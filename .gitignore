@@ -1,0 +1,22 @@
+# 환경변수
+.env
+
+# 가상환경
+venv/
+.venv/
+
+# DB (seen 논문 추적 - 로컬에서만 관리)
+seen_papers.db
+
+# 로그
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
