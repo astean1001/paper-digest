@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neural Luenberger state observer for nonautonomous nonlinear systems</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">program synthesis</span>
+    <h1>Neural Luenberger state observer for nonautonomous nonlinear systems</h1>
+    <div class="meta">
+      <span>✍️ Moritz Woelk, Jarod Morris, Wentao Tang</span>
+      <span>📅 2026-02-27</span>
+      <a href="http://arxiv.org/abs/2602.24252v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>비자율 비선형 시스템에서 데이터 기반으로 신경망을 활용한 상태 관측기를 설계하고, 오차 한계에 대한 이론적 보장을 제공하는 방법론을 제시했습니다.<br><br>**문제 정의**: <br>조작 입력이 있는 비선형 시스템에서 모델 없이(model-free) 상태 관측기를 설계하는 문제를 다룹니다. 기존 Luenberger 관측기는 선형 시불변 시스템에 한정되어 있어, 입력이 시간에 따라 변하는 비자율 비선형 시스템에는 적용이 어려웠습니다.<br><br>**핵심 기여**: <br>1) Kazantzis-Kravaris/Luenberger(KKL) 관측기 구조를 비자율 시스템으로 확장하여 입력-아핀(input-affine) 항을 추가<br>2) 다층 퍼셉트론 신경망을 사용해 입력-아핀 항과 관측기 상태에서 시스템 상태로의 비선형 사상을 데이터로부터 학습<br>3) 학습된 신경망이 새로운 입출력 데이터에서 보장된 오차 한계 내에서 상태를 관측할 수 있음을 이론적으로 증명<br>4) 생물반응기와 Williams-Otto 반응기 사례 연구를 통한 검증<br><br>**의의**: <br>제어 시스템 분야에서 모델 기반 접근법의 한계를 극복하고 데이터 기반 방법론을 제시한 점이 중요합니다. 특히 이론적 보장과 함께 실용적 적용 가능성을 동시에 확보했으며, 복잡한 화학 공정이나 생물학적 시스템의 상태 추정에 직접 활용할 수 있는 방법론을 제공합니다. 딥러닝과 제어 이론의 융합 연구에 좋은 참고가 될 것입니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>This work proposes a method for model-free synthesis of a state observer for nonlinear systems with manipulated inputs, where the observer is trained offline using a historical or simulation dataset of state measurements. We use the structure of the Kazantzis-Kravaris/Luenberger (KKL) observer, extended to nonautonomous systems by adding an additional input-affine term to the linear time-invariant (LTI) observer-state dynamics, which determines a nonlinear injective mapping of the true states. Both this input-affine term and the nonlinear mapping from the observer states to the system states are learned from data using fully connected feedforward multi-layer perceptron neural networks. Furthermore, we theoretically prove that trained neural networks, when given new input-output data, can be used to observe the states with a guaranteed error bound. To validate the proposed observer synthesis method, case studies are performed on a bioreactor and a Williams-Otto reactor.</p>
+  </section>
+</article>
+</body>
+</html>

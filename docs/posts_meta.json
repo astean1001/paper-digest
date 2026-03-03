@@ -1,0 +1,137 @@
+[
+  {
+    "filename": "2026-03-03-Towards-Compositional-Generalization-in-LLMs-for-S.html",
+    "title": "Towards Compositional Generalization in LLMs for Smart Contract Security: A Case Study on Reentrancy Vulnerabilities",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2601.06914v1"
+  },
+  {
+    "filename": "2026-03-03-FLAMES--Fine-tuning-LLMs-to-Synthesize-Invariants.html",
+    "title": "FLAMES: Fine-tuning LLMs to Synthesize Invariants for Smart Contract Security",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "스마트 컨트랙트 보안을 위해 대규모 언어모델을 활용하여 Solidity require문 형태의 실행 가능한 런타임 가드를 자동 생성하는 FLAMES 시스템을 제안하고, 실제 익스플로잇의 20.4%를 차단하는 성능을 입증했다.",
+    "url": "http://arxiv.org/abs/2510.21401v1"
+  },
+  {
+    "filename": "2026-03-03-Equality-Saturation-Guided-by-Large-Language-Model.html",
+    "title": "Equality Saturation Guided by Large Language Models",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" AND (ab:\"e-graph\" OR ab:\"program synthesis\" OR ab:\"deobfuscation\")",
+    "one_liner": "LLM의 정확성 부족 문제를 해결하기 위해 e-graph를 중간층으로 활용하여 LLM이 고수준 체크포인트만 제공하고 e-graph가 저수준 재작성 체인을 생성하는 LGuess 방법론을 제안함.",
+    "url": "http://arxiv.org/abs/2511.00403v1"
+  },
+  {
+    "filename": "2026-03-03-LISA-Technical-Report--An-Agentic-Framework-for-Sm.html",
+    "title": "LISA Technical Report: An Agentic Framework for Smart Contract Auditing",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "과거 감사 보고서 데이터를 활용해 모델 파인튜닝 없이 취약점 탐지 패턴을 학습하는 에이전틱 스마트 컨트랙트 취약점 탐지 프레임워크 LISA를 제시",
+    "url": "http://arxiv.org/abs/2509.24698v1"
+  },
+  {
+    "filename": "2026-03-03-egg--Fast-and-Extensible-Equality-Saturation.html",
+    "title": "egg: Fast and Extensible Equality Saturation",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" AND (ab:\"e-graph\" OR ab:\"program synthesis\" OR ab:\"deobfuscation\")",
+    "one_liner": "E-graph를 equality saturation에 특화하여 성능과 확장성을 대폭 개선한 egg 라이브러리를 개발하여, 컴파일러 최적화와 프로그램 합성 분야에서 혁신적 성능을 달성했습니다.",
+    "url": "http://arxiv.org/abs/2004.03082v3"
+  },
+  {
+    "filename": "2026-03-03-Examining-the-Effectiveness-of-Transformer-Based-S.html",
+    "title": "Examining the Effectiveness of Transformer-Based Smart Contract Vulnerability Scan",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "Transformer 기반 스마트 컨트랙트 취약점 탐지 모델 VASCOT을 제안하고, EVM 바이트코드 분석을 통해 기존 LSTM 기반 모델과 성능을 비교 평가한 연구입니다.",
+    "url": "http://arxiv.org/abs/2601.07334v1"
+  },
+  {
+    "filename": "2026-03-03-Large-Language-Model-based-Smart-Contract-Auditing.html",
+    "title": "Large Language Model based Smart Contract Auditing with LLMBugScanner",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2512.02069v1"
+  },
+  {
+    "filename": "2026-03-03-SmartPoC--Generating-Executable-and-Validated-PoCs.html",
+    "title": "SmartPoC: Generating Executable and Validated PoCs for Smart Contract Bug Reports",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "스마트 컨트랙트 감사 보고서를 자동으로 실행 가능하고 검증된 PoC 테스트 케이스로 변환하는 LLM 기반 프레임워크 SmartPoC를 제안하였습니다.",
+    "url": "http://arxiv.org/abs/2511.12993v2"
+  },
+  {
+    "filename": "2026-03-03-MEV-in-Binance-Builder.html",
+    "title": "MEV in Binance Builder",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "BSC의 PBS(Proposer-Builder Separation) 시스템에서 화이트리스트 방식과 짧은 블록 간격으로 인해 MEV 수익이 소수 빌더(48Club, Blockrazor)에게 극도로 집중되는 구조적 중앙화 문제를 실증 분석했습니다.",
+    "url": "http://arxiv.org/abs/2602.15395v1"
+  },
+  {
+    "filename": "2026-03-03-How-to-Serve-Your-Sandwich--MEV-Attacks-in-Private.html",
+    "title": "How to Serve Your Sandwich? MEV Attacks in Private L2 Mempools",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "프라이빗 멤풀을 사용하는 이더리움 L2 롤업에서 샌드위치 공격이 L1과 달리 드물고 수익성이 낮다는 것을 실증적으로 입증한 연구",
+    "url": "http://arxiv.org/abs/2601.19570v1"
+  },
+  {
+    "filename": "2026-03-03-Rethinking-Evidence-Hierarchies-in-Medical-Languag.html",
+    "title": "Rethinking Evidence Hierarchies in Medical Language Benchmarks: A Critical Evaluation of HealthBench",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "MBA deobfuscation",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2508.00081v1"
+  },
+  {
+    "filename": "2026-03-03-PieArena--Frontier-Language-Agents-Achieve-MBA-Lev.html",
+    "title": "PieArena: Frontier Language Agents Achieve MBA-Level Negotiation Performance and Reveal Novel Behavioral Differences",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "MBA deobfuscation",
+    "one_liner": "GPT-5 등 최신 언어모델들이 MBA 수준의 협상 과제에서 비즈니스 스쿨 학생들과 동등하거나 더 나은 성과를 보이며, 모델별로 고유한 협상 행동 패턴을 나타낸다는 것을 실증적으로 입증했습니다.",
+    "url": "http://arxiv.org/abs/2602.05302v2"
+  },
+  {
+    "filename": "2026-03-03-Neural-Luenberger-state-observer-for-nonautonomous.html",
+    "title": "Neural Luenberger state observer for nonautonomous nonlinear systems",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "program synthesis",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2602.24252v1"
+  },
+  {
+    "filename": "2026-03-03-Quantifying-Robustness-to-Unmeasured-Confounding-i.html",
+    "title": "Quantifying Robustness to Unmeasured Confounding in Time-Varying Treatment Confounder Settings: An Extension of E-value Approach",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "signature based vulnerability detection",
+    "one_liner": "기존 E-value 방법론을 시간에 따라 변하는 치료와 교란변수가 있는 종단연구로 확장하여, 측정되지 않은 교란변수에 대한 강건성을 정량화하는 새로운 접근법을 제시한 연구",
+    "url": "http://arxiv.org/abs/2602.24261v1"
+  },
+  {
+    "filename": "2026-03-03-Thermal-Casimir-Force-Imaging-of-Nonequilibrium-Ho.html",
+    "title": "Thermal Casimir Force Imaging of Nonequilibrium Hot Electrons",
+    "date": "2026-03-03",
+    "source": "arXiv",
+    "topic": "smart contract vulnerability detection",
+    "one_liner": "열적 카시미르 효과를 이용해 나노스케일에서 비평형 상태의 뜨거운 전자를 비접촉 방식으로 최초 측정하는 방법론을 개발했습니다.",
+    "url": "http://arxiv.org/abs/2602.24157v1"
+  }
+]

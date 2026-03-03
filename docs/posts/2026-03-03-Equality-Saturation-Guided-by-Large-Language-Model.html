@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equality Saturation Guided by Large Language Models</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" AND (ab:"e-graph" OR ab:"program synthesis" OR ab:"deobfuscation")</span>
+    <h1>Equality Saturation Guided by Large Language Models</h1>
+    <div class="meta">
+      <span>✍️ Wentao Peng, Ruyi Ji, Yingfei Xiong</span>
+      <span>📅 2025-11-01</span>
+      <a href="http://arxiv.org/abs/2511.00403v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: LLM의 정확성 부족 문제를 해결하기 위해 e-graph를 중간층으로 활용하여 LLM이 고수준 체크포인트만 제공하고 e-graph가 저수준 재작성 체인을 생성하는 LGuess 방법론을 제안함.<br><br>**문제 정의**: <br>- LLM은 정확성을 보장할 수 없어 형식적 재작성 시스템에 적용 시 올바른 재작성 체인 생성에 한계가 있음<br>- 직접적인 LLM 적용과 전통적인 equality saturation 모두 다변수 다항식 인수분해 같은 복잡한 문제에서 효율성과 정확성 면에서 부족함<br><br>**핵심 기여**:<br>1. **LGuess 아키텍처**: LLM과 형식적 재작성 시스템 사이에 e-graph를 중간층으로 배치한 하이브리드 접근법 설계<br>2. **확률적 체크포인트 추출 모델**: saturated e-graph에서 LLM이 예측한 가능성 높은 체크포인트를 효과적으로 추출하는 학습 모델 개발<br>3. **역할 분담 최적화**: LLM은 전략적 방향 제시(고수준), e-graph는 정확한 변환 수행(저수준)으로 각각의 강점 활용<br><br>**의의**: <br>이 연구는 neurosymbolic AI의 실용적 구현 사례로서, LLM의 창의적 추론 능력과 기호적 시스템의 정확성을 효과적으로 결합하는 방법론을 제시함. 특히 equality saturation과 LLM 융합 연구에서 핵심인 '어떻게 두 시스템의 장점을 최적으로 조합할 것인가'라는 질문에 대한 구체적 답안을 제공하며, 향후 프로그램 합성이나 코드 최적화 등 다양한 영역으로의 확장 가능성을 보여줌.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>One critical issue with large language models (LLMs) is their inability to guarantee correctness. Although this problem can be addressed by applying LLMs to formal rewrite systems, current LLMs are still far from adequate to generate sound rewrite chains. To bridge this gap, this paper proposes LLM-guided equality saturation, dubbed LGuess, by incorporating e-graphs as an intermediate layer between LLMs and rewrite systems. LGuess queries LLMs only for high-level rewrite checkpoints and uses e-graphs to supply low-level rewrite chains between these checkpoints. The key technical challenge in this procedure lies in effectively extracting a suitable checkpoint from a saturated e-graph, which LGuess addresses by learning a probabilistic model from the LLM. The model predicts probable checkpoints while remaining simple enough for effective extraction. We implement a prototype of LGuess and evaluate it on the problem of factorizing multivariable polynomials. The results demonstrate a significant advantage of LGuess compared to both straightforward equality saturation and the approach that queries the LLM directly for the rewrite chain.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Serve Your Sandwich? MEV Attacks in Private L2 Mempools</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"MEV" OR ti:"maximal extractable value" AND ab:"Solana"</span>
+    <h1>How to Serve Your Sandwich? MEV Attacks in Private L2 Mempools</h1>
+    <div class="meta">
+      <span>✍️ Krzysztof Gogol, Manvir Schneider, Jan Gorzny</span>
+      <span>📅 2026-01-27</span>
+      <a href="http://arxiv.org/abs/2601.19570v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 프라이빗 멤풀을 사용하는 이더리움 L2 롤업에서 샌드위치 공격이 L1과 달리 드물고 수익성이 낮다는 것을 실증적으로 입증한 연구<br><br>**문제 정의**: <br>이더리움 L1에서는 샌드위치 공격이 널리 퍼져있고 수익성이 높다고 알려져 있으나, 프라이빗 멤풀을 사용하는 L2 롤업 환경에서 이러한 MEV 공격의 실제 실행 가능성, 수익성, 발생 빈도에 대한 체계적 분석이 부족했음<br><br>**핵심 기여**:<br>1. **이론적 모델링**: 최적 front-run/back-run 크기 결정 모델을 확장하여 공격 수익성과 거래량, 유동성 깊이, 슬리피지 한계의 관계를 공식화<br>2. **실행 제약 분석**: 프라이빗 멤풀 환경에서 빌더 시장 부재 시 원자적 포함이 보장되지 않아 샌드위치 공격이 확률적으로 변한다는 점을 모델화<br>3. **실증 분석**: 주요 롤업들의 트랜잭션 데이터 분석을 통해 기존 휴리스틱이 샌드위치 활동을 과대평가했으며, 대부분이 거짓 양성이고 중앙값 순수익이 음수임을 발견<br><br>**의의**: <br>MEV 연구 분야에서 L1과 L2의 근본적 차이를 실증적으로 규명한 중요한 연구로, L2 설계 시 시퀀싱 정책 수립과 MEV 측정 방법론 개선에 핵심적 기여. 특히 프라이빗 멤풀이 MEV 공격 완화에 효과적임을 입증하여 향후 L2 아키텍처 설계와 MEV 방어 메커니즘 연구에 중요한 시사점 제공</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We study the feasibility, profitability, and prevalence of sandwich attacks on Ethereum rollups with private mempools. First, we extend a formal model of optimal front- and back-run sizing, relating attack profitability to victim trade volume, liquidity depth, and slippage bounds. We complement it with an execution-feasibility model that quantifies co-inclusion constraints under private mempools. Second, we examine execution constraints in the absence of builder markets: without guaranteed atomic inclusion, attackers must rely on sequencer ordering, redundant submissions, and priority fee placement, which renders sandwiching probabilistic rather than deterministic. Third, using transaction-level data from major rollups, we show that naive heuristics overstate sandwich activity. We find that the majority of flagged patterns are false positives and that the median net return for these attacks is negative. Our results suggest that sandwiching, while endemic and profitable on Ethereum L1, is rare, unprofitable, and largely absent in rollups with private mempools. These findings challenge prevailing assumptions, refine measurement of MEV in L2s, and inform the design of sequencing policies.</p>
+  </section>
+</article>
+</body>
+</html>

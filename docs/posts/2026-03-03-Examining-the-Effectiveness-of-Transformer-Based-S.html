@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examining the Effectiveness of Transformer-Based Smart Contract Vulnerability Scan</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>Examining the Effectiveness of Transformer-Based Smart Contract Vulnerability Scan</h1>
+    <div class="meta">
+      <span>✍️ Emre Balci, Timucin Aydede, Gorkem Yilmaz</span>
+      <span>📅 2026-01-12</span>
+      <a href="http://arxiv.org/abs/2601.07334v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Transformer 기반 스마트 컨트랙트 취약점 탐지 모델 VASCOT을 제안하고, EVM 바이트코드 분석을 통해 기존 LSTM 기반 모델과 성능을 비교 평가한 연구입니다.<br><br>**문제 정의**: <br>- 스마트 컨트랙트의 취약점으로 인한 재정적 손실과 DApp 서비스 중단 문제<br>- 기존 취약점 탐지 방법의 한계와 딥러닝 기반 접근법의 효과성 검증 필요<br>- 입력 길이 제약과 false positive 문제 해결<br><br>**핵심 기여**:<br>- **VASCOT 모델**: Transformer 기반 EVM 바이트코드 순차 분석 시스템 개발<br>- **슬라이딩 윈도우 메커니즘**: 입력 길이 제약 문제 해결을 위한 기술적 접근<br>- **고품질 데이터셋 구축**: 2022년 배포된 16,469개 검증된 이더리움 컨트랙트 데이터셋, trace analysis와 구체적 검증을 통한 false positive 완화<br>- **비교 평가**: LSTM 기반 모델과의 체계적 성능 비교 분석<br><br>**의의**:<br>- **LLM-프로그램 분석 융합**: Transformer 아키텍처를 코드 취약점 분석에 적용한 실증적 연구로, LLM과 정적 분석 기법 결합에 대한 직접적 참조점 제공<br>- **실용적 검증**: 실제 배포된 대규모 컨트랙트 데이터를 활용한 현실적 평가로 연구 신뢰성 확보<br>- **방법론적 기여**: 바이트코드 레벨 분석과 슬라이딩 윈도우 기법은 다른 프로그램 분석 연구에 응용 가능한 기술적 통찰 제공</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contract technology facilitates self-executing agreements on the blockchain, eliminating dependency on an external trusted authority. However, smart contracts may expose vulnerabilities that can lead to financial losses and disruptions in decentralized applications. In this work, we evaluate deep learning-based approaches for vulnerability scanning of Ethereum smart contracts. We propose VASCOT, a Vulnerability Analyzer for Smart COntracts using Transformers, which performs sequential analysis of Ethereum Virtual Machine (EVM) bytecode and incorporates a sliding window mechanism to overcome input length constraints. To assess VASCOT's detection efficacy, we construct a dataset of 16,469 verified Ethereum contracts deployed in 2022, and annotate it using trace analysis with concrete validation to mitigate false positives. VASCOT's performance is then compared against a state-of-the-art LSTM-based vulnerability detection model on both our dataset and an older public dataset. Our findings highlight the strengths and limitations of each model, providing insights into their detection capabilities and generalizability.</p>
+  </section>
+</article>
+</body>
+</html>

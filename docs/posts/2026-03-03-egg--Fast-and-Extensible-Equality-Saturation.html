@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>egg: Fast and Extensible Equality Saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" AND (ab:"e-graph" OR ab:"program synthesis" OR ab:"deobfuscation")</span>
+    <h1>egg: Fast and Extensible Equality Saturation</h1>
+    <div class="meta">
+      <span>✍️ Max Willsey, Chandrakana Nandi, Yisu Remy Wang</span>
+      <span>📅 2020-04-07</span>
+      <a href="http://arxiv.org/abs/2004.03082v3" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: E-graph를 equality saturation에 특화하여 성능과 확장성을 대폭 개선한 egg 라이브러리를 개발하여, 컴파일러 최적화와 프로그램 합성 분야에서 혁신적 성능을 달성했습니다.<br><br>**문제 정의**: <br>기존 e-graph는 1970년대 자동정리증명기용으로 개발되어 현재 equality saturation의 컴파일러 최적화 및 프로그램 합성 용도에 특화되지 않았으며, 성능 문제와 구문적 재작성을 넘어선 변환 통합의 어려움이 있었습니다.<br><br>**핵심 기여**: <br>1) **Rebuilding 기법**: equality saturation의 고유한 작업부하 특성을 활용한 분할상환(amortized) 불변성 복원 기법으로 기존 대비 점근적 성능 향상 달성<br>2) **E-class analyses**: 도메인 특화 분석을 e-graph에 직접 통합하는 범용 메커니즘으로 임시적 조작 필요성 제거<br>3) **egg 라이브러리**: 위 기법들을 구현한 오픈소스 라이브러리 개발<br><br>**의의**: <br>MBA 난독화 해제 연구에 핵심적인 이론적/실용적 기반을 제공합니다. Equality saturation은 복잡한 MBA 표현식을 단순한 형태로 변환하는 핵심 기법이며, egg의 성능 향상과 확장성은 대규모 난독화된 코드 분석을 실용적으로 만들어줍니다. 특히 e-class analyses는 MBA 표현식의 의미적 동치성 분석에 직접 활용 가능합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>An e-graph efficiently represents a congruence relation over many expressions. Although they were originally developed in the late 1970s for use in automated theorem provers, a more recent technique known as equality saturation repurposes e-graphs to implement state-of-the-art, rewrite-driven compiler optimizations and program synthesizers. However, e-graphs remain unspecialized for this newer use case. Equality saturation workloads exhibit distinct characteristics and often require ad-hoc e-graph extensions to incorporate transformations beyond purely syntactic rewrites.
+  This work contributes two techniques that make e-graphs fast and extensible, specializing them to equality saturation. A new amortized invariant restoration technique called rebuilding takes advantage of equality saturation's distinct workload, providing asymptotic speedups over current techniques in practice. A general mechanism called e-class analyses integrates domain-specific analyses into the e-graph, reducing the need for ad hoc manipulation.
+  We implemented these techniques in a new open-source library called egg. Our case studies on three previously published applications of equality saturation highlight how egg's performance and flexibility enable state-of-the-art results across diverse domains.</p>
+  </section>
+</article>
+</body>
+</html>

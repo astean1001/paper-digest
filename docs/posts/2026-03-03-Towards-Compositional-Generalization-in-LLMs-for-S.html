@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Towards Compositional Generalization in LLMs for Smart Contract Security: A Case Study on Reentrancy Vulnerabilities</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>Towards Compositional Generalization in LLMs for Smart Contract Security: A Case Study on Reentrancy Vulnerabilities</h1>
+    <div class="meta">
+      <span>✍️ Ying Zhou, Jiacheng Wei, Yu Qi</span>
+      <span>📅 2026-01-11</span>
+      <a href="http://arxiv.org/abs/2601.06914v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>스마트 컨트랙트의 reentrancy 취약점 탐지를 위해 복잡한 추론 작업을 4개의 원자 태스크로 분해하고 LoRA 어댑터 융합을 통해 LLM의 compositional generalization 능력을 향상시켜 98.2%의 탐지 정확도를 달성한 연구.<br><br>**문제 정의**: <br>대규모 고품질 데이터로 훈련된 LLM이 스마트 컨트랙트 취약점 탐지와 같은 전문 도메인에서 전통적인 정적 분석 도구보다 성능이 떨어지는 문제를 해결하고, 제한된 데이터 환경에서 combinatorial generalization을 달성하고자 함.<br><br>**핵심 기여**:<br>- **원자 태스크 분해**: reentrancy 취약점 탐지를 4개의 선형 독립적 원자 태스크로 분해 (외부 호출 식별, 상태 업데이트 식별, 데이터 의존성 식별, 데이터 플로우 순서 결정)<br>- **구조적 정보 활용**: Slither 도구를 통해 제어 플로우 그래프와 데이터 플로우 그래프에서 구조 정보를 추출하여 LLM 어댑터 파인튜닝에 활용<br>- **LoRA 어댑터 융합**: low-rank normalization fusion 기법으로 성능 향상 달성<br><br>**의의**: <br>neurosymbolic 접근법의 관점에서 매우 중요한 연구로, 복잡한 보안 분석 작업을 symbolic한 원자 태스크로 분해하고 neural 방법(LLM)과 결합한 실제적 사례를 제시함. 특히 정적 분석 도구의 구조적 지식을 LLM과 융합하는 방법론은 스마트 컨트랙트 보안 연구에서 neurosymbolic 접근법의 효과적인 적용 모델을 보여주며, 제한된 데이터 환경에서의 일반화 능력 향상 전략으로도 활용 가능함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Large language models (LLMs) demonstrate remarkable capabilities in natural language understanding and generation. Despite being trained on large-scale, high-quality data, LLMs still fail to outperform traditional static analysis tools in specialized domains like smart contract vulnerability detection. To address this issue, this paper proposes a post-training algorithm based on atomic task decomposition and fusion. This algorithm aims to achieve combinatorial generalization under limited data by decomposing complex reasoning tasks. Specifically, we decompose the reentrancy vulnerability detection task into four linearly independent atomic tasks: identifying external calls, identifying state updates, identifying data dependencies between external calls and state updates, and determining their data flow order. These tasks form the core components of our approach. By training on synthetic datasets, we generate three compiler-verified datasets. We then employ the Slither tool to extract structural information from the control flow graph and data flow graph, which is used to fine-tune the LLM's adapter. Experimental results demonstrate that low-rank normalization fusion with the LoRA adapter improves the LLM's reentrancy vulnerability detection accuracy to 98.2%, surpassing state-of-the-art methods. On 31 real-world contracts, the algorithm achieves a 20% higher recall than traditional analysis tools.</p>
+  </section>
+</article>
+</body>
+</html>

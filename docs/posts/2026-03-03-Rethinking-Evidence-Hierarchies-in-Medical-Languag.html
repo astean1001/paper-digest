@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rethinking Evidence Hierarchies in Medical Language Benchmarks: A Critical Evaluation of HealthBench</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">MBA deobfuscation</span>
+    <h1>Rethinking Evidence Hierarchies in Medical Language Benchmarks: A Critical Evaluation of HealthBench</h1>
+    <div class="meta">
+      <span>✍️ Fred Mutisya, Shikoh Gitau, Nasubo Ongoma</span>
+      <span>📅 2025-07-31</span>
+      <a href="http://arxiv.org/abs/2508.00081v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>의료 AI 평가 벤치마크인 HealthBench가 전문가 의견에만 의존하여 지역적 편향과 개인차를 반영하는 문제점을 지적하고, 체계적인 임상진료지침(CPG) 기반의 증거 중심 평가 방법론을 제안한 비판적 분석 연구입니다.<br><br>**문제 정의**: <br>현재 의료 AI 시스템 평가에 널리 사용되는 HealthBench가 개별 의사의 주관적 판단과 지역적 의료 관행에 의존함으로써, 특히 아프리카 등 저중소득 국가에서 공정하지 못한 평가 결과를 초래하고 있으며, 소외된 열대질환 등의 coverage 부족 문제를 해결해야 합니다.<br><br>**핵심 기여**: <br>1) HealthBench의 증거 위계(evidence hierarchy) 한계를 체계적으로 분석<br>2) 버전 관리되는 임상진료지침(CPG)을 기반으로 한 "증거-견고한(evidence-robust)" 강화학습 프레임워크 제안  <br>3) 체계적 문헌고찰과 GRADE 증거 등급을 활용한 rubric-to-guideline 연결, 증거 가중 점수화, 맥락적 오버라이드 메커니즘 제시<br><br>**의의**: <br>전 세계적으로 공정하고 신뢰할 수 있는 의료 AI 평가 표준 구축의 필요성을 제기하며, 특히 의료 자원이 부족한 지역에서도 적용 가능한 평가 방법론 개발의 중요성을 강조합니다. 의료 AI 연구자들에게는 평가 벤치마크의 증거 기반 설계와 글로벌 형평성 고려의 중요성을 일깨워주는 연구입니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>HealthBench, a benchmark designed to measure the capabilities of AI systems for health better (Arora et al., 2025), has advanced medical language model evaluation through physician-crafted dialogues and transparent rubrics. However, its reliance on expert opinion, rather than high-tier clinical evidence, risks codifying regional biases and individual clinician idiosyncrasies, further compounded by potential biases in automated grading systems. These limitations are particularly magnified in low- and middle-income settings, where issues like sparse neglected tropical disease coverage and region-specific guideline mismatches are prevalent.
+  The unique challenges of the African context, including data scarcity, inadequate infrastructure, and nascent regulatory frameworks, underscore the urgent need for more globally relevant and equitable benchmarks. To address these shortcomings, we propose anchoring reward functions in version-controlled Clinical Practice Guidelines (CPGs) that incorporate systematic reviews and GRADE evidence ratings.
+  Our roadmap outlines "evidence-robust" reinforcement learning via rubric-to-guideline linkage, evidence-weighted scoring, and contextual override </p>
+  </section>
+</article>
+</body>
+</html>

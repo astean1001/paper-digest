@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LISA Technical Report: An Agentic Framework for Smart Contract Auditing</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>LISA Technical Report: An Agentic Framework for Smart Contract Auditing</h1>
+    <div class="meta">
+      <span>✍️ Izaiah Sun, Daniel Tan, Andy Deng</span>
+      <span>📅 2025-09-29</span>
+      <a href="http://arxiv.org/abs/2509.24698v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 과거 감사 보고서 데이터를 활용해 모델 파인튜닝 없이 취약점 탐지 패턴을 학습하는 에이전틱 스마트 컨트랙트 취약점 탐지 프레임워크 LISA를 제시<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 취약점 탐지 도구들이 제한된 취약점 유형 커버리지와 낮은 탐지 정확도를 보이며, 수동 감사에 과도하게 의존하는 문제를 해결하고자 함<br><br>**핵심 기여**:<br>- 규칙 기반(rule-based)과 논리 기반(logic-based) 방법을 결합한 하이브리드 에이전틱 프레임워크 개발<br>- 과거 감사 보고서에서 취약점 탐지 경험을 추출하여 모델 파인튜닝 없이 학습하는 메커니즘 구현<br>- 학습된 패턴을 새로운 프로젝트와 진화하는 위협 프로파일에 일반화할 수 있는 능력 제공<br>- 기존 LLM 기반 접근법과 전통적 정적 분석 도구 대비 우수한 취약점 유형 커버리지와 탐지 정확도 달성<br><br>**의의**: <br>연구자의 핵심 관심사인 "감사 보고서 기반 취약점 시그니처 추출"과 직접적으로 연관되는 연구로, 감사 보고서 데이터를 활용한 취약점 패턴 학습 방법론을 제시함. 특히 모델 파인튜닝 없이 감사 경험을 학습하는 접근법은 실용적이면서도 확장 가능한 취약점 시그니처 추출 방법론의 가능성을 보여줌</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We present LISA, an agentic smart contract vulnerability detection framework that combines rule-based and logic-based methods to address a broad spectrum of vulnerabilities in smart contracts. LISA leverages data from historical audit reports to learn the detection experience (without model fine-tuning), enabling it to generalize learned patterns to unseen projects and evolving threat profiles. In our evaluation, LISA significantly outperforms both LLM-based approaches and traditional static analysis tools, achieving superior coverage of vulnerability types and higher detection accuracy. Our results suggest that LISA offers a compelling solution for industry: delivering more reliable and comprehensive vulnerability detection while reducing the dependence on manual effort.</p>
+  </section>
+</article>
+</body>
+</html>

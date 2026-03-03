@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Large Language Model based Smart Contract Auditing with LLMBugScanner</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>Large Language Model based Smart Contract Auditing with LLMBugScanner</h1>
+    <div class="meta">
+      <span>✍️ Yining Yuan, Yifei Wang, Yichang Xu</span>
+      <span>📅 2025-11-29</span>
+      <a href="http://arxiv.org/abs/2512.02069v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>스마트 컨트랙트 취약점 탐지를 위해 여러 LLM의 장점을 결합한 앙상블 프레임워크 LLMBugScanner를 제안하여 단일 모델의 한계를 극복했습니다.<br><br>**문제 정의**: <br>- 기존 LLM들이 스마트 컨트랙트 취약점 탐지에서 모델별로 추론 능력이 다르고, 단일 모델로는 모든 취약점 유형이나 컨트랙트 구조에서 일관된 성능을 보이지 못함<br>- Fine-tuning을 적용해도 개별 LLM의 한계가 지속됨<br><br>**핵심 기여**: <br>1. **도메인 지식 적응(Domain Knowledge Adaptation)**: 일반적인 코드 의미론과 취약점 탐지 추론을 모두 포착하는 상호보완적 데이터셋으로 LLM을 파라미터 효율적으로 fine-tuning<br>2. **앙상블 추론(Ensemble Reasoning)**: 여러 LLM의 상호보완적 강점을 활용하고 합의 기반 충돌 해결 전략을 적용하여 신뢰성 있는 취약점 평가 수행<br>3. 사전훈련 및 fine-tuned 개별 모델 대비 일관된 정확도 향상과 더 강한 일반화 성능 달성<br><br>**의의**: <br>스마트 컨트랙트 보안 분야에서 단일 LLM의 한계를 체계적으로 해결한 첫 번째 앙상블 프레임워크로, 비용 효율적이면서 확장 가능한 감사 솔루션을 제공합니다. 특히 블록체인 보안 연구자들에게는 실용적인 도구로, AI/ML 연구자들에게는 도메인 특화 앙상블 학습의 효과적인 사례로 활용될 수 있습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>This paper presents LLMBugScanner, a large language model (LLM) based framework for smart contract vulnerability detection using fine-tuning and ensemble learning. Smart contract auditing presents several challenges for LLMs: different pretrained models exhibit varying reasoning abilities, and no single model performs consistently well across all vulnerability types or contract structures. These limitations persist even after fine-tuning individual LLMs.
+  To address these challenges, LLMBugScanner combines domain knowledge adaptation with ensemble reasoning to improve robustness and generalization. Through domain knowledge adaptation, we fine-tune LLMs on complementary datasets to capture both general code semantics and instruction-guided vulnerability reasoning, using parameter-efficient tuning to reduce computational cost. Through ensemble reasoning, we leverage the complementary strengths of multiple LLMs and apply a consensus-based conflict resolution strategy to produce more reliable vulnerability assessments.
+  We conduct extensive experiments across multiple popular LLMs and compare LLMBugScanner with both pretrained and fine-tuned individual models. Results show that LLMBugScanner achieves consistent accuracy improvements and stronger generalization, demonstrating that it provides a principled, cost-effective, and extensible framework for smart contract auditing.</p>
+  </section>
+</article>
+</body>
+</html>

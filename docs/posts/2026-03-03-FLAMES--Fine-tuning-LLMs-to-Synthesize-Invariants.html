@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLAMES: Fine-tuning LLMs to Synthesize Invariants for Smart Contract Security</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>FLAMES: Fine-tuning LLMs to Synthesize Invariants for Smart Contract Security</h1>
+    <div class="meta">
+      <span>✍️ Mojtaba Eshghie, Gabriele Morello, Matteo Lauretano</span>
+      <span>📅 2025-10-24</span>
+      <a href="http://arxiv.org/abs/2510.21401v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트 보안을 위해 대규모 언어모델을 활용하여 Solidity require문 형태의 실행 가능한 런타임 가드를 자동 생성하는 FLAMES 시스템을 제안하고, 실제 익스플로잇의 20.4%를 차단하는 성능을 입증했다.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 보안 분석 도구들은 취약점을 탐지할 수 있지만 실제 배포 가능한 방어 메커니즘을 생성하지 못하며, 취약점 라벨링, 심볼릭 분석, 자연어 명세에 의존하는 한계가 있어 실용적인 보안 강화 방안이 부족한 상황이다.<br><br>**핵심 기여**:<br>- 514,506개의 검증된 컨트랙트에서 추출한 실제 불변식으로 fill-in-the-middle 지도학습을 통해 도메인 특화된 LLM을 훈련<br>- 취약점 탐지나 형식 명세 없이 실행 가능한 Solidity require문을 자동 합성하는 방법론 개발<br>- 컴파일 성공률 96.7%, 의미적 정확도 44.5%, 실제 익스플로잇 차단률 20.4%의 성능 달성<br>- APEMAGA 실제 공격 사례를 포함한 실증적 검증 수행<br><br>**의의**: <br>형식 검증과 자동화된 프로그램 수정 관점에서 매우 중요한 연구로, 기존의 정적 분석 기반 취약점 탐지를 넘어서 실제 배포 가능한 런타임 방어 코드를 자동 생성한다는 점에서 혁신적이다. 특히 LLM을 활용한 코드 합성이 형식 검증 도구와 결합될 때 프로그램의 안전성을 보장하는 자동화된 수정 메커니즘으로 발전할 수 있는 가능성을 제시한다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contract vulnerabilities cost billions of dollars annually, yet existing automated analysis tools fail to generate deployable defenses. We present FLAMES, a novel automated approach that synthesizes executable runtime guards as Solidity "require" statements to harden smart contracts against exploits. Unlike prior work that relies on vulnerability labels, symbolic analysis, or natural language specifications, FLAMES employs domain-adapted large language models trained through fill-in-the-middle supervised fine-tuning on real-world invariants extracted from 514,506 verified contracts. Our extensive evaluation across three dimensions demonstrates FLAMES's effectiveness: (1) Compilation: FLAMES achieves 96.7% compilability for synthesized invariant (2) Semantic Quality: on a curated test set of 5,000 challenging invariants, FLAMES produces exact or semantically equivalent matches to ground truth in 44.5% of cases; (3) Exploit Mitigation: FLAMES prevents 22 out of 108 real exploits (20.4%) while preserving contract functionality, and (4) FLAMES successfully blocks the real-world APEMAGA incident by synthesizing a pre-condition that mitigates the attack. FLAMES establishes that domain-adapted LLMs can automatically generate production-ready security defenses for smart contracts without requiring vulnerability detection, formal specifications, or human intervention. We release our code, model weights, datasets, and evaluation infrastructure to enable reproducible research in t</p>
+  </section>
+</article>
+</body>
+</html>
