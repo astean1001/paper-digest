@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simplifying MBA Expression Using E-Graphs</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"MBA" OR ti:"mixed boolean arithmetic" AND ab:"deobfuscation" AND ab:"equality saturation"</span>
+    <h1>Simplifying MBA Expression Using E-Graphs</h1>
+    <div class="meta">
+      <span>✍️ Seoksu Lee, Hyeongchang Jeon, Eun-Sun Cho</span>
+      <span>📅 2024-04-08</span>
+      <a href="http://arxiv.org/abs/2404.05431v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>E-graph 자료구조를 활용하여 동일한 의미를 가진 다양한 표현을 효율적으로 관리하고 체계적으로 재작성함으로써 MBA(Mixed Boolean Arithmetic) 난독화 표현을 단순화하는 방법을 제안한다.<br><br>**문제 정의**: <br>바이러스와 멀웨어에서 전문가 분석을 방해하기 위해 사용되는 MBA 난독화 기법은 기존 역난독화 도구들로는 해독하기 매우 어려운 형태로, 복잡한 불린 연산과 산술 연산이 혼합된 표현을 원래의 단순한 형태로 복원하는 것이 핵심 과제이다.<br><br>**핵심 기여**: <br>- E-graph 자료구조를 MBA 역난독화에 처음 적용하여 동일한 의미를 가진 여러 표현들을 효율적으로 저장하고 관리<br>- 체계적인 term 재작성 규칙을 통해 복잡한 MBA 표현을 더 단순한 형태로 변환하는 알고리즘 개발<br>- 기존 접근법 대비 빠른 처리 속도와 합리적인 성능을 달성<br><br>**의의**: <br>이 연구는 equality saturation과 e-graph를 활용한 프로그램 합성 및 난독화 해제 분야에서 핵심적인 기여를 하며, 특히 e-graph의 효율적인 표현 관리 능력이 복잡한 프로그램 변환 문제에 어떻게 적용될 수 있는지를 구체적으로 보여준다. 또한 악성코드 분석 도구 개발에 직접적으로 활용 가능한 실용적 가치가 높다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Code obfuscation involves the addition of meaningless code or the complication of existing code in order to make a program difficult to reverse engineer. In recent years, MBA (Mixed Boolean Arithmetic) obfuscation has been applied to virus and malware code to impede expert analysis. Among the various obfuscation techniques, Mixed Boolean Arithmetic (MBA) obfuscation is considered the most challenging to decipher using existing code deobfuscation techniques. In this paper, we have attempted to simplify the MBA expression. We use an e-graph data structure to efficiently hold multiple expressions of the same semantics to systematically rewrite terms and find simpler expressions. The preliminary experimental result shows that our e-graph based MBA deobfuscation approach works faster with reasonable performance than other approaches do.</p>
+  </section>
+</article>
+</body>
+</html>

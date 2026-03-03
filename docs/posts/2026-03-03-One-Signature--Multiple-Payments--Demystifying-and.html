@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Signature, Multiple Payments: Demystifying and Detecting Signature Replay Vulnerabilities in Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature-based analysis" OR ab:"audit report")</span>
+    <h1>One Signature, Multiple Payments: Demystifying and Detecting Signature Replay Vulnerabilities in Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Zexu Wang, Jiachi Chen, Zewei Lin</span>
+      <span>📅 2025-11-12</span>
+      <a href="http://arxiv.org/abs/2511.09134v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트에서 디지털 서명이 반복적으로 재사용되어 권한 남용을 초래하는 Signature Replay Vulnerability(SRV)를 체계적으로 분석하고, LLM 기반 정적 분석 도구 LASiR을 개발하여 자동 탐지에 성공했습니다.<br><br>**문제 정의**: <br>스마트 컨트랙트에서 서명 사용 조건에 대한 검증 부족으로 인해 동일한 서명이 반복 검증되어 권한 남용과 자산 위험을 초래하는 Signature Replay Vulnerability 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **실증적 연구**: 37개 블록체인 보안업체의 1,419개 감사 보고서 분석을 통해 108개 SRV 사례를 식별하고 5가지 유형으로 분류<br>2. **LASiR 도구 개발**: Large Language Model의 의미적 이해 능력을 활용한 정적 오염 분석(static taint analysis)과 심볼릭 실행을 통한 경로 도달성 검증을 결합한 자동 탐지 시스템<br>3. **대규모 실험**: 4개 블록체인(Ethereum, BSC, Polygon, Arbitrum)에서 918,964개 컨트랙트 중 서명 검증 관련 15,383개 컨트랙트를 대상으로 한 포괄적 성능 평가<br><br>**의의**: <br>서명 기반 취약점에 대한 최초의 체계적 분류와 탐지 방법을 제시하여 스마트 컨트랙트 보안 분야에 새로운 연구 영역을 개척했으며, LLM과 정적 분석 기법의 융합을 통해 실용적인 자동화 도구를 구현함으로써 블록체인 보안 감사의 효율성과 정확성을 크게 향상시켰습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contracts have significantly advanced blockchain technology, and digital signatures are crucial for reliable verification of contract authority. Through signature verification, smart contracts can ensure that signers possess the required permissions, thus enhancing security and scalability. However, lacking checks on signature usage conditions can lead to repeated verifications, increasing the risk of permission abuse and threatening contract assets. We define this issue as the Signature Replay Vulnerability (SRV). In this paper, we conducted the first empirical study to investigate the causes and characteristics of the SRVs. From 1,419 audit reports across 37 blockchain security companies, we identified 108 with detailed SRV descriptions and classified five types of SRVs. To detect these vulnerabilities automatically, we designed LASiR, which utilizes the general semantic understanding ability of Large Language Models (LLMs) to assist in the static taint analysis of the signature state and identify the signature reuse behavior. It also employs path reachability verification via symbolic execution to ensure effective and reliable detection. To evaluate the performance of LASiR, we conducted large-scale experiments on 15,383 contracts involving signature verification, selected from the initial dataset of 918,964 contracts across four blockchains: Ethereum, Binance Smart Chain, Polygon, and Arbitrum. The results indicate that SRVs are widespread, with affected contracts h</p>
+  </section>
+</article>
+</body>
+</html>

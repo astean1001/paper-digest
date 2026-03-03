@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCRUTINEER: Detecting Logic-Level Usage Violations of Reusable Components in Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature-based analysis" OR ab:"audit report")</span>
+    <h1>SCRUTINEER: Detecting Logic-Level Usage Violations of Reusable Components in Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Xingshuang Lin, Binbin Zhao, Jinwen Wang</span>
+      <span>📅 2025-11-14</span>
+      <a href="http://arxiv.org/abs/2511.11411v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트의 재사용 컴포넌트가 문법적으로는 올바르지만 비즈니스 로직 맥락에서 부적절하게 사용되는 '로직 레벨 사용법 위반'을 자동 탐지하는 SCRUTINEER 시스템을 제안함.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 재사용 컴포넌트(SCR) 검증 도구들은 문법적 규칙 준수 여부만 확인할 뿐, 해당 컴포넌트가 특정 비즈니스 로직 맥락에서 의미적으로 올바르게 사용되고 있는지는 판단하지 못하는 한계가 있음. 이러한 로직 레벨 사용법 위반은 심각한 보안 취약점으로 이어질 수 있음.<br><br>**핵심 기여**:<br>1. **복합 특징 추출**: SCR 사용 패턴을 다각도로 분석하기 위한 3가지 상호 보완적 특징 표현 방법 개발<br>2. **LLM 기반 지식 구축**: 이해 중심 프롬프트와 도메인 특화 도구를 활용해 로직 레벨 사용 패턴을 추출하고 SCR 지식베이스 구축<br>3. **RAG 기반 검사기**: 신속한 검색 전략과 포괄적/타겟팅 분석을 결합하여 잠재적 로직 레벨 사용법 위반 식별<br><br>**의의**: <br>기존의 시그니처 기반 취약점 탐지가 문법적 패턴에 집중했다면, 이 연구는 비즈니스 로직의 의미적 맥락을 고려한 취약점 탐지로 한 단계 발전시킴. 특히 audit report에서 취약점 시그니처를 추출할 때 단순한 코드 패턴뿐만 아니라 로직 레벨의 의미적 위반 패턴도 함께 고려해야 함을 시사하며, LLM을 활용한 도메인 지식 구축 방법론은 직접적으로 참조 가능함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart Contract Reusable Components(SCRs) play a vital role in accelerating the development of business-specific contracts by promoting modularity and code reuse. However, the risks associated with SCR usage violations have become a growing concern. One particular type of SCR usage violation, known as a logic-level usage violation, is becoming especially harmful. This violation occurs when the SCR adheres to its specified usage rules but fails to align with the specific business logic of the current context, leading to significant vulnerabilities. Detecting such violations necessitates a deep semantic understanding of the contract's business logic, including the ability to extract implicit usage patterns and analyze fine-grained logical behaviors. To address these challenges, we propose SCRUTINEER, the first automated and practical system for detecting logic-level usage violations of SCRs. First, we design a composite feature extraction approach that produces three complementary feature representations, supporting subsequent analysis. We then introduce a Large Language Model-powered knowledge construction framework, which leverages comprehension-oriented prompts and domain-specific tools to extract logic-level usage and build the SCR knowledge base. Next, we develop a Retrieval-Augmented Generation-driven inspector, which combines a rapid retrieval strategy with both comprehensive and targeted analysis to identify potentially insecure logic-level usages. Finally, we implement </p>
+  </section>
+</article>
+</body>
+</html>
