@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PropertyGPT: LLM-driven Formal Verification of Smart Contracts through Retrieval-Augmented Property Generation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"audit report" OR ab:"vulnerability signature" OR ab:"bytecode analysis")</span>
+    <h1>PropertyGPT: LLM-driven Formal Verification of Smart Contracts through Retrieval-Augmented Property Generation</h1>
+    <div class="meta">
+      <span>✍️ Ye Liu, Yue Xue, Daoyuan Wu</span>
+      <span>📅 2024-05-04</span>
+      <a href="http://arxiv.org/abs/2405.02580v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>GPT-4와 벡터 데이터베이스를 활용해 Certora 감사 보고서의 기존 속성을 새로운 스마트 컨트랙트에 전이하여 형식 검증 속성을 자동 생성하는 PropertyGPT 도구를 개발했습니다.<br><br>**문제 정의**: <br>스마트 컨트랙트의 형식 검증을 위해서는 수동으로 작성해야 하는 검증 속성(property) 생성이 필요하지만, 이는 전문 지식이 필요하고 시간이 많이 소요되어 자동화된 속성 생성 방법이 필요했습니다.<br><br>**핵심 기여**: <br>1) **검색 기반 속성 전이**: 기존 Certora 감사 보고서의 속성들을 벡터 데이터베이스에 임베딩하고, 유사성 기반으로 참조 속성을 검색하여 새로운 코드에 맞게 생성<br>2) **3단계 품질 보장**: (i) 컴파일 가능성을 위한 반복적 피드백 수정, (ii) 다차원 유사성 기반 top-K 속성 선별, (iii) 전용 증명기를 통한 형식 검증<br>3) **실증적 성과**: 실제 진리값 대비 80% 재현율 달성, 37개 테스트 중 26개 CVE/공격 사례 탐지, 12개 제로데이 취약점 발견으로 $8,256 버그 바운티 획득<br><br>**의의**: <br>연구자의 audit report 시그니처 추출과 Certora CVL 연구에 직접적으로 부합하는 연구로, 감사 보고서에서 추출한 패턴을 새로운 컨트랙트에 자동 적용하는 구체적인 방법론을 제시합니다. 특히 LLM 기반 속성 생성의 실용성을 입증했다는 점에서 형식 검증 자동화 연구에 중요한 기여를 했습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>With recent advances in large language models (LLMs), this paper explores the potential of leveraging state-of-the-art LLMs,such as GPT-4, to transfer existing human-written properties (e.g.,those from Certora auditing reports) and automatically generate customized properties for unknown code. To this end, we embed existing properties into a vector database and retrieve a reference property for LLM-based in-context learning to generate a new property for a given code. While this basic process is relatively straightforward, ensuring that the generated properties are (i) compilable, (ii) appropriate, and (iii) verifiable presents challenges. To address (i), we use the compilation and static analysis feedback as an external oracle to guide LLMs in iteratively revising the generated properties. For (ii), we consider multiple dimensions of similarity to rank the properties and employ a weighted algorithm to identify the top-K properties as the final result. For (iii), we design a dedicated prover to formally verify the correctness of the generated properties. We have implemented these strategies into a novel LLM-based property generation tool called PropertyGPT. Our experiments show that PropertyGPT can generate comprehensive and high-quality properties, achieving an 80% recall compared to the ground truth. It successfully detected 26 CVEs/attack incidents out of 37 tested and also uncovered 12 zero-day vulnerabilities, leading to $8,256 in bug bounty rewards.</p>
+  </section>
+</article>
+</body>
+</html>

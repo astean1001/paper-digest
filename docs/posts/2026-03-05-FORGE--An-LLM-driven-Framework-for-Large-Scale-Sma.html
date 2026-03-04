@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORGE: An LLM-driven Framework for Large-Scale Smart Contract Vulnerability Dataset Construction</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"audit report" OR ab:"vulnerability signature" OR ab:"bytecode analysis")</span>
+    <h1>FORGE: An LLM-driven Framework for Large-Scale Smart Contract Vulnerability Dataset Construction</h1>
+    <div class="meta">
+      <span>✍️ Jiachi Chen, Yiming Shen, Jiashuo Zhang</span>
+      <span>📅 2025-06-23</span>
+      <a href="http://arxiv.org/abs/2506.18795v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: LLM을 활용하여 실제 audit report에서 스마트 컨트랙트 취약점을 자동으로 추출하고 CWE 분류 체계로 분류하는 대규모 데이터셋 구축 프레임워크 FORGE를 제안함.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 취약점 데이터셋 구축의 두 가지 핵심 한계를 해결하려 함: (1) 수작업 기반 라벨링의 노동집약성과 오류 가능성으로 인한 확장성 및 품질 제약, (2) 표준화된 분류 규칙 부재로 인한 데이터셋 간 취약점 카테고리와 라벨링 결과의 비일관성.<br><br>**핵심 기여**:<br>- **LLM 기반 자동화 파이프라인**: 실제 audit report에서 취약점 정보를 자동 추출하는 최초의 프레임워크<br>- **분할정복 전략**: 비정형 audit report를 구조화된 취약점 정보로 변환<br>- **Tree-of-thoughts 기법**: 계층적 CWE 분류 체계에 따른 자동 분류<br>- **대규모 데이터셋**: 6,454개 실제 audit report에서 81,390개 Solidity 파일과 27,497개 취약점 발견사항을 포함하는 296개 CWE 카테고리의 데이터셋 생성<br>- **높은 정확도**: 95.6% 정밀도와 0.87의 inter-rater agreement 달성<br><br>**의의**: <br>스마트 컨트랙트 보안 연구의 패러다임 전환을 제시하는 연구로, 표준화된 대규모 데이터셋을 통해 보안 도구 평가와 취약점 탐지 연구의 재현성과 비교가능성을 크게 향상시킴. 특히 LLM을 보안 데이터 큐레이션에 적용한 선구적 사례로서, 향후 다양한 보안 도메인에서 자동화된 데이터셋 구축 방법론의 기준점을 제공할 것으로 예상됨.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>High-quality smart contract vulnerability datasets are critical for evaluating security tools and advancing smart contract security research. Two major limitations of current manual dataset construction are (1) labor-intensive and error-prone annotation processes limiting the scale, quality, and evolution of the dataset, and (2) absence of standardized classification rules results in inconsistent vulnerability categories and labeling results across different datasets. To address these limitations, we present FORGE, the first automated approach for constructing smart contract vulnerability datasets. FORGE leverages an LLM-driven pipeline to extract high-quality vulnerabilities from real-world audit reports and classify them according to the CWE, the most widely recognized classification in software security. FORGE employs a divide-and-conquer strategy to extract structured and self-contained vulnerability information from these reports. Additionally, it uses a tree-of-thoughts technique to classify the vulnerability information into the hierarchical CWE classification. To evaluate FORGE's effectiveness, we run FORGE on 6,454 real-world audit reports and generate a dataset comprising 81,390 solidity files and 27,497 vulnerability findings across 296 CWE categories. Manual assessment of the dataset demonstrates high extraction precision and classification consistency with human experts (precision of 95.6% and inter-rater agreement k-$α$ of 0.87). We further validate the practica</p>
+  </section>
+</article>
+</body>
+</html>
