@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>An end-to-end agentic pipeline for smart contract translation and quality evaluation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>An end-to-end agentic pipeline for smart contract translation and quality evaluation</h1>
+    <div class="meta">
+      <span>✍️ Abhinav Goel, Chaitya Shah, Agostino Capponi</span>
+      <span>📅 2026-02-14</span>
+      <a href="http://arxiv.org/abs/2602.13808v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 자연어 사양에서 스마트 컨트랙트를 자동 생성하고 품질을 체계적으로 평가하는 end-to-end 에이전트 파이프라인을 제안하여, LLM 기반 스마트 컨트랙트 생성의 신뢰성과 재현성을 높였다.<br><br>**문제 정의**: <br>LLM을 활용한 스마트 컨트랙트 자동 생성 시 품질 평가와 검증이 체계적이지 못하고, 생성된 코드의 기능적 완성도, 보안성, 비즈니스 로직 정합성을 종합적으로 측정할 수 있는 표준화된 프레임워크가 부족한 문제를 해결하고자 했다.<br><br>**핵심 기여**:<br>1. **다차원 품질 평가 체계**: 기능적 완성도, 변수 충실도, 상태머신 정확성, 비즈니스 로직 충실도, 코드 품질의 5차원으로 구성된 종합 평가 지표 제시<br>2. **CrewAI 기반 에이전트 팀**: 반복적 개선(iterative refinement)을 통한 협업적 코드 생성 및 검증 시스템 구현<br>3. **완전한 추적 가능성**: 생성 과정의 모든 메타데이터를 보존하여 재현 가능한 벤치마크 제공<br>4. **체계적 오류 분석**: 로직 누락, 상태 전이 불일치 등 LLM의 전형적인 오류 패턴 식별 및 분류<br><br>**의의**: <br>LLM과 프로그램 분석의 융합 연구에서 핵심적인 기여로, 단순한 코드 생성을 넘어 품질 보장까지 포함한 완전한 워크플로우를 제시했다. 특히 스마트 컨트랙트의 보안 취약점 탐지와 형식 검증으로의 확장 가능성을 명시하여, 연구자의 관심 영역인 LLM 기반 보안 분석 도구 개발에 직접적인 방법론적 토대를 제공한다. 재현 가능한 벤치마크 제공으로 후속 연구의 비교 평가 기준으로도 활용 가능하다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We present an end-to-end framework for systematic evaluation of LLM-generated smart contracts from natural-language specifications. The system parses contractual text into structured schemas, generates Solidity code, and performs automated quality assessment through compilation and security checks. Using CrewAI-style agent teams with iterative refinement, the pipeline produces structured artifacts with full provenance metadata. Quality is measured across five dimensions, including functional completeness, variable fidelity, state-machine correctness, business-logic fidelity, and code quality aggregated into composite scores. The framework supports paired evaluation against ground-truth implementations, quantifying alignment and identifying systematic error modes such as logic omissions and state transition inconsistencies. This provides a reproducible benchmark for empirical research on smart contract synthesis quality and supports extensions to formal verification and compliance checking.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-Agent Collaborative Fuzzing with Continuous Reflection for Smart Contracts Vulnerability Detection</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>Multi-Agent Collaborative Fuzzing with Continuous Reflection for Smart Contracts Vulnerability Detection</h1>
+    <div class="meta">
+      <span>✍️ Jie Chen, Liangmin Wang</span>
+      <span>📅 2025-11-15</span>
+      <a href="http://arxiv.org/abs/2511.12164v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>대규모 언어모델 기반 멀티 에이전트 협업과 연속적 반성(reflection) 메커니즘을 활용하여 스마트 컨트랙트의 복잡한 취약점을 효과적으로 탐지하는 SmartFuzz 퍼징 기법을 제안<br><br>**문제 정의**:<br>기존 스마트 컨트랙트 퍼저들이 (1) 코드 커버리지에만 집중하여 취약점이 없는 코드 영역에 불필요한 노력을 소모하고, (2) 상태 기반 컨트랙트의 의미적 이해가 부족하여 런타임에서 실행되지 않는 무효한 트랜잭션 시퀀스를 대량 생성하는 한계로 인해 정교한 공격 시퀀스가 필요한 복잡한 취약점 탐지에 실패하는 문제<br><br>**핵심 기여**:<br>- **연속적 반성 프로세스(CRP)**: 런타임 환경 피드백을 통한 자가 진화형 트랜잭션 시퀀스 생성 메커니즘<br>- **반응형 협업 체인(RCC)**: 트랜잭션 시퀀스 의존성 기반으로 퍼징 과정을 다중 하위 태스크로 체계화<br>- **멀티 에이전트 협업팀**: 각 전문 에이전트가 RCC 가이드를 통해 글로벌 및 로컬 관점에서 트랜잭션 시퀀스를 공동 생성/개선<br><br>**의의**:<br>LLM 기반 지능형 에이전트와 협업 메커니즘을 퍼징에 적용한 혁신적 접근으로, 기존 정적 분석의 한계를 보완하고 복잡한 상태 기반 취약점까지 자동 탐지 가능한 새로운 패러다임을 제시. 연구자의 취약점 탐지 자동화 및 바이트코드 분석 방법론 연구에 AI 기반 동적 분석 기법의 새로운 방향성 제공</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Fuzzing is a widely used technique for detecting vulnerabilities in smart contracts, which generates transaction sequences to explore the execution paths of smart contracts. However, existing fuzzers are falling short in detecting sophisticated vulnerabilities that require specific attack transaction sequences with proper inputs to trigger, as they (i) prioritize code coverage over vulnerability discovery, wasting considerable effort on non-vulnerable code regions, and (ii) lack semantic understanding of stateful contracts, generating numerous invalid transaction sequences that cannot pass runtime execution.
+  In this paper, we propose SmartFuzz, a novel collaborative reflective fuzzer for smart contract vulnerability detection. It employs large language model-driven agents as the fuzzing engine and continuously improves itself by learning and reflecting through interactions with the environment. Specifically, we first propose a new Continuous Reflection Process (CRP) for fuzzing smart contracts, which reforms the transaction sequence generation as a self-evolving process through continuous reflection on feedback from the runtime environment. Then, we present the Reactive Collaborative Chain (RCC) to orchestrate the fuzzing process into multiple sub-tasks based on the dependencies of transaction sequences. Furthermore, we design a multi-agent collaborative team, where each expert agent is guided by the RCC to jointly generate and refine transaction sequences from both global </p>
+  </section>
+</article>
+</body>
+</html>

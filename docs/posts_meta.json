@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-06-An-end-to-end-agentic-pipeline-for-smart-contract.html",
+    "title": "An end-to-end agentic pipeline for smart contract translation and quality evaluation",
+    "date": "2026-03-06",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "자연어 사양에서 스마트 컨트랙트를 자동 생성하고 품질을 체계적으로 평가하는 end-to-end 에이전트 파이프라인을 제안하여, LLM 기반 스마트 컨트랙트 생성의 신뢰성과 재현성을 높였다.",
+    "url": "http://arxiv.org/abs/2602.13808v1"
+  },
+  {
+    "filename": "2026-03-06-Multi-Agent-Collaborative-Fuzzing-with-Continuous.html",
+    "title": "Multi-Agent Collaborative Fuzzing with Continuous Reflection for Smart Contracts Vulnerability Detection",
+    "date": "2026-03-06",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2511.12164v1"
+  },
+  {
+    "filename": "2026-03-06-Prompt-Engineering-vs--Fine-Tuning-for-LLM-Based-V.html",
+    "title": "Prompt Engineering vs. Fine-Tuning for LLM-Based Vulnerability Detection in Solana and Algorand Smart Contracts",
+    "date": "2026-03-06",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "Ethereum 외 블록체인 플랫폼(Solana, Algorand)의 스마트 컨트랙트 취약점 탐지에서 대규모 언어모델(LLM) 기반 프롬프트 엔지니어링과 파인튜닝 방법을 비교 분석한 연구입니다.",
+    "url": "http://arxiv.org/abs/2511.11250v1"
+  },
+  {
+    "filename": "2026-03-06-ParaVul--A-Parallel-Large-Language-Model-and-Retri.html",
+    "title": "ParaVul: A Parallel Large Language Model and Retrieval-Augmented Framework for Smart Contract Vulnerability Detection",
+    "date": "2026-03-06",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "스마트 컨트랙트 취약점 탐지를 위해 경량화된 LLM과 하이브리드 RAG 시스템을 병렬로 결합한 ParaVul 프레임워크를 제안하여 높은 정확도와 효율성을 동시에 달성",
+    "url": "http://arxiv.org/abs/2510.17919v1"
+  },
+  {
+    "filename": "2026-03-06-ExDoS--Expert-Guided-Dual-Focus-Cross-Modal-Distil.html",
+    "title": "ExDoS: Expert-Guided Dual-Focus Cross-Modal Distillation for Smart Contract Vulnerability Detection",
+    "date": "2026-03-06",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "스마트 컨트랙트의 소스코드와 바이트코드 간 fine-grained 정렬을 통해 바이트코드만으로도 효과적인 취약점 탐지가 가능한 크로스 모달 증류 기법 ExDoS를 제안",
+    "url": "http://arxiv.org/abs/2509.10252v1"
+  },
+  {
     "filename": "2026-03-05-TaintSentinel--Path-Level-Randomness-Vulnerability.html",
     "title": "TaintSentinel: Path-Level Randomness Vulnerability Detection for Ethereum Smart Contracts",
     "date": "2026-03-05",
