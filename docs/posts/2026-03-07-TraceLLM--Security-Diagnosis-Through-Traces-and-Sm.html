@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TraceLLM: Security Diagnosis Through Traces and Smart Contracts in Ethereum</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature analysis" OR ab:"bytecode analysis")</span>
+    <h1>TraceLLM: Security Diagnosis Through Traces and Smart Contracts in Ethereum</h1>
+    <div class="meta">
+      <span>✍️ Shuzheng Wang, Yue Huang, Zhuoer Xu</span>
+      <span>📅 2025-09-03</span>
+      <a href="http://arxiv.org/abs/2509.03037v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>이더리움 스마트 컨트랙트의 실행 트레이스와 디컴파일된 코드를 LLM으로 통합 분석하여 공격 시나리오를 자동 재구성하는 TraceLLM 프레임워크를 제안한 연구입니다.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 보안 분석은 두 가지 한계를 가집니다: (1) 이상 거래 탐지는 실행 트레이스 내 구체적 공격 전략에 대한 통찰이 부족하고, (2) 코드 취약점 탐지는 미검증 컨트랙트 분석이 불가하며 실제 공격 경로 재현에 어려움이 있어, 결국 분석가가 수동으로 트레이스와 코드를 연결하여 공격 시나리오를 재구성해야 하는 문제입니다.<br><br>**핵심 기여**: <br>1) **Neurosymbolic 접근법**: 실행 트레이스 레벨 탐지와 디컴파일된 컨트랙트 코드를 LLM으로 통합하는 새로운 프레임워크<br>2) **이상 실행 경로 식별 알고리즘**: 취약한 함수와 명시적 공격 경로를 LLM에 제공하는 새로운 알고리즘<br>3) **LLM 강화 디컴파일 도구**: 미검증 컨트랙트도 분석 가능한 개선된 도구<br>4) **첫 벤치마크 구축**: 트레이스와 컨트랙트 코드 결합 보안 분석의 첫 평가 기준 (공격자/피해자 주소 식별 85.19% 정밀도, 자동화 리포트 70.37% 사실 정밀도)<br><br>**의의**: <br>이 연구는 정적 코드 분석의 한계를 동적 실행 트레이스로 보완하고 LLM을 활용해 복잡한 공격 패턴을 자동 해석하는 혁신적 접근을 제시합니다. 특히 미검증 컨트랙트와 프록시 기반 아키텍처 분석이 가능해 실무 적용성이 높으며, 바이트코드 분석과 취약점 탐지 연구에 실행 컨텍스트를 통합하는 새로운 연구 방향을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Ethereum smart contracts hold tens of billions of USD in DeFi and NFTs, yet comprehensive security analysis remains difficult due to unverified code, proxy-based architectures, and the reliance on manual inspection of complex execution traces. Existing approaches fall into two main categories: anomaly transaction detection, which flags suspicious transactions but offers limited insight into specific attack strategies hidden in execution traces inside transactions, and code vulnerability detection, which cannot analyze unverified contracts and struggles to show how identified flaws are exploited in real incidents. As a result, analysts must still manually align transaction traces with contract code to reconstruct attack scenarios and conduct forensics. To address this gap, TraceLLM is proposed as a framework that leverages LLMs to integrate execution trace-level detection with decompiled contract code. We introduce a new anomaly execution path identification algorithm and an LLM-refined decompile tool to identify vulnerable functions and provide explicit attack paths to LLM. TraceLLM establishes the first benchmark for joint trace and contract code-driven security analysis. For comparison, proxy baselines are created by jointly transmitting the results of three representative code analysis along with raw traces to LLM. TraceLLM identifies attacker and victim addresses with 85.19\% precision and produces automated reports with 70.37\% factual precision across 27 cases with grou</p>
+  </section>
+</article>
+</body>
+</html>

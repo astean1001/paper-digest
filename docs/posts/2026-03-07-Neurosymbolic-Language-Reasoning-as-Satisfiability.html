@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurosymbolic Language Reasoning as Satisfiability Modulo Theory</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Neurosymbolic Language Reasoning as Satisfiability Modulo Theory</h1>
+    <div class="meta">
+      <span>✍️ Hyunseok Oh, Sam Stern, Youngki Lee</span>
+      <span>📅 2026-02-20</span>
+      <a href="http://arxiv.org/abs/2602.18095v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: LLM과 SMT 솔버를 통합하여 자연어와 논리적 추론을 동시에 수행할 수 있는 neurosymbolic 언어 Logitext를 제안하고, 부분적 논리 구조를 가진 자연어 문서 처리 문제를 해결했습니다.<br><br>**문제 정의**: <br>기존 대형 언어 모델은 텍스트와 논리적 추론을 교차적으로 수행하는데 한계가 있으며, 현재 neurosymbolic 시스템들은 수학이나 프로그램 합성 같은 완전히 형식화 가능한 작업에만 제한되어 부분적 논리 구조를 가진 자연어 문서는 처리하지 못하는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **Logitext 언어 개발**: 자연어 텍스트 제약조건(NLTC)으로 문서를 표현하여 부분적 논리 구조를 명시적으로 나타낼 수 있는 neurosymbolic 언어 제안<br>2. **SMT-LLM 통합 알고리즘**: LLM 기반 제약조건 평가와 SMT 해결을 결합한 텍스트-논리 공동 추론 알고리즘 개발<br>3. **SMT 이론으로서의 LLM**: LLM 기반 추론을 SMT 이론으로 처리하는 최초의 접근법 제시<br><br>**의의**: <br>이 연구는 neurosymbolic 방법론을 완전 형식화 영역을 넘어 확장시킨 중요한 진전입니다. 특히 연구자의 neurosymbolic 프로그램 분석 관심사와 직접적으로 연관되며, 프로그램 분석에서 자연어 명세와 코드의 논리적 구조를 동시에 다뤄야 하는 경우에 응용 가능한 방법론적 기반을 제공합니다. 콘텐츠 조정, LegalBench, Super-Natural Instructions에서의 성능 향상은 실용적 가치도 입증합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Natural language understanding requires interleaving textual and logical reasoning, yet large language models often fail to perform such reasoning reliably. Existing neurosymbolic systems combine LLMs with solvers but remain limited to fully formalizable tasks such as math or program synthesis, leaving natural documents with only partial logical structure unaddressed. We introduce Logitext, a neurosymbolic language that represents documents as natural language text constraints (NLTCs), making partial logical structure explicit. We develop an algorithm that integrates LLM-based constraint evaluation with satisfiability modulo theory (SMT) solving, enabling joint textual-logical reasoning. Experiments on a new content moderation benchmark, together with LegalBench and Super-Natural Instructions, show that Logitext improves both accuracy and coverage. This work is the first that treats LLM-based reasoning as an SMT theory, extending neurosymbolic methods beyond fully formalizable domains.</p>
+  </section>
+</article>
+</body>
+</html>

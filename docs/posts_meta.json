@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-07-TraceLLM--Security-Diagnosis-Through-Traces-and-Sm.html",
+    "title": "TraceLLM: Security Diagnosis Through Traces and Smart Contracts in Ethereum",
+    "date": "2026-03-07",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature analysis\" OR ab:\"bytecode analysis\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2509.03037v1"
+  },
+  {
+    "filename": "2026-03-07-Prompt-to-Pwn--Automated-Exploit-Generation-for-Sm.html",
+    "title": "Prompt to Pwn: Automated Exploit Generation for Smart Contracts",
+    "date": "2026-03-07",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature analysis\" OR ab:\"bytecode analysis\")",
+    "one_liner": "LLM을 활용한 스마트 컨트랙트 자동 익스플로잇 생성 프레임워크 ReX를 제안하여, 8개 취약점 유형에 대한 LLM의 공격 코드 자동 생성 능력을 체계적으로 평가했습니다.",
+    "url": "http://arxiv.org/abs/2508.01371v2"
+  },
+  {
+    "filename": "2026-03-07-Syntax-Guided-Automated-Program-Repair-for-Hyperpr.html",
+    "title": "Syntax-Guided Automated Program Repair for Hyperproperties",
+    "date": "2026-03-07",
+    "source": "arXiv",
+    "topic": "ti:\"program repair\" AND ab:\"symbolic execution\" AND (ab:\"constraint\" OR ab:\"patch synthesis\")",
+    "one_liner": "HyperLTL 시간논리 기반 하이퍼프로퍼티를 만족하도록 무한상태 소프트웨어 프로그램을 자동 수정하는 구문 가이드 접근법을 제시하고, 원본 프로그램에 최대한 가까운 '투명한 수정'을 통해 수정 품질을 향상시켰다.",
+    "url": "http://arxiv.org/abs/2408.06035v1"
+  },
+  {
+    "filename": "2026-03-07-NeuroProlog--Multi-Task-Fine-Tuning-for-Neurosymbo.html",
+    "title": "NeuroProlog: Multi-Task Fine-Tuning for Neurosymbolic Mathematical Reasoning via the Cocktail Effect",
+    "date": "2026-03-07",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2603.02504v2"
+  },
+  {
+    "filename": "2026-03-07-Neurosymbolic-Language-Reasoning-as-Satisfiability.html",
+    "title": "Neurosymbolic Language Reasoning as Satisfiability Modulo Theory",
+    "date": "2026-03-07",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "LLM과 SMT 솔버를 통합하여 자연어와 논리적 추론을 동시에 수행할 수 있는 neurosymbolic 언어 Logitext를 제안하고, 부분적 논리 구조를 가진 자연어 문서 처리 문제를 해결했습니다.",
+    "url": "http://arxiv.org/abs/2602.18095v1"
+  },
+  {
     "filename": "2026-03-06-An-end-to-end-agentic-pipeline-for-smart-contract.html",
     "title": "An end-to-end agentic pipeline for smart contract translation and quality evaluation",
     "date": "2026-03-06",

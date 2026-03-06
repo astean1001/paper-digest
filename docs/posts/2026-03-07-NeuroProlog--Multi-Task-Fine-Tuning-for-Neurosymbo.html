@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroProlog: Multi-Task Fine-Tuning for Neurosymbolic Mathematical Reasoning via the Cocktail Effect</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>NeuroProlog: Multi-Task Fine-Tuning for Neurosymbolic Mathematical Reasoning via the Cocktail Effect</h1>
+    <div class="meta">
+      <span>✍️ Pratibha Zunjare, Michael Hsiao</span>
+      <span>📅 2026-03-03</span>
+      <a href="http://arxiv.org/abs/2603.02504v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>수학 문제를 Prolog 프로그램으로 변환하여 검증 가능한 추론을 수행하는 neurosymbolic 프레임워크 NeuroProlog을 제안하고, multi-task fine-tuning을 통해 LLM의 수학적 추론 성능을 크게 향상시켰습니다.<br><br>**문제 정의**: <br>대규모 언어 모델(LLM)이 자연어 처리에서는 우수한 성능을 보이지만, 수학적 추론에서는 논리적으로 일관되지 않은 답변을 생성하는 신뢰성 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **NeuroProlog 프레임워크**: 수학 문제를 실행 가능한 Prolog 프로그램으로 변환하여 형식적 검증을 보장하는 neurosymbolic 접근법 개발<br>2. **Cocktail 훈련 전략**: (i) 수학 공식-규칙 변환, (ii) 자연어-프로그램 합성, (iii) 프로그램-답변 정렬의 3가지 목적을 동시에 최적화하는 multi-task learning 방법론 제안<br>3. **실행 기반 디코딩 파이프라인**: 세밀한 오류 분류와 반복적 프로그램 수정이 가능한 추론 시스템 구현<br>4. **실증적 성과**: GSM8K에서 다양한 모델 크기(3B-32B)에 걸쳐 일관된 성능 향상(최대 5.54% 정확도 개선) 달성<br><br>**의의**: <br>이 연구는 LLM과 symbolic reasoning을 효과적으로 결합한 실용적 방법론을 제시하며, 특히 multi-task learning이 symbolic grounding을 통해 compositional reasoning 능력을 향상시킨다는 중요한 통찰을 제공합니다. 프로그램 합성과 검증을 통한 신뢰성 있는 AI 추론 시스템 구축에 직접적으로 활용할 수 있는 핵심 기술입니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Large Language Models (LLMs) achieve strong performance on natural language tasks but remain unreliable in mathematical reasoning, frequently generating fluent yet logically inconsistent solutions. We present \textbf{NeuroProlog}, a neurosymbolic framework that ensures verifiable reasoning by compiling math word problems into executable Prolog programs with formal verification guarantees. We propose a multi-task Cocktail training strategy that jointly optimizes three synergistic objectives in a unified symbolic representation space: (i) mathematical formula-to-rule translation (KB), (ii) natural language-to-program synthesis (SOLVE), and (iii) program-answer alignment. This joint supervision enables positive transfer, where symbolic grounding in formula translation directly improves compositional reasoning capabilities. At inference, we introduce an execution-guided decoding pipeline with fine-grained error taxonomy that enables iterative program repair and quantifies model self-debugging capacity. Comprehensive evaluation on GSM8K across four model scales (3B--32B parameters) demonstrates consistent improvements: cocktail training achieves significant accuracy gains of +5.23\% (Qwen-32B, $p < 0.01$), +3.43\% (GPT-OSS-20B, $p < 0.01$), and +5.54\% (Llama-3B, $p < 0.05$) over single-task baselines. Systematic error analysis reveals scale-dependent learning dynamics: at 32B scale, cocktail training transforms unfixable type errors (12\% repair rate) into correctable domain erro</p>
+  </section>
+</article>
+</body>
+</html>

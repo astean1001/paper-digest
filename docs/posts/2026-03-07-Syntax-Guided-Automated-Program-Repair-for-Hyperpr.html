@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syntax-Guided Automated Program Repair for Hyperproperties</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"program repair" AND ab:"symbolic execution" AND (ab:"constraint" OR ab:"patch synthesis")</span>
+    <h1>Syntax-Guided Automated Program Repair for Hyperproperties</h1>
+    <div class="meta">
+      <span>✍️ Raven Beutner, Tzu-Han Hsu, Borzoo Bonakdarpour</span>
+      <span>📅 2024-08-12</span>
+      <a href="http://arxiv.org/abs/2408.06035v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: HyperLTL 시간논리 기반 하이퍼프로퍼티를 만족하도록 무한상태 소프트웨어 프로그램을 자동 수정하는 구문 가이드 접근법을 제시하고, 원본 프로그램에 최대한 가까운 '투명한 수정'을 통해 수정 품질을 향상시켰다.<br><br>**문제 정의**: <br>기존 자동 프로그램 수정(APR)은 주로 단일 실행 경로의 함수적 속성에 초점을 맞춰왔으나, 보안과 프라이버시가 중요해지면서 여러 실행 경로 간의 관계를 다루는 하이퍼프로퍼티(hyperproperties) 위반을 자동으로 수정할 필요성이 대두되었다. 특히 무한상태 프로그램에서 시간적 하이퍼프로퍼티를 만족하는 수정을 생성하는 것은 복잡한 도전 과제였다.<br><br>**핵심 기여**:<br>1. **HyperLTL 기반 수정 프레임워크**: 심볼릭 실행, 제약 생성, 구문 가이드 합성(SyGuS)을 결합한 체계적 접근법 개발<br>2. **투명한 수정(Transparent Repair) 개념**: 원본 프로그램과 최대한 유사한 동작을 유지하면서 하이퍼프로퍼티를 만족하는 패치 생성 방법론 도입<br>3. **반복적 수정 알고리즘**: 점진적으로 원본 프로그램에 더 가까운 수정을 찾아가는 다단계 접근법 구현<br>4. **실용적 구현**: 기존 SyGuS 솔버를 활용한 프로토타입 개발 및 실험적 검증<br><br>**의의**: <br>이 연구는 APR 분야를 단일 프로그램 속성에서 다중 실행 경로 간 관계로 확장하는 중요한 발전을 보여준다. 특히 보안 취약점이나 정보 누출과 같은 하이퍼프로퍼티 위반의 자동 수정이 가능해져, 현실적인 소프트웨어 보안 문제 해결에 직접 적용할 수 있다. 심볼릭 실행과 제약 기반 합성의 조합은 기존 APR 연구에서 다루기 어려웠던</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We study the problem of automatically repairing infinite-state software programs w.r.t. temporal hyperproperties. As a first step, we present a repair approach for the temporal logic HyperLTL based on symbolic execution, constraint generation, and syntax-guided synthesis of repair expression (SyGuS). To improve the repair quality, we introduce the notation of a transparent repair that aims to find a patch that is as close as possible to the original program. As a practical realization, we develop an iterative repair approach. Here, we search for a sequence of repairs that are closer and closer to the original program's behavior. We implement our method in a prototype and report on encouraging experimental results using off-the-shelf SyGuS solvers.</p>
+  </section>
+</article>
+</body>
+</html>
