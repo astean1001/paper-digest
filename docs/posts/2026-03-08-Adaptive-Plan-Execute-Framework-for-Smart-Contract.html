@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adaptive Plan-Execute Framework for Smart Contract Security Auditing</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"audit" OR ab:"signature")</span>
+    <h1>Adaptive Plan-Execute Framework for Smart Contract Security Auditing</h1>
+    <div class="meta">
+      <span>✍️ Zhiyuan Wei, Jing Sun, Zijian Zhang</span>
+      <span>📅 2025-05-21</span>
+      <a href="http://arxiv.org/abs/2505.15242v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기존 LLM 기반 스마트 컨트랙트 보안 감사의 한계(환각, 제한된 맥락 추론)를 극복하기 위해 동적 계획 생성과 구조화된 실행을 통한 적응형 Plan-Execute 프레임워크를 제안했습니다.<br><br>**문제 정의**: <br>기존 LLM 기반 스마트 컨트랙트 감사 도구들이 고정된 워크플로우와 사전 정의된 단계를 따라 진행되면서 발생하는 환각(hallucination), 제한된 맥락 인식 추론, 높은 false positive 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **동적 감사 계획 생성**: 각 스마트 컨트랙트의 고유 특성에 따라 감사 계획을 동적으로 생성하고 조정<br>2. **적응형 실행 전략**: 중간 LLM 출력과 새로 발견된 취약점에 따라 감사 전략을 지속적으로 조정<br>3. **다중 지식원 통합**: 정적 분석 도구와 RAG(Retrieval-Augmented Generation)를 통해 외부 지식을 활용<br>4. **반복적 프롬프트 최적화**: 맥락 정보와 실제 보안 지식을 바탕으로 한 구조화된 추론 과정<br><br>**의의**: <br>이 연구는 neurosymbolic 접근법의 핵심인 기호적 추론(계획 생성)과 신경망 기반 실행의 결합을 보여주며, 일반적/중요한 취약점에서 100% 정확도를 달성했습니다. 특히 동적 계획 조정과 외부 지식 통합은 연구자의 neurosymbolic 스마트 컨트랙트 분석 연구에 직접적인 방법론적 통찰을 제공하며, LLM과 형식 검증 도구의 효과적 결합 방안을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Large Language Models (LLMs) have shown great promise in code analysis and auditing; however, they still struggle with hallucinations and limited context-aware reasoning. We introduce SmartAuditFlow, a novel Plan-Execute framework that enhances smart contract security analysis through dynamic audit planning and structured execution. Unlike conventional LLM-based auditing approaches that follow fixed workflows and predefined steps, SmartAuditFlow dynamically generates and refines audit plans based on the unique characteristics of each smart contract. It continuously adjusts its auditing strategy in response to intermediate LLM outputs and newly detected vulnerabilities, ensuring a more adaptive and precise security assessment. The framework then executes these plans step by step, applying a structured reasoning process to enhance vulnerability detection accuracy while minimizing hallucinations and false positives. To further improve audit precision, SmartAuditFlow integrates iterative prompt optimization and external knowledge sources, such as static analysis tools and Retrieval-Augmented Generation (RAG). This ensures audit decisions are contextually informed and backed by real-world security knowledge, producing comprehensive security reports. Extensive evaluations across multiple benchmarks demonstrate that SmartAuditFlow outperforms existing methods, achieving 100 percent accuracy on common and critical vulnerabilities, 41.2 percent accuracy for comprehensive coverage of k</p>
+  </section>
+</article>
+</body>
+</html>

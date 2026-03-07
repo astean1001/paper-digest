@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartLLM: Smart Contract Auditing using Custom Generative AI</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"audit" OR ab:"signature")</span>
+    <h1>SmartLLM: Smart Contract Auditing using Custom Generative AI</h1>
+    <div class="meta">
+      <span>✍️ Jun Kevin, Pujianto Yugopuspito</span>
+      <span>📅 2025-02-17</span>
+      <a href="http://arxiv.org/abs/2502.13167v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: DeFi 생태계의 스마트 컨트랙트 취약점을 탐지하기 위해 LLaMA 3.1 모델을 커스텀 파인튜닝하고 RAG 기법을 결합한 SmartLLM을 개발하여 기존 정적 분석 도구 대비 우수한 성능을 달성했습니다.<br><br>**문제 정의**: <br>- 기존 정적 분석 도구(Mythril, Slither)의 높은 거짓 양성률과 동적 취약점 탐지 한계<br>- 복잡한 공격 벡터와 코딩 오류로 인한 DeFi 익스플로잇 증가<br>- 일반적인 LLM의 스마트 컨트랙트 도메인 특화 지식 부족<br><br>**핵심 기여**:<br>- **도메인 특화 모델**: LLaMA 3.1을 ERC 표준 등 블록체인 도메인 지식으로 파인튜닝<br>- **효율적 학습 기법**: QLoRA를 활용한 메모리 효율적 파인튜닝 방법론 적용<br>- **하이브리드 접근법**: RAG(Retrieval-Augmented Generation)를 통한 실시간 지식 보강<br>- **성능 검증**: 리인트런시, 접근 제어 등 핵심 취약점에서 100% 재현율, 70% 정확도 달성<br><br>**의의**: <br>블록체인 인프라 보안 연구에서 AI/ML 기반 접근법의 실질적 적용 가능성을 입증했으며, 특히 DeFi 프로토콜의 자동화된 보안 감사 도구로서 확장성을 제시했습니다. 정적 분석의 한계를 극복하고 동적 취약점까지 탐지 가능한 점에서 차세대 스마트 컨트랙트 보안 솔루션의 방향성을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contracts are essential to decentralized finance (DeFi) and blockchain ecosystems but are increasingly vulnerable to exploits due to coding errors and complex attack vectors. Traditional static analysis tools and existing vulnerability detection methods often fail to address these challenges comprehensively, leading to high false-positive rates and an inability to detect dynamic vulnerabilities. This paper introduces SmartLLM, a novel approach leveraging fine-tuned LLaMA 3.1 models with Retrieval-Augmented Generation (RAG) to enhance the accuracy and efficiency of smart contract auditing. By integrating domain-specific knowledge from ERC standards and employing advanced techniques such as QLoRA for efficient fine-tuning, SmartLLM achieves superior performance compared to static analysis tools like Mythril and Slither, as well as zero-shot large language model (LLM) prompting methods such as GPT-3.5 and GPT-4. Experimental results demonstrate a perfect recall of 100% and an accuracy score of 70%, highlighting the model's robustness in identifying vulnerabilities, including reentrancy and access control issues. This research advances smart contract security by offering a scalable and effective auditing solution, supporting the secure adoption of decentralized applications.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPTScan: Detecting Logic Vulnerabilities in Smart Contracts by Combining GPT with Program Analysis</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"audit" OR ab:"signature")</span>
+    <h1>GPTScan: Detecting Logic Vulnerabilities in Smart Contracts by Combining GPT with Program Analysis</h1>
+    <div class="meta">
+      <span>✍️ Yuqiang Sun, Daoyuan Wu, Yue Xue</span>
+      <span>📅 2023-08-07</span>
+      <a href="http://arxiv.org/abs/2308.03314v3" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: GPT의 코드 이해 능력과 정적 분석을 결합하여 스마트 컨트랙트의 로직 취약점을 탐지하는 GPTScan 도구를 제안한 연구<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 분석 도구들은 재진입(re-entrancy), 정수 오버플로우 등 고정된 제어/데이터 흐름 패턴을 가진 취약점만 탐지 가능하며, Web3 보안 버그의 약 80%는 도메인별 속성 설명 및 검증 부족으로 인해 기존 도구로는 감사할 수 없는 상황을 해결하고자 함<br><br>**핵심 기여**:<br>1. **하이브리드 접근법**: GPT를 단독으로 취약점 탐지에 사용하는 대신, 범용적인 코드 이해 도구로 활용하여 정적 분석과 결합<br>2. **구조화된 탐지 방법론**: 각 로직 취약점 유형을 시나리오와 속성으로 세분화하여 GPT가 후보 취약점을 매칭하도록 설계<br>3. **검증 메커니즘**: GPT가 핵심 변수와 구문을 지능적으로 인식하도록 지시한 후, 정적 분석으로 이를 검증하여 정확도 향상<br>4. **실증적 성과**: 토큰 컨트랙트에서 90% 이상의 높은 정밀도, Web3Bugs와 같은 대규모 프로젝트에서 57.14%의 수용 가능한 정밀도 달성<br><br>**의의**: <br>LLM과 전통적인 프로그램 분석 기법의 융합이라는 새로운 패러다임을 제시한 선구적 연구로, GPT의 한계(높은 거짓 양성률, 사전 훈련 지식 제약)를 정적 분석으로 보완하여 실용적 도구 개발 가능성을 입증. 특히 기존 도구로 탐지 불가능한 로직 취약점 영역에서 AI와 형식 검증의 결합 방향성을 제시하여, 스마트 컨트랙트 보안 도구 발전에 중요한 이정표 역할</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contracts are prone to various vulnerabilities, leading to substantial financial losses over time. Current analysis tools mainly target vulnerabilities with fixed control or data-flow patterns, such as re-entrancy and integer overflow. However, a recent study on Web3 security bugs revealed that about 80% of these bugs cannot be audited by existing tools due to the lack of domain-specific property description and checking. Given recent advances in Large Language Models (LLMs), it is worth exploring how Generative Pre-training Transformer (GPT) could aid in detecting logicc vulnerabilities.
+  In this paper, we propose GPTScan, the first tool combining GPT with static analysis for smart contract logic vulnerability detection. Instead of relying solely on GPT to identify vulnerabilities, which can lead to high false positives and is limited by GPT's pre-trained knowledge, we utilize GPT as a versatile code understanding tool. By breaking down each logic vulnerability type into scenarios and properties, GPTScan matches candidate vulnerabilities with GPT. To enhance accuracy, GPTScan further instructs GPT to intelligently recognize key variables and statements, which are then validated by static confirmation. Evaluation on diverse datasets with around 400 contract projects and 3K Solidity files shows that GPTScan achieves high precision (over 90%) for token contracts and acceptable precision (57.14%) for large projects like Web3Bugs. It effectively detects ground-truth logic </p>
+  </section>
+</article>
+</body>
+</html>
