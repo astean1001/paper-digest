@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MultiCFV: Detecting Control Flow Vulnerabilities in Smart Contracts Leveraging Multimodal Deep Learning</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature analysis" OR ab:"bytecode analysis")</span>
+    <h1>MultiCFV: Detecting Control Flow Vulnerabilities in Smart Contracts Leveraging Multimodal Deep Learning</h1>
+    <div class="meta">
+      <span>✍️ Hongli Peng, Xiaoqi Li, Wenkai Li</span>
+      <span>📅 2025-08-02</span>
+      <a href="http://arxiv.org/abs/2508.01346v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트의 소스코드, 바이트코드, 주석을 동시에 분석하는 멀티모달 딥러닝 기법(MultiCFV)을 통해 제어 흐름 취약점과 코드 클론을 탐지하는 방법을 제안했습니다.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 취약점 탐지 도구들이 소스코드 또는 바이트코드 중 단일 모달리티에만 의존하여 성능과 정확도가 제한적이고 일반화 능력이 부족한 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **멀티모달 특징 융합**: 바이트코드 제어 흐름 그래프(구조적 특징), 추상 구문 트리(구문적 특징), 코드 주석(의미적 특징)을 동시에 활용<br>2. **그래프 임베딩 기법**: 바이트코드에서 생성된 제어 흐름 그래프로부터 그래프 특징을 추출<br>3. **통합 탐지 시스템**: 제어 흐름 취약점 탐지와 코드 클론 식별을 동시에 수행하는 단일 프레임워크 구축<br><br>**의의**: <br>바이트코드 분석을 포함한 다층적 접근법으로 단일 모달리티의 한계를 극복했으며, 특히 제어 흐름 그래프와 그래프 임베딩을 활용한 구조적 분석이 바이트코드 기반 취약점 탐지 연구에 새로운 방향을 제시합니다. 연구자의 바이트코드 분석과 시그니처 기반 취약점 탐지 연구에 멀티모달 접근법과 그래프 분석 기법을 접목할 수 있는 중요한 참고 사례가 됩니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The introduction of smart contract functionality marks the advent of the blockchain 2.0 era, enabling blockchain technology to support digital currency transactions and complex distributed applications. However, many smart contracts have been found to contain vulnerabilities and errors, leading to the loss of assets within the blockchain. Despite a range of tools that have been developed to identify vulnerabilities in smart contracts at the source code or bytecode level, most rely on a single modality, reducing performance, accuracy, and limited generalization capabilities. This paper proposes a multimodal deep learning approach, MultiCFV, which is designed specifically to analyze and detect erroneous control flow vulnerability, as well as identify code clones in smart contracts. Bytecode is generated from source code to construct control flow graphs, with graph embedding techniques extracting graph features. Abstract syntax trees are used to obtain syntax features, while code comments capture key commentary words and comment features. These three feature vectors are fused to create a database for code inspection, which is used to detect similar code and identify contract vulnerabilities. Experimental results demonstrate our method effectively combines structural, syntactic, and semantic information, improving the accuracy of smart contract vulnerability detection and clone detection.</p>
+  </section>
+</article>
+</body>
+</html>

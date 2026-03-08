@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semantic foundations of equality saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" OR ti:"e-graph" AND (ab:"deobfuscation" OR ab:"MBA" OR ab:"mixed boolean arithmetic")</span>
+    <h1>Semantic foundations of equality saturation</h1>
+    <div class="meta">
+      <span>✍️ Dan Suciu, Yisu Remy Wang, Yihong Zhang</span>
+      <span>📅 2025-01-05</span>
+      <a href="http://arxiv.org/abs/2501.02413v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Equality Saturation의 이론적 토대를 tree automata 기반 고정점 의미론으로 정립하고, chase와의 연관성을 밝혀 종료 조건에 대한 수학적 분석을 제공한 연구.<br><br>**문제 정의**: <br>프로그램 최적화에서 널리 사용되는 Equality Saturation 기법이 실용적으로는 성공적이지만, 그 이론적 기초가 부족하여 종료성(termination) 보장, 복잡도 분석, 정확성 증명 등이 어려운 문제를 해결하고자 함.<br><br>**핵심 기여**:<br>- Tree automata 기반의 Equality Saturation 고정점 의미론 정의<br>- Database 이론의 chase와 Equality Saturation 간의 깊은 연관성 발견 및 대응되는 chase sequence 클래스 특성화<br>- 세 가지 케이스(단일 인스턴스, 모든 항 인스턴스, 모든 E-graph 인스턴스)에서의 종료성 복잡도 분석<br>- 비순환성(acyclicity) 기반의 구문적 종료 조건 제시<br><br>**의의**: <br>연구자의 프로그램 합성 및 난독화 해제 연구에서 핵심 도구인 E-graph와 Equality Saturation의 수학적 토대를 제공하여, 더 신뢰할 수 있는 도구 개발과 성능 예측이 가능해짐. 특히 MBA(Mixed Boolean Arithmetic) 표현식 간소화 시 rewrite rule 적용의 종료성을 보장하는 이론적 근거를 마련하여, 난독화 해제 도구의 안정성과 효율성 향상에 직접적으로 기여할 수 있음.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Equality saturation is an emerging technique for program and query optimization developed in the programming language community. It performs term rewriting over an E-graph, a data structure that compactly represents a program space. Despite its popularity, the theory of equality saturation lags behind the practice. In this paper, we define a fixpoint semantics of equality saturation based on tree automata and uncover deep connections between equality saturation and the chase. We characterize the class of chase sequences that correspond to equality saturation. We study the complexities of terminations of equality saturation in three cases: single-instance, all-term-instance, and all-E-graph-instance. Finally, we define a syntactic criterion based on acyclicity that implies equality saturation termination.</p>
+  </section>
+</article>
+</body>
+</html>

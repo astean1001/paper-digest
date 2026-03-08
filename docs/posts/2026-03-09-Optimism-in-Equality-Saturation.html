@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimism in Equality Saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" OR ti:"e-graph" AND (ab:"deobfuscation" OR ab:"MBA" OR ab:"mixed boolean arithmetic")</span>
+    <h1>Optimism in Equality Saturation</h1>
+    <div class="meta">
+      <span>✍️ Russel Arbore, Alvin Cheung, Max Willsey</span>
+      <span>📅 2025-11-25</span>
+      <a href="http://arxiv.org/abs/2511.20782v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기존 equality saturation의 pessimistic e-class 분석이 SSA 형태의 순환 프로그램을 효과적으로 분석하지 못하는 문제를 해결하기 위해, 순환 구조를 정확히 분석할 수 있는 optimistic abstract interpretation 알고리즘을 제안함.<br><br>**문제 정의**: <br>현재의 equality saturation에서 사용되는 e-class analysis는 pessimistic 방식으로 작동하여, SSA(Static Single Assignment) 형태와 같은 순환 프로그램(cyclic programs)을 분석할 때 비효율적이고 부정확한 결과를 생성함. 이는 프로그램 최적화의 정밀도와 효과를 크게 제한하는 요인이 됨.<br><br>**핵심 기여**:<br>1. **Optimistic abstract interpretation 알고리즘**: equality saturation 과정에서 순환 구조를 정확히 분석할 수 있는 새로운 추상 해석 방법론 개발<br>2. **통합 알고리즘**: optimistic analysis와 non-destructive rewriting을 하나의 통합된 프레임워크로 결합<br>3. **새로운 SSA 의미론**: SSA 프로그램을 위한 새로운 의미론을 기반으로 한 프로토타입 추상 해석기 구현<br>4. **실증적 성능 향상**: clang과 gcc보다 정밀한 분석 결과를 보이는 프로토타입 시연<br><br>**의의**: <br>이 연구는 e-graph 기반 프로그램 분석의 근본적 한계를 극복하는 방법론적 혁신을 제시함. 특히 deobfuscation과 MBA(Mixed Boolean Arithmetic) 분석에서 순환 구조가 빈번하게 나타나는 점을 고려할 때, 이 optimistic 접근법은 더 정확하고 효과적인 프로그램 분석을 가능하게 하여 연구자의 e-graph 기반 deobfuscation 연구에 직접적으로 활용할 수 있는 핵심 기술적 토대를 제공함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Equality saturation is a technique for program optimization based on non-destructive rewriting and a form of program analysis called e-class analysis. The current form of e-class analysis is pessimistic and therefore ineffective at analyzing cyclic programs, such as those in SSA form. We propose an abstract interpretation algorithm that can precisely analyze cycles during equality saturation. This results in a unified algorithm for optimistic analysis and non-destructive rewriting. We instantiate this approach on a prototype abstract interpreter for SSA programs using a new semantics of SSA. Our prototype can analyze simple example programs more precisely than clang and gcc.</p>
+  </section>
+</article>
+</body>
+</html>
