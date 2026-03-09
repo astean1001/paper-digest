@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WANA: Symbolic Execution of Wasm Bytecode for Cross-Platform Smart Contract Vulnerability Detection</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND ab:"vulnerability detection" AND (ab:"signature" OR ab:"bytecode analysis")</span>
+    <h1>WANA: Symbolic Execution of Wasm Bytecode for Cross-Platform Smart Contract Vulnerability Detection</h1>
+    <div class="meta">
+      <span>✍️ Dong Wang, Bo Jiang, W. K. Chan</span>
+      <span>📅 2020-07-30</span>
+      <a href="http://arxiv.org/abs/2007.15510v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: WebAssembly 바이트코드의 심볼릭 실행을 통해 EOSIO와 Ethereum 플랫폼 모두에서 작동하는 크로스플랫폼 스마트 컨트랙트 취약점 탐지 도구 WANA를 개발했다.<br><br>**문제 정의**: <br>- EOSIO 블록체인 플랫폼을 위한 효과적인 취약점 탐지 도구가 부족함<br>- 기존 취약점 탐지 도구들이 단일 블록체인 플랫폼만 지원하는 한계<br>- 스마트 컨트랙트 취약점으로 인한 심각한 재정적 손실 문제<br><br>**핵심 기여**:<br>- WebAssembly(WASM) 바이트코드 레벨에서의 심볼릭 실행 기법 적용<br>- EOSIO와 Ethereum 스마트 컨트랙트 취약점을 동시에 탐지할 수 있는 크로스플랫폼 도구 개발<br>- WASM 바이트코드 분석 기반의 테스트 오라클(test oracle) 세트 제안<br>- 높은 효율성으로 양 플랫폼의 취약점을 효과적으로 탐지함을 실험적으로 입증<br><br>**의의**:<br>연구자의 스마트 컨트랙트 보안 및 바이트코드 분석 관심사와 직접 연관되며, 특히 크로스플랫폼 접근법과 심볼릭 실행 기법을 활용한 취약점 탐지 방법론을 제시함으로써 플랫폼에 독립적인 보안 분석 도구 개발의 새로운 방향을 제시한다. WASM을 중간 표현으로 활용한 접근법은 다양한 블록체인 플랫폼 지원 확장 가능성을 보여준다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Many popular blockchain platforms are supporting smart contracts for building decentralized applications. However, the vulnerabilities within smart contracts have led to serious financial loss to their end users. For the EOSIO blockchain platform, effective vulnerability detectors are still limited. Furthermore, existing vulnerability detection tools can only support one blockchain platform. In this work, we present WANA, a cross-platform smart contract vulnerability detection tool based on the symbolic execution of WebAssembly bytecode. Furthermore, WANA proposes a set of test oracles to detect the vulnerabilities in EOSIO and Ethereum smart contracts based on WebAssembly bytecode analysis. Our experimental analysis shows that WANA can effectively detect vulnerabilities in both EOSIO and Ethereum smart contracts with high efficiency.</p>
+  </section>
+</article>
+</body>
+</html>

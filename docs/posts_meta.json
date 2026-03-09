@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-03-10-WANA--Symbolic-Execution-of-Wasm-Bytecode-for-Cros.html",
+    "title": "WANA: Symbolic Execution of Wasm Bytecode for Cross-Platform Smart Contract Vulnerability Detection",
+    "date": "2026-03-10",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND ab:\"vulnerability detection\" AND (ab:\"signature\" OR ab:\"bytecode analysis\")",
+    "one_liner": "WebAssembly 바이트코드의 심볼릭 실행을 통해 EOSIO와 Ethereum 플랫폼 모두에서 작동하는 크로스플랫폼 스마트 컨트랙트 취약점 탐지 도구 WANA를 개발했다.",
+    "url": "http://arxiv.org/abs/2007.15510v2"
+  },
+  {
     "filename": "2026-03-09-ScamDetect--Towards-a-Robust--Agnostic-Framework-t.html",
     "title": "ScamDetect: Towards a Robust, Agnostic Framework to Uncover Threats in Smart Contracts",
     "date": "2026-03-09",
