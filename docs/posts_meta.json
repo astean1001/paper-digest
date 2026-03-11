@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-12-Enhancing-Smart-Contract-Vulnerability-Detection-i.html",
+    "title": "Enhancing Smart Contract Vulnerability Detection in DApps Leveraging Fine-Tuned LLM",
+    "date": "2026-03-12",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"audit\" OR ab:\"signature\")",
+    "one_liner": "실제 DApp 프로젝트 4,998개 스마트 컨트랙트를 활용해 Llama3-8B와 Qwen2-7B를 파인튜닝하여 기존 도구로 탐지 어려운 토큰 가격 조작 등 논리적 취약점까지 탐지하는 방법을 제안했습니다.",
+    "url": "http://arxiv.org/abs/2504.05006v2"
+  },
+  {
+    "filename": "2026-03-12-Combining-GPT-and-Code-Based-Similarity-Checking-f.html",
+    "title": "Combining GPT and Code-Based Similarity Checking for Effective Smart Contract Vulnerability Detection",
+    "date": "2026-03-12",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"audit\" OR ab:\"signature\")",
+    "one_liner": "GPT의 의미적 이해 능력과 코드 기반 유사성 검사를 결합하여 스마트 컨트랙트 취약점을 효과적으로 탐지하는 SimilarGPT 도구를 제안함.",
+    "url": "http://arxiv.org/abs/2412.18225v1"
+  },
+  {
+    "filename": "2026-03-12-FTSmartAudit--A-Knowledge-Distillation-Enhanced-Fr.html",
+    "title": "FTSmartAudit: A Knowledge Distillation-Enhanced Framework for Automated Smart Contract Auditing Using Fine-Tuned LLMs",
+    "date": "2026-03-12",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"audit\" OR ab:\"signature\")",
+    "one_liner": "대형 언어모델(LLM)의 지식을 경량 모델로 전이하는 다단계 지식 증류 파이프라인을 통해 효율적이면서도 정확한 스마트 컨트랙트 자동 감사 프레임워크를 개발했다.",
+    "url": "http://arxiv.org/abs/2410.13918v3"
+  },
+  {
+    "filename": "2026-03-12-More-to-Extract--Discovering-MEV-by-Token-Contract.html",
+    "title": "More to Extract: Discovering MEV by Token Contract Analysis",
+    "date": "2026-03-12",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\" AND (ab:\"arbitrage\" OR ab:\"infrastructure\" OR ab:\"validator\")",
+    "one_liner": "토큰 스마트 컨트랙트에 내재된 MEV(tMEV)를 발견하는 새로운 방법론을 제시하여 기존 MEV 대비 10배 높은 수익성을 입증했습니다.",
+    "url": "http://arxiv.org/abs/2603.07996v1"
+  },
+  {
+    "filename": "2026-03-12-SoftJAX---SoftTorch--Empowering-Automatic-Differen.html",
+    "title": "SoftJAX & SoftTorch: Empowering Automatic Differentiation Libraries with Informative Gradients",
+    "date": "2026-03-12",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "JAX와 PyTorch에서 미분 불가능한 연산들(thresholding, Boolean logic, sorting 등)을 미분 가능한 \"soft\" 버전으로 대체할 수 있는 통합 라이브러리 SoftJAX와 SoftTorch를 개발했습니다.",
+    "url": "http://arxiv.org/abs/2603.08824v1"
+  },
+  {
     "filename": "2026-03-10-WANA--Symbolic-Execution-of-Wasm-Bytecode-for-Cros.html",
     "title": "WANA: Symbolic Execution of Wasm Bytecode for Cross-Platform Smart Contract Vulnerability Detection",
     "date": "2026-03-10",

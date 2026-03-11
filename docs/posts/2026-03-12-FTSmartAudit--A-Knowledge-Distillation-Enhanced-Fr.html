@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FTSmartAudit: A Knowledge Distillation-Enhanced Framework for Automated Smart Contract Auditing Using Fine-Tuned LLMs</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"audit" OR ab:"signature")</span>
+    <h1>FTSmartAudit: A Knowledge Distillation-Enhanced Framework for Automated Smart Contract Auditing Using Fine-Tuned LLMs</h1>
+    <div class="meta">
+      <span>✍️ Zhiyuan Wei, Jing Sun, Zijian Zhang</span>
+      <span>📅 2024-10-17</span>
+      <a href="http://arxiv.org/abs/2410.13918v3" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대형 언어모델(LLM)의 지식을 경량 모델로 전이하는 다단계 지식 증류 파이프라인을 통해 효율적이면서도 정확한 스마트 컨트랙트 자동 감사 프레임워크를 개발했다.<br><br>**문제 정의**: <br>- 스마트 컨트랙트의 복잡성과 규모 증가로 기존 감사 방법의 한계 노출<br>- LLM을 활용한 취약점 탐지는 유망하지만 높은 컴퓨팅 비용과 데이터 프라이버시 문제로 실용성 제한<br>- 기존 연구는 대형 모델 활용에 집중했지만, 효율성과 프라이버시를 동시에 만족하는 경량 모델 개발에는 상대적으로 관심 부족<br><br>**핵심 기여**:<br>1. **HKT-SmartAudit 프레임워크**: 스마트 컨트랙트 감사에 특화된 경량 모델 개발 프레임워크<br>2. **다단계 지식 증류 파이프라인**: <br>   - 고전적 증류(classical distillation)<br>   - 외부 도메인 지식(external domain knowledge) <br>   - 보상 기반 학습(reward-guided learning)을 통합한 교사-학생 모델 구조<br>3. **단일 작업 학습 전략**: 컴퓨팅 오버헤드를 크게 줄이면서도 높은 정확성과 견고성 유지<br><br>**의의**: <br>- **실용적 해결책**: 상용 도구와 대형 모델보다 우수한 복잡한 취약점 및 논리적 결함 탐지 성능 달성<br>- **연구 연관성**: 귀하의 audit report 기반 시그니처 추출 연구와 상호 보완적 - 본 연구의 자동화된 감사 결과를 시그니처 추출의 입력으로 활용하거나, 추출된 시그니처를 지식 증류 과정의 도메인 지식으로 활용 가능<br>- **확장성**: 데이터 프라이버시를 보장하면서도 확장 가능한 솔루션으로 실무 적용 가능성 높음</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The rapid growth of blockchain technology has driven the widespread adoption of smart contracts. However, their inherent vulnerabilities have led to significant financial losses. Traditional auditing methods, while essential, struggle to keep pace with the increasing complexity and scale of smart contracts. Large Language Models (LLMs) offer promising capabilities for automating vulnerability detection, but their adoption is often limited by high computational costs. Although prior work has explored leveraging large models through agents or workflows, relatively little attention has been given to improving the performance of smaller, fine-tuned models--a critical factor for achieving both efficiency and data privacy. In this paper, we introduce HKT-SmartAudit, a framework for developing lightweight models optimized for smart contract auditing. It features a multi-stage knowledge distillation pipeline that integrates classical distillation, external domain knowledge, and reward-guided learning to transfer high-quality insights from large teacher models. A single-task learning strategy is employed to train compact student models that maintain high accuracy and robustness while significantly reducing computational overhead. Experimental results show that our distilled models outperform both commercial tools and larger models in detecting complex vulnerabilities and logical flaws, offering a practical, secure, and scalable solution for smart contract auditing. The source code is </p>
+  </section>
+</article>
+</body>
+</html>

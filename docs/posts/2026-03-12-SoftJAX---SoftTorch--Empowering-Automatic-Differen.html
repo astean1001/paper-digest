@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoftJAX & SoftTorch: Empowering Automatic Differentiation Libraries with Informative Gradients</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"MBA" OR ab:"mixed boolean arithmetic")</span>
+    <h1>SoftJAX & SoftTorch: Empowering Automatic Differentiation Libraries with Informative Gradients</h1>
+    <div class="meta">
+      <span>✍️ Anselm Paulus, A. René Geist, Vít Musil</span>
+      <span>📅 2026-03-09</span>
+      <a href="http://arxiv.org/abs/2603.08824v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: JAX와 PyTorch에서 미분 불가능한 연산들(thresholding, Boolean logic, sorting 등)을 미분 가능한 "soft" 버전으로 대체할 수 있는 통합 라이브러리 SoftJAX와 SoftTorch를 개발했습니다.<br><br>**문제 정의**: <br>기존 자동미분 프레임워크에서 임계값 처리, 불린 논리, 이산 인덱싱, 정렬 등의 "hard" 연산들은 0이거나 정의되지 않은 gradient를 생성하여 gradient 기반 최적화에 활용할 수 없었습니다. 각각의 soft relaxation 구현이 프로젝트별로 분산되어 있어 통합적인 사용과 비교가 어려웠습니다.<br><br>**핵심 기여**:<br>1. **통합 라이브러리**: JAX/PyTorch의 hard 연산을 drop-in 방식으로 대체할 수 있는 완전한 soft 함수 라이브러리 제공<br>2. **다양한 연산 지원**: (i) clip, abs 등 요소별 연산자, (ii) 퍼지 논리 기반 불린/인덱스 조작, (iii) optimal transport/permutahedron 투영 기반 sort/rank 연산, (iv) straight-through gradient 추정 완전 지원<br>3. **실용적 검증**: 벤치마킹과 실제 사례 연구를 통한 효용성 입증<br><br>**의의**: <br>프로그램 합성과 자동화 수정 연구에서 핵심적인 이산적/불린 연산들을 gradient 기반으로 최적화할 수 있는 도구를 제공합니다. 특히 MBA(Mixed Boolean Arithmetic) deobfuscation이나 e-graph 기반 equality saturation에서 불린 조건이나 이산 선택을 포함한 최적화 문제를 연속적으로 완화하여 해결할 수 있는 기반을 마련했습니다. 이는 기존에 휴리스틱이나 symbolic 방법에 의존했던 영역에 neural 접근법을 적용할 수 있게 합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Automatic differentiation (AD) frameworks such as JAX and PyTorch have enabled gradient-based optimization for a wide range of scientific fields. Yet, many "hard" primitives in these libraries such as thresholding, Boolean logic, discrete indexing, and sorting operations yield zero or undefined gradients that are not useful for optimization. While numerous "soft" relaxations have been proposed that provide informative gradients, the respective implementations are fragmented across projects, making them difficult to combine and compare. This work introduces SoftJAX and SoftTorch, open-source, feature-complete libraries for soft differentiable programming. These libraries provide a variety of soft functions as drop-in replacements for their hard JAX and PyTorch counterparts. This includes (i) elementwise operators such as clip or abs, (ii) utility methods for manipulating Booleans and indices via fuzzy logic, (iii) axiswise operators such as sort or rank -- based on optimal transport or permutahedron projections, and (iv) offer full support for straight-through gradient estimation. Overall, SoftJAX and SoftTorch make the toolbox of soft relaxations easily accessible to differentiable programming, as demonstrated through benchmarking and a practical case study. Code is available at github.com/a-paulus/softjax and github.com/a-paulus/softtorch.</p>
+  </section>
+</article>
+</body>
+</html>

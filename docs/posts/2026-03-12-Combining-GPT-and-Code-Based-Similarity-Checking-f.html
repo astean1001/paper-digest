@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combining GPT and Code-Based Similarity Checking for Effective Smart Contract Vulnerability Detection</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"audit" OR ab:"signature")</span>
+    <h1>Combining GPT and Code-Based Similarity Checking for Effective Smart Contract Vulnerability Detection</h1>
+    <div class="meta">
+      <span>✍️ Jango Zhang</span>
+      <span>📅 2024-12-24</span>
+      <a href="http://arxiv.org/abs/2412.18225v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: GPT의 의미적 이해 능력과 코드 기반 유사성 검사를 결합하여 스마트 컨트랙트 취약점을 효과적으로 탐지하는 SimilarGPT 도구를 제안함.<br><br>**문제 정의**: <br>DeFi 애플리케이션의 급속한 성장으로 스마트 컨트랙트 보안이 중요해졌으나, 기존 취약점 탐지 방법들은 미탐(missed detection)과 오탐(false positive) 문제로 인해 정확성과 효율성이 부족함.<br><br>**핵심 기여**:<br>1. **하이브리드 접근법**: GPT의 의미적 코드 이해 능력과 코드 기반 유사성 검사를 결합한 새로운 탐지 프레임워크 개발<br>2. **위상 정렬 최적화**: 탐지 순서를 위상학적으로 최적화하여 논리적 일관성 향상 및 오탐률 감소<br>3. **포괄적 참조 코드베이스**: 제3자 라이브러리의 안전한 코드 패턴을 분석하여 광범위한 참조 데이터베이스 구축<br>4. **코드 재사용 패턴 분석**: 스마트 컨트랙트의 코드 재사용 패턴을 체계적으로 분석하여 유사성 기반 탐지 정확도 향상<br><br>**의의**: <br>이 연구는 neurosymbolic 방법론의 실용적 적용 사례로, 심볼릭 방법(코드 유사성)과 신경망 기반 방법(GPT)을 효과적으로 결합함. 스마트 컨트랙트 보안 분야에서 LLM의 활용 가능성을 보여주며, 특히 미탐과 오탐 문제 해결에 기여함으로써 실제 보안 감사의 정확성과 효율성을 크게 향상시킬 수 있는 실용적 가치가 높음.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>With the rapid growth of blockchain technology, smart contracts are now crucial to Decentralized Finance (DeFi) applications. Effective vulnerability detection is vital for securing these contracts against hackers and enhancing the accuracy and efficiency of security audits. In this paper, we present SimilarGPT, a unique vulnerability identification tool for smart contract, which combines Generative Pretrained Transformer (GPT) models with Code-based similarity checking methods. The main concept of the SimilarGPT tool is to measure the similarity between the code under inspection and the secure code from third-party libraries. To identify potential vulnerabilities, we connect the semantic understanding capability of large language models (LLMs) with Code-based similarity checking techniques. We propose optimizing the detection sequence using topological ordering to enhance logical coherence and reduce false positives during detection. Through analysis of code reuse patterns in smart contracts, we compile and process extensive third-party library code to establish a comprehensive reference codebase. Then, we utilize LLM to conduct an indepth analysis of similar codes to identify and explain potential vulnerabilities in the codes. The experimental findings indicate that SimilarGPT excels in detecting vulnerabilities in smart contracts, particularly in missed detections and minimizing false positives.</p>
+  </section>
+</article>
+</body>
+</html>
