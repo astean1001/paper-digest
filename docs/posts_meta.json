@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-14-Smart-Contracts-Formal-Verification--A-Systematic.html",
+    "title": "Smart Contracts Formal Verification: A Systematic Literature Review",
+    "date": "2026-03-14",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "스마트 컨트랙트의 형식 검증 연구 동향을 체계적으로 분석하고, 기존 방법론들의 한계를 파악하여 description logic 기반의 새로운 형식 검증 방법론을 제안한 문헌 리뷰 연구입니다.",
+    "url": "http://arxiv.org/abs/2510.17865v1"
+  },
+  {
+    "filename": "2026-03-14-MoveScanner--Analysis-of-Security-Risks-of-Move-Sm.html",
+    "title": "MoveScanner: Analysis of Security Risks of Move Smart Contracts",
+    "date": "2026-03-14",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "Move 언어 스마트 컨트랙트의 보안 취약점을 탐지하기 위한 정적 분석 도구 MoveScanner를 개발하여 88.2%의 탐지 정확도를 달성하고 12가지 새로운 보안 위험 유형을 식별했습니다.",
+    "url": "http://arxiv.org/abs/2508.17964v3"
+  },
+  {
+    "filename": "2026-03-14-RASP--Reliability-ab-initio-simulation-package-of.html",
+    "title": "RASP: Reliability ab initio simulation package of MOSFETs based on all-state model",
+    "date": "2026-03-14",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "MOSFET의 신뢰성 저하를 정확히 시뮬레이션하기 위해 모든 결함 상태를 고려하는 all-state 모델을 구현한 RASP 패키지를 개발했습니다.",
+    "url": "http://arxiv.org/abs/2603.12042v1"
+  },
+  {
+    "filename": "2026-03-14-Ab-initio-superfluid-weight-and-superconducting-pe.html",
+    "title": "Ab-initio superfluid weight and superconducting penetration depth",
+    "date": "2026-03-14",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "초전도체 발견을 위한 머신러닝 기반 고처리량 스크리닝에서 핵심 물리량인 초유체 무게(superfluid weight)를 밀도함수이론으로부터 효율적으로 계산하는 프레임워크를 개발했습니다.",
+    "url": "http://arxiv.org/abs/2603.10955v1"
+  },
+  {
+    "filename": "2026-03-14-Ab-initio-quantum-embedding-description-of-magic-a.html",
+    "title": "Ab initio quantum embedding description of magic angle twisted bilayer graphene at even-integer fillings",
+    "date": "2026-03-14",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "마법각 이중층 그래핀의 상관 전자 상태를 밀도 함수 이론 기반의 ab initio 양자 임베딩 방법론으로 정확히 모델링하여, 충전률에 따른 비대칭적 전자 거동을 발견했습니다.",
+    "url": "http://arxiv.org/abs/2603.10433v1"
+  },
+  {
     "filename": "2026-03-12-Enhancing-Smart-Contract-Vulnerability-Detection-i.html",
     "title": "Enhancing Smart Contract Vulnerability Detection in DApps Leveraging Fine-Tuned LLM",
     "date": "2026-03-12",

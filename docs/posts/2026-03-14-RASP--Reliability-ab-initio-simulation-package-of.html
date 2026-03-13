@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RASP: Reliability ab initio simulation package of MOSFETs based on all-state model</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>RASP: Reliability ab initio simulation package of MOSFETs based on all-state model</h1>
+    <div class="meta">
+      <span>✍️ Xinjing Guo, Menglin Huang, Shiyou Chen</span>
+      <span>📅 2026-03-12</span>
+      <a href="http://arxiv.org/abs/2603.12042v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: MOSFET의 신뢰성 저하를 정확히 시뮬레이션하기 위해 모든 결함 상태를 고려하는 all-state 모델을 구현한 RASP 패키지를 개발했습니다.<br><br>**문제 정의**: <br>트랜지스터가 소형화되면서 장치 신뢰성이 핵심 이슈가 되었으나, 기존의 2-state나 4-state 모델은 제한된 결함 구성만 고려하여 MOSFET의 결함으로 인한 신뢰성 저하를 정확히 시뮬레이션하지 못하는 문제가 있었습니다.<br><br>**핵심 기여**: <br>- 비정질 게이트 유전체 내 모든 가능한 결함 구성을 체계적으로 고려하는 all-state 모델 구현<br>- 모든 비방사성 다중포논(NMP) 및 열전이 경로를 포함한 포괄적 시뮬레이션 방법론 개발<br>- 제일원리 계산에서 얻은 결함 매개변수를 입력으로 사용하여 임계전압 변화를 정확히 예측<br>- a-SiO₂의 산소 공공이 NBTI(음의 바이어스 온도 불안정성)에 무시할 수 없는 영향을 미친다는 발견<br><br>**의의**: <br>반도체 신뢰성 분야에서 복잡한 시스템의 모든 가능한 상태를 체계적으로 모델링하는 접근법을 제시했으며, 이는 프로그램 분석에서 모든 실행 경로나 상태를 고려하는 포괄적 분석 방법론과 유사한 철학을 보여줍니다. 특히 복잡한 시스템을 완전히 모델링하려는 시도는 프로그램 합성이나 분석 도구 개발에서도 중요한 통찰을 제공할 수 있습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>As transistors continue to scale down, device reliability has become a critical concern. In order to accurately simulate defect-induced reliability degradation in MOSFET based logic, memory and power devices, we develop RASP (Reliability Ab initio Simulation Package), which implements the all-state model for reliability simulation. Unlike conventional two-state and four-state models that consider only two and four defect configurations respectively, the all-state model systematically considers all possible defect configurations in amorphous gate dielectrics and all nonradiative multiphonon (NMP) and thermal transition pathways among them. With defect parameters obtained from ab initio calculations as input, RASP enables accurate simulation of threshold voltage shifts caused by defects. Using RASP to simulate oxygen vacancies in a-SiO$_2$, we find that they are a non-negligible source of negative bias temperature instability (NBTI).</p>
+  </section>
+</article>
+</body>
+</html>

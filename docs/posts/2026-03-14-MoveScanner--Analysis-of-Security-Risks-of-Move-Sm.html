@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoveScanner: Analysis of Security Risks of Move Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>MoveScanner: Analysis of Security Risks of Move Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Yuhe Luo, Zhongwen Li, Xiaoqi Li</span>
+      <span>📅 2025-08-25</span>
+      <a href="http://arxiv.org/abs/2508.17964v3" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Move 언어 스마트 컨트랙트의 보안 취약점을 탐지하기 위한 정적 분석 도구 MoveScanner를 개발하여 88.2%의 탐지 정확도를 달성하고 12가지 새로운 보안 위험 유형을 식별했습니다.<br><br>**문제 정의**: <br>Move 언어는 고유한 리소스 모델과 선형 타입 시스템을 통해 디지털 자산의 보안성을 제공하지만, 개발자의 프로그래밍 오류와 크로스 모듈 상호작용으로 인한 새로운 보안 취약점이 발생하며, 기존 Move 생태계의 보안 도구들은 이러한 문제들을 효과적으로 탐지하지 못하는 한계가 있었습니다.<br><br>**핵심 기여**:<br>1. **MoveScanner 도구 개발**: 제어 흐름 그래프와 데이터 흐름 분석 기반의 정적 분석 도구 구현<br>2. **크로스 모듈 분석**: 모듈 간 호출 그래프 추적을 통해 리소스 누수, 권한 관리 취약점, 산술 오버플로우 등 5가지 핵심 취약점 유형 탐지<br>3. **혁신적 알고리즘**: 리소스 궤적 추적 알고리즘과 capability 매트릭스 분석 방법 도입으로 false positive rate 대폭 감소<br>4. **새로운 취약점 분류**: 리소스 지향 프로그래밍 모델 기반 12가지 새로운 보안 위험 유형 식별<br><br>**의의**: <br>Move 언어는 차세대 블록체인 플랫폼(Aptos, Sui 등)에서 채택되는 핵심 언어로, 기존 Solidity와 다른 리소스 기반 보안 모델을 가지고 있어 새로운 보안 분석 접근법이 필요합니다. 본 연구는 블록체인 보안 연구자들에게 (1) 새로운 언어 패러다임에 대한 취약점 탐지 방법론, (2) 바이트코드 레벨 분석과 멀티체인 적응 기술, (3) 정적 분석 도구 설계의 모듈화 원칙을 제시하여, 차세대 블록체인 보안 도구 개발과 취약점 연구의 기반을 마련했습</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>As blockchain technology continues to evolve, the security of smart contracts has increasingly drawn attention from both academia and industry. The Move language, with its unique resource model and linear type system, provides a solid foundation for the security of digital assets. However, smart contracts still face new security challenges due to developer programming errors and the potential risks associated with cross-module interactions. This paper systematically analyzes the limitations of existing security tools within the Move ecosystem and reveals their unique vulnerability patterns. To address these issues, it introduces MoveScanner, a static analysis tool based on a control flow graph and data flow analysis architecture. By incorporating cross-module call graph tracking, MoveScanner can effectively identify five key types of security vulnerabilities, including resource leaks, weak permission management, and arithmetic overflows. In terms of design, MoveScanner adheres to a modular principle, supports bytecode-level analysis and multi-chain adaptation, and introduces innovative resource trajectory tracking algorithms and capability matrix analysis methods, thereby significantly reducing the false positive rate. Empirical results show that MoveScanner achieved 88.2% detection accuracy in benchmark testing, filling the gap in security tools in the Move ecosystem. Furthermore, this paper identifies twelve new types of security risks based on the resource-oriented program</p>
+  </section>
+</article>
+</body>
+</html>
