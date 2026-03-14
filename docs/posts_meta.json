@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-15-BugMagnifier--TON-Transaction-Simulator-for-Reveal.html",
+    "title": "BugMagnifier: TON Transaction Simulator for Revealing Smart Contract Vulnerabilities",
+    "date": "2026-03-15",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "TON 블록체인의 비동기 실행 모델에서 발생하는 스마트 컨트랙트 취약점을 체계적으로 탐지하는 트랜잭션 시뮬레이션 프레임워크 BugMagnifier를 개발하였음.",
+    "url": "http://arxiv.org/abs/2509.24444v2"
+  },
+  {
+    "filename": "2026-03-15-From-Paradigm-Shift-to-Audit-Rift--Exploring-Vulne.html",
+    "title": "From Paradigm Shift to Audit Rift: Exploring Vulnerabilities and Audit Tips for TON Smart Contracts",
+    "date": "2026-03-15",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "TON 블록체인의 34개 전문 감사 보고서에서 233개 실제 취약점을 분석하여 TON 특화 스마트 컨트랙트 감사 체크리스트를 개발한 연구",
+    "url": "http://arxiv.org/abs/2509.10823v1"
+  },
+  {
+    "filename": "2026-03-15-Impact-of-Oxygen-Vacancies-in-Josephson-Junction-o.html",
+    "title": "Impact of Oxygen Vacancies in Josephson Junction on Decoherence of Superconducting Qubits",
+    "date": "2026-03-15",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"deobfuscation\" AND (ab:\"MBA\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "초전도 양자회로의 조셉슨 접합에서 산소 공공(oxygen vacancy) 결함이 큐빗의 디코히어런스를 가속화하는 메커니즘을 제1원리 계산으로 규명하고, 결함 농도와 구조가 전기 전도도 변동에 미치는 영향을 정량화한 연구.",
+    "url": "http://arxiv.org/abs/2603.11469v1"
+  },
+  {
+    "filename": "2026-03-15-Modeling-anisotropic-energy-dissipation-of-light-i.html",
+    "title": "Modeling anisotropic energy dissipation of light ions at the atomistic scale",
+    "date": "2026-03-15",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"deobfuscation\" AND (ab:\"MBA\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "경이온(수소, 헬륨)이 물질(텅스텐)과 상호작용할 때 원자 수준에서 발생하는 이방성 에너지 소산을 모델링하기 위해 기존 텐서 모델을 단순화한 국소 모델을 제안하고 검증한 연구입니다.",
+    "url": "http://arxiv.org/abs/2603.10838v1"
+  },
+  {
+    "filename": "2026-03-15-Low-loss-phase-change-material-based-programmable.html",
+    "title": "Low-loss phase-change material based programmable mode converter for photonic computing",
+    "date": "2026-03-15",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"deobfuscation\" AND (ab:\"MBA\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "기존 위상변화물질(GST)의 높은 광손실 문제를 해결하기 위해 저손실 Sb2Se3를 이용한 프로그래머블 모드 변환기를 설계하여 5비트 정밀도의 다중레벨 광학 프로그래밍을 구현했습니다.",
+    "url": "http://arxiv.org/abs/2603.10667v1"
+  },
+  {
     "filename": "2026-03-14-Smart-Contracts-Formal-Verification--A-Systematic.html",
     "title": "Smart Contracts Formal Verification: A Systematic Literature Review",
     "date": "2026-03-14",

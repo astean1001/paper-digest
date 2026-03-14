@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BugMagnifier: TON Transaction Simulator for Revealing Smart Contract Vulnerabilities</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>BugMagnifier: TON Transaction Simulator for Revealing Smart Contract Vulnerabilities</h1>
+    <div class="meta">
+      <span>✍️ Yury Yanovich, Victoria Kovalevskaya, Maksim Egorov</span>
+      <span>📅 2025-09-29</span>
+      <a href="http://arxiv.org/abs/2509.24444v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: TON 블록체인의 비동기 실행 모델에서 발생하는 스마트 컨트랙트 취약점을 체계적으로 탐지하는 트랜잭션 시뮬레이션 프레임워크 BugMagnifier를 개발하였음.<br><br>**문제 정의**: TON 블록체인의 비동기 실행 모델은 예측 불가능한 메시지 처리 순서로 인해 경쟁 조건(race condition) 등 독특한 보안 취약점을 야기하는데, 기존의 정적 분석만으로는 이러한 시간적 의존성(temporal dependencies) 취약점을 동적으로 탐지하기 어려운 문제가 있었음.<br><br>**핵심 기여**: <br>- TON Sandbox와 TVM을 기반으로 한 체계적인 트랜잭션 시뮬레이션 프레임워크 구축<br>- 제어된 메시지 오케스트레이션, 차분 상태 분석, 확률적 순열 테스트를 결합한 취약점 탐지 방법론 제시<br>- 메시지 비율에 따른 탐지 복잡도의 정량적 모델링을 통해 이론적 예측과 일치하는 실험 결과 도출<br>- 수동 전문가 분석에서 자동화된 증거 생성으로 패러다임 전환<br><br>**의의**: 비동기 블록체인 환경에서 시간적 취약점에 대한 재현 가능한 테스트 시나리오를 제공함으로써 TON 보안 도구의 중요한 격차를 해결하였으며, 스마트 컨트랙트 취약점 탐지 연구에서 동적 분석과 시뮬레이션 기반 접근법의 실용적 가능성을 보여주어 관련 연구의 방법론적 확장에 기여할 수 있음.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The Open Network (TON) blockchain employs an asynchronous execution model that introduces unique security challenges for smart contracts, particularly race conditions arising from unpredictable message processing order. While previous work established vulnerability patterns through static analysis of audit reports, dynamic detection of temporal dependencies through systematic testing remains an open problem. We present BugMagnifier, a transaction simulation framework that systematically reveals vulnerabilities in TON smart contracts through controlled message orchestration. Built atop TON Sandbox and integrated with the TON Virtual Machine (TVM), our tool combines precise message queue manipulation with differential state analysis and probabilistic permutation testing to detect asynchronous execution flaws. Experimental evaluation demonstrates BugMagnifier's effectiveness through extensive parametric studies on purpose-built vulnerable contracts, revealing message ratio-dependent detection complexity that aligns with theoretical predictions. This quantitative model enables predictive vulnerability assessment while shifting discovery from manual expert analysis to automated evidence generation. By providing reproducible test scenarios for temporal vulnerabilities, BugMagnifier addresses a critical gap in the TON security tooling, offering practical support for safer smart contract development in asynchronous blockchain environments.</p>
+  </section>
+</article>
+</body>
+</html>
