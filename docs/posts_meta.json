@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-16-Scrambler--Mixed-Boolean-Arithmetic-Obfuscation-To.html",
+    "title": "Scrambler: Mixed Boolean Arithmetic Obfuscation Tool Using E-graph and Equality Expansion",
+    "date": "2026-03-16",
+    "source": "arXiv",
+    "topic": "(ti:\"equality saturation\" OR ti:\"e-graph\") AND (ab:\"deobfuscation\" OR ab:\"MBA\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "E-graph와 Equality Expansion을 활용하여 수학적 등가성이 보장된 복잡하고 다양한 MBA(Mixed Boolean Arithmetic) 난독화 표현식을 효율적으로 생성하는 도구 'Scrambler'를 제안함.",
+    "url": "http://arxiv.org/abs/2603.03624v2"
+  },
+  {
+    "filename": "2026-03-16-A-Neurosymbolic-Approach-to-Loop-Invariant-Generat.html",
+    "title": "A Neurosymbolic Approach to Loop Invariant Generation via Weakest Precondition Reasoning",
+    "date": "2026-03-16",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "LLM과 Hoare 논리를 결합하여 루프 불변식을 자동 생성하는 신경기호적 접근법 NeuroInv를 제안하여 99.5%의 성공률을 달성했습니다.",
+    "url": "http://arxiv.org/abs/2512.15816v1"
+  },
+  {
+    "filename": "2026-03-16-Testing-Deep-Learning-Libraries-via-Neurosymbolic.html",
+    "title": "Testing Deep Learning Libraries via Neurosymbolic Constraint Learning",
+    "date": "2026-03-16",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "딥러닝 라이브러리 API의 입력 제약조건을 동적으로 학습하는 neurosymbolic 접근법 'Centaur'를 제안하여, 기존 테스팅 방법의 부정확한 입력 모델링 문제를 해결하고 효과적인 버그 탐지를 가능하게 함.",
+    "url": "http://arxiv.org/abs/2601.15493v1"
+  },
+  {
+    "filename": "2026-03-16-SymCode--A-Neurosymbolic-Approach-to-Mathematical.html",
+    "title": "SymCode: A Neurosymbolic Approach to Mathematical Reasoning via Verifiable Code Generation",
+    "date": "2026-03-16",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2510.25975v2"
+  },
+  {
+    "filename": "2026-03-16-Intermediate-Languages-Matter--Formal-Languages-an.html",
+    "title": "Intermediate Languages Matter: Formal Languages and LLMs affect Neurosymbolic Reasoning",
+    "date": "2026-03-16",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "뉴로심볼릭 LLM 추론에서 자연어를 형식언어로 번역할 때, 어떤 형식언어를 선택하느냐가 추론 성능에 큰 영향을 미친다는 것을 실증적으로 입증한 연구",
+    "url": "http://arxiv.org/abs/2509.04083v1"
+  },
+  {
     "filename": "2026-03-15-BugMagnifier--TON-Transaction-Simulator-for-Reveal.html",
     "title": "BugMagnifier: TON Transaction Simulator for Revealing Smart Contract Vulnerabilities",
     "date": "2026-03-15",

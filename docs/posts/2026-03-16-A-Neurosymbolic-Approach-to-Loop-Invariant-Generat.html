@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Neurosymbolic Approach to Loop Invariant Generation via Weakest Precondition Reasoning</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model" OR ab:"LLM")</span>
+    <h1>A Neurosymbolic Approach to Loop Invariant Generation via Weakest Precondition Reasoning</h1>
+    <div class="meta">
+      <span>✍️ Daragh King, Vasileios Koutavas, Laura Kovacs</span>
+      <span>📅 2025-12-17</span>
+      <a href="http://arxiv.org/abs/2512.15816v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: LLM과 Hoare 논리를 결합하여 루프 불변식을 자동 생성하는 신경기호적 접근법 NeuroInv를 제안하여 99.5%의 성공률을 달성했습니다.<br><br>**문제 정의**: <br>자동 프로그램 검증에서 루프 불변식(loop invariant) 생성은 여전히 핵심적인 병목지점입니다. 기존 LLM 기반 접근법들은 체계적인 방법론이 부족하고 프로그램 검증 이론과의 연결이 약했습니다.<br><br>**핵심 기여**:<br>1. **신경기호적 이중 모듈 구조**: <br>   - 신경 추론 모듈: LLM과 Hoare 논리를 활용해 역방향 연쇄 최약 사전조건(weakest precondition) 추론으로 불변식 후보를 도출하고 개선<br>   - 검증 가이드 기호 모듈: OpenJML의 반례를 이용해 불변식을 반복적으로 수정<br><br>2. **포괄적 평가**: 150개 Java 프로그램(단일/다중 루프, 다중 배열, 랜덤 분기, 노이즈 코드 포함)에서 99.5% 성공률 달성<br><br>3. **확장성 입증**: 평균 7개 루프를 가진 10개 대규모 다중 루프 프로그램에서도 효과적인 성능 확인<br><br>**의의**: <br>이 연구는 LLM과 형식적 프로그램 검증 이론을 체계적으로 결합한 첫 번째 성공 사례로, 자동화 프로그램 수정 분야에 중요한 시사점을 제공합니다. 특히 weakest precondition 추론을 통한 구조적 접근법은 LLM 기반 프로그램 분석의 신뢰성과 정확성을 크게 향상시켰으며, 향후 자동 프로그램 수정에서도 유사한 신경기호적 접근법이 적용될 수 있는 가능성을 보여줍니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Loop invariant generation remains a critical bottleneck in automated program verification. Recent work has begun to explore the use of Large Language Models (LLMs) in this area, yet these approaches tend to lack a reliable and structured methodology, with little reference to existing program verification theory. This paper presents NeuroInv, a neurosymbolic approach to loop invariant generation. NeuroInv comprises two key modules: (1) a neural reasoning module that leverages LLMs and Hoare logic to derive and refine candidate invariants via backward-chaining weakest precondition reasoning, and (2) a verification-guided symbolic module that iteratively repairs invariants using counterexamples from OpenJML. We evaluate NeuroInv on a comprehensive benchmark of 150 Java programs, encompassing single and multiple (sequential) loops, multiple arrays, random branching, and noisy code segments. NeuroInv achieves a $99.5\%$ success rate, substantially outperforming the other evaluated approaches. Additionally, we introduce a hard benchmark of $10$ larger multi-loop programs (with an average of $7$ loops each); NeuroInv's performance in this setting demonstrates that it can scale to more complex verification scenarios.</p>
+  </section>
+</article>
+</body>
+</html>

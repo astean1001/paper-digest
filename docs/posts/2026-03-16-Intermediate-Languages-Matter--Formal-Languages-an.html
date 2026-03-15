@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intermediate Languages Matter: Formal Languages and LLMs affect Neurosymbolic Reasoning</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model" OR ab:"LLM")</span>
+    <h1>Intermediate Languages Matter: Formal Languages and LLMs affect Neurosymbolic Reasoning</h1>
+    <div class="meta">
+      <span>✍️ Alexander Beiser, David Penz, Nysret Musliu</span>
+      <span>📅 2025-09-04</span>
+      <a href="http://arxiv.org/abs/2509.04083v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 뉴로심볼릭 LLM 추론에서 자연어를 형식언어로 번역할 때, 어떤 형식언어를 선택하느냐가 추론 성능에 큰 영향을 미친다는 것을 실증적으로 입증한 연구<br><br>**문제 정의**: <br>LLM의 형식적 추론 능력 향상을 위해 자연어→형식언어 번역 후 심볼릭 솔버를 사용하는 뉴로심볼릭 접근법이 주목받고 있으나, 성공 요인 중 '어떤 형식언어를 중간언어로 선택할지'에 대한 체계적 분석이 부족했음<br><br>**핵심 기여**:<br>- **중간언어 선택 문제(Intermediate Language Challenge)** 개념 도입<br>- 4개 형식언어 × 3개 데이터셋 × 7개 LLM을 통한 대규모 비교 실험 수행<br>- 형식언어 선택이 구문적(syntactic) 추론과 의미적(semantic) 추론 능력 모두에 영향을 미침을 정량적으로 입증<br>- LLM별로 형식언어에 대한 반응이 다르게 나타남을 확인<br><br>**의의**: <br>프로그램 분석-LLM 융합 연구에서 단순히 "LLM + 형식적 도구"를 결합하는 것을 넘어, **어떤 중간 표현을 사용할지**가 핵심 설계 결정임을 시사. 특히 코드 생성, 프로그램 합성, 자동 검증 도구 개발 시 타겟 형식언어 선택 전략 수립에 중요한 가이드라인 제공. LLM 기반 프로그램 분석 도구의 성능 최적화를 위한 새로운 연구 방향을 제시함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Large language models (LLMs) achieve astonishing results on a wide range of tasks. However, their formal reasoning ability still lags behind. A promising approach is Neurosymbolic LLM reasoning. It works by using LLMs as translators from natural to formal languages and symbolic solvers for deriving correct results. Still, the contributing factors to the success of Neurosymbolic LLM reasoning remain unclear. This paper demonstrates that one previously overlooked factor is the choice of the formal language. We introduce the intermediate language challenge: selecting a suitable formal language for neurosymbolic reasoning. By comparing four formal languages across three datasets and seven LLMs, we show that the choice of formal language affects both syntactic and semantic reasoning capabilities. We also discuss the varying effects across different LLMs.</p>
+  </section>
+</article>
+</body>
+</html>

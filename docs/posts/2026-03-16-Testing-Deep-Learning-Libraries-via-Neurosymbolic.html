@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testing Deep Learning Libraries via Neurosymbolic Constraint Learning</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model" OR ab:"LLM")</span>
+    <h1>Testing Deep Learning Libraries via Neurosymbolic Constraint Learning</h1>
+    <div class="meta">
+      <span>✍️ M M Abid Naziri, Shinhae Kim, Feiran Qin</span>
+      <span>📅 2026-01-21</span>
+      <a href="http://arxiv.org/abs/2601.15493v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 딥러닝 라이브러리 API의 입력 제약조건을 동적으로 학습하는 neurosymbolic 접근법 'Centaur'를 제안하여, 기존 테스팅 방법의 부정확한 입력 모델링 문제를 해결하고 효과적인 버그 탐지를 가능하게 함.<br><br>**문제 정의**: <br>- PyTorch 등 딥러닝 라이브러리는 복잡하고 버그가 많지만, API 명세가 부족하여 테스팅이 어려움<br>- 기존 테스팅 방법들은 API 입력 명세를 부정확하게 모델링하여 유효한 버그 발견 입력을 놓치거나 무효한 입력으로 인한 오탐을 발생시킴<br><br>**핵심 기여**:<br>1. **Neurosymbolic 제약 학습**: 소수의 자동 생성된 시드 입력으로부터 형식적 API 제약조건을 학습하고, SMT 솔버로 이를 해결하여 유효하고 다양한 테스트 입력을 생성<br>2. **새로운 문법 체계**: API 파라미터에 대한 1차 논리 공식을 표현하는 문법을 개발하여 텐서 속성(shape, 데이터 타입)과 파라미터 간 관계적 속성을 표현<br>3. **LLM 기반 규칙 생성**: 대규모 언어 모델을 활용해 문법적으로 올바른 후보 규칙들을 열거하고 시드 입력으로 검증<br>4. **정제 전략**: 가짜 또는 중복 규칙을 제거하는 맞춤형 정제 전략 개발<br><br>**의의**: <br>프로그램 분석과 LLM 융합 연구에서 중요한 사례로, 형식적 방법(SMT 솔버)과 신경망 기반 방법(LLM)을 결합한 실용적 접근법을 제시함. 특히 명세가 불완전한 복잡한 소프트웨어 시스템의 동적 제약 학습 방법론은 다른 도메인의 프로그램 분석 연구에도 응용 가능한 일반화된 접근법으로 평가됨.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Deep Learning (DL) libraries (e.g., PyTorch) are popular in AI development. These libraries are complex and contain bugs. Researchers have proposed various bug-finding techniques for such libraries. Yet, there is much room for improvement. A key challenge in testing DL libraries is the lack of API specifications. Prior testing approaches often inaccurately model the input specifications of DL APIs, resulting in missed valid inputs that could reveal bugs or false alarms due to invalid inputs.
+  To address this challenge, we develop Centaur -- the first neurosymbolic technique to test DL library APIs using dynamically learned input constraints. Centaur leverages the key idea that formal API constraints can be learned from a small number of automatically generated seed inputs, and that the learned constraints can be solved using SMT solvers to generate valid and diverse test inputs.
+  We develop a novel grammar that represents first-order logic formulae over API parameters and expresses tensor-related properties (e.g., shape, data types) as well as relational properties between parameters. We use the grammar to guide a Large Language Model (LLM) to enumerate syntactically correct candidate rules, validated using seed inputs. Further, we develop a custom refinement strategy to prune the set of learned rules to eliminate spurious or redundant rules. We use the learned constraints to systematically generate valid and diverse inputs by integrating SMT-based solving with randomized s</p>
+  </section>
+</article>
+</body>
+</html>
