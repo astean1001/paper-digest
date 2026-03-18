@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SseRex: Practical Symbolic Execution of Solana Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>SseRex: Practical Symbolic Execution of Solana Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Tobias Cloosters, Pascal Winkler, Jens-Rene Giesen</span>
+      <span>📅 2026-03-17</span>
+      <a href="http://arxiv.org/abs/2603.16349v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Solana 스마트 컨트랙트의 고유한 계정 모델을 고려한 최초의 심볼릭 실행 기반 취약점 탐지 도구 SseRex를 제안하여 기존 접근법보다 우수한 성능으로 Solana 특화 버그를 식별했습니다.<br><br>**문제 정의**: <br>Solana의 급속한 성장과 함께 보안 사고가 증가하고 있지만, 기존 스마트 컨트랙트 분석 도구들은 Solana의 독특하고 복잡한 계정 모델(account model)을 제대로 다루지 못해 Solana 특화 취약점을 효과적으로 탐지할 수 없는 문제가 있었습니다.<br><br>**핵심 기여**:<br>- Solana 스마트 컨트랙트를 위한 최초의 심볼릭 실행 취약점 탐지 접근법 개발<br>- Missing owner checks, missing signer checks, missing key checks, arbitrary cross-program invocations 등 Solana 특화 버그 탐지 가능<br>- 8,714개의 바이트코드 컨트랙트 평가에서 467개 컨트랙트에서 잠재적 버그 식별<br>- 120개 오픈소스 Solana 프로젝트 분석 및 4개 심층 사례 연구 수행<br><br>**의의**: <br>블록체인 인프라 보안 연구에서 플랫폼별 특화 분석의 중요성을 보여주며, 스마트 컨트랙트 보안 분석 연구에 새로운 방향을 제시합니다. 특히 미묘하고 간과하기 쉬운 이슈들이 심각한 공격의 근본 원인이 된다는 발견은 정적 분석 도구의 정교함이 얼마나 중요한지를 시사하여, 스마트 컨트랙트 취약점 탐지 연구의 발전 방향을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Solana is rapidly gaining traction among smart contract developers and users. However, its growing adoption has been accompanied by a series of major security incidents, which have spurred research into automated analysis techniques for Solana smart contracts. Unfortunately, existing approaches do not address the unique and complex account model of Solana. In this paper, we propose SseRex, the first symbolic execution vulnerability detection approach for finding Solana-specific bugs such as missing owner checks, missing signer checks, and missing key checks, as well as arbitrary cross-program invocations. Our evaluation of 8,714 bytecode-only contracts shows that our approach outperforms existing approaches and identifies potential bugs in 467 different contracts. Additionally, we analyzed 120 open-source Solana projects and conducted in-depth case studies on four of them. Our findings reveal that subtle, easily overlooked issues often serve as the root cause of severe exploits, further highlighting the need for specialized analysis tools like SseRex.</p>
+  </section>
+</article>
+</body>
+</html>

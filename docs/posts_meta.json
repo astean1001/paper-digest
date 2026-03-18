@@ -1,5 +1,23 @@
 [
   {
+    "filename": "2026-03-19-SseRex--Practical-Symbolic-Execution-of-Solana-Sma.html",
+    "title": "SseRex: Practical Symbolic Execution of Solana Smart Contracts",
+    "date": "2026-03-19",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "Solana 스마트 컨트랙트의 고유한 계정 모델을 고려한 최초의 심볼릭 실행 기반 취약점 탐지 도구 SseRex를 제안하여 기존 접근법보다 우수한 성능으로 Solana 특화 버그를 식별했습니다.",
+    "url": "http://arxiv.org/abs/2603.16349v1"
+  },
+  {
+    "filename": "2026-03-19-Benchmarking-Zero-Shot-Reasoning-Approaches-for-Er.html",
+    "title": "Benchmarking Zero-Shot Reasoning Approaches for Error Detection in Solidity Smart Contracts",
+    "date": "2026-03-19",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "Solidity 스마트 컨트랙트의 취약점 탐지를 위해 최신 LLM들을 대상으로 zero-shot 프롬프팅 전략(CoT, ToT)의 성능을 체계적으로 벤치마킹한 연구입니다.",
+    "url": "http://arxiv.org/abs/2603.13239v1"
+  },
+  {
     "filename": "2026-03-16-Scrambler--Mixed-Boolean-Arithmetic-Obfuscation-To.html",
     "title": "Scrambler: Mixed Boolean Arithmetic Obfuscation Tool Using E-graph and Equality Expansion",
     "date": "2026-03-16",
