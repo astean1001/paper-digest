@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Efficient Deobfuscation of Linear Mixed Boolean-Arithmetic Expressions</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"deobfuscation" AND ab:"MBA" AND (ab:"equality saturation" OR ab:"e-graph" OR ab:"mixed boolean arithmetic")</span>
+    <h1>Efficient Deobfuscation of Linear Mixed Boolean-Arithmetic Expressions</h1>
+    <div class="meta">
+      <span>✍️ Benjamin Reichenwallner, Peter Meerwald-Stadler</span>
+      <span>📅 2022-09-13</span>
+      <a href="http://arxiv.org/abs/2209.06335v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>선형 혼합 부울-산술(MBA) 표현식의 난독화 해제를 위한 SiMBA 알고리즘을 제안하여 기존 방법 대비 모든 선형 MBA를 처리하면서 실행 시간을 대폭 단축시켰습니다.<br><br>**문제 정의**: <br>MBA 표현식은 산술 연산과 부울 연산을 결합하여 기존의 산술 법칙이나 논리 공식 변환 규칙을 적용하기 어려워 단순화와 해결이 매우 까다로운 난독화 기법입니다. 2019년 Liu et al.이 제안한 MBA-Blast와 MBA-Solver가 성능을 개선했지만, 여전히 모든 선형 MBA를 처리하지 못하고 간단한 해를 놓치는 경우가 있으며 실행 시간이 오래 걸리는 한계가 있었습니다.<br><br>**핵심 기여**: <br>- Zhou et al.(2007)의 비트값 집합 {0,1}과 길이 n인 워드 집합 간의 변환을 활용한 SiMBA 알고리즘 개발<br>- 기존 MBA-Blast/MBA-Solver 대비 **모든 선형 MBA 표현식**을 완전히 난독화 해제 가능<br>- 특히 간단한 해를 놓치지 않으면서도 **실행 시간을 획기적으로 단축**시킨 효율적 알고리즘 설계<br><br>**의의**: <br>이 연구는 MBA 난독화 해제의 완전성(completeness)과 효율성을 동시에 달성한 중요한 이론적 기여로, 연구자의 MBA 난독화 해제 연구에서 핵심적인 방법론적 기반을 제공합니다. 특히 선형 MBA에 대한 완전한 해결책을 제시함으로써 더 복잡한 비선형 MBA나 고급 난독화 기법 연구로 확장할 수 있는 견고한 출발점을 마련했습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Mixed Boolean-Arithmetic (MBA) expressions are frequently used for obfuscation. As they combine arithmetic as well as Boolean operations, neither arithmetic laws nor transformation rules for logical formulas can be applied to suitably complex expressions, making MBAs hard to simplify and solve. In 2019, Liu et al. demystified linear MBAs, leveraging a transformation between the set $B=\{0,1\}$ of bit values and the set $B^n$ of words of length $n\in\mathbb{N}$ for linear MBAs, originally introduced by Zhou et al. in 2007. With their MBA-Blast and MBA-Solver algorithms, they outperform existing tools noticably in terms of performance as well as ability to simplify of such MBAs. We propose a surprisingly simple algorithm called SiMBA that improves upon MBA-Blast and MBA-Solver in that it can deobfuscate all linear MBAs, does not miss particularly simple solutions and takes only a fraction of their runtime.</p>
+  </section>
+</article>
+</body>
+</html>

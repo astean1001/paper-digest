@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gMBA: Expression Semantic Guided Mixed Boolean-Arithmetic Deobfuscation Using Transformer Architectures</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"deobfuscation" AND ab:"MBA" AND (ab:"equality saturation" OR ab:"e-graph" OR ab:"mixed boolean arithmetic")</span>
+    <h1>gMBA: Expression Semantic Guided Mixed Boolean-Arithmetic Deobfuscation Using Transformer Architectures</h1>
+    <div class="meta">
+      <span>✍️ Youjeong Noh, Joon-Young Paik, Jingun Kwon</span>
+      <span>📅 2025-06-30</span>
+      <a href="http://arxiv.org/abs/2506.23634v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>MBA 난독화 해제를 위해 표현식의 의미 정보를 진리표로 자동 구성하고 이를 Transformer 기반 Seq2Seq 모델에 통합한 gMBA 프레임워크를 제안한 연구입니다.<br><br>**문제 정의**: <br>기존 MBA 난독화 해제 방법들이 표현식을 블랙박스로 취급하여 내부 의미 정보를 간과함으로써, 악성코드가 MBA 난독화를 통해 탐지를 회피하는 문제가 심화되고 있는 상황을 해결하고자 했습니다.<br><br>**핵심 기여**: <br>1) 외부 자원에 의존하지 않고 표현식의 동작을 나타내는 진리표 기반 의미 표현 방법론 제안<br>2) 이러한 의미적 가이던스를 Transformer 기반 신경망 인코더-디코더 구조에 통합한 gMBA 프레임워크 개발<br>3) 표현식 내부 의미 정보가 난독화된 코드 복원에 미치는 중요성 실증<br><br>**의의**: <br>LLM과 MBA 난독화 해제의 융합 연구에서 의미 정보 활용의 새로운 방향을 제시했으며, 특히 진리표를 통한 자동화된 의미 표현 구성 방법은 연구자의 관련 연구에서 equality saturation이나 e-graph 기반 접근법과 상호 보완적으로 활용할 수 있는 중요한 참조점이 됩니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Mixed Boolean-Arithmetic (MBA) obfuscation protects intellectual property by converting programs into forms that are more complex to analyze. However, MBA has been increasingly exploited by malware developers to evade detection and cause significant real-world problems. Traditional MBA deobfuscation methods often consider these expressions as part of a black box and overlook their internal semantic information. To bridge this gap, we propose a truth table, which is an automatically constructed semantic representation of an expression's behavior that does not rely on external resources. The truth table is a mathematical form that represents the output of expression for all possible combinations of input. We also propose a general and extensible guided MBA deobfuscation framework (gMBA) that modifies a Transformer-based neural encoder-decoder Seq2Seq architecture to incorporate this semantic guidance. Experimental results and in-depth analysis show that integrating expression semantics significantly improves performance and highlights the importance of internal semantic expressions in recovering obfuscated code to its original form.</p>
+  </section>
+</article>
+</body>
+</html>

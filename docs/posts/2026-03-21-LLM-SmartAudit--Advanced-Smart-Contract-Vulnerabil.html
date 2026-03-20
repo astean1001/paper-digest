@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM-SmartAudit: Advanced Smart Contract Vulnerability Detection</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"audit" OR ab:"signature")</span>
+    <h1>LLM-SmartAudit: Advanced Smart Contract Vulnerability Detection</h1>
+    <div class="meta">
+      <span>✍️ Zhiyuan Wei, Jing Sun, Zijiang Zhang</span>
+      <span>📅 2024-10-12</span>
+      <a href="http://arxiv.org/abs/2410.09381v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대규모 언어모델(LLM) 기반 다중 에이전트 대화 시스템을 활용하여 스마트 컨트랙트의 다양한 취약점을 기존 도구보다 높은 정확도로 탐지하는 자동화된 감사 프레임워크를 제안함.<br><br>**문제 정의**: <br>블록체인의 불변성으로 인해 스마트 컨트랙트 보안 취약점이 큰 재정적 손실을 야기하는 상황에서, 기존 도구들은 특정 유형의 취약점에만 집중하여 포괄적이고 고정확도의 취약점 탐지가 어려운 문제를 해결하고자 함.<br><br>**핵심 기여**:<br>1. **다중 에이전트 대화 시스템**: 전문화된 LLM 에이전트들이 협업하여 감사 과정을 수행하는 새로운 프레임워크 설계<br>2. **포괄적 취약점 탐지**: 전통적 도구가 놓치던 복잡한 로직 취약점까지 탐지 가능<br>3. **실증적 성능 향상**: 라벨링된 벤치마크 데이터셋과 실제 데이터셋에서 기존 모든 전통적 스마트 컨트랙트 감사 도구 대비 우수한 정확도와 효율성 입증<br><br>**의의**: <br>이 연구는 Neurosymbolic 접근법의 핵심인 기호적 추론(전문 에이전트의 협업)과 신경망 기반 학습(LLM)을 융합한 실용적 사례를 제시함. 특히 취약점 탐지 분야에서 LLM의 추론 능력과 전통적 정형 검증 방법론을 결합한 하이브리드 접근법의 가능성을 보여주어, 연구자의 관심사인 AI 기반 보안 감사 시스템 개발에 직접적인 방법론적 통찰을 제공함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The immutable nature of blockchain technology, while revolutionary, introduces significant security challenges, particularly in smart contracts. These security issues can lead to substantial financial losses. Current tools and approaches often focus on specific types of vulnerabilities. However, a comprehensive tool capable of detecting a wide range of vulnerabilities with high accuracy is lacking. This paper introduces LLM-SmartAudit, a novel framework leveraging the advanced capabilities of Large Language Models (LLMs) to detect and analyze vulnerabilities in smart contracts. Using a multi-agent conversational approach, LLM-SmartAudit employs a collaborative system with specialized agents to enhance the audit process. To evaluate the effectiveness of LLM-SmartAudit, we compiled two distinct datasets: a labeled dataset for benchmarking against traditional tools and a real-world dataset for assessing practical applications. Experimental results indicate that our solution outperforms all traditional smart contract auditing tools, offering higher accuracy and greater efficiency. Furthermore, our framework can detect complex logic vulnerabilities that traditional tools have previously overlooked. Our findings demonstrate that leveraging LLM agents provides a highly effective method for automated smart contract auditing.</p>
+  </section>
+</article>
+</body>
+</html>

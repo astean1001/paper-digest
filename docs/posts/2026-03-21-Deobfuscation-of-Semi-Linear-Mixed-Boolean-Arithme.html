@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deobfuscation of Semi-Linear Mixed Boolean-Arithmetic Expressions</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"deobfuscation" AND ab:"MBA" AND (ab:"equality saturation" OR ab:"e-graph" OR ab:"mixed boolean arithmetic")</span>
+    <h1>Deobfuscation of Semi-Linear Mixed Boolean-Arithmetic Expressions</h1>
+    <div class="meta">
+      <span>✍️ Colton Skees</span>
+      <span>📅 2024-06-14</span>
+      <a href="http://arxiv.org/abs/2406.10016v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기존 선형 MBA 난독화 해제 도구들이 처리하지 못하는 비트별 연산에 상수가 포함된 반-선형(semi-linear) MBA 표현식을 효과적으로 단순화하는 SiMBA 확장 방법을 제안한다.<br><br>**문제 정의**: <br>현재의 선형 MBA 단순화 도구들(SiMBA 등)은 1-bit 공간에서 동작하여 (x&1), (x&1111) + (y&1111)과 같이 비트별 연산자 내부에 상수가 포함된 semi-linear MBA 표현식을 처리할 수 없다는 한계가 있다.<br><br>**핵심 기여**:<br>- SiMBA 알고리즘을 확장하여 비트별 연산에 상수가 포함된 semi-linear MBA 표현식 클래스까지 단순화할 수 있는 새로운 방법론 개발<br>- 기존 도구들이 어려워하는 더 넓은 범위의 MBA 난독화 패턴을 효율적으로 처리하는 기법 제시<br>- 1-bit와 n-bit 변수 간의 변환 원리를 semi-linear 케이스로 확장<br><br>**의의**:<br>MBA 난독화 해제 연구에서 처리 가능한 표현식의 범위를 크게 확장했으며, 실제 악성코드와 소프트웨어 보호 시스템에서 널리 사용되는 복잡한 MBA 패턴들을 다룰 수 있게 되었다. 연구자의 MBA 난독화 해제 방법론 연구에서 semi-linear 표현식 처리 기법의 핵심 참고 자료로 활용할 수 있으며, 특히 상수가 포함된 복합적 MBA 패턴 분석에 직접적으로 적용 가능하다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Mixed Boolean-Arithmetic (MBA) obfuscation is a common technique used to transform simple expressions into semantically equivalent but more complex combinations of boolean and arithmetic operators. Its widespread usage in DRM systems, malware, and software protectors is well documented. In 2021, Liu et al. proposed a groundbreaking method of simplifying linear MBAs, utilizing a hidden two-way transformation between 1-bit and n-bit variables. In 2022, Reichenwallner et al. proposed a similar but more effective method of simplifying linear MBAs, SiMBA, relying on a similar but more involved theorem. However, because current linear MBA simplifiers operate in 1-bit space, they cannot handle expressions which utilize constants inside of their bitwise operands, e.g. (x&1), (x&1111) + (y&1111). We propose an extension to SiMBA that enables simplification of this broader class of expressions. It surpasses peer tools, achieving efficient simplification of a class of MBAs that current simplifiers struggle with.</p>
+  </section>
+</article>
+</body>
+</html>

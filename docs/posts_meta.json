@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-21-LLM-SmartAudit--Advanced-Smart-Contract-Vulnerabil.html",
+    "title": "LLM-SmartAudit: Advanced Smart Contract Vulnerability Detection",
+    "date": "2026-03-21",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"audit\" OR ab:\"signature\")",
+    "one_liner": "대규모 언어모델(LLM) 기반 다중 에이전트 대화 시스템을 활용하여 스마트 컨트랙트의 다양한 취약점을 기존 도구보다 높은 정확도로 탐지하는 자동화된 감사 프레임워크를 제안함.",
+    "url": "http://arxiv.org/abs/2410.09381v2"
+  },
+  {
+    "filename": "2026-03-21-Retrieval-Augmented-Generation-Integrated-Large-La.html",
+    "title": "Retrieval Augmented Generation Integrated Large Language Models in Smart Contract Vulnerability Detection",
+    "date": "2026-03-21",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"audit\" OR ab:\"signature\")",
+    "one_liner": "RAG(Retrieval-Augmented Generation)와 GPT-4를 결합하여 스마트 컨트랙트 취약점 탐지를 자동화하는 프레임워크를 제안하고, 62.7%(가이드 모드)와 60.71%(블라인드 모드)의 탐지 성공률을 달성했습니다.",
+    "url": "http://arxiv.org/abs/2407.14838v1"
+  },
+  {
+    "filename": "2026-03-21-gMBA--Expression-Semantic-Guided-Mixed-Boolean-Ari.html",
+    "title": "gMBA: Expression Semantic Guided Mixed Boolean-Arithmetic Deobfuscation Using Transformer Architectures",
+    "date": "2026-03-21",
+    "source": "arXiv",
+    "topic": "ti:\"deobfuscation\" AND ab:\"MBA\" AND (ab:\"equality saturation\" OR ab:\"e-graph\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2506.23634v1"
+  },
+  {
+    "filename": "2026-03-21-Deobfuscation-of-Semi-Linear-Mixed-Boolean-Arithme.html",
+    "title": "Deobfuscation of Semi-Linear Mixed Boolean-Arithmetic Expressions",
+    "date": "2026-03-21",
+    "source": "arXiv",
+    "topic": "ti:\"deobfuscation\" AND ab:\"MBA\" AND (ab:\"equality saturation\" OR ab:\"e-graph\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "기존 선형 MBA 난독화 해제 도구들이 처리하지 못하는 비트별 연산에 상수가 포함된 반-선형(semi-linear) MBA 표현식을 효과적으로 단순화하는 SiMBA 확장 방법을 제안한다.",
+    "url": "http://arxiv.org/abs/2406.10016v2"
+  },
+  {
+    "filename": "2026-03-21-Efficient-Deobfuscation-of-Linear-Mixed-Boolean-Ar.html",
+    "title": "Efficient Deobfuscation of Linear Mixed Boolean-Arithmetic Expressions",
+    "date": "2026-03-21",
+    "source": "arXiv",
+    "topic": "ti:\"deobfuscation\" AND ab:\"MBA\" AND (ab:\"equality saturation\" OR ab:\"e-graph\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2209.06335v1"
+  },
+  {
     "filename": "2026-03-19-SseRex--Practical-Symbolic-Execution-of-Solana-Sma.html",
     "title": "SseRex: Practical Symbolic Execution of Solana Smart Contracts",
     "date": "2026-03-19",

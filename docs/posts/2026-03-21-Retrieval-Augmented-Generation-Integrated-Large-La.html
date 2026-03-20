@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retrieval Augmented Generation Integrated Large Language Models in Smart Contract Vulnerability Detection</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"audit" OR ab:"signature")</span>
+    <h1>Retrieval Augmented Generation Integrated Large Language Models in Smart Contract Vulnerability Detection</h1>
+    <div class="meta">
+      <span>✍️ Jeffy Yu</span>
+      <span>📅 2024-07-20</span>
+      <a href="http://arxiv.org/abs/2407.14838v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: RAG(Retrieval-Augmented Generation)와 GPT-4를 결합하여 스마트 컨트랙트 취약점 탐지를 자동화하는 프레임워크를 제안하고, 62.7%(가이드 모드)와 60.71%(블라인드 모드)의 탐지 성공률을 달성했습니다.<br><br>**문제 정의**: <br>DeFi 생태계의 급속한 성장과 함께 스마트 컨트랙트 취약점으로 인한 막대한 금융 손실이 발생하고 있으나, 기존 보안 감사 서비스는 비용이 높아 독립 개발자와 소규모 기업들이 접근하기 어려운 상황을 해결하고자 했습니다.<br><br>**핵심 기여**:<br>- 830개의 알려진 취약 컨트랙트를 벡터 스토어로 구축하여 RAG 시스템 구현<br>- Pinecone(벡터 저장), OpenAI text-embedding-ada-002(임베딩), LangChain(파이프라인)을 활용한 통합 아키텍처 설계  <br>- GPT-4-1106의 128k 토큰 컨텍스트 윈도우를 활용한 대용량 컨트랙트 분석<br>- 가이드 모드(취약점 유형 힌트 제공)와 블라인드 모드(힌트 없음) 두 가지 평가 방식으로 실용성 검증<br><br>**의의**: <br>프로그램 분석과 LLM 융합 연구에서 중요한 선행 연구로, RAG를 통한 도메인 특화 지식 활용이 코드 취약점 탐지 성능을 실질적으로 향상시킬 수 있음을 실증했습니다. 특히 대규모 취약점 데이터베이스 구축과 이를 활용한 검색 증강 방식은 정적 분석 도구의 한계를 보완하는 새로운 접근법을 제시하며, 연구자의 바이트코드 분석-LLM 융합 연구에 직접적인 방법론적 통찰을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The rapid growth of Decentralized Finance (DeFi) has been accompanied by substantial financial losses due to smart contract vulnerabilities, underscoring the critical need for effective security auditing. With attacks becoming more frequent, the necessity and demand for auditing services has escalated. This especially creates a financial burden for independent developers and small businesses, who often have limited available funding for these services. Our study builds upon existing frameworks by integrating Retrieval-Augmented Generation (RAG) with large language models (LLMs), specifically employing GPT-4-1106 for its 128k token context window. We construct a vector store of 830 known vulnerable contracts, leveraging Pinecone for vector storage, OpenAI's text-embedding-ada-002 for embeddings, and LangChain to construct the RAG-LLM pipeline. Prompts were designed to provide a binary answer for vulnerability detection. We first test 52 smart contracts 40 times each against a provided vulnerability type, verifying the replicability and consistency of the RAG-LLM. Encouraging results were observed, with a 62.7% success rate in guided detection of vulnerabilities. Second, we challenge the model under a "blind" audit setup, without the vulnerability type provided in the prompt, wherein 219 contracts undergo 40 tests each. This setup evaluates the general vulnerability detection capabilities without hinted context assistance. Under these conditions, a 60.71% success rate was obser</p>
+  </section>
+</article>
+</body>
+</html>
