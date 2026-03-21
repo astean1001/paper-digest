@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Augmenting Smart Contract Decompiler Output through Fine-grained Dependency Analysis and LLM-facilitated Semantic Recovery</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"Solidity" OR ab:"EVM")</span>
+    <h1>Augmenting Smart Contract Decompiler Output through Fine-grained Dependency Analysis and LLM-facilitated Semantic Recovery</h1>
+    <div class="meta">
+      <span>✍️ Zeqin Liao, Yuhong Nan, Zixu Gao</span>
+      <span>📅 2025-01-15</span>
+      <a href="http://arxiv.org/abs/2501.08670v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트 디컴파일러의 한계를 극복하기 위해 정적 분석과 LLM을 결합한 SmartHalo 프레임워크를 제안하여 메소드 식별, 변수 타입 복구, 컨트랙트 속성 추출의 정확도를 크게 향상시켰습니다.<br><br>**문제 정의**: <br>기존 Solidity 스마트 컨트랙트 디컴파일러들이 원본 소스코드 재구성에서 보이는 핵심적인 한계점들을 해결하고자 했습니다. 특히 (1) 부정확한 메소드 식별, (2) 잘못된 변수 타입 복구, (3) 누락된 컨트랙트 속성이라는 세 가지 병목현상이 프로그램 이해와 취약점 탐지 등 하위 작업들을 크게 저해하고 있었습니다.<br><br>**핵심 기여**:<br>- **하이브리드 접근법**: 정적 분석(SA)의 제어/데이터 흐름 분석 정확성과 LLM의 의미론적 예측 능력을 상호 보완적으로 결합<br>- **새로운 데이터 구조**: Dependency Graph(DG)를 구축하여 정적 분석을 통한 의미론적 종속성 추출<br>- **검증 메커니즘**: 심볼릭 실행과 형식 검증을 통해 LLM 출력의 정확성을 보장하는 파이프라인 구축<br>- **성능 개선**: GPT-4o와 결합 시 메소드 경계 식별에서 87.39%의 정밀도 달성으로 기존 SOTA 디컴파일러(Gigahorse) 대비 유의미한 성능 향상<br><br>**의의**:<br>이 연구는 프로그램 분석 분야에서 전통적인 정적 분석 기법과 최신 LLM 기술의 효과적인 융합 사례를 제시합니다. 특히 스마트 컨트랙트의 보안 감사와 취약점 탐지 연구에 직접적으로 활용 가능하며, 바이트코드 레벨에서의 프로그램 이해도 향상을 통해 블록체인 보안 연구의 기반을 강화할 수 있습니다. LLM과 형식적 검증을 결합한 방법론은 다른 리버스 엔지니어링 도메인으로도</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Decompiler is a specialized type of reverse engineering tool extensively employed in program analysis tasks, particularly in program comprehension and vulnerability detection. However, current Solidity smart contract decompilers face significant limitations in reconstructing the original source code. In particular, the bottleneck of SOTA decompilers lies in inaccurate method identification, incorrect variable type recovery, and missing contract attributes. These deficiencies hinder downstream tasks and understanding of the program logic. To address these challenges, we propose SmartHalo, a new framework that enhances decompiler output by combining static analysis (SA) and large language models (LLM). SmartHalo leverages the complementary strengths of SA's accuracy in control and data flow analysis and LLM's capability in semantic prediction. More specifically, \system{} constructs a new data structure - Dependency Graph (DG), to extract semantic dependencies via static analysis. Then, it takes DG to create prompts for LLM optimization. Finally, the correctness of LLM outputs is validated through symbolic execution and formal verification. Evaluation on a dataset consisting of 465 randomly selected smart contract methods shows that SmartHalo significantly improves the quality of the decompiled code, compared to SOTA decompilers (e.g., Gigahorse). Notably, integrating GPT-4o with SmartHalo further enhances its performance, achieving precision rates of 87.39% for method boundari</p>
+  </section>
+</article>
+</body>
+</html>

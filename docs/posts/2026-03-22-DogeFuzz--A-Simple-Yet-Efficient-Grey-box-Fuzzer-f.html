@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DogeFuzz: A Simple Yet Efficient Grey-box Fuzzer for Ethereum Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"Solidity" OR ab:"EVM")</span>
+    <h1>DogeFuzz: A Simple Yet Efficient Grey-box Fuzzer for Ethereum Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Ismael Medeiros, Fausto Carvalho, Alexandre Ferreira</span>
+      <span>📅 2024-09-03</span>
+      <a href="http://arxiv.org/abs/2409.01788v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 단순한 그레이박스 퍼징 기법만으로도 복잡한 고급 기술을 사용하는 기존 스마트 컨트랙트 퍼저보다 우수한 성능을 달성할 수 있음을 실증적으로 보여준 연구입니다.<br><br>**문제 정의**: <br>이더리움 스마트 컨트랙트 보안 검증 분야에서 단순한 그레이박스 퍼저와 고급 기술을 활용한 퍼저 간의 성능 비교 연구가 부족하며, 복잡한 기법(심볼릭 실행, 머신러닝 등)의 실제 효과성에 대한 검증이 필요한 상황입니다.<br><br>**핵심 기여**:<br>1. **DogeFuzz 프레임워크 개발**: 확장 가능한 이더리움 스마트 컨트랙트 퍼징 인프라 구축 (블랙박스, 커버리지 기반 그레이박스, 지향성 그레이박스 퍼징 지원)<br>2. **단순함의 효과성 입증**: 고급 입력 생성 기법 없이도 sFuzz, ILF 등 최신 퍼저들을 성능상 능가<br>3. **벤치마크 기반 체계적 비교**: 기존 문헌의 벤치마크를 활용한 객관적 성능 평가 수행<br><br>**의의**: <br>스마트 컨트랙트 보안 도구 개발에서 '복잡성 vs 효율성'의 트레이드오프를 재고하게 하는 중요한 발견입니다. 연구자 입장에서는 1) 단순한 방법론도 충분히 경쟁력 있을 수 있다는 통찰 제공, 2) 기존 Slither 등 정적 분석 도구와 상호 보완적 활용 가능성, 3) EVM 바이트코드 레벨 취약점 탐지 연구의 새로운 방향성을 제시하며, 향후 도구 개발 시 성능 대비 복잡도를 고려한 설계 방향을 모색할 수 있게 합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Ethereum is a distributed, peer-to-peer blockchain infrastructure that has attracted billions of dollars. Perhaps due to its success, Ethereum has become a target for various kinds of attacks, motivating researchers to explore different techniques to identify vulnerabilities in EVM bytecode (the language of the Ethereum Virtual Machine), including formal verification, symbolic execution, and fuzz testing. Although recent studies empirically compare smart contract fuzzers, there is a lack of literature investigating how simpler greybox fuzzers compare to more advanced ones. To fill this gap, in this paper, we present DogeFuzz, an extensible infrastructure for fuzzing Ethereum smart contracts, currently supporting black-box fuzzing and two grey-box fuzzing strategies: coverage-guided grey-box fuzzing (DogeFuzz-G) and directed grey-box fuzzing (DogeFuzz-DG). We conduct a series of experiments using benchmarks already available in the literature and compare the DogeFuzz strategies with state-of-the-art fuzzers for smart contracts. Surprisingly, although DogeFuzz does not leverage advanced techniques for improving input generation (such as symbolic execution or machine learning), DogeFuzz outperforms sFuzz and ILF, two state-of-the-art fuzzers. Nonetheless, the Smartian fuzzer shows higher code coverage and bug-finding capabilities than DogeFuzz.</p>
+  </section>
+</article>
+</body>
+</html>

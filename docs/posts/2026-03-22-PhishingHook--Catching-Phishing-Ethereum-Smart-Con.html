@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhishingHook: Catching Phishing Ethereum Smart Contracts leveraging EVM Opcodes</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"Solidity" OR ab:"EVM")</span>
+    <h1>PhishingHook: Catching Phishing Ethereum Smart Contracts leveraging EVM Opcodes</h1>
+    <div class="meta">
+      <span>✍️ Pasquale De Rosa, Simon Queyrut, Yérom-David Bromberg</span>
+      <span>📅 2025-06-24</span>
+      <a href="http://arxiv.org/abs/2506.19480v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 이더리움 스마트 컨트랙트의 바이트코드와 EVM 옵코드를 직접 분석하여 피싱 스마트 컨트랙트를 탐지하는 머신러닝 기반 프레임워크 PhishingHook을 제안하고, 7,000개의 실제 악성 스마트 컨트랙트로 16가지 기법을 실험적으로 비교 평가함.<br><br>**문제 정의**: <br>기존 피싱 스마트 컨트랙트 탐지 방법들이 거래 실행 후 온라인 분석에 의존하여 민감한 사용자 데이터 노출과 보안 우려를 야기하는 문제를 해결하고, 배포 전 단계에서 피싱 활동을 사전에 탐지할 수 있는 방법론 필요.<br><br>**핵심 기여**:<br>- EVM 바이트코드와 옵코드를 직접 분석하는 정적 분석 기반의 피싱 탐지 프레임워크 개발<br>- 히스토그램 유사도 분류기, 비전 모델, 언어 모델, 취약점 탐지 모델 등 4개 카테고리의 16가지 머신러닝 기법 체계적 비교<br>- 7,000개 실제 악성 스마트 컨트랙트 데이터셋을 활용한 대규모 실험적 검증<br><br>**의의**: <br>거래 실행 없이 바이트코드 수준에서 사전 탐지가 가능하여 사용자 프라이버시 보호와 네트워크 보안성 향상에 기여하며, 연구자의 바이트코드 분석 및 취약점 탐지 연구 영역과 직접적으로 연관되어 정적 분석 기반 보안 탐지 방법론 발전에 중요한 참조점 제공.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The Ethereum Virtual Machine (EVM) is a decentralized computing engine. It enables the Ethereum blockchain to execute smart contracts and decentralized applications (dApps). The increasing adoption of Ethereum sparked the rise of phishing activities. Phishing attacks often target users through deceptive means, e.g., fake websites, wallet scams, or malicious smart contracts, aiming to steal sensitive information or funds. A timely detection of phishing activities in the EVM is therefore crucial to preserve the user trust and network integrity. Some state-of-the art approaches to phishing detection in smart contracts rely on the online analysis of transactions and their traces. However, replaying transactions often exposes sensitive user data and interactions, with several security concerns. In this work, we present PhishingHook, a framework that applies machine learning techniques to detect phishing activities in smart contracts by directly analyzing the contract's bytecode and its constituent opcodes. We evaluate the efficacy of such techniques in identifying malicious patterns, suspicious function calls, or anomalous behaviors within the contract's code itself before it is deployed or interacted with. We experimentally compare 16 techniques, belonging to four main categories (Histogram Similarity Classifiers, Vision Models, Language Models and Vulnerability Detection Models), using 7,000 real-world malware smart contracts. Our results demonstrate the efficiency of PhishingHo</p>
+  </section>
+</article>
+</body>
+</html>
