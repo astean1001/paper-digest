@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurosymbolic Retrievers for Retrieval-augmented Generation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model")</span>
+    <h1>Neurosymbolic Retrievers for Retrieval-augmented Generation</h1>
+    <div class="meta">
+      <span>✍️ Yash Saxena, Manas Gaur</span>
+      <span>📅 2026-01-08</span>
+      <a href="http://arxiv.org/abs/2601.04568v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기존 RAG 시스템의 불투명한 검색 과정 문제를 해결하기 위해 지식 그래프 기반 상징적 추론을 결합한 Neurosymbolic RAG 프레임워크를 제안함.<br><br>**문제 정의**: <br>전통적인 RAG 시스템은 retriever, re-ranker, generator가 모두 신경망 기반으로 구성되어 내부 추론 과정이 불투명하며, 이는 해석가능성 부족, 디버깅 어려움, 신뢰성 저하 문제를 야기함. 특히 고위험 도메인에서는 명확한 의사결정 근거가 필수적이나 기존 시스템으로는 이를 제공하기 어려움.<br><br>**핵심 기여**:<br>1. **MAR (Knowledge Modulation Aligned Retrieval)**: 해석가능한 상징적 특성을 사용하여 쿼리 임베딩을 정제하는 조절 네트워크 도입으로 문서 매칭 과정을 명시적으로 만듦<br>2. **KG-Path RAG**: 지식 그래프 순회를 통해 쿼리를 향상시켜 검색 품질과 해석가능성을 동시에 개선<br>3. **Process Knowledge-infused RAG**: 도메인별 도구를 활용해 검증된 워크플로우를 기반으로 검색된 콘텐츠를 재정렬<br><br>**의의**: <br>RAG 시스템의 해석가능성 한계를 극복하는 새로운 패러다임을 제시하여, 의료·법률 등 고신뢰성이 요구되는 도메인에서의 LLM 활용 가능성을 확대함. 신경-상징 결합 접근법을 통해 성능과 투명성을 동시에 달성하는 방법론적 기여가 있으며, 설명가능한 AI 연구 분야에 중요한 진전을 제공함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Retrieval Augmented Generation (RAG) has made significant strides in overcoming key limitations of large language models, such as hallucination, lack of contextual grounding, and issues with transparency. However, traditional RAG systems consist of three interconnected neural components - the retriever, re-ranker, and generator - whose internal reasoning processes remain opaque. This lack of transparency complicates interpretability, hinders debugging efforts, and erodes trust, especially in high-stakes domains where clear decision-making is essential. To address these challenges, we introduce the concept of Neurosymbolic RAG, which integrates symbolic reasoning using a knowledge graph with neural retrieval techniques. This new framework aims to answer two primary questions: (a) Can retrievers provide a clear and interpretable basis for document selection? (b) Can symbolic knowledge enhance the clarity of the retrieval process? We propose three methods to improve this integration. First is MAR (Knowledge Modulation Aligned Retrieval) that employs modulation networks to refine query embeddings using interpretable symbolic features, thereby making document matching more explicit. Second, KG-Path RAG enhances queries by traversing knowledge graphs to improve overall retrieval quality and interpretability. Lastly, Process Knowledge-infused RAG utilizes domain-specific tools to reorder retrieved content based on validated workflows. Preliminary results from mental health risk asse</p>
+  </section>
+</article>
+</body>
+</html>

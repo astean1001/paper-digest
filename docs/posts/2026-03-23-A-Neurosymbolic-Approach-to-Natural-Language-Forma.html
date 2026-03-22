@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Neurosymbolic Approach to Natural Language Formalization and Verification</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model")</span>
+    <h1>A Neurosymbolic Approach to Natural Language Formalization and Verification</h1>
+    <div class="meta">
+      <span>✍️ Sam Bayless, Stefano Buliani, Darion Cassel</span>
+      <span>📅 2025-11-12</span>
+      <a href="http://arxiv.org/abs/2511.09008v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 자연어 정책을 형식적 검증 가능한 형태로 변환하고, 추론 시점에서 자동으로 논리적 정확성을 검증하는 2단계 뉴로심볼릭 프레임워크를 제안하여 99% 이상의 건전성을 달성했다.<br><br>**문제 정의**: <br>대형 언어모델(LLM)이 자연어 해석과 추론에서 우수한 성능을 보이지만, 본질적인 확률성 때문에 엄격한 정책 하에서 운영되는 금융, 의료 등 규제 산업에서 채택이 제한되는 문제를 해결하고자 했다. 특히 자연어로 작성된 정책을 형식적으로 검증 가능한 형태로 변환하면서도 논리적 정확성을 보장하는 것이 핵심 과제였다.<br><br>**핵심 기여**:<br>1) **2단계 뉴로심볼릭 프레임워크**: (1단계) LLM과 선택적 인간 가이던스를 활용해 자연어 정책을 형식화하되 세밀한 제어 가능, (2단계) 추론 시점에서 자동형식화를 통해 자연어 명제의 논리적 정확성을 정책 대비 검증<br>2) **다중 중복 형식화 메커니즘**: 정확성이 중요한 경우 추론 시점에서 여러 번의 중복 형식화 단계를 수행하고 의미적 동등성을 교차 검증<br>3) **감사 가능한 논리적 산출물**: 검증 결과를 뒷받침하는 추적 가능한 논리적 근거를 생성하여 원본 텍스트 개선에도 활용 가능<br><br>**의의**: <br>이 연구는 LLM의 불확실성 문제를 해결하면서도 자연어 처리 능력을 활용할 수 있는 실용적 방법론을 제시한다. 특히 프로그램 합성 분야에서 자연어 명세를 형식적 명세로 변환하는 과정의 신뢰성을 크게 향상시킬 수 있으며, 규제가 엄격한 도메인에서의 AI 시스템 적용 가능성을 확장한다. 99% 이상의 건전성은 실제 산업 적용에서 요구되는 신뢰성 수준에 근접한 결과로 평가된다</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Large Language Models perform well at natural language interpretation and reasoning, but their inherent stochasticity limits their adoption in regulated industries like finance and healthcare that operate under strict policies. To address this limitation, we present a two-stage neurosymbolic framework that (1) uses LLMs with optional human guidance to formalize natural language policies, allowing fine-grained control of the formalization process, and (2) uses inference-time autoformalization to validate logical correctness of natural language statements against those policies. When correctness is paramount, we perform multiple redundant formalization steps at inference time, cross checking the formalizations for semantic equivalence. Our benchmarks demonstrate that our approach exceeds 99% soundness, indicating a near-zero false positive rate in identifying logical validity. Our approach produces auditable logical artifacts that substantiate the verification outcomes and can be used to improve the original text.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhyNiKCE: A Neurosymbolic Agentic Framework for Autonomous Computational Fluid Dynamics</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model")</span>
+    <h1>PhyNiKCE: A Neurosymbolic Agentic Framework for Autonomous Computational Fluid Dynamics</h1>
+    <div class="meta">
+      <span>✍️ E Fan, Lisong Shi, Zhengtong Li</span>
+      <span>📅 2026-02-12</span>
+      <a href="http://arxiv.org/abs/2602.11666v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 전산유체역학(CFD)에서 LLM의 확률적 특성으로 인한 물리법칙 위반 문제를 신경-기호 결합 방식으로 해결하여 자율 시뮬레이션 에이전트의 신뢰성을 크게 향상시킨 연구입니다.<br><br>**문제 정의**: <br>- CFD 자율 에이전트에서 LLM이 언어적으로는 그럴듯하지만 물리적으로는 잘못된 설정을 생성하는 "의미-물리 단절(Semantic-Physical Disconnect)" 문제<br>- 기존 RAG 방식의 "컨텍스트 중독(context poisoning)" 현상으로 인한 보존법칙 및 수치적 안정성 위반<br>- 순수 확률적 접근법으로는 물리 기반 시뮬레이션의 엄격한 제약조건 만족 불가능<br><br>**핵심 기여**:<br>- **PhyNiKCE 프레임워크**: 신경망 기반 계획(neural planning)과 기호적 검증(symbolic validation)을 분리한 neurosymbolic 접근법<br>- **결정론적 RAG 엔진**: 시뮬레이션 설정을 제약 만족 문제(CSP)로 처리하여 물리적 제약조건을 엄격히 강제<br>- **특화된 검색 전략**: 솔버, 난류 모델, 경계 조건에 대한 전문적 지식 검색 메커니즘<br>- **성능 향상**: 기존 방법 대비 96% 상대적 개선, 자율 자기교정 루프 59% 감소, LLM 토큰 소비 17% 절약<br><br>**의의**: <br>이 연구는 LLM을 과학/공학 시뮬레이션에 적용할 때 발생하는 근본적 한계를 체계적으로 해결한 선구적 사례로, 물리적 정확성과 AI 자율성을 동시에 확보하는 방법론을 제시합니다. 특히 도메인 특화 지식과 LLM의 일반적 추론 능력을 효과적으로 결합하는 접근법은 다른 과학 계산 영역에도 적용 가능한 중요한 패러다임을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The deployment of autonomous agents for Computational Fluid Dynamics (CFD), is critically limited by the probabilistic nature of Large Language Models (LLMs), which struggle to enforce the strict conservation laws and numerical stability required for physics-based simulations. Reliance on purely semantic Retrieval Augmented Generation (RAG) often leads to "context poisoning," where agents generate linguistically plausible but physically invalid configurations due to a fundamental Semantic-Physical Disconnect. To bridge this gap, this work introduces PhyNiKCE (Physical and Numerical Knowledgeable Context Engineering), a neurosymbolic agentic framework for trustworthy engineering. Unlike standard black-box agents, PhyNiKCE decouples neural planning from symbolic validation. It employs a Symbolic Knowledge Engine that treats simulation setup as a Constraint Satisfaction Problem, rigidly enforcing physical constraints via a Deterministic RAG Engine with specialized retrieval strategies for solvers, turbulence models, and boundary conditions. Validated through rigorous OpenFOAM experiments on practical, non-tutorial CFD tasks using Gemini-2.5-Pro/Flash, PhyNiKCE demonstrates a 96% relative improvement over state-of-the-art baselines. Furthermore, by replacing trial-and-error with knowledge-driven initialization, the framework reduced autonomous self-correction loops by 59% while simultaneously lowering LLM token consumption by 17%. These results demonstrate that decoupling neural </p>
+  </section>
+</article>
+</body>
+</html>

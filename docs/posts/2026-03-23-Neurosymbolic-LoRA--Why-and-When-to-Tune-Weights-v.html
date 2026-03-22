@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurosymbolic LoRA: Why and When to Tune Weights vs. Rewrite Prompts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model")</span>
+    <h1>Neurosymbolic LoRA: Why and When to Tune Weights vs. Rewrite Prompts</h1>
+    <div class="meta">
+      <span>✍️ Kevin Wang, Neel P. Bhatt, Cong Liu</span>
+      <span>📅 2026-01-19</span>
+      <a href="http://arxiv.org/abs/2601.12711v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대규모 언어모델의 적응에서 수치적 파라미터 업데이트(LoRA)와 기호적 프롬프트 조작(TextGrad)을 언제 어떻게 사용할지 동적으로 결정하는 통합 프레임워크를 제시한 연구<br><br>**문제 정의**: <br>기존 LLM 적응 방법들이 수치적 fine-tuning(새로운 지식 주입에 효과적)과 기호적 조작(스타일/정렬 제어에 유연함) 중 하나만 사용하여 각각의 한계를 가지고 있었음. 언제 어떤 방법을 사용해야 최적인지에 대한 체계적 가이드라인이 부족했음.<br><br>**핵심 기여**:<br>1. **통합 모니터링 신호**: 수치적/기호적 업데이트 중 어느 것을 사용할지 결정하는 보상 기반 분류기 개발<br>2. **동적 선택 메커니즘**: 깊은 사실적 재구성이 필요할 때는 LoRA, 토큰 수준 편집이 필요할 때는 TextGrad 자동 선택<br>3. **메모리 효율성**: 필요시에만 외부 LLM에 기호적 변환을 위임하여 효율성 확보<br>4. **데이터 재활용**: 기호적 편집 과정에서 생성된 정제된 프롬프트를 고품질 훈련 데이터로 재사용<br><br>**의의**: <br>이 연구는 LLM 적응에서 "언제 무엇을 사용할 것인가"라는 핵심적인 실용 문제에 체계적 해답을 제시함. 특히 수학적 추론과 같은 데이터 부족 도메인에서 중요한 의미를 가지며, 향후 neurosymbolic AI 연구에서 numerical과 symbolic 접근법의 최적 결합 전략 수립에 중요한 기준점이 될 것으로 예상됨.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Large language models (LLMs) can be adapted either through numerical updates that alter model parameters or symbolic manipulations that work on discrete prompts or logical constraints. While numerical fine-tuning excels at injecting new factual knowledge, symbolic updates offer flexible control of style and alignment without retraining. We introduce a neurosymbolic LoRA framework that dynamically combines these two complementary strategies. Specifically, we present a unified monitoring signal and a reward-based classifier to decide when to employ LoRA for deeper factual reconstruction and when to apply TextGrad for token-level edits. Our approach remains memory-efficient by offloading the symbolic transformations to an external LLM only when needed. Additionally, the refined prompts produced during symbolic editing serve as high-quality, reusable training data, an important benefit in data-scarce domains like mathematical reasoning. Extensive experiments across multiple LLM backbones show that neurosymbolic LoRA consistently outperforms purely numerical or purely symbolic baselines, demonstrating superior adaptability and improved performance. Our findings highlight the value of interleaving numerical and symbolic updates to unlock a new level of versatility in language model fine-tuning.</p>
+  </section>
+</article>
+</body>
+</html>

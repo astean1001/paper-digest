@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-23-Agentic-Neurosymbolic-Collaboration-for-Mathematic.html",
+    "title": "Agentic Neurosymbolic Collaboration for Mathematical Discovery: A Case Study in Combinatorial Design",
+    "date": "2026-03-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2603.08322v1"
+  },
+  {
+    "filename": "2026-03-23-PhyNiKCE--A-Neurosymbolic-Agentic-Framework-for-Au.html",
+    "title": "PhyNiKCE: A Neurosymbolic Agentic Framework for Autonomous Computational Fluid Dynamics",
+    "date": "2026-03-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\")",
+    "one_liner": "전산유체역학(CFD)에서 LLM의 확률적 특성으로 인한 물리법칙 위반 문제를 신경-기호 결합 방식으로 해결하여 자율 시뮬레이션 에이전트의 신뢰성을 크게 향상시킨 연구입니다.",
+    "url": "http://arxiv.org/abs/2602.11666v1"
+  },
+  {
+    "filename": "2026-03-23-Neurosymbolic-LoRA--Why-and-When-to-Tune-Weights-v.html",
+    "title": "Neurosymbolic LoRA: Why and When to Tune Weights vs. Rewrite Prompts",
+    "date": "2026-03-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\")",
+    "one_liner": "대규모 언어모델의 적응에서 수치적 파라미터 업데이트(LoRA)와 기호적 프롬프트 조작(TextGrad)을 언제 어떻게 사용할지 동적으로 결정하는 통합 프레임워크를 제시한 연구",
+    "url": "http://arxiv.org/abs/2601.12711v1"
+  },
+  {
+    "filename": "2026-03-23-Neurosymbolic-Retrievers-for-Retrieval-augmented-G.html",
+    "title": "Neurosymbolic Retrievers for Retrieval-augmented Generation",
+    "date": "2026-03-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\")",
+    "one_liner": "기존 RAG 시스템의 불투명한 검색 과정 문제를 해결하기 위해 지식 그래프 기반 상징적 추론을 결합한 Neurosymbolic RAG 프레임워크를 제안함.",
+    "url": "http://arxiv.org/abs/2601.04568v2"
+  },
+  {
+    "filename": "2026-03-23-A-Neurosymbolic-Approach-to-Natural-Language-Forma.html",
+    "title": "A Neurosymbolic Approach to Natural Language Formalization and Verification",
+    "date": "2026-03-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\")",
+    "one_liner": "자연어 정책을 형식적 검증 가능한 형태로 변환하고, 추론 시점에서 자동으로 논리적 정확성을 검증하는 2단계 뉴로심볼릭 프레임워크를 제안하여 99% 이상의 건전성을 달성했다.",
+    "url": "http://arxiv.org/abs/2511.09008v1"
+  },
+  {
     "filename": "2026-03-22-PhishingHook--Catching-Phishing-Ethereum-Smart-Con.html",
     "title": "PhishingHook: Catching Phishing Ethereum Smart Contracts leveraging EVM Opcodes",
     "date": "2026-03-22",
