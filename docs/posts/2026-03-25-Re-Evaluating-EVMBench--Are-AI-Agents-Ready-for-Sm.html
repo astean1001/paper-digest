@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Re-Evaluating EVMBench: Are AI Agents Ready for Smart Contract Security?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"formal verification" OR ab:"audit")</span>
+    <h1>Re-Evaluating EVMBench: Are AI Agents Ready for Smart Contract Security?</h1>
+    <div class="meta">
+      <span>✍️ Chaoyuan Peng, Lei Wu, Yajin Zhou</span>
+      <span>📅 2026-03-11</span>
+      <a href="http://arxiv.org/abs/2603.10795v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: OpenAI 등이 발표한 AI 에이전트 스마트 컨트랙트 보안 벤치마크(EVMbench)의 한계를 지적하고, 더 엄격한 평가를 통해 완전 자동화된 AI 감사가 아직 현실적이지 않음을 입증한 연구.<br><br>**문제 정의**: <br>EVMbench가 AI 에이전트의 스마트 컨트랙트 보안 성능을 과대평가했을 가능성을 검증하고, 보다 객관적이고 포괄적인 평가 기준을 제시하여 AI 기반 자동 감사의 실제 한계를 파악하고자 함.<br><br>**핵심 기여**: <br>1. **평가 범위 확장**: 기존 14개에서 26개 에이전트 구성으로 확대하고, 4개 모델군과 3개 스캐폴드 조합으로 다각도 분석<br>2. **데이터 오염 제거**: 모든 모델의 출시일 이후 발생한 22개 실제 보안 사고로 구성된 contamination-free 데이터셋 구축<br>3. **3가지 핵심 발견**: (1) 에이전트 성능의 불안정성 입증, (2) 실제 환경에서 end-to-end 익스플로잇 실패율 100% 확인, (3) 스캐폴딩 선택이 결과에 미치는 중대한 영향 발견<br><br>**의의**: <br>AI 기반 스마트 컨트랙트 자동 감사 연구의 현실적 한계를 제시하여 과도한 기대를 조정하고, 향후 연구 방향을 재정립하는 데 중요한 기준점을 제공함. 특히 자동화된 audit 방법론 연구에서 벤치마크 설계 시 고려해야 할 핵심 요소들(데이터 오염, 스캐폴딩 영향, 평가 안정성)을 명확히 제시하여 연구의 신뢰성 향상에 기여함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>EVMbench, released by OpenAI, Paradigm, and OtterSec, is the first large-scale benchmark for AI agents on smart contract security. Its results -- agents detect up to 45.6% of vulnerabilities and exploit 72.2% of a curated subset -- have fueled expectations that fully automated AI auditing is within reach. We identify two limitations: its narrow evaluation scope (14 agent configurations, most models tested on only their vendor scaffold) and its reliance on audit-contest data published before every model's release that models may have seen during training. To address these, we expand to 26 configurations across four model families and three scaffolds, and introduce a contamination-free dataset of 22 real-world security incidents postdating every model's release date. Our evaluation yields three findings: (1) agents' detection results are not stable, with rankings shifting across configurations, tasks, and datasets; (2) on real-world incidents, no agent succeeds at end-to-end exploitation across all 110 agent-incident pairs despite detecting up to 65% of vulnerabilities, contradicting EVMbench's conclusion that discovery is the primary bottleneck; and (3) scaffolding materially affects results, with an open-source scaffold outperforming vendor alternatives by up to 5 percentage points, yet EVMbench does not control for this. These findings challenge the narrative that fully automated AI auditing is imminent. Agents reliably catch well-known patterns and respond strongly to human</p>
+  </section>
+</article>
+</body>
+</html>

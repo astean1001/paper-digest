@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LogicScan: An LLM-driven Framework for Detecting Business Logic Vulnerabilities in Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"formal verification" OR ab:"audit")</span>
+    <h1>LogicScan: An LLM-driven Framework for Detecting Business Logic Vulnerabilities in Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Jiaqi Gao, Zijian Zhang, Yuqiang Sun</span>
+      <span>📅 2026-02-03</span>
+      <a href="http://arxiv.org/abs/2602.03271v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대규모 온체인 스마트 컨트랙트에서 비즈니스 불변조건을 자동으로 추출하여 LLM 기반 대조 감사를 통해 비즈니스 로직 취약점을 탐지하는 LogicScan 프레임워크를 제안했습니다.<br><br>**문제 정의**: <br>기존 정적 분석 기법은 재진입(reentrancy)이나 산술 오류 같은 전통적 취약점은 잘 탐지하지만, 프로토콜 의미론과 밀접하게 연관된 비즈니스 로직 취약점(누락되거나 잘못 구현된 비즈니스 불변조건)을 포착하지 못하는 한계가 있습니다. 또한 최근 LLM 기반 접근법들은 환각(hallucination) 현象과 제한적 검증으로 인해 불안정한 출력과 낮은 정확도 문제를 겪고 있습니다.<br><br>**핵심 기여**: <br>1) **대조 감사(Contrastive Auditing)**: 성숙하고 널리 배포된 온체인 프로토콜들이 암묵적으로 인코딩한 검증된 비즈니스 불변조건을 체계적으로 마이닝하여 참조 제약조건으로 활용<br>2) **비즈니스 명세 언어(BSL)**: 다양한 구현 패턴을 구조화된 검증 가능한 로직 표현으로 정규화<br>3) **노이즈 인식 로직 집계**: LLM 유발 거짓양성을 완화하면서 누락되거나 약하게 시행된 불변조건을 식별<br><br>**의의**: <br>프로그램 분석과 LLM을 실용적으로 융합한 혁신적 사례로, 기존 정적 분석의 한계를 보완하면서 LLM의 환각 문제를 완화하는 구체적 해결책을 제시합니다. 특히 대규모 온체인 데이터를 활용한 집단지성 기반 접근법은 스마트 컨트랙트 보안 연구뿐만 아니라 일반적인 소프트웨어 취약점 탐지 연구에도 새로운 패러다임을 제공할 수 있습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Business logic vulnerabilities have become one of the most damaging yet least understood classes of smart contract vulnerabilities. Unlike traditional bugs such as reentrancy or arithmetic errors, these vulnerabilities arise from missing or incorrectly enforced business invariants and are tightly coupled with protocol semantics. Existing static analysis techniques struggle to capture such high-level logic, while recent large language model based approaches often suffer from unstable outputs and low accuracy due to hallucination and limited verification.
+  In this paper, we propose LogicScan, an automated contrastive auditing framework for detecting business logic vulnerabilities in smart contracts. The key insight behind LogicScan is that mature, widely deployed on-chain protocols implicitly encode well-tested and consensus-driven business invariants. LogicScan systematically mines these invariants from large-scale on-chain contracts and reuses them as reference constraints to audit target contracts. To achieve this, LogicScan introduces a Business Specification Language (BSL) to normalize diverse implementation patterns into structured, verifiable logic representations. It further combines noise-aware logic aggregation with contrastive auditing to identify missing or weakly enforced invariants while mitigating LLM-induced false positives.
+  We evaluate LogicScan on three real-world datasets, including DeFiHacks, Web3Bugs, and a set of top-200 audited contracts. The results s</p>
+  </section>
+</article>
+</body>
+</html>

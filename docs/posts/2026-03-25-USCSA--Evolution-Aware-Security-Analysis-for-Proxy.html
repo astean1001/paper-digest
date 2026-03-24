@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USCSA: Evolution-Aware Security Analysis for Proxy-Based Upgradeable Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"formal verification" OR ab:"audit")</span>
+    <h1>USCSA: Evolution-Aware Security Analysis for Proxy-Based Upgradeable Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Xiaoqi Li, Lei Xie, Wenkai Li</span>
+      <span>📅 2025-12-09</span>
+      <a href="http://arxiv.org/abs/2512.08372v3" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 프록시 기반 업그레이드 가능한 스마트 컨트랙트에서 업그레이드 과정에서 발생하는 새로운 취약점을 탐지하기 위해 AST 차분 분석과 LLM을 결합한 진화 인식 보안 분석 도구 USCSA를 제안함.<br><br>**문제 정의**: <br>기존 정적 분석 도구들은 스마트 컨트랙트의 단일 버전만을 스캔하여 업그레이드 과정에서 코드 변경과 새로운 위험 간의 상관관계를 포착하지 못하며, 업그레이드 작업이 종종 새로운 취약점을 도입하는 문제를 해결하지 못함.<br><br>**핵심 기여**:<br>1. **AST 차분 분석**: 업그레이드 전후 버전 간의 Abstract Syntax Tree 차이를 분석하여 업그레이드로 인한 위험을 평가<br>2. **LLM 보조 추론**: 대규모 언어 모델을 활용하여 고신뢰도 취약점 귀속 분석 수행<br>3. **성능 검증**: 3,546개의 업그레이드 가능한 컨트랙트 취약점 사례를 분석하여 정밀도 92.26%, 재현율 89.67%, F1-점수 90.95% 달성<br><br>**의의**: <br>스마트 컨트랙트 보안 감사 분야에서 기존의 정적 분석을 넘어 진화적 관점을 도입한 혁신적 접근법으로, 특히 DeFi 프로토콜의 업그레이드 보안성 검증에 실용적 가치가 높음. 코드 변경 추적과 AI 기반 취약점 분석의 결합은 향후 동적 분석 및 형식 검증 연구와의 융합 가능성을 제시함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In the case of upgrading smart contracts on blockchain systems, it is essential to consider the continuity of upgrades and subsequent maintenance. In practice, upgrade operations often introduce new vulnerabilities. Existing static analysis tools usually only scan a single version and are unable to capture the correlation between code changes and emerging risks. To address this, we propose an Upgradeable Smart Contract Security Analyzer, USCSA, which uses Abstract Syntax Tree (AST) difference analysis to assess risks associated with the upgrade process and utilizes large language models (LLMs) for assisted reasoning to achieve high-confidence vulnerability attribution. We collected and analyzed 3,546 cases of vulnerabilities in upgradeable contracts, covering common vulnerability categories such as reentrancy, access control flaws, and integer overflow. Experimental results show that USCSA achieves a precision of 92.26%, a recall of 89.67%, and an F1-score of 90.95% in detecting upgrade-induced vulnerabilities. As a result, USCSA provides a significant advantage to improve the security and integrity of upgradeable smart contracts, offering a novel and efficient solution for security auditing on blockchain applications.</p>
+  </section>
+</article>
+</body>
+</html>

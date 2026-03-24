@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPEAR: An Engineering Case Study of Multi-Agent Coordination for Smart Contract Auditing</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"formal verification" OR ab:"audit")</span>
+    <h1>SPEAR: An Engineering Case Study of Multi-Agent Coordination for Smart Contract Auditing</h1>
+    <div class="meta">
+      <span>✍️ Arnab Mallick, Indraveni Chebolu, Harmesh Rana</span>
+      <span>📅 2026-02-04</span>
+      <a href="http://arxiv.org/abs/2602.04418v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>스마트 컨트랙트 보안 감사를 위한 다중 에이전트 협업 프레임워크 SPEAR를 제안하여, 계획-실행-복구 에이전트가 역할을 분담해 자동화된 보안 분석을 수행하는 시스템을 개발했습니다.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 보안 감사 프로세스는 중앙집중식 또는 단순 파이프라인 구조로 인해 복잡한 보안 분석 작업을 효율적으로 처리하지 못하고, 실패 상황에 대한 복구 능력이 부족한 문제가 있었습니다.<br><br>**핵심 기여**:<br>- **특화된 에이전트 역할 분담**: Planning Agent(위험 기반 우선순위 설정), Execution Agent(Contract Net 프로토콜을 통한 작업 할당), Repair Agent(자율적 오류 복구)로 구성된 협업 구조<br>- **AGM 준수 신념 갱신**: 각 에이전트가 새로운 정보에 따라 로컬 신념을 체계적으로 업데이트하는 메커니즘<br>- **실증적 성능 비교**: 제어된 실패 시나리오 하에서 중앙집중식 및 파이프라인 기반 대안과의 협업, 복구 행동, 자원 사용량 비교 분석<br><br>**의의**: <br>이 연구는 블록체인 보안 분야에서 다중 에이전트 시스템의 실용적 적용 가능성을 입증했으며, 특히 스마트 컨트랙트 자동 감사 도구 개발에 있어 확장 가능하고 내결함성을 갖춘 아키텍처 설계의 새로운 방향을 제시합니다. 자동화된 보안 분석 시스템이나 분산 보안 도구 연구에 직접적으로 활용할 수 있는 프레임워크를 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We present SPEAR, a multi-agent coordination framework for smart contract auditing that applies established MAS patterns in a realistic security analysis workflow. SPEAR models auditing as a coordinated mission carried out by specialized agents: a Planning Agent prioritizes contracts using risk-aware heuristics, an Execution Agent allocates tasks via the Contract Net protocol, and a Repair Agent autonomously recovers from brittle generated artifacts using a programmatic-first repair policy. Agents maintain local beliefs updated through AGM-compliant revision, coordinate via negotiation and auction protocols, and revise plans as new information becomes available. An empirical study compares the multi-agent design with centralized and pipeline-based alternatives under controlled failure scenarios, focusing on coordination, recovery behavior, and resource use.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-25-Zero-Shot-Vulnerability-Detection-in-Low-Resource.html",
+    "title": "Zero-Shot Vulnerability Detection in Low-Resource Smart Contracts Through Solidity-Only Training",
+    "date": "2026-03-25",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"formal verification\" OR ab:\"audit\")",
+    "one_liner": "Solidity로만 학습한 모델을 Vyper 스마트 컨트랙트의 취약점 탐지에 적용하는 Zero-Shot 교차 언어 지식 전이 프레임워크 Sol2Vy를 제안하여, 라벨링된 데이터가 부족한 저자원 언어의 보안 분석 문제를 해결했다.",
+    "url": "http://arxiv.org/abs/2603.21058v1"
+  },
+  {
+    "filename": "2026-03-25-Re-Evaluating-EVMBench--Are-AI-Agents-Ready-for-Sm.html",
+    "title": "Re-Evaluating EVMBench: Are AI Agents Ready for Smart Contract Security?",
+    "date": "2026-03-25",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"formal verification\" OR ab:\"audit\")",
+    "one_liner": "OpenAI 등이 발표한 AI 에이전트 스마트 컨트랙트 보안 벤치마크(EVMbench)의 한계를 지적하고, 더 엄격한 평가를 통해 완전 자동화된 AI 감사가 아직 현실적이지 않음을 입증한 연구.",
+    "url": "http://arxiv.org/abs/2603.10795v1"
+  },
+  {
+    "filename": "2026-03-25-SPEAR--An-Engineering-Case-Study-of-Multi-Agent-Co.html",
+    "title": "SPEAR: An Engineering Case Study of Multi-Agent Coordination for Smart Contract Auditing",
+    "date": "2026-03-25",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"formal verification\" OR ab:\"audit\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2602.04418v1"
+  },
+  {
+    "filename": "2026-03-25-LogicScan--An-LLM-driven-Framework-for-Detecting-B.html",
+    "title": "LogicScan: An LLM-driven Framework for Detecting Business Logic Vulnerabilities in Smart Contracts",
+    "date": "2026-03-25",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"formal verification\" OR ab:\"audit\")",
+    "one_liner": "대규모 온체인 스마트 컨트랙트에서 비즈니스 불변조건을 자동으로 추출하여 LLM 기반 대조 감사를 통해 비즈니스 로직 취약점을 탐지하는 LogicScan 프레임워크를 제안했습니다.",
+    "url": "http://arxiv.org/abs/2602.03271v1"
+  },
+  {
+    "filename": "2026-03-25-USCSA--Evolution-Aware-Security-Analysis-for-Proxy.html",
+    "title": "USCSA: Evolution-Aware Security Analysis for Proxy-Based Upgradeable Smart Contracts",
+    "date": "2026-03-25",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"formal verification\" OR ab:\"audit\")",
+    "one_liner": "프록시 기반 업그레이드 가능한 스마트 컨트랙트에서 업그레이드 과정에서 발생하는 새로운 취약점을 탐지하기 위해 AST 차분 분석과 LLM을 결합한 진화 인식 보안 분석 도구 USCSA를 제안함.",
+    "url": "http://arxiv.org/abs/2512.08372v3"
+  },
+  {
     "filename": "2026-03-23-Agentic-Neurosymbolic-Collaboration-for-Mathematic.html",
     "title": "Agentic Neurosymbolic Collaboration for Mathematical Discovery: A Case Study in Combinatorial Design",
     "date": "2026-03-23",
