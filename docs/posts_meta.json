@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-03-26-Benchmarking-Zero-Shot-Reasoning-Approaches-for-Er.html",
+    "title": "Benchmarking Zero-Shot Reasoning Approaches for Error Detection in Solidity Smart Contracts",
+    "date": "2026-03-26",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "Solidity 스마트 컨트랙트 취약점 탐지에서 GPT, Claude 등 최신 LLM의 제로샷 추론 성능을 체계적으로 벤치마킹하고, Chain-of-Thought와 Tree-of-Thought 프롬프팅 전략의 효과를 정량적으로 분석한 연구입니다.",
+    "url": "http://arxiv.org/abs/2603.13239v2"
+  },
+  {
     "filename": "2026-03-25-Zero-Shot-Vulnerability-Detection-in-Low-Resource.html",
     "title": "Zero-Shot Vulnerability Detection in Low-Resource Smart Contracts Through Solidity-Only Training",
     "date": "2026-03-25",

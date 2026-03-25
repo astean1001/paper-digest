@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benchmarking Zero-Shot Reasoning Approaches for Error Detection in Solidity Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>Benchmarking Zero-Shot Reasoning Approaches for Error Detection in Solidity Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Eduardo Sardenberg, Antonio José Grandson Busson, Daniel de Sousa Moraes</span>
+      <span>📅 2026-02-17</span>
+      <a href="http://arxiv.org/abs/2603.13239v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Solidity 스마트 컨트랙트 취약점 탐지에서 GPT, Claude 등 최신 LLM의 제로샷 추론 성능을 체계적으로 벤치마킹하고, Chain-of-Thought와 Tree-of-Thought 프롬프팅 전략의 효과를 정량적으로 분석한 연구입니다.<br><br>**문제 정의**: <br>스마트 컨트랙트의 보안 취약점이 심각한 금전적 손실을 야기하는 상황에서, LLM을 활용한 자동화된 취약점 탐지의 가능성은 제시되었으나, 실제 환경에서 어떤 모델과 프롬프팅 전략이 가장 효과적인지에 대한 체계적인 평가가 부족했습니다.<br><br>**핵심 기여**:<br>- 400개 Solidity 컨트랙트 균형 데이터셋으로 Error Detection(이진 분류)과 Error Classification(취약점 유형 분류) 두 태스크 설계<br>- Zero-shot, Chain-of-Thought(CoT), Tree-of-Thought(ToT) 세 가지 프롬프팅 전략의 성능 비교<br>- CoT/ToT가 재현율을 95-99%까지 대폭 향상시키지만 정밀도는 감소시켜 false positive 증가하는 트레이드오프 발견<br>- Error Classification에서 Claude 3 Opus + ToT 조합이 90.8 Weighted F1-score로 최고 성능 달성<br><br>**의의**: <br>스마트 컨트랙트 보안 연구에서 LLM 활용의 실용적 가이드라인을 제시하며, 특히 프롬프팅 전략이 성능에 미치는 구체적 영향을 정량화했습니다. 연구자의 스마트 컨트랙트 보안과 LLM 융합 연구에 직접적인 방법론적 기준점과 벤치마크를 제공하여, 후속 연구에서 모델 선택과 프롬프팅 설계 시 참고할 수 있는 실증적 근거를 마련했습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contracts play a central role in blockchain systems by encoding financial and operational logic. Still, their susceptibility to subtle security flaws poses significant risks of financial loss and erosion of trust. LLMs create new opportunities for automating vulnerability detection, yet the effectiveness of different prompting strategies and model choices in real-world contexts remains uncertain. This paper evaluates state-of-the-art LLMs on Solidity smart contract analysis using a balanced dataset of 400 contracts under two tasks: (i) Error Detection, where the model performs binary classification to decide whether a contract is vulnerable, and (ii) Error Classification, where the model must assign the predicted issue to a specific vulnerability category. Models are evaluated using zero-shot prompting strategies, including zero-shot, zero-shot Chain-of-Thought (CoT), and zero-shot Tree-of-Thought (ToT). In the Error Detection task, CoT and ToT substantially increase recall (often approaching ~ 95--99%), but typically reduce precision, indicating a more sensitive decision regime with more false positives. In the Error Classification task, Claude 3 Opus attains the best Weighted F1-score (90.8) under the ToT prompt, followed closely by its CoT.</p>
+  </section>
+</article>
+</body>
+</html>
