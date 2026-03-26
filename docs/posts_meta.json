@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-03-27-Computation-Tree-Logic-Guided-Program-Repair.html",
+    "title": "Computation Tree Logic Guided Program Repair",
+    "date": "2026-03-27",
+    "source": "arXiv",
+    "topic": "ti:\"program repair\" AND ab:\"symbolic execution\" AND (ab:\"loop\" OR ab:\"constraint\")",
+    "one_liner": "CTL(Computation Tree Logic) 속성을 활용해 테스트 스위트 기반 수정의 과적합 문제를 해결하는 새로운 자동 프로그램 수정 프레임워크를 제시함.",
+    "url": "http://arxiv.org/abs/2502.15344v1"
+  },
+  {
     "filename": "2026-03-26-Benchmarking-Zero-Shot-Reasoning-Approaches-for-Er.html",
     "title": "Benchmarking Zero-Shot Reasoning Approaches for Error Detection in Solidity Smart Contracts",
     "date": "2026-03-26",

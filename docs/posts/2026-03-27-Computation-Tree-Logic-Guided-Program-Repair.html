@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computation Tree Logic Guided Program Repair</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"program repair" AND ab:"symbolic execution" AND (ab:"loop" OR ab:"constraint")</span>
+    <h1>Computation Tree Logic Guided Program Repair</h1>
+    <div class="meta">
+      <span>✍️ Yu Liu, Yahui Song, Martin Mirchev</span>
+      <span>📅 2025-02-21</span>
+      <a href="http://arxiv.org/abs/2502.15344v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: CTL(Computation Tree Logic) 속성을 활용해 테스트 스위트 기반 수정의 과적합 문제를 해결하는 새로운 자동 프로그램 수정 프레임워크를 제시함.<br><br>**문제 정의**: <br>기존 테스트 스위트 기반 프로그램 수정 방법은 주어진 테스트만 통과하고 다른 입력에서는 실패하는 과적합 문제가 발생함. 또한 도달가능성, 종료성, 불변성, 응답성 등 테스트하기 어려운 시간적 속성들을 다루기 어려움.<br><br>**핵심 기여**:<br>1. **CTL 기반 수정 프레임워크**: Datalog를 기반으로 CTL 속성을 통해 프로그램을 수정하는 메커니즘 개발<br>2. **SEDL 확장**: 기존 Symbolic Execution of Datalog(SEDL)를 계층화된(stratified) Datalog로 확장하여 CTL 표현 지원<br>3. **루프 요약 기법**: 무한 계산이 포함된 liveness 속성 위반을 처리하기 위한 새로운 루프 요약 방법론<br>4. **성능 개선**: 소규모 벤치마크에서 56.6%, 실제 벤치마크에서 88.5%의 분석 정확도 달성<br><br>**의의**: <br>형식 검증과 자동 프로그램 수정을 결합한 접근법으로, 테스트 기반 수정의 한계를 극복하고 시간적 논리를 활용한 더 강건한 수정을 가능하게 함. 특히 루프와 제약 조건이 포함된 복잡한 프로그램의 자동 수정 연구에 새로운 방향성을 제시하며, 형식 명세 기반 프로그램 검증 및 수정 연구 분야의 발전에 기여함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Temporal logics like Computation Tree Logic (CTL) have been widely used as expressive formalisms to capture rich behavioral specifications. CTL can express properties such as reachability, termination, invariants and responsiveness, which are difficult to test. This paper suggests a mechanism for the automated repair of infinite-state programs guided by CTL properties. Our produced patches avoid the overfitting issue that occurs in test-suite-guided repair, where the repaired code may not pass tests outside the given test suite. To realize this vision, we propose a repair framework based on Datalog, a widely used domain-specific language for program analysis, which readily supports nested fixed-point semantics of CTL via stratified negation. Specifically, our framework encodes the program and CTL properties into Datalog facts and rules and performs the repair by modifying the facts to pass the analysis rules. Previous research proposed a generic repair mechanism for Datalog-based analysis in the form of Symbolic Execution of Datalog (SEDL). However, SEDL only supports positive Datalog, which is insufficient for expressing CTL properties. Thus, we extended SEDL to make it applicable to stratified Datalog. Moreover, liveness property violations involve infinite computations, which we handle via a novel loop summarization. Our approach achieves analysis accuracy of 56.6% on a small-scale benchmark and 88.5% on a real-world benchmark, outperforming the best baseline performances </p>
+  </section>
+</article>
+</body>
+</html>
