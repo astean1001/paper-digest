@@ -1,5 +1,32 @@
 [
   {
+    "filename": "2026-03-28-eqsat--An-Equality-Saturation-Dialect-for-Non-dest.html",
+    "title": "eqsat: An Equality Saturation Dialect for Non-destructive Rewriting",
+    "date": "2026-03-28",
+    "source": "arXiv",
+    "topic": "(ti:\"equality saturation\" OR ti:\"e-graph\") AND ab:\"program synthesis\"",
+    "one_liner": "LLVM MLIR 프레임워크에 e-graph를 네이티브하게 표현하는 eqsat 방언을 제안하여, 컴파일러 중간표현 수준에서 equality saturation을 비파괴적으로 수행할 수 있는 새로운 접근법을 제시했다.",
+    "url": "http://arxiv.org/abs/2505.09363v2"
+  },
+  {
+    "filename": "2026-03-28-Scaling-Program-Synthesis-Based-Technology-Mapping.html",
+    "title": "Scaling Program Synthesis Based Technology Mapping with Equality Saturation",
+    "date": "2026-03-28",
+    "source": "arXiv",
+    "topic": "(ti:\"equality saturation\" OR ti:\"e-graph\") AND ab:\"program synthesis\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2411.11036v2"
+  },
+  {
+    "filename": "2026-03-28-Synthesizing-Structured-CAD-Models-with-Equality-S.html",
+    "title": "Synthesizing Structured CAD Models with Equality Saturation and Inverse Transformations",
+    "date": "2026-03-28",
+    "source": "arXiv",
+    "topic": "(ti:\"equality saturation\" OR ti:\"e-graph\") AND ab:\"program synthesis\"",
+    "one_liner": "3D 메시를 CSG 표현식으로 역컴파일할 때 생성되는 비구조적 코드를 Equality Saturation과 역변환을 활용해 편집 가능한 구조화된 프로그램으로 변환하는 도구 Szalinski를 제안한다.",
+    "url": "http://arxiv.org/abs/1909.12252v3"
+  },
+  {
     "filename": "2026-03-27-Computation-Tree-Logic-Guided-Program-Repair.html",
     "title": "Computation Tree Logic Guided Program Repair",
     "date": "2026-03-27",

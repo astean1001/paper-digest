@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scaling Program Synthesis Based Technology Mapping with Equality Saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"equality saturation" OR ti:"e-graph") AND ab:"program synthesis"</span>
+    <h1>Scaling Program Synthesis Based Technology Mapping with Equality Saturation</h1>
+    <div class="meta">
+      <span>✍️ Gus Henry Smith, Colin Knizek, Daniel Petrisko</span>
+      <span>📅 2024-11-17</span>
+      <a href="http://arxiv.org/abs/2411.11036v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>Equality Saturation을 프로그램 합성 기반 기술 매핑에 결합하여 사용자 스케치 제공 없이도 더 크고 복잡한 FPGA 하드웨어 설계를 효율적으로 매핑할 수 있는 Churchroad 도구를 개발했습니다.<br><br>**문제 정의**: <br>기존 FPGA 하드웨어 컴파일러는 고수준 설계를 DSP와 같은 복잡한 저수준 프리미티브로 효율적으로 매핑하지 못하고, 스케치 가이드 프로그램 합성 접근법은 ①사용자가 도메인 전문지식을 요구하는 스케치를 직접 작성해야 하고 ②오픈소스 SMT 솔버가 곱셈과 같은 하드웨어 연산 처리에 한계가 있다는 두 가지 핵심 문제를 가지고 있었습니다.<br><br>**핵심 기여**: <br>Equality Saturation(eqsat) 프레임워크를 기존 최신 프로그램 합성 도구와 결합하여 ①사용자 스케치 제공 요구사항을 제거하고 ②기존 도구 단독 사용 대비 더 크고 복잡한 설계를 처리할 수 있는 Churchroad라는 새로운 기술 매핑 도구를 개발했습니다.<br><br>**의의**: <br>이 연구는 프로그램 합성과 equality saturation의 융합을 통해 하드웨어 설계 자동화의 확장성과 사용성을 동시에 개선했다는 점에서 중요합니다. 특히 도메인 전문지식 없이도 복잡한 하드웨어 매핑을 자동화할 수 있게 하여, 프로그램 합성 기반 최적화 연구에서 실용성과 접근성을 크게 향상시켰습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>State-of-the-art hardware compilers for FPGAs often fail to find efficient mappings of high-level designs to low-level primitives, especially complex programmable primitives like digital signal processors (DSPs). New approaches apply sketch-guided program synthesis to more optimally map designs. However, this approach has two primary drawbacks. First, sketch-guided program synthesis requires the user to provide sketches, which are challenging to write and require domain expertise. Second, the open-source SMT solvers which power sketch-guided program synthesis struggle with the sorts of operations common in hardware -- namely multiplication. In this paper, we address both of these challenges using an equality saturation (eqsat) framework. By combining eqsat and an existing state-of-the-art program-synthesis-based tool, we produce Churchroad, a technology mapper which handles larger and more complex designs than the program-synthesis-based tool alone, while eliminating the need for a user to provide sketches.</p>
+  </section>
+</article>
+</body>
+</html>
