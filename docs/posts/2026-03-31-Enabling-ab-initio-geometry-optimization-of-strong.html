@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enabling ab initio geometry optimization of strongly correlated systems with transferable deep quantum Monte Carlo</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ab:"LLM program synthesis") AND (ab:"program analysis" OR ab:"code generation")</span>
+    <h1>Enabling ab initio geometry optimization of strongly correlated systems with transferable deep quantum Monte Carlo</h1>
+    <div class="meta">
+      <span>✍️ P. Bernát Szabó, Zeno Schätzle, Frank Noé</span>
+      <span>📅 2026-03-26</span>
+      <a href="http://arxiv.org/abs/2603.25381v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 강상관 분자 시스템의 분자 구조 최적화를 위해 전이가능한 딥러닝 변분 몬테카르로(VMC)와 가우시안 프로세스 회귀를 결합한 새로운 ab initio 프레임워크를 개발했습니다.<br><br>**문제 정의**: <br>- 강상관 전자 시스템에서 분자 포텐셜 에너지 표면(PES)의 정확한 탐색이 매우 어려움<br>- 기존 DFT 방법은 강상관계에서 부정확하고, 고정밀 양자화학 방법은 계산 비용이 과도함<br>- VMC의 확률적 특성으로 인해 분자 구조 최적화에 직접 적용하기 어려움<br><br>**핵심 기여**:<br>1. **전이가능한 딥러닝 VMC**: 다양한 분자 기하구조에서 동시에 전자 슈뢰딩거 방정식을 풀어 zero-shot 화학적 정확도 달성<br>2. **노이즈 처리 프레임워크**: VMC 최적화 중 핵 구조를 연속 샘플링하고 가우시안 프로세스 회귀로 노이즈가 있는 에너지/힘 데이터를 집계<br>3. **효율적 PES 탐색**: 희소 샘플링과 지역 근사를 통해 구조 완화, 전이상태 탐색, 최소에너지 경로 계산을 가능하게 함<br><br>**의의**:<br>- **방법론적 혁신**: 확률적 양자 계산과 기계학습을 결합한 새로운 패러다임 제시<br>- **neurosymbolic 연관성**: 물리적 제약(양자역학)과 데이터 기반 학습을 통합한 하이브리드 접근법으로, 형식적 추론과 학습의 결합 사례<br>- **응용 가능성**: 복잡한 화학 반응 메커니즘 연구에 적용 가능하며, 다른 강상관 문제(재료과학, 촉매 설계)로 확장 가능<br>- **계산과학 발전**: 고정밀 양자 시뮬레이션의 실용적 적용 범위를 크게 확장</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>A faithful description of chemical processes requires exploring extended regions of the molecular potential energy surface (PES), which remains challenging for strongly correlated systems. Transferable deep-learning variational Monte Carlo (VMC) offers a promising route by efficiently solving the electronic Schrödinger equation jointly across molecular geometries at consistently high accuracy, yet its stochastic nature renders direct exploration of molecular configuration space nontrivial. Here, we present a framework for highly accurate ab initio exploration of PESs that combines transferable deep-learning VMC with a cost-effective estimation of energies, forces, and Hessians. By continuously sampling nuclear configurations during VMC optimization of electronic wave functions, we obtain transferable descriptions that achieve zero-shot chemical accuracy within chemically relevant distributions of molecular geometries. Throughout the subsequent characterization of molecular configuration space, the PES is evaluated only sparsely, with local approximations constructed by estimating VMC energies and forces at sampled geometries and aggregating the resulting noisy data using Gaussian process regression. Our method enables accurate and efficient exploration of complex PES landscapes, including structure relaxation, transition-state searches, and minimum-energy pathways, for both ground and excited states. This opens the door to studying bond breaking, formation, and large structur</p>
+  </section>
+</article>
+</body>
+</html>

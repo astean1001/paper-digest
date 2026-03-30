@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extracting Resonance Width from Lattice Quantum Monte Carlo Simulations Using Analytical Continuation Method</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ab:"LLM program synthesis") AND (ab:"program analysis" OR ab:"code generation")</span>
+    <h1>Extracting Resonance Width from Lattice Quantum Monte Carlo Simulations Using Analytical Continuation Method</h1>
+    <div class="meta">
+      <span>✍️ Zhong-Wang Niu, Shi-Sheng Zhang, Bing-Nan Lu</span>
+      <span>📅 2026-03-26</span>
+      <a href="http://arxiv.org/abs/2603.25081v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 격자 양자 몬테카를로 시뮬레이션에서 해석적 연속 방법과 특이값 분해 기반 Padé 해석기를 결합하여 핵 공명 상태의 폭을 정밀하게 추출하는 새로운 계산 방법론을 제시했습니다.<br><br>**문제 정의**: <br>핵 격자 유효장 이론(NLEFT)에서 불안정한 공명 상태, 특히 넓은 폭을 가진 공명의 추출이 기존의 복소 스케일링 방법으로는 부호 문제(sign problem)와 통계적 불확실성으로 인해 매우 어려웠습니다. 특히 드립라인 근처 exotic 핵에서 다체 공명 상태 연구를 위한 정밀하고 실용적인 방법론이 필요했습니다.<br><br>**핵심 기여**:<br>- 결합상수에서의 해석적 연속(ACCC) 접근법과 부호 문제가 없는 고정밀도 핵 상호작용을 결합한 최초의 직접적 공명 폭 추출<br>- 특이값 분해(SVD) 기반 robust Padé 해석기 구현으로 수치적 불안정성 해결<br>- Ridge 정규화와 극점 안전성 기준을 도입하여 공명 극점으로의 신뢰성 있는 외삽 구현<br>- $^5$He 바닥상태($J^π=3/2^-$)에 적용하여 실험값과 일치하는 공명 에너지와 폭 계산 달성<br><br>**의의**:<br>이 연구는 ab initio 격자 프레임워크 내에서 공명 상태 연구를 위한 실용적이고 정밀한 전략을 확립했으며, 특히 수치해석에서 발생하는 불안정성 문제를 정규화와 SVD 기법으로 해결한 방법론적 기여가 뛰어납니다. 복잡한 물리계에서 해석적 연속을 통한 신뢰성 있는 외삽 기법은 다른 계산물리학 분야에도 응용 가능한 범용적 가치를 가집니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Nuclear lattice effective field theory (NLEFT) provides an efficient ab initio framework for computing low-lying states via imaginary-time projection. However, the extraction of unstable resonances, especially those with broad widths, remains a significant challenge. Traditional techniques such as the complex scaling method are often limited by sign problems or inherent statistical uncertainties. In this work, we present the first direct extraction of a nuclear resonance width within NLEFT by combining a high-precision, sign-problem-free nuclear interaction with the analytical continuation in the coupling constant (ACCC) approach. To address numerical instabilities in the ACCC framework, we implement a robust Pade solver based on singular value decomposition (SVD), incorporating ridge regularization and pole-safety criteria to ensure reliable extrapolation to the resonance pole. We detail the methodology and apply it to the unbound ground state of $^5$He ($J^π=3/2^-$). Our calculation yields a resonance energy $E=0.80(10)$ MeV and a width $Γ=1.05(9)$ MeV, in agreement with recent experimental results ($E_{\rm exp}=0.798$ MeV, $Γ_{\rm exp}=0.648$ MeV). This work establishes a practical and precise strategy for studying resonances within the ab initio lattice framework, paving the way for investigations of many-body resonances in exotic nuclei near the drip lines.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchored-Branched Steady-state WInd Flow Transformer (AB-SWIFT): a metamodel for 3D atmospheric flow in urban environments</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ab:"LLM program synthesis") AND (ab:"program analysis" OR ab:"code generation")</span>
+    <h1>Anchored-Branched Steady-state WInd Flow Transformer (AB-SWIFT): a metamodel for 3D atmospheric flow in urban environments</h1>
+    <div class="meta">
+      <span>✍️ Armand de Villeroché, Rem-Sophia Mouradi, Vincent Le Guen</span>
+      <span>📅 2026-03-26</span>
+      <a href="http://arxiv.org/abs/2603.25635v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 도시 환경의 3D 대기 흐름을 예측하기 위해 분기 구조를 가진 트랜스포머 기반 메타모델 AB-SWIFT를 개발하여 기존 CFD 시뮬레이션을 대체할 수 있는 고정확도 서로게이트 모델을 제시했습니다.<br><br>**문제 정의**: <br>- 오염물질 확산 모델링이나 풍력 발전소 모델링에 필요한 지역 규모 대기 흐름 모델링에서 전산유체역학(CFD) 계산의 높은 비용 문제<br>- 기존 딥러닝 모델들이 도시 기하학적 구조의 높은 변동성과 대규모 메시 크기에 적응하지 못하는 한계<br><br>**핵심 기여**:<br>- **AB-SWIFT 아키텍처**: 대기 흐름 모델링을 위해 특별히 설계된 내부 분기 구조를 가진 트랜스포머 기반 모델<br>- **전용 데이터베이스**: 무작위화된 도시 기하학적 구조와 불안정/중립/안정 대기 성층화를 혼합한 대기 시뮬레이션 데이터베이스 구축<br>- **성능 개선**: 기존 최신 트랜스포머 및 그래프 기반 모델 대비 모든 예측 필드에서 최고 정확도 달성<br><br>**의의**: <br>이 연구는 물리적 시뮬레이션을 딥러닝으로 대체하는 서로게이트 모델링의 전형적 사례로, 복잡한 물리 현상을 데이터 기반으로 학습하여 계산 비용을 획기적으로 줄였습니다. 특히 도메인별 특화 아키텍처 설계(분기 구조)와 전용 데이터셋 구축을 통한 성능 향상 방법론은 다른 과학 computing 영역에서도 활용 가능한 범용적 접근법을 보여줍니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Air flow modeling at a local scale is essential for applications such as pollutant dispersion modeling or wind farm modeling. To circumvent costly Computational Fluid Dynamics (CFD) computations, deep learning surrogate models have recently emerged as promising alternatives. However, in the context of urban air flow, deep learning models struggle to adapt to the high variations of the urban geometry and to large mesh sizes. To tackle these challenges, we introduce Anchored Branched Steady-state WInd Flow Transformer (AB-SWIFT), a transformer-based model with an internal branched structure uniquely designed for atmospheric flow modeling. We train our model on a specially designed database of atmospheric simulations around randomised urban geometries and with a mixture of unstable, neutral, and stable atmospheric stratifications. Our model reaches the best accuracy on all predicted fields compared to state-of-the-art transformers and graph-based models. Our code and data is available at https://github.com/cerea-daml/abswift.</p>
+  </section>
+</article>
+</body>
+</html>

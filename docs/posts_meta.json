@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-03-31-Knowdit--Agentic-Smart-Contract-Vulnerability-Dete.html",
+    "title": "Knowdit: Agentic Smart Contract Vulnerability Detection with Auditing Knowledge Summarization",
+    "date": "2026-03-31",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2603.26270v1"
+  },
+  {
+    "filename": "2026-03-31-Privacy-Enhancing-Encryption-in-Data-Sharing--A-Su.html",
+    "title": "Privacy-Enhancing Encryption in Data Sharing: A Survey on Security, Performance and Functionality",
+    "date": "2026-03-31",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ab:\"LLM program synthesis\") AND (ab:\"program analysis\" OR ab:\"code generation\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2603.26224v1"
+  },
+  {
+    "filename": "2026-03-31-Anchored-Branched-Steady-state-WInd-Flow-Transform.html",
+    "title": "Anchored-Branched Steady-state WInd Flow Transformer (AB-SWIFT): a metamodel for 3D atmospheric flow in urban environments",
+    "date": "2026-03-31",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ab:\"LLM program synthesis\") AND (ab:\"program analysis\" OR ab:\"code generation\")",
+    "one_liner": "도시 환경의 3D 대기 흐름을 예측하기 위해 분기 구조를 가진 트랜스포머 기반 메타모델 AB-SWIFT를 개발하여 기존 CFD 시뮬레이션을 대체할 수 있는 고정확도 서로게이트 모델을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2603.25635v1"
+  },
+  {
+    "filename": "2026-03-31-Enabling-ab-initio-geometry-optimization-of-strong.html",
+    "title": "Enabling ab initio geometry optimization of strongly correlated systems with transferable deep quantum Monte Carlo",
+    "date": "2026-03-31",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ab:\"LLM program synthesis\") AND (ab:\"program analysis\" OR ab:\"code generation\")",
+    "one_liner": "강상관 분자 시스템의 분자 구조 최적화를 위해 전이가능한 딥러닝 변분 몬테카르로(VMC)와 가우시안 프로세스 회귀를 결합한 새로운 ab initio 프레임워크를 개발했습니다.",
+    "url": "http://arxiv.org/abs/2603.25381v1"
+  },
+  {
+    "filename": "2026-03-31-Extracting-Resonance-Width-from-Lattice-Quantum-Mo.html",
+    "title": "Extracting Resonance Width from Lattice Quantum Monte Carlo Simulations Using Analytical Continuation Method",
+    "date": "2026-03-31",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ab:\"LLM program synthesis\") AND (ab:\"program analysis\" OR ab:\"code generation\")",
+    "one_liner": "격자 양자 몬테카를로 시뮬레이션에서 해석적 연속 방법과 특이값 분해 기반 Padé 해석기를 결합하여 핵 공명 상태의 폭을 정밀하게 추출하는 새로운 계산 방법론을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2603.25081v1"
+  },
+  {
     "filename": "2026-03-28-eqsat--An-Equality-Saturation-Dialect-for-Non-dest.html",
     "title": "eqsat: An Equality Saturation Dialect for Non-destructive Rewriting",
     "date": "2026-03-28",
