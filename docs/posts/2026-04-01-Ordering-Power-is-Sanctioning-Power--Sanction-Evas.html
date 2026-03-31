@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ordering Power is Sanctioning Power: Sanction Evasion-MEV and the Limits of On-Chain Enforcement</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"MEV" OR ti:"maximal extractable value" AND ab:"Solana"</span>
+    <h1>Ordering Power is Sanctioning Power: Sanction Evasion-MEV and the Limits of On-Chain Enforcement</h1>
+    <div class="meta">
+      <span>✍️ Di Wu, Yuman Bai, Shoupeng Ren</span>
+      <span>📅 2026-03-29</span>
+      <a href="http://arxiv.org/abs/2603.27739v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 블록체인에서 스테이블코인 제재를 회피하는 새로운 MEV 형태(SE-MEV)를 발견하고, ordering power를 가진 블록 생산자들이 경제적 동기로 제재 집행을 방해할 수 있음을 실증적으로 입증한 연구<br><br>**문제 정의**: <br>USDT, USDC 등 중앙화된 스테이블코인이 컨트랙트 레벨에서 제재 대상 주소를 동결(freeze)하려 해도, 퍼블릭 블록체인에서는 이것이 단순한 트랜잭션에 불과해 실행 우선순위 경쟁에 노출되는 구조적 한계를 분석. 제재 대상자의 자산 이체와 발행사의 동결 명령이 같은 블록에 포함될 때 규제 명령이 아닌 블록 생산자의 경제적 동기에 의해 결과가 결정되는 문제를 다룸.<br><br>**핵심 기여**:<br>- **실증 분석**: 2017년 11월-2025년 8월 이더리움 기반 USDC/USDT 제재 데이터셋 구축 (15억 달러 규모)<br>- **제재 회피 현황**: USDT 제재 주소의 7.3%, USDC 제재 주소의 18.7%가 동결 전 잔액 전액 인출 성공<br>- **회피 기법 진화**: out-of-gas 공격 → 가스 경매 → 프라이빗 오더플로우 → 직접 제안자 매수의 단계적 발전 과정 추적<br>- **게임 이론적 모델링**: (1) 컴플라이언트 발행사도 MEV 시장 참여가 합리적, (2) 고정 참여 비용으로 전문화된 회피 주체 집중, (3) 규제 처벌 강화 시 MEV 세금 무한 증가하는 구조적 한계 도출<br><br>**의의**: <br>블록체인의 탈중앙화 특성과 규제 집행력 간의 근본적 긴장 관계를 MEV 관점에서 최초로 체계화한 연구. ordering power가 곧 sanctioning power라는 핵심 통찰을 통해 블록 생산자의 경제적 인센티브가 규제 정책을 무력화할 수 있음을 보여줌. MEV 연구자에게는 새로운 MEV 유형 발견과 </div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Centralized stablecoins such as USDT and USDC enforce financial sanctions through contract-layer blacklist functions, yet on public blockchains a freeze is merely an ordinary transaction that must compete for execution priority. We identify a fundamental gap between contract-layer authority and consensus-layer enforcement: when a sanctioned entity's transfer and the issuer's freeze race for inclusion in the same block, the outcome is determined not by regulatory mandate but by the economically motivated ordering decisions of block producers. We term the resulting value extraction Sanction-Evasion MEV (SE-MEV). To quantify this vulnerability, we construct the first comprehensive dataset of on-chain sanctions enforcement and evasion for Ethereum-based USDC and USDT (Nov 2017-Aug 2025), covering over $1.5 billion in frozen assets. We find that 7.3% of sanctioned USDT addresses and 18.7% of sanctioned USDC addresses were drained to zero balances before enforcement took effect, and document a clear escalation trajectory-from issuer-side out-of-gas failures, to public gas auctions, to private order flow, to direct proposer bribery. We further develop a game-theoretic model that yields three results: (i) compliant issuers cannot rationally stay outside the MEV market; (ii) fixed participation costs concentrate evasion among specialized, MEV-aware actors; and (iii) the implicit MEV tax extracted by block proposers grows without bound as regulatory penalties intensify, creating struct</p>
+  </section>
+</article>
+</body>
+</html>
