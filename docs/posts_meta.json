@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-02-A-Precision-Emulation-Approach-to-the-GPU-Accelera.html",
+    "title": "A Precision Emulation Approach to the GPU Acceleration of Ab Initio Electronic Structure Calculations",
+    "date": "2026-04-02",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "GPU에서 전자구조 계산을 가속화하기 위해 FP64 연산을 INT8 기반 에뮬레이션으로 대체하되, 조정 가능한 정밀도를 통해 정확도를 유지하는 방법을 제안한다.",
+    "url": "http://arxiv.org/abs/2603.29975v1"
+  },
+  {
+    "filename": "2026-04-02-Hunting-for-quantum-advantage-in-electronic-struct.html",
+    "title": "Hunting for quantum advantage in electronic structure calculations is a highly non-trivial task",
+    "date": "2026-04-02",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "양자컴퓨팅의 우위가 기대되는 전자구조 계산 문제에서 고전 알고리즘(DMRG)을 이용해 최첨단 성능을 달성함으로써, 실제 양자 우위를 입증하기 위한 벤치마크의 중요성을 강조한 연구.",
+    "url": "http://arxiv.org/abs/2603.28648v1"
+  },
+  {
+    "filename": "2026-04-02-Oxygen-as-a-dual-function-regulator-in-MoS2-CVD-sy.html",
+    "title": "Oxygen as a dual function regulator in MoS2 CVD synthesis: enhancing precursor evaporation while modulating reaction kinetics",
+    "date": "2026-04-02",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "CVD를 이용한 MoS2 합성에서 산소가 전구체 증발 촉진과 반응 속도 조절이라는 이중 기능을 수행하는 메커니즘을 규명하고, 이를 활용해 고품질 단층 MoS2 합성 조건을 최적화한 연구입니다.",
+    "url": "http://arxiv.org/abs/2603.28461v1"
+  },
+  {
+    "filename": "2026-04-02-Electronic-structure-of-higher-order-layered-palla.html",
+    "title": "Electronic structure of higher-order layered palladates: La$_{n+1}$Pd$_{n}$O$_{2n+1}$ $(n = 4-7)$",
+    "date": "2026-04-02",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "아직 합성되지 않은 고차 층상 팔라듐 산화물(La$_{n+1}$Pd$_{n}$O$_{2n+1}$, n=4-7)의 전자구조를 이론적으로 분석하여 비전통적 초전도체 후보물질로서의 가능성을 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2603.27456v1"
+  },
+  {
+    "filename": "2026-04-02-Twist-Angle-Engineering-of-Moiré-Potentials-for-Hi.html",
+    "title": "Twist-Angle Engineering of Moiré Potentials for High-Performance Ionics in Bilayer Graphene",
+    "date": "2026-04-02",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "비틀림각을 조절한 이층 그래핀에서 리튬 이온의 삽입 에너지와 확산 장벽을 동시에 최적화할 수 있는 구조를 발견하고, 머신러닝을 통해 효율적인 스크리닝 방법론을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2603.27453v1"
+  },
+  {
     "filename": "2026-04-01-ORACAL--A-Robust-and-Explainable-Multimodal-Framew.html",
     "title": "ORACAL: A Robust and Explainable Multimodal Framework for Smart Contract Vulnerability Detection with Causal Graph Enrichment",
     "date": "2026-04-01",

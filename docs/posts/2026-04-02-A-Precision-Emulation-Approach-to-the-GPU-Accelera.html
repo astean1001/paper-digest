@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Precision Emulation Approach to the GPU Acceleration of Ab Initio Electronic Structure Calculations</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>A Precision Emulation Approach to the GPU Acceleration of Ab Initio Electronic Structure Calculations</h1>
+    <div class="meta">
+      <span>✍️ Hang Liu, Junjie Li, Yinzhi Wang</span>
+      <span>📅 2026-03-31</span>
+      <a href="http://arxiv.org/abs/2603.29975v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: GPU에서 전자구조 계산을 가속화하기 위해 FP64 연산을 INT8 기반 에뮬레이션으로 대체하되, 조정 가능한 정밀도를 통해 정확도를 유지하는 방법을 제안한다.<br><br>**문제 정의**: <br>기존 고성능 컴퓨팅(HPC)에서 사용되는 FP64 기반 전자구조 계산은 계산 비용이 매우 높아 GPU 가속화가 필요하지만, 전통적인 혼합 정밀도 접근법은 원본 알고리즘을 수정해야 하는 한계가 있다. 특히 ab initio 전자구조 계산에서 정확도 손실 없이 성능을 개선하는 것이 핵심 과제이다.<br><br>**핵심 기여**:<br>- **SCILIB-Accel 자동 BLAS 오프로드 도구**: 코드 수정 없이 FP64 행렬 곱셈을 INT8 기반으로 에뮬레이션<br>- **조정 가능한 정밀도 에뮬레이션**: 연산자 특성에 따라 정밀도를 동적으로 조정하여 정확도와 성능을 동시에 최적화<br>- **원본 알고리즘 보존**: 기존 혼합 정밀도 방법과 달리 알고리즘 구조를 유지하면서 하드웨어 활용도 개선<br><br>**의의**: <br>이 연구는 프로그램 분석과 자동 최적화 관점에서 중요한 시사점을 제공한다. 특히 자동화된 성능 개선 도구가 도메인별 특성(연산자 속성, 정밀도 요구사항)을 고려하여 적응적으로 최적화할 수 있음을 보여준다. APR(Automated Program Repair) 연구에서도 유사하게 프로그램의 의미를 보존하면서 성능이나 정확성을 개선하는 자동화 기법 개발에 응용 가능하며, AI 기반 하드웨어 최적화가 과학 계산 분야의 패러다임 변화를 이끌 가능성을 시사한다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>This study explores the use of INT8-based emulation for accelerating traditional FP64-based HPC workloads on modern GPU architectures. Through SCILIB-Accel automatic BLAS offload tool for cache-coherent Unified Memory Architecture, we emulate FP64 matrix multiplications in the LSMS CPU application in the MuST suite without code changes. We find that accuracy depends on both arithmetic precision and the properties of the operator, which can be dealt with through tunable precision emulation. Unlike traditional mixed-precision approaches, this method preserves original algorithms while optimizing hardware utilization. We showcase the potential of improving accuracy and performance at the same time. This work highlights the potential of AI-driven hardware to transform HPC, advocating for adaptive precision strategies in future scientific computing.</p>
+  </section>
+</article>
+</body>
+</html>

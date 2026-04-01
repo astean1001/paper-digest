@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hunting for quantum advantage in electronic structure calculations is a highly non-trivial task</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Hunting for quantum advantage in electronic structure calculations is a highly non-trivial task</h1>
+    <div class="meta">
+      <span>✍️ Örs Legeza, Andor Menczer, Miklós Antal Werner</span>
+      <span>📅 2026-03-30</span>
+      <a href="http://arxiv.org/abs/2603.28648v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 양자컴퓨팅의 우위가 기대되는 전자구조 계산 문제에서 고전 알고리즘(DMRG)을 이용해 최첨단 성능을 달성함으로써, 실제 양자 우위를 입증하기 위한 벤치마크의 중요성을 강조한 연구.<br><br>**문제 정의**: <br>- 양자컴퓨팅과 고전컴퓨팅 발전으로 실제 양자 우위를 보일 수 있는 문제 영역 식별의 어려움<br>- 강상관 전자계 문제(multi-reference 양자화학 계산)가 양자 우위 후보로 여겨지지만, 고전 알고리즘의 한계가 명확히 규명되지 않음<br>- IBM-RIKEN의 Quantum Advantage Tracker에 포함된 Fe₄S₄ 분자 클러스터 등에 대한 정확한 고전 벤치마크 부재<br><br>**핵심 기여**:<br>- Fe₄S₄ 분자의 CAS(54,36) 모델에서 고정밀 바닥상태 에너지 계산 성공<br>- Fe₅S₁₂H₄⁵⁻ 시스템에서 전례없는 CAS(89,102) 크기의 궤도 최적화 달성<br>- 혼합정밀도 스핀적응 ab initio DMRG 방법과 ORCA 프로그램 연동을 통한 대규모 전자구조 계산 구현<br>- 실제 양자 우위 검증을 위한 고전 알고리즘의 성능 한계 제시<br><br>**의의**: <br>양자컴퓨팅 연구에서 실제 우위를 주장하기 전에 고전 방법론의 한계를 정확히 파악해야 한다는 중요한 시사점 제공. Neurosymbolic 연구 맥락에서 보면, 서로 다른 계산 패러다임(양자 vs 고전, 또는 신경망 vs 기호적 방법) 간의 성능 비교 시 공정하고 정확한 벤치마크의 필요성을 보여주며, 하이브리드 접근법에서 각 구성요소의 실제 기여도를 정량적으로 평가하는 방법론적 중요성을 시사함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In light of major developments over the past decades in both quantum computing and simulations on classical hardware, it is a serious challenge to identify a real-world problem where quantum advantage is expected to appear. In quantum chemistry, electronic structure calculations of strongly correlated, i.e. multi-reference problems, are often argued to fall into such category because of their intractability with standard methods based on mean-field theory. Therefore, providing state-of-the-art benchmark data by classical algorithms is necessary to make a decisive conclusion when such competing development directions are compared. We report cutting-edge performance results together with high accuracy ground state energy for the Fe$_4$S$_4$ molecular cluster on a CAS(54,36) model space, a problem that has been included quite recently among the list of systems in the {\it Quantum Advantage Tracker} webpage maintained by IBM and RIKEN. Pushing the limits even further, we also present CAS-SCF based orbital optimizations for unprecedented CAS sizes of up to 89 electrons in 102 orbitals [CAS(89,102)] for the Fe$_5$S$_{12}$H$_4^{5-}$ molecular system comprising twenty five open shell orbitals in its sextet ground state and an active spaces size of 331 electrons in 451 orbitals. We have achieved our results via mixed-precision spin-adapted \textit{ab initio} Density Matrix Renormalization Group (DMRG) electronic structure calculations interfaced with the ORCA program package and utili</p>
+  </section>
+</article>
+</body>
+</html>
