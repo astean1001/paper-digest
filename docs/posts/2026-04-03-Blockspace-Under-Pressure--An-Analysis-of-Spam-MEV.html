@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blockspace Under Pressure: An Analysis of Spam MEV on High-Throughput Blockchains</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"MEV" OR ti:"maximal extractable value" AND ab:"Solana"</span>
+    <h1>Blockspace Under Pressure: An Analysis of Spam MEV on High-Throughput Blockchains</h1>
+    <div class="meta">
+      <span>✍️ Wenhao Wang, Aditya Saraf, Lioba Heimbach</span>
+      <span>📅 2026-03-31</span>
+      <a href="http://arxiv.org/abs/2604.00234v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 고처리량 블록체인에서 발생하는 spam MEV 현상을 모델링하고, 블록 용량과 가스 가격이 spam 거래량에 미치는 영향을 분석하여 네트워크 최적화 방안을 제시한 연구입니다.<br><br>**문제 정의**: <br>Solana와 같은 고처리량·저수수료 블록체인에서 searcher들이 대량의 투기적 거래를 제출하여 블록 공간의 절반 이상을 차지하는 spam MEV 현상이 발생하고 있으나, 이를 이해할 수 있는 체계적인 분석 프레임워크가 부족했습니다.<br><br>**핵심 기여**:<br>1. **이론적 모델링**: spam 거래들이 온체인 기회를 두고 경쟁하는 상황을 경쟁균형 모델로 정식화하고, 블록 용량, 최소 가스 가격, 거래 수수료 메커니즘의 함수로 균형 spam 볼륨을 도출<br>2. **실증적 검증**: Base와 Arbitrum 데이터를 통해 블록 용량 확장 시 spam이 급증하고, 최소 가스 가격 도입 시 감소함을 확인<br>3. **정책적 통찰**: spam은 항상 비용을 발생시키며, 블록 용량 증가분의 대부분을 spam이 차지하므로 모든 사용자를 수용하기 전에 spam을 제한하는 것이 유리한 트레이드오프를 창출함을 증명<br><br>**의의**: <br>이 연구는 Solana 기반 MEV 솔루션 개발에 중요한 시사점을 제공합니다. 특히 네트워크 리소스 최적화와 사용자 경험 개선을 위한 메커니즘 설계 시, spam MEV의 영향을 정량적으로 예측하고 제어할 수 있는 이론적 기반을 마련했다는 점에서 블록체인 프로그램 분석 연구에 직접적으로 활용 가능합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>On high-throughput, low-fee blockchains, a qualitatively new form of maximal extractable value (MEV) has emerged: searchers submit large volumes of speculative transactions, whose profitability is resolved only at execution time. We refer to this as spam MEV. On major rollups, it can at times consume more than half of block gas, even though only a small fraction of probes ultimately results in a trade. Despite growing awareness of this phenomenon, there is no principled framework for understanding how blockchain design parameters shape its prevalence and impact.
+  We develop such a framework, modeling spam transactions competing for on-chain opportunities under a competitive equilibrium that drives their profits to zero, and deriving equilibrium spam volumes as a function of block capacity, minimum gas price, and the transaction fee mechanism. Empirical evidence from Base and Arbitrum supports the model: spam grew sharply as block capacity was scaled up and fell when minimum gas prices were introduced. Our analysis yields three main insights. First, spam is always costly: when block capacity is scarce, it displaces users and drives up gas prices; as block capacity grows, it increasingly consumes execution resources, raising network externality, i.e., the cost of provisioning and processing blocks. We show that spam takes an increasing share of each additional unit of block capacity, so capping it before all users are included creates a favorable trade-off: forgoing a small am</p>
+  </section>
+</article>
+</body>
+</html>

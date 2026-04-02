@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-04-03-Blockspace-Under-Pressure--An-Analysis-of-Spam-MEV.html",
+    "title": "Blockspace Under Pressure: An Analysis of Spam MEV on High-Throughput Blockchains",
+    "date": "2026-04-03",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "고처리량 블록체인에서 발생하는 spam MEV 현상을 모델링하고, 블록 용량과 가스 가격이 spam 거래량에 미치는 영향을 분석하여 네트워크 최적화 방안을 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.00234v1"
+  },
+  {
     "filename": "2026-04-02-A-Precision-Emulation-Approach-to-the-GPU-Accelera.html",
     "title": "A Precision Emulation Approach to the GPU Acceleration of Ab Initio Electronic Structure Calculations",
     "date": "2026-04-02",
