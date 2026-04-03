@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAInfer+: Neurosymbolic Inference of API Specifications from Documentation via Embedding Models</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"LLM" OR ab:"large language model")</span>
+    <h1>DAInfer+: Neurosymbolic Inference of API Specifications from Documentation via Embedding Models</h1>
+    <div class="meta">
+      <span>✍️ Maryam Masoudian, Anshunkang Zhou, Chengpeng Wang</span>
+      <span>📅 2026-03-30</span>
+      <a href="http://arxiv.org/abs/2603.28060v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 라이브러리 문서로부터 API 명세를 자동 추론하기 위해 임베딩 모델과 신경-기호 최적화를 결합한 DAInfer+ 접근법을 제안하며, LLM보다 문장 임베딩 모델이 더 우수한 성능을 보임을 입증했습니다.<br><br>**문제 정의**: <br>현대 소프트웨어 시스템의 정적 분석에서 외부 라이브러리의 API 의미론을 이해해야 하지만, 복잡한 구현이나 소스코드 접근 불가로 인해 API 명세를 자동으로 추출하는 것이 어려운 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **신경-기호 융합 접근법**: 자연어 처리로 문서에서 비공식적 의미 정보를 해석하여 명세 추론을 최적화 문제로 변환<br>2. **임베딩 모델의 우수성 입증**: Zero-shot 문장 임베딩 모델이 Few-shot LLM보다 robustness와 세밀한 의미 포착에서 우수함을 실증<br>3. **높은 정확도 달성**: 데이터 플로우 추론에서 82% 이상의 recall과 85%의 precision, 별칭 관계에서 88% recall과 79% precision 달성<br><br>**의의**: <br>스마트 컨트랙트 보안 분석에서 취약점 시그니처 추출과 유사한 방법론적 접근을 제시하며, 문서 기반 자동 명세 추론이 정적 분석 도구의 정확성과 커버리지 향상에 기여할 수 있음을 보여줍니다. 특히 임베딩 모델이 LLM보다 구조화된 추론 작업에서 더 효과적일 수 있다는 통찰은 향후 프로그램 분석 연구에 중요한 시사점을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Modern software systems heavily rely on various libraries, which require understanding the API semantics in static analysis. However, summarizing API semantics remains challenging due to complex implementations or unavailable library code. This paper presents DAInfer+, a novel approach for inferring API specifications from library documentation. We employ Natural Language Processing (NLP) to interpret informal semantic information provided by the documentation, which enables us to reduce the specification inference to an optimization problem. Specifically, we investigate the effectiveness of sentence embedding models and Large Language Models (LLMs) in deriving memory operation abstractions from API descriptions. These abstractions are used to retrieve data-flow and aliasing relations to generate comprehensive API specifications. To solve the optimization problem efficiently, we propose neurosymbolic optimization, yielding precise data-flow and aliasing specifications. Our evaluation of popular Java libraries shows that zero-shot sentence embedding models outperform few-shot prompted LLMs in robustness, capturing fine-grained semantic nuances more effectively. While our initial attempts using two-stage LLM prompting yielded promising results, we found that the embedding-based approach proved superior. Specifically, these models achieve over 82% recall and 85% precision for data-flow inference and 88% recall and 79% precision for alias relations, all within seconds. These resu</p>
+  </section>
+</article>
+</body>
+</html>

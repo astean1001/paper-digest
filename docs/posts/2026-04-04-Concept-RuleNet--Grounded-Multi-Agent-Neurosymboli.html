@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"LLM" OR ab:"large language model")</span>
+    <h1>Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models</h1>
+    <div class="meta">
+      <span>✍️ Sanchit Sinha, Guangzhi Xiong, Zhenghao He</span>
+      <span>📅 2025-11-13</span>
+      <a href="http://arxiv.org/abs/2511.11751v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>시각-언어 모델의 해석 가능성 부족과 환각 문제를 해결하기 위해, 이미지에서 직접 시각적 개념을 추출하여 기호적 추론 규칙을 생성하는 다중 에이전트 뉴로심볼릭 시스템을 제안함.<br><br>**문제 정의**:<br>- 기존 VLM들이 높은 예측 성능을 보이지만 결정 과정에 대한 해석 가능성이 부족하고, 특히 분포 외 데이터에서 환각(hallucination) 현상이 빈번히 발생<br>- 현재 뉴로심볼릭 방법들이 태스크 레이블에만 의존하여 기호를 추출하므로, 실제 시각 데이터와의 연결(grounding)이 약함<br><br>**핵심 기여**:<br>- **Concept-RuleNet**: 3단계 다중 에이전트 시스템 개발<br>  1) **다중모달 개념 생성기**: 훈련 이미지에서 직접 판별력 있는 시각적 개념 추출<br>  2) **LLM 추론 에이전트**: 추출된 시각적 개념을 조건으로 하여 실행 가능한 1차 논리 규칙 생성<br>  3) **비전 검증 에이전트**: 추론 시 각 기호의 존재 정도를 정량화하고 규칙 실행을 트리거<br>- 시각 데이터에 직접 기반한 기호 발견으로 레이블 편향 완화 및 해석 가능한 추론 경로 제공<br><br>**의의**:<br>- 뉴로심볼릭 AI 분야에서 시각적 grounding과 프로그램 합성을 결합한 새로운 접근법으로, 의료 영상 등 고신뢰성이 요구되는 도메인에서 특히 유용<br>- LLM과 시각 모델의 융합을 통해 해석 가능하면서도 성능이 향상된(평균 5% 개선) 추론 시스템을 제시하여, 블랙박스 AI의 투명성 문제 해결에 기여<br>- 프로그램 합성과 다중 에이전트 시스템을 활용한 뉴로심볼릭 추론의 새로운 패러다임 제시</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Modern vision-language models (VLMs) deliver impressive predictive accuracy yet offer little insight into 'why' a decision is reached, frequently hallucinating facts, particularly when encountering out-of-distribution data. Neurosymbolic frameworks address this by pairing black-box perception with interpretable symbolic reasoning, but current methods extract their symbols solely from task labels, leaving them weakly grounded in the underlying visual data. In this paper, we introduce a multi-agent system - Concept-RuleNet that reinstates visual grounding while retaining transparent reasoning. Specifically, a multimodal concept generator first mines discriminative visual concepts directly from a representative subset of training images. Next, these visual concepts are utilized to condition symbol discovery, anchoring the generations in real image statistics and mitigating label bias. Subsequently, symbols are composed into executable first-order rules by a large language model reasoner agent - yielding interpretable neurosymbolic rules. Finally, during inference, a vision verifier agent quantifies the degree of presence of each symbol and triggers rule execution in tandem with outputs of black-box neural models, predictions with explicit reasoning pathways. Experiments on five benchmarks, including two challenging medical-imaging tasks and three underrepresented natural-image datasets, show that our system augments state-of-the-art neurosymbolic baselines by an average of 5% wh</p>
+  </section>
+</article>
+</body>
+</html>

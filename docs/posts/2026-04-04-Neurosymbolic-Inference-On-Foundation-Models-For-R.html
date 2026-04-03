@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurosymbolic Inference On Foundation Models For Remote Sensing Text-to-image Retrieval With Complex Queries</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"LLM" OR ab:"large language model")</span>
+    <h1>Neurosymbolic Inference On Foundation Models For Remote Sensing Text-to-image Retrieval With Complex Queries</h1>
+    <div class="meta">
+      <span>✍️ Emanuele Mezzi, Gertjan Burghouts, Maarten Kruithof</span>
+      <span>📅 2025-12-16</span>
+      <a href="http://arxiv.org/abs/2512.14102v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 원격 감지 이미지 검색에서 복잡한 공간 관계를 다루기 위해 LLM과 신경기호적 추론을 결합한 RUNE 프레임워크를 제안하여 기존 비전-언어 모델의 설명가능성과 성능을 개선했습니다.<br><br>**문제 정의**: <br>- 기존 원격 감지용 대형 비전-언어 모델(RS-LVLM)은 복잡한 공간 관계 처리 능력이 부족하고 설명가능성이 제한적<br>- 암묵적 임베딩 기반 접근법으로는 실제 응용에서 요구되는 정확한 추론과 해석이 어려움<br>- 복잡한 텍스트 쿼리에 대한 명시적 추론 메커니즘 필요<br><br>**핵심 기여**:<br>- **RUNE 프레임워크**: LLM을 이용해 텍스트 쿼리를 1차 논리(FOL) 표현으로 변환하고, 신경기호적 추론 모듈이 탐지된 객체와의 호환성을 명시적으로 추론<br>- **논리 분해 전략**: 조건부 객체 부분집합에 대해 작동하여 신경망 방식보다 실행 시간을 단축시키는 확장성 개선 방법<br>- **역할 분리 설계**: Foundation 모델을 종단간 검색이 아닌 FOL 생성에만 활용하고, 추론은 별도 모듈에서 담당하는 효율적 구조<br><br>**의의**: <br>복잡한 쿼리 처리를 위한 neurosymbolic inference 연구로서, 프로그램 분석에서 자연어 명세를 논리적 표현으로 변환하고 명시적 추론을 통해 성능을 향상시키는 방법론을 제공합니다. 특히 LLM의 언어 이해 능력과 기호적 추론의 정확성을 결합한 하이브리드 접근법은 프로그램 합성 분야에서 복잡한 요구사항을 처리하는 데 직접 응용 가능합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Text-to-image retrieval in remote sensing (RS) has advanced rapidly with the rise of large vision-language models (LVLMs) tailored for aerial and satellite imagery, culminating in remote sensing large vision-language models (RS-LVLMS). However, limited explainability and poor handling of complex spatial relations remain key challenges for real-world use. To address these issues, we introduce RUNE (Reasoning Using Neurosymbolic Entities), an approach that combines Large Language Models (LLMs) with neurosymbolic AI to retrieve images by reasoning over the compatibility between detected entities and First-Order Logic (FOL) expressions derived from text queries. Unlike RS-LVLMs that rely on implicit joint embeddings, RUNE performs explicit reasoning, enhancing performance and interpretability. For scalability, we propose a logic decomposition strategy that operates on conditioned subsets of detected entities, guaranteeing shorter execution time compared to neural approaches. Rather than using foundation models for end-to-end retrieval, we leverage them only to generate FOL expressions, delegating reasoning to a neurosymbolic inference module. For evaluation we repurpose the DOTA dataset, originally designed for object detection, by augmenting it with more complex queries than in existing benchmarks. We show the LLM's effectiveness in text-to-logic translation and compare RUNE with state-of-the-art RS-LVLMs, demonstrating superior performance. We introduce two metrics, Retrieval R</p>
+  </section>
+</article>
+</body>
+</html>

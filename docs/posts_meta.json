@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-04-Ontology-Constrained-Neural-Reasoning-in-Enterpris.html",
+    "title": "Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents",
+    "date": "2026-04-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "기업 환경에서 LLM의 환각과 규제 준수 문제를 해결하기 위해 3계층 온톨로지로 신경기호적 추론을 제약하는 FAOS 플랫폼 아키텍처를 제안하고, 5개 산업 분야 실험을 통해 정확성과 규제 준수 성능의 유의미한 향상을 입증했습니다.",
+    "url": "http://arxiv.org/abs/2604.00555v1"
+  },
+  {
+    "filename": "2026-04-04-DAInfer---Neurosymbolic-Inference-of-API-Specifica.html",
+    "title": "DAInfer+: Neurosymbolic Inference of API Specifications from Documentation via Embedding Models",
+    "date": "2026-04-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "라이브러리 문서로부터 API 명세를 자동 추론하기 위해 임베딩 모델과 신경-기호 최적화를 결합한 DAInfer+ 접근법을 제안하며, LLM보다 문장 임베딩 모델이 더 우수한 성능을 보임을 입증했습니다.",
+    "url": "http://arxiv.org/abs/2603.28060v1"
+  },
+  {
+    "filename": "2026-04-04-Concept-RuleNet--Grounded-Multi-Agent-Neurosymboli.html",
+    "title": "Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models",
+    "date": "2026-04-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2511.11751v1"
+  },
+  {
+    "filename": "2026-04-04-Advancing-Symbolic-Integration-in-Large-Language-M.html",
+    "title": "Advancing Symbolic Integration in Large Language Models: Beyond Conventional Neurosymbolic AI",
+    "date": "2026-04-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2510.21425v1"
+  },
+  {
+    "filename": "2026-04-04-Neurosymbolic-Inference-On-Foundation-Models-For-R.html",
+    "title": "Neurosymbolic Inference On Foundation Models For Remote Sensing Text-to-image Retrieval With Complex Queries",
+    "date": "2026-04-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "원격 감지 이미지 검색에서 복잡한 공간 관계를 다루기 위해 LLM과 신경기호적 추론을 결합한 RUNE 프레임워크를 제안하여 기존 비전-언어 모델의 설명가능성과 성능을 개선했습니다.",
+    "url": "http://arxiv.org/abs/2512.14102v1"
+  },
+  {
     "filename": "2026-04-03-Blockspace-Under-Pressure--An-Analysis-of-Spam-MEV.html",
     "title": "Blockspace Under Pressure: An Analysis of Spam MEV on High-Throughput Blockchains",
     "date": "2026-04-03",
