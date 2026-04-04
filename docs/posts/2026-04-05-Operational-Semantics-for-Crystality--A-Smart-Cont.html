@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operational Semantics for Crystality: A Smart Contract Language for Parallel EVMs</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"Solidity" OR ab:"EVM")</span>
+    <h1>Operational Semantics for Crystality: A Smart Contract Language for Parallel EVMs</h1>
+    <div class="meta">
+      <span>✍️ Ziyun Xu, Hao Wang, Meng Sun</span>
+      <span>📅 2025-04-24</span>
+      <a href="http://arxiv.org/abs/2504.17336v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 병렬 EVM을 위한 새로운 스마트 컨트랙트 언어 Crystality의 형식적 연산 의미론을 제시하고 Coq를 이용해 기계화하여 병렬 스마트 컨트랙트의 정확성을 형식적으로 검증할 수 있는 기반을 마련했습니다.<br><br>**문제 정의**: <br>- 블록체인의 확장성 요구 증가로 스마트 컨트랙트의 병렬 실행 모델이 필요하지만, 기존 순차적 실행 환경에서 벗어난 병렬 환경에서의 스마트 컨트랙트 정확성 보장이 어려움<br>- Crystality와 같은 병렬 실행 지원 언어의 형식적 의미론과 검증 프레임워크 부재<br><br>**핵심 기여**:<br>- Crystality 언어의 최초 구조적 연산 의미론(structural operational semantics) 정의<br>- Programmable Contract Scopes와 Asynchronous Functional Relay를 통한 세밀한 동시성 제어 메커니즘의 형식적 명세<br>- Coq 정리 증명 도구를 이용한 문법과 의미론의 기계화 구현<br>- 토큰 전송 함수 사례 연구를 통한 스마트 컨트랙트 정확성 검증 실증<br><br>**의의**:<br>- 병렬 스마트 컨트랙트의 형식적 검증 기반 제공으로 블록체인 시스템의 보안성과 확장성 동시 향상에 기여<br>- 기존 Solidity/EVM 환경의 순차적 실행 한계를 넘어서는 새로운 검증 방법론 제시<br>- 스마트 컨트랙트 취약점 탐지 연구에서 병렬성으로 인한 새로운 유형의 버그(race condition, deadlock 등) 분석을 위한 이론적 토대 마련</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The increasing demand for scalable blockchain has driven research into parallel execution models for smart contracts. Crystality is a novel smart contract programming language designed for parallel Ethereum Virtual Machines (EVMs), enabling fine-grained concurrency through Programmable Contract Scopes and Asynchronous Functional Relay. This paper presents the first formal structural operational semantics for Crystality, providing a rigorous framework to reason about its execution. We mechanize the syntax and semantics of Crystality in the theorem-proving assistant Coq, enabling formal verification of correctness properties. As a case study, we verify a simplified token transfer function, demonstrating the applicability of our semantics in ensuring smart contract correctness. Our work lays the foundation for formally verified parallel smart contracts, contributing to the security and scalability of blockchain systems.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoliDiffy: AST Differencing for Solidity Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification") AND (ab:"Solidity" OR ab:"EVM")</span>
+    <h1>SoliDiffy: AST Differencing for Solidity Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Mojtaba Eshghie, Viktor Åryd, Cyrille Artho</span>
+      <span>📅 2024-11-12</span>
+      <a href="http://arxiv.org/abs/2411.07718v4" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>Solidity 스마트 컨트랙트를 위한 최초의 AST 기반 구조적 차이 분석 도구 SoliDiffy를 개발하여, 기존 라인 기반 비교의 한계를 극복하고 취약점 탐지 및 자동화된 프로그램 수정에 활용할 수 있는 정확한 편집 스크립트를 생성한다.<br><br>**문제 정의**: <br>기존의 라인 기반 코드 비교(Git diff 등)는 스마트 컨트랙트의 구조적 변화를 정확히 포착하지 못해 취약점 탐지나 자동화된 프로그램 수정 작업에 한계가 있었으며, Solidity에 특화된 AST 기반 구조적 차이 분석 도구가 부재했다.<br><br>**핵심 기여**:<br>- Solidity 스마트 컨트랙트를 위한 최초의 AST 기반 차이 분석 도구 개발<br>- Insert, Delete, Update, Move 연산을 통한 구조적 차이의 정확한 편집 스크립트 생성<br>- 353,262개 컨트랙트 쌍에서 96.1%의 높은 성공률과 기존 도구 대비 현저히 짧은 편집 스크립트 생성<br>- 925개 실제 커밋 데이터로 Git 라인 기반 비교 대비 우수성 검증<br><br>**의의**:<br>스마트 컨트랙트 보안 연구에서 코드 진화 패턴 분석, 취약점 도입 지점 추적, 자동화된 패치 검증 등의 연구에 핵심 도구로 활용 가능하며, 특히 대규모 스마트 컨트랙트 데이터셋에서 구조적 변화를 체계적으로 분석할 수 있는 기반을 제공한다. 또한 스마트 컨트랙트의 버전 관리 및 지속적 보안 모니터링 연구에도 직접적으로 적용할 수 있다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Structured code differencing is the act of comparing the hierarchical structure of code via its abstract syntax tree (AST) to capture modifications. AST-based source code differencing enables tasks such as vulnerability detection and automated repair where traditional line-based differencing falls short. We introduce SoliDiffy, the first AST differencing tool for Solidity smart contracts with the ability to generate an edit script that soundly shows the structural differences between two smart-contracts using insert, delete, update, move operations. In our evaluation on 353,262 contract pairs, SoliDiffy achieved a 96.1% diffing success rate, surpassing the state-of-the-art, and produced significantly shorter edit scripts. Additional experiments on 925 real-world commits further confirmed its superiority compared to Git line-based differencing. SoliDiffy provides accurate representations of smart contract evolution even in the existence of multiple complex modifications to the source code. SoliDiffy is made publicly available at https://github.com/mojtaba-eshghie/SoliDiffy.</p>
+  </section>
+</article>
+</body>
+</html>

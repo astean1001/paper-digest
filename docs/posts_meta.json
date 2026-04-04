@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-05-Operational-Semantics-for-Crystality--A-Smart-Cont.html",
+    "title": "Operational Semantics for Crystality: A Smart Contract Language for Parallel EVMs",
+    "date": "2026-04-05",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"Solidity\" OR ab:\"EVM\")",
+    "one_liner": "병렬 EVM을 위한 새로운 스마트 컨트랙트 언어 Crystality의 형식적 연산 의미론을 제시하고 Coq를 이용해 기계화하여 병렬 스마트 컨트랙트의 정확성을 형식적으로 검증할 수 있는 기반을 마련했습니다.",
+    "url": "http://arxiv.org/abs/2504.17336v1"
+  },
+  {
+    "filename": "2026-04-05-Automated-Vulnerability-Injection-in-Solidity-Smar.html",
+    "title": "Automated Vulnerability Injection in Solidity Smart Contracts: A Mutation-Based Approach for Benchmark Development",
+    "date": "2026-04-05",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"Solidity\" OR ab:\"EVM\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2504.15948v1"
+  },
+  {
+    "filename": "2026-04-05-SoliDiffy--AST-Differencing-for-Solidity-Smart-Con.html",
+    "title": "SoliDiffy: AST Differencing for Solidity Smart Contracts",
+    "date": "2026-04-05",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"Solidity\" OR ab:\"EVM\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2411.07718v4"
+  },
+  {
+    "filename": "2026-04-05-A-Practical-Two-Stage-Framework-for-GPU-Resource-a.html",
+    "title": "A Practical Two-Stage Framework for GPU Resource and Power Prediction in Heterogeneous HPC Systems",
+    "date": "2026-04-05",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"e-graph\" OR ab:\"program synthesis\") AND (ab:\"deobfuscation\" OR ab:\"MBA\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "GPU 자원 활용률과 전력 소모를 예측하기 위한 2단계 프레임워크를 제안하여 HPC 시스템에서 최대 97%의 GPU 활용률 예측 정확도와 92%의 전력 사용량 예측 정확도를 달성했습니다.",
+    "url": "http://arxiv.org/abs/2604.02158v1"
+  },
+  {
+    "filename": "2026-04-05-A-Practical-Two-Stage-Framework-for-GPU-Resource-a.html",
+    "title": "A Practical Two-Stage Framework for GPU Resource and Power Prediction in Heterogeneous HPC Systems",
+    "date": "2026-04-05",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ab:\"neural symbolic\") AND ab:\"program synthesis\" AND (ab:\"large language model\" OR ab:\"LLM\" OR ab:\"transformer\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.02158v1"
+  },
+  {
     "filename": "2026-04-04-Ontology-Constrained-Neural-Reasoning-in-Enterpris.html",
     "title": "Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents",
     "date": "2026-04-04",
