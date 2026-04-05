@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-06-TUNA--A-streamlined-quantum-chemistry-program-for.html",
+    "title": "TUNA: A streamlined quantum chemistry program for atoms and diatomics",
+    "date": "2026-04-06",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "원자와 이원자 분자에 특화된 오픈소스 양자화학 프로그램 TUNA를 개발하여, 에너지 계산을 기반으로 모든 분자 특성을 수치 미분으로 도출하는 통합된 접근법을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2604.01471v1"
+  },
+  {
+    "filename": "2026-04-06-Ab-initio-optical-potentials-for-magnesium-isotope.html",
+    "title": "Ab initio optical potentials for magnesium isotopes: from stability to the island of inversion",
+    "date": "2026-04-06",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "마그네슘 동위원소에 대한 첫 번째 ab initio 비국소 광학 포텐셜을 계산하여 핵반응 모델링의 정확도를 향상시키고, N=20 역전섬 근처에서 기존 전역 모델의 한계를 규명했습니다.",
+    "url": "http://arxiv.org/abs/2603.28978v1"
+  },
+  {
+    "filename": "2026-04-06-Hydrogen-helium-immiscibility-boundary-in-planets.html",
+    "title": "Hydrogen-helium immiscibility boundary in planets",
+    "date": "2026-04-06",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "기계학습 기반 대규모 분자동역학 시뮬레이션을 통해 거대 행성 내부의 수소-헬륨 비혼화 경계를 정밀하게 규명하고, 토성에서는 헬륨 비가 가능하지만 목성에서는 불가능함을 밝혔습니다.",
+    "url": "http://arxiv.org/abs/2603.28927v1"
+  },
+  {
+    "filename": "2026-04-06-TUNA--A-streamlined-quantum-chemistry-program-for.html",
+    "title": "TUNA: A streamlined quantum chemistry program for atoms and diatomics",
+    "date": "2026-04-06",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "원자와 이원자 분자에 특화된 오픈소스 양자화학 프로그램 TUNA를 개발하여, 에너지 계산으로부터 수치 미분을 통해 모든 물성을 도출하는 통합적 접근법을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2604.01471v1"
+  },
+  {
+    "filename": "2026-04-06-Ab-initio-optical-potentials-for-magnesium-isotope.html",
+    "title": "Ab initio optical potentials for magnesium isotopes: from stability to the island of inversion",
+    "date": "2026-04-06",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "마그네슘 동위원소에 대한 최초의 ab initio 비국소 광학 포텐셜을 계산하여 핵반응 모델링의 정확도를 향상시키고, 기존 글로벌 모델의 한계를 검증한 연구",
+    "url": "http://arxiv.org/abs/2603.28978v1"
+  },
+  {
     "filename": "2026-04-05-Operational-Semantics-for-Crystality--A-Smart-Cont.html",
     "title": "Operational Semantics for Crystality: A Smart Contract Language for Parallel EVMs",
     "date": "2026-04-05",

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TUNA: A streamlined quantum chemistry program for atoms and diatomics</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>TUNA: A streamlined quantum chemistry program for atoms and diatomics</h1>
+    <div class="meta">
+      <span>✍️ Harry Brough</span>
+      <span>📅 2026-04-01</span>
+      <a href="http://arxiv.org/abs/2604.01471v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 원자와 이원자 분자에 특화된 오픈소스 양자화학 프로그램 TUNA를 개발하여, 에너지 계산으로부터 수치 미분을 통해 모든 물성을 도출하는 통합적 접근법을 제시했습니다.<br><br>**문제 정의**: 기존 양자화학 프로그램들은 복잡하고 방대하여 교육 및 벤치마킹 목적으로 사용하기 어렵고, 특히 가장 기본적인 시스템인 원자와 이원자 분자 연구에 최적화된 투명하고 직관적인 도구가 부족했습니다.<br><br>**핵심 기여**: <br>- 원자/이원자 분자 도메인에 특화된 streamlined 양자화학 프로그램 개발<br>- "에너지 계산 → 수치 미분 → 모든 물성 도출"이라는 단일 원리 기반 설계<br>- DFT, 다체 섭동 이론, coupled cluster 이론 등 다양한 전자 구조 방법론의 참조 구현체 제공<br>- 직관적인 명령행 인터페이스를 통한 에너지, 최적화, 진동 주파수, 응답 특성 등 통합 접근<br><br>**의의**: 도메인 특화 프로그램 설계의 모범 사례로서, 복잡한 계산 화학 문제를 제한된 도메인에서 단순화하고 투명하게 구현하는 방법론을 보여줍니다. 이는 neurosymbolic 접근법에서 도메인 지식을 활용한 프로그램 합성 연구에 영감을 줄 수 있으며, 특히 과학 계산 도메인에서의 LLM 기반 코드 생성 및 분석 연구에 유용한 벤치마크 환경을 제공할 수 있습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We present TUNA, an open-source quantum chemistry program specifically designed for atoms and diatomic molecules. Within this narrow molecular domain, a broad and consistent set of electronic structure methods and calculation types is available. Energies, optimisations, vibrational frequencies, response properties, coordinate scans and ab initio molecular dynamics trajectories can be accessed through an intuitive command-line interface. A single principle underlies TUNA: once a method can be used to evaluate the energy, all properties follow from numerical differentiation. This makes the program both a transparent teaching platform and a compact environment for benchmarking methods on diatomics $\unicode{x2014}$ among the most simple yet instructive systems in quantum chemistry. Reference implementations including density functional theory, many-body perturbation theory and coupled cluster theory, supported by detailed theoretical documentation, make TUNA an accessible foundation for developing improved methods and algorithms in electronic structure.</p>
+  </section>
+</article>
+</body>
+</html>

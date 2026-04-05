@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydrogen-helium immiscibility boundary in planets</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>Hydrogen-helium immiscibility boundary in planets</h1>
+    <div class="meta">
+      <span>✍️ Xiaoyu Wang, Sebastien Hamel, Bingqing Cheng</span>
+      <span>📅 2026-03-30</span>
+      <a href="http://arxiv.org/abs/2603.28927v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기계학습 기반 대규모 분자동역학 시뮬레이션을 통해 거대 행성 내부의 수소-헬륨 비혼화 경계를 정밀하게 규명하고, 토성에서는 헬륨 비가 가능하지만 목성에서는 불가능함을 밝혔습니다.<br><br>**문제 정의**: <br>거대 행성 내부에서 헬륨 비(helium rain) 현상이 발생하는 위치를 결정하는 수소-헬륨 비혼화 경계의 정확한 위치가 불분명했습니다. 기존 고압 실험의 기술적 한계와 ab initio 시뮬레이션의 시스템 크기 및 시간 제약으로 인해 신뢰할 만한 데이터가 부족했습니다.<br><br>**핵심 기여**:<br>- 세 가지 밀도범함수 근사법(PBE, vdW-DF, HSE)으로 훈련된 기계학습 포텐셜을 이용한 대규모 분자동역학 시뮬레이션 수행<br>- 조성 의존적 화학 포텐셜 계산을 통한 비혼화 경계 매핑<br>- 기존 소규모 시뮬레이션 대비 ~2000K 낮은 상분리 온도 발견<br>- Redlich-Kister 정규용액 모델을 통한 열역학적 원리 규명 및 예측 모델 제시<br><br>**의의**:<br>행성 내부 모델링의 정확도를 크게 향상시켰으며, 대규모 시뮬레이션과 기계학습 포텐셜의 결합이 복잡한 물리 현상 예측에 효과적임을 입증했습니다. 제약 기반 문제 해결 관점에서 볼 때, 다중 물리적 제약 조건(압력, 온도, 조성)을 동시에 만족하는 해를 찾는 최적화 문제로 접근한 점이 주목할 만합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The location of the hydrogen-helium (H/He) immiscibility boundary controls whether and where helium rain occurs in giant planets, yet it remains uncertain because high-pressure experiments are challenging and ab initio simulations are limited in system size and simulation time. We map this boundary by computing composition-dependent chemical potentials from large-scale molecular dynamics driven by machine learning potentials trained on three density functional approximations (PBE, vdW-DF, and the hybrid HSE). The three functionals yield consistent immiscibility boundaries, and the demixing temperatures are typically ~2000 K lower than previous ab initio simulations using small system sizes across the pressure range of 100-1000 GPa. Fitting the H/He mixing free energy to a Redlich-Kister regular solution model rationalizes the thermodynamic driving force for phase separation and provides a predictive representation of the boundary. Comparison with current planetary interior profiles indicates that helium rain is plausible in Saturn but unlikely in the warmer interior of Jupiter. Our results narrow the uncertainty in the H/He immiscibility boundary and provide inputs for planetary models that couple demixing, heat transport, and composition gradients in gas giants.</p>
+  </section>
+</article>
+</body>
+</html>
