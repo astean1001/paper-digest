@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enhancing The Open Network: Definition and Automated Detection of Smart Contract Defects</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"audit report" OR ab:"vulnerability signature" OR ab:"bytecode analysis")</span>
+    <h1>Enhancing The Open Network: Definition and Automated Detection of Smart Contract Defects</h1>
+    <div class="meta">
+      <span>✍️ Hao Song, Teng Li, Jiachi Chen</span>
+      <span>📅 2025-01-11</span>
+      <a href="http://arxiv.org/abs/2501.06459v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: TON 블록체인의 FunC 스마트 컨트랙트에서 발생하는 8가지 결함을 정의하고, 이를 자동 탐지하는 정적 분석 도구 TONScanner를 개발하여 1,640개 컨트랙트에서 14,995개의 결함을 발견했습니다.<br><br>**문제 정의**: <br>- TON 블록체인이 2022년 출시 후 주목받고 있지만, FunC 언어로 작성된 스마트 컨트랙트의 실질적 결함에 대한 연구가 초기 단계에 머물러 있음<br>- 기존 Ethereum 중심의 스마트 컨트랙트 보안 연구와 달리, TON의 독특한 구조와 FunC 언어의 특성을 고려한 결함 탐지 도구가 부재<br><br>**핵심 기여**:<br>1. **결함 분류체계**: TON 공식 블로그와 감사 보고서 분석을 통해 8가지 FunC 스마트 컨트랙트 결함을 정의하고 코드 예제 제공<br>2. **TONScanner 프레임워크**: FunC 컴파일러 프론트엔드를 재사용하여 소스코드를 중간표현(IR)으로 변환하고, CFG 구축 후 SSA 형태로 변환하는 정적 분석 도구 개발<br>3. **TON 특화 분석 기법**: 데이터 의존성, 호출 그래프, 오염 분석, Cell 구조 분석 등 TON 블록체인의 고유 데이터 구조에 맞춤화된 분석 컴포넌트 통합<br><br>**의의**: <br>- **연구 확장성**: Ethereum 중심에서 벗어나 TON 등 다양한 블록체인 플랫폼으로 스마트 컨트랙트 보안 연구 영역 확장<br>- **실용적 기여**: 대규모 실제 컨트랙트 분석을 통한 검증으로 실무 적용 가능성 입증<br>- **방법론적 시사점**: 플랫폼별 고유 특성을 고려한 맞춤형 정적 분석 도구 개발 접근법 제시로, 향후 다른 블록체인 플랫폼 대상 연구의 방법론적 기준 제공</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The Open Network (TON), designed to support Telegram's extensive user base of hundreds of millions, has garnered considerable attention since its launch in 2022. FunC is the most popular programming language for writing smart contracts on TON. It is distinguished by a unique syntax compared to other smart contract languages. Despite growing interest, research on the practical defects of TON smart contracts is still in its early stages. In this paper, we summarize eight smart contract defects identified from TON's official blogs and audit reports, each with detailed definitions and code examples. Furthermore, we propose a static analysis framework called TONScanner to facilitate the detection of these defects. Specifically, TONScanner reuses FunC compiler's frontend code to transform the FunC source code into FunC intermediate representation (IR) in the form of a directed acyclic graph (DAG). Based on this IR, TONScanner constructs a control flow graph (CFG), then transforms it into a static single assignment (SSA) form to simplify further analysis. TONScanner also integrates Data Dependency, Call Graph, Taint Analysis, and Cell Construct, which are specifically tailored for TON blockchain's unique data structures. These components finally facilitate the identification of the eight defects. We evaluate the effectiveness of TONScanner by applying it to 1,640 smart contracts and find a total of 14,995 defects. Through random sampling and manual labeling, we find that TONScanner </p>
+  </section>
+</article>
+</body>
+</html>

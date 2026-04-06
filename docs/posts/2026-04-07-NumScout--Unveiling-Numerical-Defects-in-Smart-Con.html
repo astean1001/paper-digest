@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NumScout: Unveiling Numerical Defects in Smart Contracts using LLM-Pruning Symbolic Execution</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"audit report" OR ab:"vulnerability signature" OR ab:"bytecode analysis")</span>
+    <h1>NumScout: Unveiling Numerical Defects in Smart Contracts using LLM-Pruning Symbolic Execution</h1>
+    <div class="meta">
+      <span>✍️ Jiachi Chen, Zhenzhe Shao, Shuo Yang</span>
+      <span>📅 2025-03-13</span>
+      <a href="http://arxiv.org/abs/2503.10041v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트의 새로운 수치적 결함 5가지를 체계적으로 정의하고, LLM과 심볼릭 실행을 결합한 NumScout 도구로 이를 효과적으로 탐지하는 방법론을 제시했습니다.<br><br>**문제 정의**: <br>- 기존 연구는 정수 오버플로우 등 전통적인 수치적 결함에만 집중하여, 고TVL 스마트 컨트랙트의 복잡한 금융 수학 모델에서 발생하는 새로운 유형의 수치적 결함에 대한 체계적 연구와 효과적 탐지 방법이 부족함<br>- DeFi 애플리케이션의 부적절한 수치 계산이 보안 위험을 초래할 수 있음에도 이에 대한 대응책이 미흡함<br><br>**핵심 기여**:<br>1. **새로운 결함 분류체계**: 1,199개 감사 보고서 분석을 통해 5가지 새로운 수치적 결함 유형을 식별하고 정의<br>2. **하이브리드 탐지 방법론**: 소스코드와 바이트코드 정보를 결합한 심볼릭 실행 기반 탐지 도구 개발<br>3. **LLM 활용 최적화**: 대규모 언어모델을 사용해 수치 연산과 무관한 함수를 사전 필터링하여 심볼릭 실행 속도를 28.4% 향상<br>4. **실증적 검증**: 6,617개 실제 컨트랙트에서 도구의 성능 검증<br><br>**의의**: <br>이 연구는 스마트 컨트랙트 보안 감사 분야에서 새로운 패러다임을 제시합니다. 특히 neurosymbolic 접근법(LLM + 심볼릭 실행)을 통해 기존 정적 분석의 한계를 극복하고, DeFi 생태계의 복잡한 금융 로직에서 발생할 수 있는 미묘한 수치적 오류를 체계적으로 탐지할 수 있는 방법론을 제공합니다. 이는 고액 자산을 다루는 스마트 컨트랙트의 안전성 향상에 직접적으로 기여할 수 있는 실용적 가치가 높은 연구입니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In recent years, the Ethereum platform has witnessed a proliferation of smart contracts, accompanied by exponential growth in total value locked (TVL). High-TVL smart contracts often require complex numerical computations, particularly in mathematical financial models used by many decentralized applications (DApps). Improper calculations can introduce numerical defects, posing potential security risks. Existing research primarily focuses on traditional numerical defects like integer overflow, and there is currently a lack of systematic research and effective detection methods targeting new types of numerical defects. In this paper, we identify five new types of numerical defects through the analysis of 1,199 audit reports by utilizing the open card method. Each defect is defined and illustrated with a code example to highlight its features and potential consequences. We also propose NumScout, a symbolic execution-based tool designed to detect these five defects. Specifically, the tool combines information from source code and bytecode, analyzing key operations such as comparisons and transfers, to effectively locate defects and report them based on predefined detection patterns. Furthermore, NumScout uses a large language model (LLM) to prune functions which are unrelated to numerical operations. This step allows symbolic execution to quickly enter the target function and improve runtime speed by 28.4%. We run NumScout on 6,617 real-world contracts and evaluated its performan</p>
+  </section>
+</article>
+</body>
+</html>

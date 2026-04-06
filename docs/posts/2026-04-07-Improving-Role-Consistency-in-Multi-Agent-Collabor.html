@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Improving Role Consistency in Multi-Agent Collaboration via Quantitative Role Clarity</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND (ab:"deobfuscation" OR ab:"mixed boolean arithmetic" OR ab:"e-graph")</span>
+    <h1>Improving Role Consistency in Multi-Agent Collaboration via Quantitative Role Clarity</h1>
+    <div class="meta">
+      <span>✍️ Guoling Zhou, Wenpei Han, Fengqin Yang</span>
+      <span>📅 2026-04-03</span>
+      <a href="http://arxiv.org/abs/2604.02770v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: LLM 기반 멀티에이전트 시스템에서 에이전트가 자신의 역할을 벗어나는 문제를 해결하기 위해 역할 명확성을 정량화하고 이를 정규화 항으로 사용한 파인튜닝 방법론을 제안<br><br>**문제 정의**: <br>LLM 기반 멀티에이전트 시스템에서 에이전트들이 할당된 역할의 책임과 제약을 준수하지 않고 다른 에이전트처럼 행동하는 "역할 불일치(role disobedience)" 문제를 해결하려고 함. 이는 멀티에이전트 협업의 주요 실패 모드 중 하나임.<br><br>**핵심 기여**:<br>1. **정량적 역할 명확성 지표 개발**: 에이전트의 행동 궤적과 역할 설명 간의 의미적 유사성을 측정하는 역할 할당 행렬 S(φ) 구성<br>2. **역할 명확성 행렬 정의**: M(φ) = softmax(S(φ)) - I로 정의하고, 이의 Frobenius 노름으로 역할-행동 정렬 정도를 정량화<br>3. **정규화 기반 파인튜닝**: 역할 명확성 행렬을 정규화 항으로 활용한 경량 파인튜닝 방법론 제시<br>4. **실증적 성능 개선**: ChatDev에서 역할 일탈률을 Qwen 46.4%→8.4%, Llama 43.4%→0.2%로 대폭 감소<br><br>**의의**: <br>이 연구는 neurosymbolic AI와 LLM 융합 분야에서 중요한 의미를 가짐. 특히 symbolic reasoning의 핵심인 역할 정의와 제약을 LLM이 일관되게 준수하도록 하는 방법론을 제시했다는 점에서 의미가 큼. 정량적 지표를 통한 역할 일관성 측정과 이를 활용한 최적화 접근법은 neurosymbolic 시스템에서 symbolic 규칙과 neural 행동 간의 정렬을 보장하는 일반화 가능한 프레임워크로 확장될 수 있음.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In large language model (LLM)-driven multi-agent systems, disobey role specification (failure to adhere to the defined responsibilities and constraints of an assigned role, potentially leading to an agent behaving like another) is a major failure mode \cite{DBLP:journals/corr/abs-2503-13657}. To address this issue, in the present paper, we propose a quantitative role clarity to improve role consistency. Firstly, we construct a role assignment matrix $S(φ)=[s_{ij}(φ)]$, where $s_{ij}(φ)$ is the semantic similarity between the $i$-th agent's behavior trajectory and the $j$-th agent's role description. Then we define role clarity matrix $M(φ)$ as $\text{softmax}(S(φ))-I$, where $\text{softmax}(S(φ))$ is a row-wise softmax of $S(φ)$ and $I$ is the identity matrix. The Frobenius norm of $M(φ)$ quantifies the alignment between agents' role descriptions and their behaviors trajectory. Moreover, we employ the role clarity matrix as a regularizer during lightweight fine-tuning to improve role consistency, thereby improving end-to-end task performance. Experiments on the ChatDev multi-agent system show that our method substantially improves role consistency and task performance: with Qwen and Llama, the role overstepping rate decreases from $46.4\%$ to $8.4\%$ and from $43.4\%$ to $0.2\%$, respectively, and the role clarity score increases from $0.5328$ to $0.9097$ and from $0.5007$ to $0.8530$, respectively, the task success rate increases from $0.6769$ to $0.6909$ and from $0.6174$ t</p>
+  </section>
+</article>
+</body>
+</html>

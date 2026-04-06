@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-07-SmartPoC--Generating-Executable-and-Validated-PoCs.html",
+    "title": "SmartPoC: Generating Executable and Validated PoCs for Smart Contract Bug Reports",
+    "date": "2026-04-07",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"audit report\" OR ab:\"vulnerability signature\" OR ab:\"bytecode analysis\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2511.12993v3"
+  },
+  {
+    "filename": "2026-04-07-NumScout--Unveiling-Numerical-Defects-in-Smart-Con.html",
+    "title": "NumScout: Unveiling Numerical Defects in Smart Contracts using LLM-Pruning Symbolic Execution",
+    "date": "2026-04-07",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"audit report\" OR ab:\"vulnerability signature\" OR ab:\"bytecode analysis\")",
+    "one_liner": "스마트 컨트랙트의 새로운 수치적 결함 5가지를 체계적으로 정의하고, LLM과 심볼릭 실행을 결합한 NumScout 도구로 이를 효과적으로 탐지하는 방법론을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2503.10041v1"
+  },
+  {
+    "filename": "2026-04-07-Enhancing-The-Open-Network--Definition-and-Automat.html",
+    "title": "Enhancing The Open Network: Definition and Automated Detection of Smart Contract Defects",
+    "date": "2026-04-07",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"audit report\" OR ab:\"vulnerability signature\" OR ab:\"bytecode analysis\")",
+    "one_liner": "TON 블록체인의 FunC 스마트 컨트랙트에서 발생하는 8가지 결함을 정의하고, 이를 자동 탐지하는 정적 분석 도구 TONScanner를 개발하여 1,640개 컨트랙트에서 14,995개의 결함을 발견했습니다.",
+    "url": "http://arxiv.org/abs/2501.06459v1"
+  },
+  {
+    "filename": "2026-04-07-Definition-and-Detection-of-Centralization-Defects.html",
+    "title": "Definition and Detection of Centralization Defects in Smart Contracts",
+    "date": "2026-04-07",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"audit report\" OR ab:\"vulnerability signature\" OR ab:\"bytecode analysis\")",
+    "one_liner": "스마트컨트랙트의 중앙화 결함을 체계적으로 분류하고, 권한 의존성 그래프를 활용한 자동 탐지 도구 CDRipper를 개발하여 대규모 실제 컨트랙트 분석을 수행한 연구",
+    "url": "http://arxiv.org/abs/2411.10169v1"
+  },
+  {
+    "filename": "2026-04-07-Improving-Role-Consistency-in-Multi-Agent-Collabor.html",
+    "title": "Improving Role Consistency in Multi-Agent Collaboration via Quantitative Role Clarity",
+    "date": "2026-04-07",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"deobfuscation\" OR ab:\"mixed boolean arithmetic\" OR ab:\"e-graph\")",
+    "one_liner": "LLM 기반 멀티에이전트 시스템에서 에이전트가 자신의 역할을 벗어나는 문제를 해결하기 위해 역할 명확성을 정량화하고 이를 정규화 항으로 사용한 파인튜닝 방법론을 제안",
+    "url": "http://arxiv.org/abs/2604.02770v1"
+  },
+  {
     "filename": "2026-04-06-TUNA--A-streamlined-quantum-chemistry-program-for.html",
     "title": "TUNA: A streamlined quantum chemistry program for atoms and diatomics",
     "date": "2026-04-06",

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartPoC: Generating Executable and Validated PoCs for Smart Contract Bug Reports</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"audit report" OR ab:"vulnerability signature" OR ab:"bytecode analysis")</span>
+    <h1>SmartPoC: Generating Executable and Validated PoCs for Smart Contract Bug Reports</h1>
+    <div class="meta">
+      <span>✍️ Longfei Chen, Ruibin Yan, Taiyu Wong</span>
+      <span>📅 2025-11-17</span>
+      <a href="http://arxiv.org/abs/2511.12993v3" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>스마트 컨트랙트 감사 보고서에서 LLM을 활용해 실행 가능하고 검증된 PoC(Proof-of-Concept) 테스트 케이스를 자동 생성하는 SmartPoC 시스템을 제안하였습니다.<br><br>**문제 정의**: <br>기존 정적 분석 기반 스마트 컨트랙트 감사는 재현 가능한 실행형 PoC 대신 이질적인 발견사항만 제공하여, 수동 검증에 높은 비용과 임시방편적 접근이 필요한 문제를 해결하고자 했습니다. 특히 LLM을 활용한 PoC 생성 시 노이즈가 많은 입력, 실행 기반 부족, 런타임 오라클 부재라는 세 가지 핵심 과제에 직면했습니다.<br><br>**핵심 기여**: <br>1) **함수 레벨 슬라이싱**: 감사 보고서에서 핵심 함수를 중심으로 실행 관련 이웃 함수들을 포함한 focused slice를 추출하여 노이즈 감소<br>2) **생성-수리-실행 루프**: 결정론적 사전 실행 정화와 피드백 기반 사후 실행 디버깅을 결합한 반복적 PoC 합성<br>3) **차등 검증**: 생성된 테스트 케이스의 악용 가능성을 확인하는 자동화된 오라클 메커니즘<br>4) 98% 이상의 확인 정밀도와 84-85%의 재현율을 달성하며, Etherscan 코퍼스에서 545개 감사 발견사항 중 64개 버그를 평균 $0.03 비용으로 확인<br><br>**의의**: <br>audit report에서 취약점 시그니처를 추출하고 실행 가능한 형태로 변환하는 구체적인 방법론을 제시하여, 스마트 컨트랙트 보안 검증의 자동화와 비용 효율성을 크게 향상시켰습니다. 특히 LLM 기반 코드 생성과 실행 검증을 결합한 접근법은 취약점 시그니처 연구에서 정적 분석 결과를 동적으로 검증하는 방법론적 기여를 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contracts are commonly audited through static analysis to explore vulnerabilities. However, static approaches typically produce heterogeneous findings rather than reproducible, executable proof-of-concept (PoC) test cases, leading to costly and ad hoc manual validation. Large language models (LLMs) offer a promising way to translate audit reports into PoC test cases, but face three major challenges: noisy inputs, lack of execution grounding, and missing runtime oracles. We present SmartPoC, an end-to-end approach for validating reported vulnerabilities in audit reports by generating and executing PoC test cases with automated exploitability verification. SmartPoC first extracts a focused function-level slice from each report to reduce noise, centering on the key functions referenced in a finding and augmenting them with execution-relevant neighbors. To improve executability, we wrap LLM-based PoC synthesis in a generate-repair-execute loop, combining deterministic pre-execution sanitization with feedback-driven post-execution debugging. We further use differential verification as an oracle to confirm the exploitability of generated test cases. On the SmartBugs-Vul and FORGE-Vul benchmarks, SmartPoC achieves confirmation precision of 98.32% and 98.65%, with recall of 84.17% and 85.28%, respectively. On a recent Etherscan verified-source corpus, SmartPoC confirms 64 bugs from 545 audit findings at an average cost of $0.03.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Definition and Detection of Centralization Defects in Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"audit report" OR ab:"vulnerability signature" OR ab:"bytecode analysis")</span>
+    <h1>Definition and Detection of Centralization Defects in Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Zewei Lin, Jiachi Chen, Jiajing Wu</span>
+      <span>📅 2024-11-15</span>
+      <a href="http://arxiv.org/abs/2411.10169v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트컨트랙트의 중앙화 결함을 체계적으로 분류하고, 권한 의존성 그래프를 활용한 자동 탐지 도구 CDRipper를 개발하여 대규모 실제 컨트랙트 분석을 수행한 연구<br><br>**문제 정의**: <br>- 스마트컨트랙트의 중앙화 결함(단일 실패 지점을 야기하는 설계/개발 오류)으로 인한 금전적 손실이 증가하고 있음<br>- 기존 스마트컨트랙트 분석 도구들이 다른 유형의 결함에만 집중하여 중앙화 결함을 간과하고 있음<br>- 중앙화 결함에 대한 체계적인 정의와 자동 탐지 방법론이 부족함<br><br>**핵심 기여**:<br>1. **체계적 분류**: 597개 Stack Exchange 게시물과 117개 감사 보고서를 수동 분석하여 6가지 중앙화 결함 유형을 정의<br>2. **탐지 방법론**: 권한 의존성 그래프(PDG) 구축을 통해 함수의 권한 종속성을 추출하고 민감한 작업을 식별하는 패턴 기반 탐지 방법 제안<br>3. **자동화 도구**: CDRipper 도구 개발로 소스코드에서 미리 정의된 패턴을 기반으로 중앙화 결함 자동 탐지<br>4. **대규모 검증**: 244,424개 실제 스마트컨트랙트를 대상으로 한 실험과 수동 라벨링된 데이터셋 기반 평가<br><br>**의의**: <br>- 기존에 체계화되지 않았던 중앙화 결함이라는 새로운 취약점 카테고리를 정의하고 분류 체계를 제시<br>- 권한 의존성 분석이라는 새로운 접근법으로 기존 취약점 탐지 방법론을 확장<br>- 취약점 시그니처 추출 연구에 중앙화 결함 패턴 정의와 PDG 기반 분석 방법론을 응용할 수 있는 기반 제공<br>- 대규모 실제 데이터 검증을 통해 실용적인 자동 탐지 도구의 가능성을 입증</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In recent years, security incidents stemming from centralization defects in smart contracts have led to substantial financial losses. A centralization defect refers to any error, flaw, or fault in a smart contract's design or development stage that introduces a single point of failure. Such defects allow a specific account or user to disrupt the normal operations of smart contracts, potentially causing malfunctions or even complete project shutdowns. Despite the significance of this issue, most current smart contract analyses overlook centralization defects, focusing primarily on other types of defects. To address this gap, our paper introduces six types of centralization defects in smart contracts by manually analyzing 597 Stack Exchange posts and 117 audit reports. For each defect, we provide a detailed description and code examples to illustrate its characteristics and potential impacts. Additionally, we introduce a tool named CDRipper (Centralization Defects Ripper) designed to identify the defined centralization defects. Specifically, CDRipper constructs a permission dependency graph (PDG) and extracts the permission dependencies of functions from the source code of smart contracts. It then detects the sensitive operations in functions and identifies centralization defects based on predefined patterns. We conduct a large-scale experiment using CDRipper on 244,424 real-world smart contracts and evaluate the results based on a manually labeled dataset. Our findings reveal </p>
+  </section>
+</article>
+</body>
+</html>
