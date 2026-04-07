@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-04-08-ContractShield--Bridging-Semantic-Structural-Gaps.html",
+    "title": "ContractShield: Bridging Semantic-Structural Gaps via Hierarchical Cross-Modal Fusion for Multi-Label Vulnerability Detection in Obfuscated Smart Contracts",
+    "date": "2026-04-08",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "스마트 컨트랙트 난독화 공격에 대응하기 위해 의미적-구조적-시간적 특징을 계층적 크로스모달 융합으로 통합한 강건한 다중 취약점 탐지 프레임워크를 제안함.",
+    "url": "http://arxiv.org/abs/2604.02771v1"
+  },
+  {
     "filename": "2026-04-07-SmartPoC--Generating-Executable-and-Validated-PoCs.html",
     "title": "SmartPoC: Generating Executable and Validated PoCs for Smart Contract Bug Reports",
     "date": "2026-04-07",
