@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-09-Accessing-the-performance-of-CC2-for-excited-state.html",
+    "title": "Accessing the performance of CC2 for excited state dynamics: a benchmark study with pyrazine",
+    "date": "2026-04-09",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.05734v1"
+  },
+  {
+    "filename": "2026-04-09-Dataset-Distillation-for-Machine-Learning-Force-Fi.html",
+    "title": "Dataset Distillation for Machine Learning Force Field in Phase Transition Regime",
+    "date": "2026-04-09",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "상전이 영역에서 기계학습 force field의 훈련 효율성을 개선하기 위해 Central-Peripheral Distillation(CPD) 알고리즘을 제안하여 최소한의 데이터로도 고정확도 모델을 구축할 수 있음을 입증했습니다.",
+    "url": "http://arxiv.org/abs/2604.03027v1"
+  },
+  {
+    "filename": "2026-04-09-Hierarchical-Awareness-Adapters-with-Hybrid-Pyrami.html",
+    "title": "Hierarchical Awareness Adapters with Hybrid Pyramid Feature Fusion for Dense Depth Prediction",
+    "date": "2026-04-09",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.03339v1"
+  },
+  {
+    "filename": "2026-04-09-PhDLspec--physical-prior-embedded-deep-learning-me.html",
+    "title": "PhDLspec: physical-prior embedded deep learning method for spectroscopic determination of stellar labels in high-dimensional parameter space",
+    "date": "2026-04-09",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "물리학적 사전 지식을 트랜스포머 프레임워크에 임베딩하여 저해상도 별 스펙트럼에서 30개 이상의 천체물리학적 매개변수를 동시에 모델링하고 추출하는 딥러닝 방법론을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2604.02730v1"
+  },
+  {
+    "filename": "2026-04-09-textit-Ab-initio---textit-GW--BSE-theory-of-optic.html",
+    "title": "\\textit{Ab initio} \\textit{GW}-BSE theory of optical activity in $α$-quartz",
+    "date": "2026-04-09",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "α-석영의 광학 활성을 GW-BSE 이론 기반의 제1원리 다체 이론으로 분석하여, 엑시톤 효과가 고체의 광학 활성 스펙트럼 분산에 결정적 역할을 함을 규명했다.",
+    "url": "http://arxiv.org/abs/2604.05450v1"
+  },
+  {
     "filename": "2026-04-08-ContractShield--Bridging-Semantic-Structural-Gaps.html",
     "title": "ContractShield: Bridging Semantic-Structural Gaps via Hierarchical Cross-Modal Fusion for Multi-Label Vulnerability Detection in Obfuscated Smart Contracts",
     "date": "2026-04-08",

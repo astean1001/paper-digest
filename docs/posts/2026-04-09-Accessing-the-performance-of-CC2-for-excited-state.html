@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessing the performance of CC2 for excited state dynamics: a benchmark study with pyrazine</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Accessing the performance of CC2 for excited state dynamics: a benchmark study with pyrazine</h1>
+    <div class="meta">
+      <span>✍️ Rui-Hao Bi, Chongxiao Zhao, Ruixin Sun</span>
+      <span>📅 2026-04-07</span>
+      <a href="http://arxiv.org/abs/2604.05734v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>RI-CC2 방법론을 이용하여 피라진(pyrazine) 분자의 초고속 내부 전환 동역학을 벤치마크하고, 인공신경망을 결합한 전차원 궤도면 이동 시뮬레이션을 통해 실험 결과를 성공적으로 재현했습니다.<br><br>**문제 정의**: <br>양자화학에서 CC2(Coupled-Cluster Singles and Doubles) 방법론이 분자의 들뜬 상태 동역학, 특히 초고속 내부 전환 과정을 얼마나 정확하게 기술할 수 있는지 평가하는 것. 기존 방법들의 계산 비용과 정확도 간의 균형점을 찾고자 했습니다.<br><br>**핵심 기여**:<br>1. **방법론적 구현**: Q-Chem 패키지에 RI-CC2의 해석적 기울기와 비단열 결합 벡터를 구현<br>2. **이중 접근법**: 축소 차원 진동 결합 모델과 전차원 ab initio 궤도면 이동 시뮬레이션을 병행 사용<br>3. **AI 가속화**: RI-CC2 데이터로 훈련된 당뇨병적 인공신경망 모델로 동역학 계산 가속화<br>4. **실험 검증**: B₂ᵤ 상태의 개체수 감소 시간(26 fs)이 실험값(22±3 fs)과 일치함을 확인<br><br>**의의**: <br>이 연구는 정확한 양자화학 계산과 기계학습의 결합이 복잡한 분자 동역학 문제를 효율적으로 해결할 수 있음을 보여줍니다. 특히 고품질 데이터셋 생성과 AI 모델 훈련의 통합 접근법은 뉴로심볼릭 프로그램 합성 분야에서 도메인 지식과 학습 알고리즘을 결합하는 방법론과 유사한 철학을 공유하며, 계산 과학 분야에서의 AI 활용 방안에 대한 중요한 시사점을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In this work, we access the performance of RI-CC2 for ultrafast internal conversion using pyrazine as a benchmark system. We implement analytical gradients and nonadiabatic coupling vectors for RI-CC2 in the Q-Chem package and employ them in two complementary approaches: a reduced-dimensionality vibronic coupling (VC) model and full-dimensional ab initio on-the-fly trajectory surface hopping simulations. To accelerate the on-the-fly dynamics, we employ a diabatic artificial neural network model trained on RI-CC2 data. Both the VC model and the full-dimensional dynamics reveal that the dark $A_\text{1u}$ state actively participates in the internal conversion process. RI-CC2 identifies the $Q_\text{9a}$ and $Q_\text{8a}$ vibrational modes as key drivers of the coherent population transfer between the $A_\text{1u}$ and $B_\text{3u}$. The on-the-fly dynamics reproduce the experimental $B_\text{2u}$ population decay time of 26 fs, consistent with the measured value of $22\pm3$ fs. The high-quality dataset of energies, forces, and nonadiabatic couplings generated here provides a valuable resource for future machine-learning developments, while the stochastic variant sRI-CC2 promises to extend such dynamics to larger molecular systems.</p>
+  </section>
+</article>
+</body>
+</html>

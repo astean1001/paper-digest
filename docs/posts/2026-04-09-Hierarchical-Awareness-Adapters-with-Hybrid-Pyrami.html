@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hierarchical Awareness Adapters with Hybrid Pyramid Feature Fusion for Dense Depth Prediction</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Hierarchical Awareness Adapters with Hybrid Pyramid Feature Fusion for Dense Depth Prediction</h1>
+    <div class="meta">
+      <span>✍️ Wuqi Su, Huilun Song, Chen Zhao</span>
+      <span>📅 2026-04-03</span>
+      <a href="http://arxiv.org/abs/2604.03339v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>단일 RGB 이미지에서 깊이 추정을 위해 계층적 어댑터와 하이브리드 피라미드 특징 융합을 결합한 다층 CRF 모델을 제안하여 기존 방법 대비 계산 효율성과 성능을 동시에 개선했습니다.<br><br>**문제 정의**: <br>단일 RGB 이미지에서의 깊이 추정이 가지는 본질적 한계(스케일 모호성, 기하학적 단서 부족)와 기존 접근법들이 복잡한 네트워크 구조에 의존하면서 발생하는 높은 학습 비용 및 계산 오버헤드 문제를 해결하고자 했습니다.<br><br>**핵심 기여**: <br>1) **하이브리드 피라미드 특징 융합(HPF)**: 다중 스케일 공간 피라미드 풀링과 이축 특징 집합을 결합하여 단거리-장거리 의존성을 효과적으로 캡처<br>2) **계층적 인식 어댑터(HA)**: 학습 가능한 차원 스케일링을 통한 경량화된 브로드캐스트 모듈로 계층 간 특징 상호작용 강화<br>3) **동적 스케일링 어텐션 기반 완전연결 CRF 디코더**: 픽셀 수준의 세밀한 공간 관계 모델링과 극값 붕괴 방지를 위한 편향 학습 단위 포함<br><br>**의의**: <br>이 연구는 계층적 구조와 어댑터 메커니즘을 통해 복잡한 시각적 추론 작업을 효율적으로 수행하는 방법론을 제시합니다. 특히 다층 표현 학습과 조건부 확률 모델링의 융합은 neurosymbolic 시스템에서 기호적 추론과 신경망 학습을 연결하는 중요한 통찰을 제공하며, LLM 기반 프로그램 분석에서도 유사한 계층적 추상화 전략을 적용할 수 있는 가능성을 시사합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Monocular depth estimation from a single RGB image remains a fundamental challenge in computer vision due to inherent scale ambiguity and the absence of explicit geometric cues. Existing approaches typically rely on increasingly complex network architectures to regress depth maps, which escalates training costs and computational overhead without fully exploiting inter-pixel spatial dependencies. We propose a multilevel perceptual conditional random field (CRF) model built upon the Swin Transformer backbone that addresses these limitations through three synergistic innovations: (1) an adaptive hybrid pyramid feature fusion (HPF) strategy that captures both short-range and long-range dependencies by combining multi-scale spatial pyramid pooling with biaxial feature aggregation, enabling effective integration of global and local contextual information; (2) a hierarchical awareness adapter (HA) that enriches cross-level feature interactions within the encoder through lightweight broadcast modules with learnable dimensional scaling, reducing computational complexity while enhancing representational capacity; and (3) a fully-connected CRF decoder with dynamic scaling attention that models fine-grained pixel-level spatial relationships, incorporating a bias learning unit to prevent extreme-value collapse and ensure stable training. Extensive experiments on NYU Depth v2, KITTI, and MatterPort3D datasets demonstrate that our method achieves state-of-the-art performance, reducing Abs R</p>
+  </section>
+</article>
+</body>
+</html>
