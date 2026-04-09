@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlphaTrans: A Neuro-Symbolic Compositional Approach for Repository-Level Code Translation and Validation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ti:"neuro-symbolic") AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>AlphaTrans: A Neuro-Symbolic Compositional Approach for Repository-Level Code Translation and Validation</h1>
+    <div class="meta">
+      <span>✍️ Ali Reza Ibrahimzada, Kaiyao Ke, Mrigank Pawagi</span>
+      <span>📅 2024-10-31</span>
+      <a href="http://arxiv.org/abs/2410.24117v5" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>Repository 전체 규모의 코드 번역을 위해 프로그램 분석으로 코드를 분해하고 LLM으로 번역한 후 다단계 검증을 수행하는 neuro-symbolic 접근법 AlphaTrans를 제안함.<br><br>**문제 정의**: <br>기존 규칙 기반 transpiler는 언어 진화에 따라 obsolete 되고 일반화가 어려우며, LLM 기반 코드 번역 기법들은 단순한 벤치마크에서는 작동하지만 의존성, 커스텀 타입, 언어별 특성 등을 가진 실제 프로젝트의 규모와 복잡성에서는 실패하는 문제를 해결하고자 함.<br><br>**핵심 기여**: <br>1) **프로그램 분석 기반 분해**: 프로그램을 fragment 단위로 분해하고 역호출 순서(reverse call order)로 번역하여 LLM이 처리할 수 있는 크기로 문제를 분할<br>2) **다단계 검증 파이프라인**: 구문 정확성, 런타임 동작, 기능적 정확성을 단계적으로 검증하는 통합된 번역-검증 시스템<br>3) **실제 프로젝트 검증**: 10개 실제 오픈소스 프로젝트(총 17,874개 fragment)에서 96.40% 구문 정확성, 27.03% 런타임 검증, 25.14% 기능 검증 달성<br><br>**의의**: <br>Repository 수준의 대규모 코드 변환에서 프로그램 분석과 LLM을 결합한 systematic approach를 제시했다는 점에서, Solidity 스마트 컨트랙트의 자동화된 패치 합성 연구에 직접 응용 가능함. 특히 복잡한 의존성을 가진 실제 코드베이스를 다루는 방법론과 다단계 검증 체계는 스마트 컨트랙트 분석 및 자동 수정 시스템 구축에 핵심적인 통찰을 제공함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Code translation transforms programs from one programming language (PL) to another. Several rule-based transpilers have been designed to automate code translation between different pairs of PLs. However, the rules can become obsolete as the PLs evolve and cannot generalize to other PLs. Recent studies have explored the automation of code translation using Large Language Models (LLMs). One key observation is that such techniques may work well for crafted benchmarks but fail to generalize to the scale and complexity of real-world projects with dependencies, custom types, PL-specific features, etc. We propose AlphaTrans, a neuro-symbolic approach to automate repository-level code translation. AlphaTrans translates both source and test code, and employs multiple levels of validation to ensure the translation preserves the functionality of the source program. To break down the problem for LLMs, AlphaTrans leverages program analysis to decompose the program into fragments and translates them in the reverse call order. We leveraged AlphaTrans to translate ten real-world open-source projects consisting of <836, 8575, 2719> classes, methods, and tests. AlphaTrans breaks down these projects into 17874 fragments and translates the entire repository. 96.40% of the translated fragments are syntactically correct, and AlphaTrans validates the translations' runtime behavior and functional correctness for 27.03% and 25.14% of fragments. On average, the integrated translation and validation ta</p>
+  </section>
+</article>
+</body>
+</html>

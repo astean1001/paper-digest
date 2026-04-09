@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Procedural Adherence and Interpretability Through Neuro-Symbolic Generative Agents</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ti:"neuro-symbolic") AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Procedural Adherence and Interpretability Through Neuro-Symbolic Generative Agents</h1>
+    <div class="meta">
+      <span>✍️ Raven Rothkopf, Hannah Tongxin Zeng, Mark Santolucito</span>
+      <span>📅 2024-02-24</span>
+      <a href="http://arxiv.org/abs/2402.16905v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대규모 언어모델(LLM)의 시간적 행동 관리 문제를 해결하기 위해 형식 논리 기반 프로그램 합성과 LLM 콘텐츠 생성을 결합한 뉴로-심볼릭 에이전트를 제안하여 절차적 준수성과 해석가능성을 보장하는 연구입니다.<br><br>**문제 정의**: <br>LLM 기반 대화형 에이전트가 장기간의 상호작용에서 일관성 있는 행동을 유지하기 어려운 문제를 다룹니다. 특히 상태 유지와 장기적 추론이 필요한 상황에서 LLM 패러다임의 한계로 인해 시간적 행동 관리와 해석이 어려운 점을 해결하고자 했습니다.<br><br>**핵심 기여**:<br>- **Temporal Stream Logic(TSL) 활용**: 해석 가능한 고수준 시간적 구조를 강제하는 오토마타 생성<br>- **하이브리드 아키텍처**: 오토마타가 상호작용 맥락을 추적하고 대화를 가이드하여 LLM이 더 짧은 컨텍스트 윈도우에 집중할 수 있도록 설계<br>- **성능 검증**: Choose-your-own-adventure 게임 생성 태스크에서 오토마타 강화 에이전트가 96% 이상의 시간적 제약 준수율을 달성(순수 LLM 에이전트는 14.67%)<br><br>**의의**: <br>이 연구는 LLM의 창의성과 형식 논리의 신뢰성을 결합한 실용적 해법을 제시합니다. 스마트 컨트랙트의 행동 검증, 설명 가능한 프로그램 분석 등 정확성과 투명성이 중요한 도메인에서 활용 가능하며, 특히 장기적 상호작용이 필요한 AI 시스템의 신뢰성 확보에 중요한 기여를 합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The surge in popularity of large language models (LLMs) has opened doors for new approaches to the creation of interactive agents. However, managing and interpreting the temporal behavior of such agents over the course of a potentially infinite interaction remain challenging. The stateful, long-term horizon reasoning required for coherent agent behavior does not fit well into the LLM paradigm. We propose a combination of formal logic-based program synthesis and LLM content generation to bring guarantees of procedural adherence and interpretability to generative agent behavior. To illustrate the benefit of procedural adherence and interpretability, we use Temporal Stream Logic (TSL) to generate an automaton that enforces an interpretable, high-level temporal structure on an agent. With the automaton tracking the context of the interaction and making decisions to guide the conversation accordingly, we can drive content generation in a way that allows the LLM to focus on a shorter context window. We evaluated our approach on different tasks involved in creating an interactive agent specialized for generating choose-your-own-adventure games. We found that over all of the tasks, an automaton-enhanced agent with procedural guarantees achieves at least 96% adherence to its temporal constraints, whereas a purely LLM-based agent demonstrates as low as 14.67% adherence.</p>
+  </section>
+</article>
+</body>
+</html>

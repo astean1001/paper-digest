@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imandra CodeLogician: Neuro-Symbolic Reasoning for Precise Analysis of Software Logic</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ti:"neuro-symbolic") AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Imandra CodeLogician: Neuro-Symbolic Reasoning for Precise Analysis of Software Logic</h1>
+    <div class="meta">
+      <span>✍️ Hongyu Lin, Samer Abdallah, Makar Valentinov</span>
+      <span>📅 2026-01-17</span>
+      <a href="http://arxiv.org/abs/2601.11840v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>LLM과 형식 검증 엔진(ImandraX)을 결합하여 소프트웨어 로직의 정밀한 수학적 추론을 수행하는 neurosymbolic 에이전트 CodeLogician을 제안하고, 기존 LLM 단독 접근법 대비 41-47%p의 추론 정확도 향상을 달성했다.<br><br>**문제 정의**: <br>LLM은 코드 이해에서 우수한 성능을 보이지만 프로그램 동작에 대한 정밀하고 완전한 수학적 추론 능력이 부족하며, 기존 벤치마크는 실제 소프트웨어와 분리된 수학적 증명이나 의미론적 엄밀성이 부족한 엔지니어링 태스크에만 초점을 맞추고 있다.<br><br>**핵심 기여**: <br>1) LLM이 소프트웨어 시스템의 명시적 형식 모델을 구성하고, 자동화된 추론을 통해 이진 검증 결과를 넘어서는 풍부한 의미론적 질문에 답변하는 neurosymbolic 접근법<br>2) 정리 증명과 소프트웨어 엔지니어링 벤치마크 사이의 중간 영역을 타겟으로 하는 code-logic-bench 벤치마크 도입<br>3) 금융 시장과 안전 critical 시스템에 배포된 산업용 자동화 추론 엔진 ImandraX와의 통합<br><br>**의의**: <br>형식 검증을 단순히 LLM 출력 검증 도구로 사용하는 기존 접근과 달리, LLM과 형식 추론을 상호 보완적으로 활용하는 새로운 패러다임을 제시했다. 스마트 컨트랙트의 형식 검증 연구에서 LLM의 코드 이해 능력과 자동화된 형식 추론을 결합하는 실용적 방법론을 제공하며, 프로그램 상태 공간, 제어 흐름, 커버리지 제약 등 복잡한 프로그램 속성에 대한 정밀한 분석이 가능하다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Large Language Models (LLMs) have shown strong performance on code understanding tasks, yet they fundamentally lack the ability to perform precise, exhaustive mathematical reasoning about program behavior. Existing benchmarks either focus on mathematical proof automation, largely disconnected from real-world software, or on engineering tasks that do not require semantic rigor.
+  We present CodeLogician, a neurosymbolic agent for precise analysis of software logic, integrated with ImandraX, an industrial automated reasoning engine deployed in financial markets and safety-critical systems. Unlike prior approaches that use formal methods primarily to validate LLM outputs, CodeLogician uses LLMs to construct explicit formal models of software systems, enabling automated reasoning to answer rich semantic questions beyond binary verification outcomes.
+  To rigorously evaluate mathematical reasoning about software logic, we introduce code-logic-bench, a benchmark targeting the middle ground between theorem proving and software engineering benchmarks. It measures reasoning correctness about program state spaces, control flow, coverage constraints, and edge cases, with ground truth defined via formal modeling and region decomposition.
+  Comparing LLM-only reasoning against LLMs augmented with CodeLogician, formal augmentation yields substantial improvements, closing a 41-47 percentage point gap in reasoning accuracy. These results demonstrate that neurosymbolic integration is essentia</p>
+  </section>
+</article>
+</body>
+</html>

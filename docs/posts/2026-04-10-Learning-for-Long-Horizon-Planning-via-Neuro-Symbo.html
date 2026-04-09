@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning for Long-Horizon Planning via Neuro-Symbolic Abductive Imitation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ti:"neuro-symbolic") AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Learning for Long-Horizon Planning via Neuro-Symbolic Abductive Imitation</h1>
+    <div class="meta">
+      <span>✍️ Jie-Jing Shao, Hao-Ran Hao, Xiao-Wen Yang</span>
+      <span>📅 2024-11-27</span>
+      <a href="http://arxiv.org/abs/2411.18201v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>관찰-행동 공간에서의 모방학습과 기호적 추론을 결합한 Abductive Imitation Learning(ABIL) 프레임워크를 제안하여 장기 계획 수행 능력을 향상시킨 연구입니다.<br><br>**문제 정의**: <br>기존 모방학습 방법들은 관찰-행동 공간에서 단기 작업에는 효과적이지만 장기 계획이 필요한 복잡한 환경에서는 한계가 있고, 반대로 전통적인 기호적 계획은 장기 추론에는 뛰어나지만 고차원 시각 입력과 같은 실제 환경의 복잡한 관찰 데이터를 처리하지 못하는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**: <br>1) **Abductive Imitation Learning(ABIL) 프레임워크**: 데이터 기반 학습과 기호적 추론을 통합하여 장기 계획을 가능하게 함<br>2) **Sequential Consistency 원칙**: 지각과 추론 간의 충돌을 해결하는 메커니즘 설계<br>3) **Predicate 후보 자동 생성**: 수작업 어노테이션 없이 원시 관찰에서 기호 공간으로의 변환을 지원<br>4) **정책 앙상블**: 서로 다른 논리적 목표를 가진 기본 정책들을 기호적 추론으로 관리하는 구조<br><br>**의의**: <br>이 연구는 neuro-symbolic AI의 실용적 적용 방안을 제시하며, 특히 LLM과 프로그램 합성을 결합한 복잡한 계획 문제 해결에 중요한 통찰을 제공합니다. 고차원 입력에서 기호적 표현으로의 자동 변환과 장기 추론 능력은 실제 로봇 제어, 게임 AI, 자율 시스템 등 다양한 분야의 연구자들에게 유용한 방법론적 기여를 할 것으로 보입니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Recent learning-to-imitation methods have shown promising results in planning via imitating within the observation-action space. However, their ability in open environments remains constrained, particularly in long-horizon tasks. In contrast, traditional symbolic planning excels in long-horizon tasks through logical reasoning over human-defined symbolic spaces but struggles to handle observations beyond symbolic states, such as high-dimensional visual inputs encountered in real-world scenarios. In this work, we draw inspiration from abductive learning and introduce a novel framework \textbf{AB}ductive \textbf{I}mitation \textbf{L}earning (ABIL) that integrates the benefits of data-driven learning and symbolic-based reasoning, enabling long-horizon planning. Specifically, we employ abductive reasoning to understand the demonstrations in symbolic space and design the principles of sequential consistency to resolve the conflicts between perception and reasoning. ABIL generates predicate candidates to facilitate the perception from raw observations to symbolic space without laborious predicate annotations, providing a groundwork for symbolic planning. With the symbolic understanding, we further develop a policy ensemble whose base policies are built with different logical objectives and managed through symbolic reasoning. Experiments show that our proposal successfully understands the observations with the task-relevant symbolics to assist the imitation learning. Importantly, ABI</p>
+  </section>
+</article>
+</body>
+</html>

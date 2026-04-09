@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-10-Finding-Memory-Leaks-in-C-C---Programs-via-Neuro-S.html",
+    "title": "Finding Memory Leaks in C/C++ Programs via Neuro-Symbolic Augmented Static Analysis",
+    "date": "2026-04-10",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ti:\"neuro-symbolic\") AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "LLM의 코드 의미 이해와 Z3 기반 기호 추론을 결합하여 C/C++ 프로그램의 메모리 누수를 정확하게 탐지하는 뉴로-심볼릭 정적 분석 프레임워크를 제안함.",
+    "url": "http://arxiv.org/abs/2603.27224v2"
+  },
+  {
+    "filename": "2026-04-10-Imandra-CodeLogician--Neuro-Symbolic-Reasoning-for.html",
+    "title": "Imandra CodeLogician: Neuro-Symbolic Reasoning for Precise Analysis of Software Logic",
+    "date": "2026-04-10",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ti:\"neuro-symbolic\") AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2601.11840v2"
+  },
+  {
+    "filename": "2026-04-10-AlphaTrans--A-Neuro-Symbolic-Compositional-Approac.html",
+    "title": "AlphaTrans: A Neuro-Symbolic Compositional Approach for Repository-Level Code Translation and Validation",
+    "date": "2026-04-10",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ti:\"neuro-symbolic\") AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2410.24117v5"
+  },
+  {
+    "filename": "2026-04-10-Learning-for-Long-Horizon-Planning-via-Neuro-Symbo.html",
+    "title": "Learning for Long-Horizon Planning via Neuro-Symbolic Abductive Imitation",
+    "date": "2026-04-10",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ti:\"neuro-symbolic\") AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2411.18201v1"
+  },
+  {
+    "filename": "2026-04-10-Procedural-Adherence-and-Interpretability-Through.html",
+    "title": "Procedural Adherence and Interpretability Through Neuro-Symbolic Generative Agents",
+    "date": "2026-04-10",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ti:\"neuro-symbolic\") AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "대규모 언어모델(LLM)의 시간적 행동 관리 문제를 해결하기 위해 형식 논리 기반 프로그램 합성과 LLM 콘텐츠 생성을 결합한 뉴로-심볼릭 에이전트를 제안하여 절차적 준수성과 해석가능성을 보장하는 연구입니다.",
+    "url": "http://arxiv.org/abs/2402.16905v2"
+  },
+  {
     "filename": "2026-04-09-Accessing-the-performance-of-CC2-for-excited-state.html",
     "title": "Accessing the performance of CC2 for excited state dynamics: a benchmark study with pyrazine",
     "date": "2026-04-09",
