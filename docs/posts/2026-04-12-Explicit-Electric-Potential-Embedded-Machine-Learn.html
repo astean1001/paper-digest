@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explicit Electric Potential-Embedded Machine Learning Framework: A Unified Description from Atomic to Electronic Scales</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"MBA")</span>
+    <h1>Explicit Electric Potential-Embedded Machine Learning Framework: A Unified Description from Atomic to Electronic Scales</h1>
+    <div class="meta">
+      <span>✍️ Jingwen Zhou, Yawen Yu, Xuwei Liu</span>
+      <span>📅 2026-04-08</span>
+      <a href="http://arxiv.org/abs/2604.07322v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 전기화학 인터페이스 시뮬레이션을 위해 원자력과 전자밀도를 동시에 예측하는 명시적 전기 포텐셜 임베디드 머신러닝 프레임워크를 개발했습니다.<br><br>**문제 정의**: <br>기존 전기화학 인터페이스 시뮬레이션은 정확성과 규모 확장성 사이의 트레이드오프 문제가 있었으며, 원자 스케일 동역학과 전자 스케일 특성을 통합적으로 다루는 효율적인 방법이 부족했습니다. 특히 전기 포텐셜 하에서 원자력 예측의 한계를 극복할 필요가 있었습니다.<br><br>**핵심 기여**: <br>1. **3단계 통합 프레임워크**: 데이터 생성(Hy-DFT), 모델 훈련, 응용으로 구성된 체계적 접근법<br>2. **PE-MACE**: MACE 아키텍처 기반의 명시적 전기 포텐셜 머신러닝 force field (EEP-MLFF) 구현<br>3. **PE-EDP**: EEP-MLFF의 원자력 기술 한계를 극복하는 equivariant graph neural network 기반 전자밀도 예측 모듈<br>4. **효율적 포텐셜 제어**: CP-AIMD에서 수렴에 필요한 단일점 계산 횟수를 크게 감소<br><br>**의의**: <br>이 연구는 멀티스케일 물리 현상을 단일 머신러닝 프레임워크로 통합하는 방법론을 제시하여, 연구자의 Neurosymbolic 접근법과 방법론적으로 유사한 패러다임을 보여줍니다. 서로 다른 스케일의 정보를 동시에 처리하고 통합하는 아키텍처 설계는 프로그램 분석과 LLM 융합 연구에서 다층적 표현 학습에 응용 가능한 인사이트를 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>To further develop accurate and large-scale simulations of electrochemical interfaces, we propose a unified explicit electric potential framework to simultaneously predict atomic forces and electron density distributions. The framework consists of three components: data generation, model training, and application. The data generation component, implemented in Hy-DFT, efficiently regulates the potential during constant-potential ab initio molecular dynamics (CP-AIMD), reducing the number of single-point calculations required for convergence. The model training component includes two modules: Potential-Embedded MACE (PE-MACE) and Potential-Embedded Electron Density Prediction (PE-EDP). PE-MACE implements an explicit electric potential machine learning force field (EEP-MLFF) based on the MACE architecture. We develop PE-EDP to overcome the limitation of EEP-MLFF in describing atom forces. PE-EDP, also based on equivariant graph neural networks, predicts electron density distributions under arbitrary potentials. Using the Pt(111)/water interface as a model system, both PE-MACE and PE-EDP show high accuracy on training and test sets. Radial distribution functions from CP-MLMD agree well with CP-AIMD, and long-timescale simulations reveal potential-induced reorganization of interfacial water. Planar-integrated charge profiles and Bader analysis from PE-EDP are consistent with DFT results. These results demonstrate that the framework can simultaneously describe atomic dynamics and e</p>
+  </section>
+</article>
+</body>
+</html>

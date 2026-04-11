@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Making Room for AI: Multi-GPU Molecular Dynamics with Deep Potentials in GROMACS</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"MBA")</span>
+    <h1>Making Room for AI: Multi-GPU Molecular Dynamics with Deep Potentials in GROMACS</h1>
+    <div class="meta">
+      <span>✍️ Luca Pennati, Andong Hu, Ivy Peng</span>
+      <span>📅 2026-04-08</span>
+      <a href="http://arxiv.org/abs/2604.07276v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>GROMACS 분자동역학 시뮬레이션에 딥러닝 기반 원자간 퍼텐셜(DeePMD-kit)을 통합하여 multi-GPU 환경에서 고성능 AI 기반 분자 시뮬레이션을 구현한 연구.<br><br>**문제 정의**: <br>AI 기반 원자간 퍼텐셜이 양자역학 수준의 정확도를 제공하지만, 기존 분자동역학 소프트웨어인 GROMACS의 multi-GPU 환경에서 신경망 추론을 효율적으로 임베딩하는 것이 기술적 도전과제였음. 특히 domain decomposition과 GPU 병렬화를 유지하면서 딥러닝 모델을 통합하는 것이 핵심 문제.<br><br>**핵심 기여**: <br>1) GROMACS NNPot 인터페이스에 DeePMD 백엔드를 확장 구현<br>2) 메인 시뮬레이션과 분리된 domain decomposition 레이어 도입  <br>3) 좌표 브로드캐스트와 힘 집계를 위한 2개 MPI collective 연산으로 병렬 추론 구현<br>4) 32개 GPU까지 strong-scaling 효율성 66%(16개), 40%(32개) 달성<br>5) 벽시간의 90% 이상이 DeePMD 추론에 소요되며 MPI 통신 오버헤드는 10% 미만으로 확인<br><br>**의의**: <br>고성능 컴퓨팅 환경에서 AI 모델과 전통적인 시뮬레이션 소프트웨어의 효율적 통합 사례를 제시. 연구자의 프로그램 합성과 LLM 융합 연구와 관련하여, 복잡한 계산 워크플로우에서 AI 구성요소를 최적화하여 임베딩하는 방법론적 통찰을 제공하며, 특히 병렬 처리와 통신 최적화 측면에서 참고할 만한 아키텍처 설계 패턴을 보여줌.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>GROMACS is a de-facto standard for classical Molecular Dynamics (MD). The rise of AI-driven interatomic potentials that pursue near-quantum accuracy at MD throughput now poses a significant challenge: embedding neural-network inference into multi-GPU simulations retaining high-performance. In this work, we integrate the MLIP framework DeePMD-kit into GROMACS, enabling domain-decomposed, GPU-accelerated inference across multi-node systems. We extend the GROMACS NNPot interface with a DeePMD backend, and we introduce a domain decomposition layer decoupled from the main simulation. The inference is executed concurrently on all processes, with two MPI collectives used each step to broadcast coordinates and to aggregate and redistribute forces. We train an in-house DPA-1 model (1.6 M parameters) on a dataset of solvated protein fragments. We validate the implementation on a small protein system, then we benchmark the GROMACS-DeePMD integration with a 15,668 atom protein on NVIDIA A100 and AMD MI250x GPUs up to 32 devices. Strong-scaling efficiency reaches 66% at 16 devices and 40% at 32; weak-scaling efficiency is 80% to 16 devices and reaches 48% (MI250x) and 40% (A100) at 32 devices. Profiling with the ROCm System profiler shows that >90% of the wall time is spent in DeePMD inference, while MPI collectives contribute <10%, primarily since they act as a global synchronization point. The principal bottlenecks are the irreducible ghost-atom cost set by the cutoff radius, confirmed </p>
+  </section>
+</article>
+</body>
+</html>

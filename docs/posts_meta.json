@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-12-MEV-ACE--Identity-Authenticated-Fair-Ordering-for.html",
+    "title": "MEV-ACE: Identity-Authenticated Fair Ordering for Proposer-Controlled MEV Mitigation",
+    "date": "2026-04-12",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.07568v1"
+  },
+  {
+    "filename": "2026-04-12-Unified-Supervision-for-Walmarts-Sponsored-Search.html",
+    "title": "Unified Supervision for Walmarts Sponsored Search Retrieval via Joint Semantic Relevance and Behavioral Engagement Modeling",
+    "date": "2026-04-12",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.07930v1"
+  },
+  {
+    "filename": "2026-04-12-Administrative-Decentralization-in-Edge-Cloud-Mult.html",
+    "title": "Administrative Decentralization in Edge-Cloud Multi-Agent for Mobile Automation",
+    "date": "2026-04-12",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.07767v1"
+  },
+  {
+    "filename": "2026-04-12-Explicit-Electric-Potential-Embedded-Machine-Learn.html",
+    "title": "Explicit Electric Potential-Embedded Machine Learning Framework: A Unified Description from Atomic to Electronic Scales",
+    "date": "2026-04-12",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "전기화학 인터페이스 시뮬레이션을 위해 원자력과 전자밀도를 동시에 예측하는 명시적 전기 포텐셜 임베디드 머신러닝 프레임워크를 개발했습니다.",
+    "url": "http://arxiv.org/abs/2604.07322v1"
+  },
+  {
+    "filename": "2026-04-12-Making-Room-for-AI--Multi-GPU-Molecular-Dynamics-w.html",
+    "title": "Making Room for AI: Multi-GPU Molecular Dynamics with Deep Potentials in GROMACS",
+    "date": "2026-04-12",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.07276v1"
+  },
+  {
     "filename": "2026-04-10-Finding-Memory-Leaks-in-C-C---Programs-via-Neuro-S.html",
     "title": "Finding Memory Leaks in C/C++ Programs via Neuro-Symbolic Augmented Static Analysis",
     "date": "2026-04-10",
