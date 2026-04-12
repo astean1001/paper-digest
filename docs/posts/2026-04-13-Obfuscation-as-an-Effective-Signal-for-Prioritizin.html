@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obfuscation as an Effective Signal for Prioritizing Cross-Chain Smart Contract Audits: Large-Scale Measurement and Risk Profiling</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ti:"vulnerability detection" OR ti:"audit" OR ti:"signature")</span>
+    <h1>Obfuscation as an Effective Signal for Prioritizing Cross-Chain Smart Contract Audits: Large-Scale Measurement and Risk Profiling</h1>
+    <div class="meta">
+      <span>✍️ Yao Zhao, Zhang Sheng, Shengchen Duan</span>
+      <span>📅 2026-01-24</span>
+      <a href="http://arxiv.org/abs/2601.17356v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 크로스체인 스마트 컨트랙트 감사 우선순위 결정을 위해 난독화 신호를 활용하는 HOBFNET 모델을 제안하고, 백만 규모의 대량 분석을 통해 실용적인 2단계 감사 큐 시스템을 구축했습니다.<br><br>**문제 정의**: <br>- 스마트 컨트랙트 난독화가 감사 비용을 증가시키지만, 난독화 신호를 체인 간에 효과적으로 전달하여 감사 우선순위를 결정하는 방법이 부족<br>- 기존 OBFPROBE는 정확하지만 대규모 크로스체인 분석에는 속도가 너무 느림<br>- 체인별로 다른 난독화 패턴과 특성으로 인해 통합된 위험 평가 체계 필요<br><br>**핵심 기여**:<br>1. **HOBFNET 모델**: OBFPROBE의 빠른 대체 모델로 이더리움에서 PCC 0.9158, MAPE 8.20% 성능과 계약당 8-9ms 처리 속도 달성 (2,300-5,200배 속도 향상)<br>2. **대규모 크로스체인 분석**: BSC, Polygon, Avalanche에서 체계적 점수 편차 발견 및 체인별 백분위 큐 시스템 제안 (p99 메인 큐, p99.9 긴급 큐)<br>3. **위험 특성화**: 고위험 계약의 특징으로 희귀 셀렉터, 외부 호출 집중, 낮은 시그니처 밀도 식별<br>4. **크로스체인 재사용 패턴**: 작은 생태계에서 큰 생태계로의 방향성 편향과 테일 집중 현상 발견<br><br>**의의**: <br>연구자의 MBA 난독화 해제 및 프로그램 분석 연구와 직접적으로 연관되어, 실제 보안 운영에서 활용 가능한 대규모 측정 방법론을 제공합니다. 특히 난독화 패턴 분석과 크로스체인 환경에서의 위험 평가 체계는 연구자의 기술적 접근 방식에 실용적 검증 사례와 확장 방향을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Obfuscation raises the interpretation cost of smart-contract auditing, yet its signals are hard to transfer across chains. We present HOBFNET, a fast surrogate of OBFPROBE, enabling million-scale cross-chain scoring. The model aligns with tool outputs on Ethereum (PCC 0.9158, MAPE 8.20 percent) and achieves 8-9 ms per contract, yielding a 2.3k-5.2k times speedup. Across BSC, Polygon, and Avalanche, we observe systematic score drift, motivating within-chain percentile queues (p99 as the main queue, p99.9 as an emergency queue). The high-score tail is characterized by rare selectors, external-call enrichment, and low signature density, supporting secondary triage. Cross-chain reuse is tail-enriched and directionally biased from smaller to larger ecosystems. On two publicly alignable cross-chain spillover cases, both fall into the p99 queue, indicating real-world hit value. We deliver a two-tier audit queue and a cross-chain linkage workflow for practical security operations.</p>
+  </section>
+</article>
+</body>
+</html>

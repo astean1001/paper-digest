@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>An Effective and Cost-Efficient Agentic Framework for Ethereum Smart Contract Auditing</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ti:"vulnerability detection" OR ti:"audit" OR ti:"signature")</span>
+    <h1>An Effective and Cost-Efficient Agentic Framework for Ethereum Smart Contract Auditing</h1>
+    <div class="meta">
+      <span>✍️ Xiaohui Hu, Wun Yu Chan, Yuejie Shi</span>
+      <span>📅 2026-01-25</span>
+      <a href="http://arxiv.org/abs/2601.17833v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>에이전트 기반 자동화 프레임워크 Heimdallr을 통해 기존 도구들의 한계를 극복하고 실제 스마트 컨트랙트 비즈니스 로직 취약점을 효과적으로 탐지하는 방법을 제시한 연구입니다.<br><br>**문제 정의**:<br>- 기존 스마트 컨트랙트 감사 방법들의 한계: 수동 감사의 확장성 부족, 정적 분석 도구의 높은 오탐율, 퍼저의 복잡한 로직 상태 탐지 어려움<br>- AI 기반 방법들의 문제: 할루시네이션, 컨텍스트 제약, 비싼 독점 LLM 의존성<br>- 복잡한 비즈니스 로직 취약점 탐지의 지속적 어려움<br><br>**핵심 기여**:<br>1. **함수 단위 코드 재구성**: 비즈니스 로직 보존하면서 컨텍스트 오버헤드 최소화<br>2. **휴리스틱 추론**: 복잡한 취약점 탐지 및 기능적 익스플로잇 자동 체이닝<br>3. **계층적 검증**: 오탐을 제거하는 캐스케이드 검증 레이어 구현<br>4. **경량 오픈소스 모델 활용**: GPToss-120B 등 독점 시스템 없이 고성능 달성<br><br>**의의**:<br>- **실용적 성과**: 2025년 6월 이후 실제 공격 20건 중 17건 재구성 성공($384M 손실), 4개 제로데이 취약점 발견($400M TVL 보호)<br>- **효율성 개선**: 기존 도구 대비 분석 시간 최대 97.59% 단축<br>- **연구 연관성**: audit report 기반 취약점 분석 연구에 직접적으로 활용 가능한 자동화 프레임워크와 검증된 취약점 탐지 방법론 제공<br>- **비용 효율성**: 오픈소스 모델 기반으로 접근성과 재현성 확보</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contract security is paramount, but identifying intricate business logic vulnerabilities remains a persistent challenge because existing solutions consistently fall short: manual auditing is unscalable, static analysis tools are plagued by false positives, and fuzzers struggle to navigate deep logic states within complex systems. Even emerging AI-based methods suffer from hallucinations, context constraints, and a heavy reliance on expensive, proprietary Large Language Models. In this paper, we introduce Heimdallr, an automated auditing agent designed to overcome these hurdles through four core innovations. By reorganizing code at the function level, Heimdallr minimizes context overhead while preserving essential business logic. It then employs heuristic reasoning to detect complex vulnerabilities and automatically chain functional exploits. Finally, a cascaded verification layer validates these findings to eliminate false positives. Notably, this approach achieves high performance on lightweight, open-source models like GPToss-120B without relying on proprietary systems. Our evaluations demonstrate exceptional performance, as Heimdallr successfully reconstructed 17 out of 20 real-world attacks post June 2025, resulting in total losses of $384M, and uncovered 4 confirmed zero-day vulnerabilities that safeguarded $400M in TVL. Compared to SOTA baselines including both official industrial tools and academic tools, Heimdallr at most reduces analysis time by 97.59% and fina</p>
+  </section>
+</article>
+</body>
+</html>

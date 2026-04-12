@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Development of ab initio Hubbard parameter calculation schemes in the k-point sampling real-time TDDFT program in CP2K</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"program repair" AND (ab:"symbolic execution" OR ab:"constraint synthesis" OR ab:"loop invariant")</span>
+    <h1>Development of ab initio Hubbard parameter calculation schemes in the k-point sampling real-time TDDFT program in CP2K</h1>
+    <div class="meta">
+      <span>✍️ Kota Hanasaki, Sandra Luber</span>
+      <span>📅 2026-04-08</span>
+      <a href="http://arxiv.org/abs/2604.06927v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: CP2K의 실시간 TDDFT 프로그램에서 에너지 의존적 Hubbard 매개변수를 계산하는 새로운 선형 응답 기반 방법론을 개발하였다.<br><br>**문제 정의**: <br>기존의 DFT+U 방법에서 사용되는 Hubbard U 매개변수는 정적이고 에너지 독립적으로 처리되어, 동적 전자 상관 효과와 교환-상관 함수의 에너지 의존성을 제대로 반영하지 못하는 한계가 있었다. 특히 k-점 샘플링을 포함한 실시간 시간 의존 밀도 함수 이론(RT-TDDFT) 계산에서 이러한 매개변수를 정확하게 계산할 수 있는 ab initio 방법이 필요했다.<br><br>**핵심 기여**: <br>1) 최소값 추적 선형 응답(minimum-tracking linear-response) 방법을 확장하여 교환-상관 함수 효과를 반영하는 에너지 의존적 Hubbard 매개변수 계산 방식을 개발<br>2) CP2K 프로그램의 k-점 샘플링 RT-TDDFT 모듈에 ab initio Hubbard 매개변수 계산 기능을 구현<br>3) 제안한 방법과 ACBN0 방법의 정적 특성 계산 정확도 및 동적 응용 특성을 비교 분석<br><br>**의의**: <br>이 연구는 물리계의 동적 거동을 더 정확하게 모델링할 수 있는 매개변수 계산 방법을 제시한다는 점에서, 심볼릭 실행에서 프로그램 상태의 동적 변화를 추적하고 제약 조건을 동적으로 업데이트하는 방법론과 개념적 유사성을 보인다. 특히 에너지 의존적 매개변수의 실시간 추적은 루프 불변식의 동적 추론이나 실행 경로에 따른 제약 조건 변화 분석과 유사한 계산적 도전을 다룬다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We implemented ab initio Hubbard parameter calculation schemes in the k-point sampling real-time TDDFT (RT-TDDFT) program in CP2K. We propose a new linear-response-based calculation scheme for energy-dependent Hubbard parameters. Our scheme extends the minimum-tracking linear-response method proposed in [Moynihan et al., arXiv preprint arXiv:1704.08076(2017); E. B. Linscott et al., Phys. Rev. B 98, 235157 (2018)] to realize the calculation of energy-dependent Hubbard parameters that reflect the exchange-correlation (xc) effects included in the xc-functional.
+  We discuss the properties of the minimum-tracking linear-response method in comparison to another promising scheme, ACBN0 [Agapito et al., Phys. Rev. X, 5, 011006 (2015)]. We show that, while neither clearly outperforms the other in the accuracy of static property calculations, each has a distinct dynamical application depending on its theoretical formulation.</p>
+  </section>
+</article>
+</body>
+</html>

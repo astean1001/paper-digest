@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Differentiable hybrid force fields support scalable autonomous electrolyte discovery</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"program repair" AND (ab:"symbolic execution" OR ab:"constraint synthesis" OR ab:"loop invariant")</span>
+    <h1>Differentiable hybrid force fields support scalable autonomous electrolyte discovery</h1>
+    <div class="meta">
+      <span>✍️ Xintian Wang, Junmin Chen, Zhuoying Zhu</span>
+      <span>📅 2026-04-09</span>
+      <a href="http://arxiv.org/abs/2604.07979v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 물리학 기반 함수형과 신경망 단거리 보정을 결합한 차별화 가능한 하이브리드 포스 필드를 통해 고속 스크리닝, 정확한 예측, 온라인 보정이 모두 가능한 자율적 전해질 발견 시스템을 제안함.<br><br>**문제 정의**: 자율적 전해질 발견을 위한 계산 엔진이 직면한 삼중 딜레마 해결 - 고처리량 스크리닝을 위한 속도, 정량적 특성 예측을 위한 정확도, 온라인 개선을 위한 보정 가능성을 동시에 만족해야 하는 문제. 기존 경험적 포스 필드는 빠르지만 오차 상쇄에 의존하고, 표준 기계학습 원자간 포텐셜은 계산 비용이 높고 장거리 물리학이 부족하며 기울기 기반 보정에 저항함.<br><br>**핵심 기여**: <br>1. Energy Decomposition Analysis(EDA)에 기반한 물리학적 동기 함수형과 신경망 단거리 보정을 융합한 차별화 가능한 하이브리드 포스 필드 개발<br>2. PhyNEO-Electrolyte, ByteFF-Pol 등 최신 모델이 벌크상에 대한 zero-shot 일반화 달성 (10,000원자 시스템에서 최대 ~50 ns/day 처리량)<br>3. 물리학적 골격이 제공하는 잘 조건화된 매개변수 공간을 활용한 차별화 가능한 분자동역학(dMD) 구현<br>4. 하향식 ab initio 매개변수화와 상향식 거시적 실험 관찰값 미세조정을 결합한 이중 보정 패러다임 제안<br><br>**의의**: 물리학 기반 시뮬레이션과 실험적으로 보정 가능한 개선을 통합하여 "ChemRobot-ready" 디지털 트윈의 요구사항을 충족시킴으로써 폐쇄 루프 자율 시스템을 가능하게 함. 연구자의 자동화 프로그램 수정 연구와 유사하게, 물리적 제약과 데이터 기반 학습을 결합한 하이브리드 접근법으로 복잡한 최적화 문제를 해결하는 방법론적 통찰을 제공</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Autonomous electrolyte discovery demands a computational engine that satisfies a critical trilemma: it must be fast enough for high-throughput screening, accurate enough for quantitative property prediction, and calibratable enough for online refinement. Classical empirical force fields (FFs) are fast but rely heavily on error cancellation, while standard machine learning interatomic potentials (MLIPs) are computationally expensive, lack rigorous long-range physics, and resist gradient-based calibration. In this Perspective, we highlight that differentiable hybrid FFs resolve this trilemma by fusing physically motivated functional forms with neural-network short-range corrections. Grounded in Energy Decomposition Analysis (EDA), state-of-the-art models such as PhyNEO-Electrolyte and ByteFF-Pol achieve zero-shot generalization to bulk phases, delivering throughputs on the order of tens of ns/day (up to $\sim$50 ns/day, depending on model complexity) for 10,000-atom systems. Crucially, their physical skeletons provide a well-conditioned parameter space for differentiable molecular dynamics (dMD). This enables a dual-calibration paradigm: bottom-up \textit{ab initio} parameterization combined with top-down fine-tuning from macroscopic experimental observables. We propose that this architecture meets the requirements of a ``ChemRobot-ready'' digital twin by integrating physics-grounded simulation with experimentally calibratable refinement, thereby enabling closed-loop autonomous</p>
+  </section>
+</article>
+</body>
+</html>

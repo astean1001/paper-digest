@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-13-SPEAR--An-Engineering-Case-Study-of-Multi-Agent-Co.html",
+    "title": "SPEAR: An Engineering Case Study of Multi-Agent Coordination for Smart Contract Auditing",
+    "date": "2026-04-13",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ti:\"vulnerability detection\" OR ti:\"audit\" OR ti:\"signature\")",
+    "one_liner": "스마트 컨트랙트 감사를 위한 다중 에이전트 조정 프레임워크 SPEAR를 제시하여, 전문화된 에이전트들이 협력해 위험 기반 우선순위화, 태스크 할당, 자동 복구를 수행하는 보안 분석 워크플로우를 구현했습니다.",
+    "url": "http://arxiv.org/abs/2602.04418v2"
+  },
+  {
+    "filename": "2026-04-13-An-Effective-and-Cost-Efficient-Agentic-Framework.html",
+    "title": "An Effective and Cost-Efficient Agentic Framework for Ethereum Smart Contract Auditing",
+    "date": "2026-04-13",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ti:\"vulnerability detection\" OR ti:\"audit\" OR ti:\"signature\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2601.17833v1"
+  },
+  {
+    "filename": "2026-04-13-Obfuscation-as-an-Effective-Signal-for-Prioritizin.html",
+    "title": "Obfuscation as an Effective Signal for Prioritizing Cross-Chain Smart Contract Audits: Large-Scale Measurement and Risk Profiling",
+    "date": "2026-04-13",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ti:\"vulnerability detection\" OR ti:\"audit\" OR ti:\"signature\")",
+    "one_liner": "크로스체인 스마트 컨트랙트 감사 우선순위 결정을 위해 난독화 신호를 활용하는 HOBFNET 모델을 제안하고, 백만 규모의 대량 분석을 통해 실용적인 2단계 감사 큐 시스템을 구축했습니다.",
+    "url": "http://arxiv.org/abs/2601.17356v2"
+  },
+  {
+    "filename": "2026-04-13-Differentiable-hybrid-force-fields-support-scalabl.html",
+    "title": "Differentiable hybrid force fields support scalable autonomous electrolyte discovery",
+    "date": "2026-04-13",
+    "source": "arXiv",
+    "topic": "ab:\"program repair\" AND (ab:\"symbolic execution\" OR ab:\"constraint synthesis\" OR ab:\"loop invariant\")",
+    "one_liner": "물리학 기반 함수형과 신경망 단거리 보정을 결합한 차별화 가능한 하이브리드 포스 필드를 통해 고속 스크리닝, 정확한 예측, 온라인 보정이 모두 가능한 자율적 전해질 발견 시스템을 제안함.",
+    "url": "http://arxiv.org/abs/2604.07979v1"
+  },
+  {
+    "filename": "2026-04-13-Development-of-ab-initio-Hubbard-parameter-calcula.html",
+    "title": "Development of ab initio Hubbard parameter calculation schemes in the k-point sampling real-time TDDFT program in CP2K",
+    "date": "2026-04-13",
+    "source": "arXiv",
+    "topic": "ab:\"program repair\" AND (ab:\"symbolic execution\" OR ab:\"constraint synthesis\" OR ab:\"loop invariant\")",
+    "one_liner": "CP2K의 실시간 TDDFT 프로그램에서 에너지 의존적 Hubbard 매개변수를 계산하는 새로운 선형 응답 기반 방법론을 개발하였다.",
+    "url": "http://arxiv.org/abs/2604.06927v1"
+  },
+  {
     "filename": "2026-04-12-MEV-ACE--Identity-Authenticated-Fair-Ordering-for.html",
     "title": "MEV-ACE: Identity-Authenticated Fair Ordering for Proposer-Controlled MEV Mitigation",
     "date": "2026-04-12",
