@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unified Supervision for Walmart's Sponsored Search Retrieval via Joint Semantic Relevance and Behavioral Engagement Modeling</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MEV" AND ab:"Solana" AND (ab:"maximal extractable value" OR ab:"blockchain infrastructure")</span>
+    <h1>Unified Supervision for Walmart's Sponsored Search Retrieval via Joint Semantic Relevance and Behavioral Engagement Modeling</h1>
+    <div class="meta">
+      <span>✍️ Shasvat Desai, Md Omar Faruk Rokon, Jhalak Nilesh Acharya</span>
+      <span>📅 2026-04-09</span>
+      <a href="http://arxiv.org/abs/2604.07930v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 월마트의 스폰서드 서치에서 의미적 관련성을 주요 지도 신호로, 사용자 참여를 보조 신호로 활용하는 이중 인코더 훈련 프레임워크를 제안하여 검색 품질을 개선했습니다.<br><br>**문제 정의**: <br>- 기존 검색 시스템은 사용자 참여 신호(클릭, 구매 등)에만 의존하여 검색 모델을 훈련하는데, 이는 의미적 관련성의 불완전한 대리 지표임<br>- 특히 스폰서드 서치에서는 광고 노출 빈도가 관련성 외의 요인(광고주 예산, 경매 결과, 입찰 경쟁력 등)에 크게 좌우되어 참여 신호가 구조적으로 희소함<br>- 높은 관련성을 가진 쿼리-광고 쌍도 제한된 노출로 인해 충분한 참여 신호를 얻지 못하는 문제 발생<br><br>**핵심 기여**:<br>- 의미적 관련성을 주요 지도 신호로, 사용자 참여를 관련 아이템 간 선호도 신호로만 활용하는 새로운 훈련 프레임워크 개발<br>- 세 가지 구성 요소로 이루어진 풍부한 컨텍스트 훈련 타겟 구성:<br>  1. 크로스 인코더 교사 모델 계층에서 추출한 등급별 관련성 레이블<br>  2. 순위 위치와 채널 간 합의에서 도출한 다채널 검색 우선순위 점수  <br>  3. 사용자 참여 신호<br><br>**의의**:<br>- 전자상거래 검색에서 의미적 관련성과 행동 신호를 효과적으로 결합하는 새로운 방법론 제시<br>- 희소한 참여 데이터 문제를 해결하면서도 실제 사용자 선호도를 반영하는 균형잡힌 접근법<br>- 대규모 상업 검색 시스템에서 실용적으로 적용 가능한 프레임워크로, 검색 품질과 비즈니스 목표를 동시에 만족시킬 수 있는 솔루션</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Modern search systems rely on a fast first stage retriever to fetch relevant items from a massive catalog of items. Deployed search systems often use user engagement signals to supervise bi-encoder retriever training at scale, because these signals are continuously logged from real traffic and require no additional annotation effort. However, engagement is an imperfect proxy for semantic relevance. Items may receive interactions due to popularity, promotion, attractive visuals, titles, or price, despite weak query-item relevance. These limitations are further accentuated in Walmart's e-commerce sponsored search. User engagement on ad items is often structurally sparse because the frequency with which an ad is shown depends on factors beyond relevance such as whether the advertiser is currently running that ad, the outcome of the auction for available ad slots, bid competitiveness, and advertiser budget. Thus, even highly relevant query ad pairs can have limited engagement signals simply due to limited impressions. We propose a bi-encoder training framework for Walmart's sponsored search retrieval in e-commerce that uses semantic relevance as the primary supervision signal, with engagement used only as a preference signal among relevant items. Concretely, we construct a context-rich training target by combining 1. graded relevance labels from a cascade of cross-encoder teacher models, 2. a multichannel retrieval prior score derived from the rank positions and cross-channel agr</p>
+  </section>
+</article>
+</body>
+</html>

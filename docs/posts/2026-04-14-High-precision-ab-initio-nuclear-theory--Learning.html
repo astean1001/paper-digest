@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High-precision ab initio nuclear theory: Learning to overcome model-space limitations</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MEV" AND ab:"Solana" AND (ab:"maximal extractable value" OR ab:"blockchain infrastructure")</span>
+    <h1>High-precision ab initio nuclear theory: Learning to overcome model-space limitations</h1>
+    <div class="meta">
+      <span>✍️ Marco Knöll</span>
+      <span>📅 2026-04-09</span>
+      <a href="http://arxiv.org/abs/2604.08253v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 핵 구조 이론의 ab initio 계산에서 모델 공간 제약으로 인한 오차를 기계학습을 통해 극복하고 고정밀 외삽을 가능하게 하는 방법론을 제시한 연구입니다.<br><br>**문제 정의**: <br>- Ab initio 핵 구조 이론에서 고정밀 핵 특성 예측을 위해서는 많은 몸체 문제(many-body problem)를 다뤄야 하지만, 계산 복잡도 때문에 절단된 모델 공간(truncated model space)을 사용할 수밖에 없음<br>- 이러한 모델 공간 제약이 핵 관측량 계산에서 주요한 이론적 오차의 원인이 되고 있음<br>- 기존의 외삽 방법들로는 충분한 정밀도와 신뢰도를 달성하기 어려움<br><br>**핵심 기여**:<br>- 인공신경망 기반 기계학습을 활용하여 ab initio 계산의 수렴 패턴을 직접 학습하는 데이터 기반 프레임워크 개발<br>- No-core shell model 등 다체 방법론을 위한 모델 공간 외삽 기법 제시<br>- 에너지 스펙트럼, 반지름, 전자기 관측량에 대해 통계적/상관관계 기반 전략을 통한 정밀도 향상 및 불확실성 추정 방법 제공<br>- 기존 방법 대비 외삽 성능의 정량적 평가 수행<br><br>**의의**: <br>- 계산 물리학에서 제한된 계산 자원으로 인한 공간 절단 문제를 기계학습으로 해결하는 새로운 패러다임 제시<br>- 프로그램 분석의 truncated space 문제나 formal verification의 확장성 한계 극복에 유사한 접근법 적용 가능<br>- 데이터 기반 외삽을 통해 계산 비용을 크게 증가시키지 않으면서도 정밀도를 향상시키는 방법론으로, 대규모 시스템 분석의 실용성 개선에 참고할 수 있는 중요한 사례</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>High-precision predictions of nuclear properties are a central objective of ab initio nuclear structure theory. However, state-of-the-art many-body methods rely on truncated model spaces to render the nuclear many-body problem tractable, which remains a major source of theoretical error in computations of nuclear observables. In recent years, machine learning, and artificial neural network approaches in particular, have emerged as a powerful data-driven framework for learning convergence patterns directly from ab initio calculations and enabling precision extrapolations beyond the reach of conventional schemes. This review focuses on model-space extrapolation methods developed for the no-core shell model and related many-body methods. We discuss machine learning extrapolation frameworks in comparison to conventional methods and assess their performance for energy spectra, radii, and electromagnetic observables, with particular emphasis on achievable precision and uncertainty estimates through statistical and correlation-based strategies. These developments establish machine learning as an increasingly important component of the precision toolbox in ab initio nuclear theory, enhancing the reliability and predictive power of ab initio nuclear structure calculations.</p>
+  </section>
+</article>
+</body>
+</html>
