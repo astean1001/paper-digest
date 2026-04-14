@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-04-15-Copiloting-the-Copilots--Fusing-Large-Language-Mod.html",
+    "title": "Copiloting the Copilots: Fusing Large Language Models with Completion Engines for Automated Program Repair",
+    "date": "2026-04-15",
+    "source": "arXiv",
+    "topic": "ti:\"program repair\" AND ab:\"constraint\" AND (ab:\"symbolic execution\" OR ab:\"patch synthesis\")",
+    "one_liner": "LLM의 패치 생성 과정에서 프로그래밍 언어의 문법적 제약을 활용하는 Completion Engine을 도입하여 더 유효한 패치를 생성하는 Repilot 프레임워크를 제안",
+    "url": "http://arxiv.org/abs/2309.00608v3"
+  },
+  {
     "filename": "2026-04-14-Unified-Supervision-for-Walmart-s-Sponsored-Search.html",
     "title": "Unified Supervision for Walmart's Sponsored Search Retrieval via Joint Semantic Relevance and Behavioral Engagement Modeling",
     "date": "2026-04-14",
