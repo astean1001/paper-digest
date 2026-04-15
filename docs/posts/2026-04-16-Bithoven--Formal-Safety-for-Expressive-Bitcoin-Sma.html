@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bithoven: Formal Safety for Expressive Bitcoin Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature" OR ab:"bytecode analysis")</span>
+    <h1>Bithoven: Formal Safety for Expressive Bitcoin Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Hyunhum Cho, Ik Rae Jeong</span>
+      <span>📅 2026-01-04</span>
+      <a href="http://arxiv.org/abs/2601.01436v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Bitcoin 스마트 컨트랙트 개발에서 발생하는 보안 취약점과 개발 복잡성 문제를 해결하기 위해 형식 검증 기능이 내장된 고수준 언어 Bithoven을 제안하고, 배포 전 주요 보안 결함을 자동으로 탐지할 수 있음을 보임.<br><br>**문제 정의**: <br>Bitcoin의 UTXO 아키텍처는 개발자가 수동으로 스택을 조작해야 하는 복잡성으로 인해 서명 가변성(signature malleability), 지출 불가능한 상태(unspendable states), 제약 없는 실행 경로 등의 심각한 금융 취약점을 야기함. 기존 Miniscript 등의 표준은 정책 검증을 위한 추상화를 제공하지만 복잡한 컨트랙트에 필요한 완전한 명령형 로직을 모델링하지 못함.<br><br>**핵심 기여**:<br>- **Bithoven 언어 설계**: 표현력과 형식 안전성을 동시에 만족하는 Bitcoin 전용 고수준 언어 개발<br>- **통합 분석 시스템**: 엄격한 타입 체커, 리소스 생존성 분석기, 의미론적 제어 흐름 분석기를 결합한 종합적 보안 분석 프레임워크 구축<br>- **결함 모델 정의**: 합의 및 로직 결함의 주요 범주를 체계적으로 분류하고 배포 전 자동 탐지 구현<br>- **효율성 입증**: 수작업으로 최적화한 코드와 비교할 만한 성능으로 Bitcoin Script로 컴파일 가능함을 실증<br><br>**의의**: <br>Bitcoin 생태계에서 형식 검증을 통한 스마트 컨트랙트 보안성 보장의 실현 가능성을 보여준 선구적 연구로, 제한된 바이트 크기라는 블록체인 특성 하에서도 타입 안전성과 개발자 친화적 추상화가 양립할 수 있음을 증명함. 스마트 컨트랙트 보안 및 형식 검증 연구에서 정적 분석 기법의 실용적 적용 사례를 제시하며, 다른 블록체인 플랫폼으로의 확장 가능성을 시사함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The rigorous security model of Bitcoin's UTXO architecture often comes at the cost of developer usability, forcing a reliance on manual stack manipulation that leads to critical financial vulnerabilities like signature malleability, unspendable states and unconstrained execution paths. Industry standards such as Miniscript provide necessary abstractions for policy verification but do not model the full imperative logic required for complex contracts, leaving gaps in state management and resource liveness. This paper introduces Bithoven, a high-level language designed to bridge the gap between expressiveness and formal safety. By integrating a strict type checker and a resource liveness analyzer with a semantic control-flow analyzer, Bithoven eliminates major categories of consensus and logic defects defined in our fault model prior to deployment. Our results indicate that this safety comes at modest cost: Bithoven compiles to Bitcoin Script with efficiency comparable to hand-optimized code, demonstrating that type-safe, developer-friendly abstractions are viable even within the strict byte-size constraints of the Bitcoin blockchain.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Dual-Positive Monotone Parameterization for Multi-Segment Bids and a Validity Assessment Framework for Reinforcement Learning Agent-based Simulation of Electricity Markets</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>A Dual-Positive Monotone Parameterization for Multi-Segment Bids and a Validity Assessment Framework for Reinforcement Learning Agent-based Simulation of Electricity Markets</h1>
+    <div class="meta">
+      <span>✍️ Zunnan Xu, Zhaoxia Jing, Zhanhua Pan</span>
+      <span>📅 2026-04-11</span>
+      <a href="http://arxiv.org/abs/2604.10252v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 전력 시장의 강화학습 시뮬레이션에서 다중 구간 입찰 곡선의 단조성 제약을 미분가능하게 처리하는 새로운 매개변수화 방법과 시뮬레이션 결과의 엄격한 검증 프레임워크를 제안했습니다.<br><br>**문제 정의**: <br>기존 강화학습 기반 전력 시장 시뮬레이션에서 단조성과 경계 제약을 만족하는 입찰 곡선 생성 시 정렬, 클리핑, 투영 등의 후처리 방법이 연속 미분가능성, 단사성, 가역성을 보장하지 못해 gradient 왜곡과 가짜 수렴을 야기하는 문제와, 대부분의 연구가 Nash 균형과의 거리를 엄밀히 평가하지 않아 결과의 신뢰성이 부족한 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **Dual-Positive Monotone Parameterization**: 후처리 없이도 단조성과 경계 조건을 자연스럽게 만족하는 미분가능한 매개변수화 방법 개발<br>2. **Validity Assessment Framework**: 시뮬레이션 결과와 Nash 균형 간의 거리를 정량적으로 측정하는 엄격한 검증 체계 구축<br>3. 실험을 통해 제안 방법이 기존 방법 대비 더 안정적인 수렴과 Nash 균형에 더 가까운 결과를 달성함을 입증<br><br>**의의**: <br>제약 조건을 만족하는 연속 미분가능한 매개변수화 접근법은 프로그램 합성이나 코드 변환에서 의미론적 제약을 보존하면서 최적화하는 문제와 방법론적으로 유사합니다. 특히 e-graph 기반 최적화에서 등가성 제약을 유지하며 gradient 기반 학습을 수행할 때 참고할 수 있는 제약 처리 기법을 제시하며, 시뮬레이션 결과의 엄밀한 검증 방법론은 자동화된 프로그램 변환 결과의 정확성 평가에도 적용 가능한 통찰을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Reinforcement learning agent-based simulation (RL-ABS) has become an important tool for electricity market mechanism analysis and evaluation. In the modeling of monotone, bounded, multi-segment stepwise bids, existing methods typically let the policy network first output an unconstrained action and then convert it into a feasible bid curve satisfying monotonicity and boundedness through post-processing mappings such as sorting, clipping, or projection. However, such post-processing mappings often fail to satisfy continuous differentiability, injectivity, and invertibility at boundaries or kinks, thereby causing gradient distortion and leading to spurious convergence in simulation results. Meanwhile, most existing studies conduct mechanism analysis and evaluation mainly on the basis of training-curve convergence, without rigorously assessing the distance between the simulation outcomes and Nash equilibrium, which severely undermines the credibility of the results. To address these issues, this paper proposes...</p>
+  </section>
+</article>
+</body>
+</html>

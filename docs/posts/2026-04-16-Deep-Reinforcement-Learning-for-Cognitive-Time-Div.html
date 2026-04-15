@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Reinforcement Learning for Cognitive Time-Division Joint SAR and Secure Communications</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>Deep Reinforcement Learning for Cognitive Time-Division Joint SAR and Secure Communications</h1>
+    <div class="meta">
+      <span>✍️ Mohamed-Amine Lahmeri, Ata Khalili, Yujiao Liu</span>
+      <span>📅 2026-04-11</span>
+      <a href="http://arxiv.org/abs/2604.09978v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>공중 기지국이 SAR 센싱과 보안 통신을 시분할로 수행하면서, 심층강화학습을 통해 도청자 탐지 및 비밀성 최대화를 동시에 달성하는 인지형 통합 시스템을 제안한 연구입니다.<br><br>**문제 정의**: <br>감시나 재해 후 통신과 같은 중요한 상황에서 지상의 이동하는 도청자가 있는 환경에서, 공중 기지국이 합성개구레이더(SAR) 센싱과 보안 통신 기능을 어떻게 효과적으로 통합하여 수행할 것인가의 문제를 다룹니다.<br><br>**핵심 기여**: <br>1) 시분할 기반 SAR-통신 통합(TD-JSARC) 프레임워크 설계<br>2) SAR along-track interferometry(ATI)를 활용한 도청자 위치/속도 추정<br>3) 추정된 도청자 궤적을 기반으로 한 마르코프 결정 과정(MDP) 모델링<br>4) 시간 및 전력 할당을 동시 최적화하여 최악 경우 비밀성 전송률을 최대화하는 심층강화학습 알고리즘<br><br>**의의**: <br>다중 목적 최적화 문제를 강화학습으로 해결하는 접근법이 MEV 솔루션 설계에서 직면하는 복합적 제약 조건(가스비, 지연시간, 수익성) 하에서의 최적화 문제와 유사한 구조를 가지고 있어, 동적 환경에서의 실시간 의사결정 모델링에 참고가 될 수 있습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Synthetic aperture radar (SAR) imaging can be exploited to enhance wireless communication performance through high-precision environmental awareness. However, integrating sensing and communication functionalities in such wideband systems remains challenging, motivating the development of a joint SAR and communication (JSARC) framework. We propose a dynamic time-division JSARC (TD-JSARC) framework for secure aerial communications that is relevant for critical scenarios, such as surveillance or post-disaster communication, where conventional localization of mobile adversaries often fails. In particular, we consider a secure downlink communication scenario where an aerial base station (ABS) serves a ground user (UE) in the presence of a ground-moving eavesdropper. To detect and track the eavesdropper, the ABS uses cognitive SAR along-track interferometry (ATI) to estimate its position and velocity. Based on these estimates, the ABS applies adaptive beamforming and artificial-noise jamming to enhance secrecy. To this end, we jointly optimize the time and power allocation to maximize the worst-case secrecy rate, while satisfying both SAR and communication constraints. Using the estimated eavesdropper trajectory, we formulate the problem as a Markov decision process (MDP) and solve it via deep reinforcement learning (DRL). Simulation results show that the proposed learning-based approach outperforms both learning and non-learning baseline schemes employing equal-aperture and random</p>
+  </section>
+</article>
+</body>
+</html>
