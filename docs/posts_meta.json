@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-18-Engineering-van-der-Waals-heterostructures-for-dis.html",
+    "title": "Engineering van der Waals heterostructures for dispersion-selective meV-scale quantum sensing",
+    "date": "2026-04-18",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2603.15581v1"
+  },
+  {
+    "filename": "2026-04-18-Searching-for-axions-with-quantum-interferometry.html",
+    "title": "Searching for axions with quantum interferometry",
+    "date": "2026-04-18",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "양자 간섭계를 활용하여 axion-광자 상호작용이 유발하는 Aharonov-Bohm 위상과 Berry 위상을 측정함으로써 기존 방법보다 1-2 자릿수 향상된 민감도로 axion을 탐지하는 새로운 방법론을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2604.13181v1"
+  },
+  {
+    "filename": "2026-04-18-Searching-for-axions-with-quantum-interferometry.html",
+    "title": "Searching for axions with quantum interferometry",
+    "date": "2026-04-18",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "양자 간섭계를 이용하여 Aharonov-Bohm 위상과 Berry 위상을 측정함으로써 액시온-광자 상호작용을 탐지하는 새로운 방법론을 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.13181v1"
+  },
+  {
+    "filename": "2026-04-18-Interfacial-Electric-Fields-in-Water-Nanodroplets.html",
+    "title": "Interfacial Electric Fields in Water Nanodroplets are Weakly Dependent on Curvature and pH",
+    "date": "2026-04-18",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "물 나노액적의 계면 전기장을 딥러닝 분자동역학과 양자역학적 재샘플링으로 분석하여, 전기장이 곡률과 pH에 약하게만 의존한다는 것을 발견한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.14784v1"
+  },
+  {
+    "filename": "2026-04-18-Environment-dependent-tight-binding-models-from-ab.html",
+    "title": "Environment-dependent tight-binding models from ab initio pseudo-atomic orbital Hamiltonians",
+    "date": "2026-04-18",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "ab initio 의사원자궤도 해밀토니안을 기반으로 환경 의존적 타이트바인딩 모델을 개발하여, 대규모 시스템에서도 정확도 손실 없이 전자구조를 계산할 수 있는 프레임워크를 제시했습니다.",
+    "url": "http://arxiv.org/abs/2604.14470v1"
+  },
+  {
     "filename": "2026-04-16-Bithoven--Formal-Safety-for-Expressive-Bitcoin-Sma.html",
     "title": "Bithoven: Formal Safety for Expressive Bitcoin Smart Contracts",
     "date": "2026-04-16",

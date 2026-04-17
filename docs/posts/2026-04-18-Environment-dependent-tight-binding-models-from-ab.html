@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Environment-dependent tight-binding models from ab initio pseudo-atomic orbital Hamiltonians</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Environment-dependent tight-binding models from ab initio pseudo-atomic orbital Hamiltonians</h1>
+    <div class="meta">
+      <span>✍️ Marco Buongiorno Nardelli</span>
+      <span>📅 2026-04-15</span>
+      <a href="http://arxiv.org/abs/2604.14470v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: ab initio 의사원자궤도 해밀토니안을 기반으로 환경 의존적 타이트바인딩 모델을 개발하여, 대규모 시스템에서도 정확도 손실 없이 전자구조를 계산할 수 있는 프레임워크를 제시했습니다.<br><br>**문제 정의**: <br>기존 타이트바인딩 모델은 계산 효율성은 높지만 정확도가 제한적이고, 반대로 ab initio 계산은 정확하지만 대규모 시스템에 적용하기 어려운 딜레마가 있었습니다. 특히 국부 배위 환경의 변화에 따른 전자구조 변화를 정확히 포착하면서도 전이가능한(transferable) 모델을 구축하는 것이 핵심 과제였습니다.<br><br>**핵심 기여**:<br>1. **환경 의존적 타이트바인딩(EDTB) 프레임워크 개발**: Slater-Koster 호핑 적분에 결합 스크리닝 함수를 도입하여 국부 배위 환경을 포착<br>2. **다중 원자 배치 동시 피팅**: 여러 원자 구조의 PAO 고유값 스펙트럼을 동시에 피팅하여 스크리닝과 호핑 매개변수 간의 퇴화성을 해결<br>3. **정확도 보장**: PAO 해밀토니안과 동일한 힐베르트 공간을 사용하여 손실 없는 ab initio 정확도 구현<br>4. **확장성 검증**: 4,324개 원자까지의 다양한 시스템(백금, 실리콘 표면, Si/Ge 초격자, 비틀린 이중층 그래핀)에서 효율성과 정확성 입증<br><br>**의의**: <br>이 연구는 **정확한 표현과 효율적 계산의 절충점**을 해결한 점에서 중요합니다. 특히 **제약 기반 매개변수 최적화** 접근법은 뉴로심볼릭 프로그램 합성에서 수학적 정확성을 보장하면서도 확장 가능한 모델을 구축하는 방법론과 직접적으로 연관됩니다. PAO 기반의 손실 없는 표현 기법은 LLM 기반 프로그램 분석에서 정확성을 유지하면서 복잡한 제약 조건을 효율</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>\textit{Ab initio} pseudo-atomic orbital (PAO) Hamiltonians express the electronic structure of a solid in a compact, localized basis that spans the same Hilbert space as a conventional Slater--Koster tight-binding model, thereby providing an exact \textit{ab initio} representation without any loss of accuracy. Building on this correspondence, we develop an environment-dependent tight-binding (EDTB) framework in which Slater--Koster hopping integrals are augmented with bond-screening functions that capture the local coordination environment. All parameters are determined by fitting to the PAO eigenvalue spectrum across multiple atomic configurations simultaneously, which breaks the degeneracy between screening and hopping parameters and yields physically meaningful, transferable models capable of generating Hamiltonians for large systems with \textit{ab initio} precision. We demonstrate the efficiency and accuracy of the approach on four prototypical systems: bulk platinum, silicon surfaces, Si/Ge~[001] superlattices, and twisted bilayer graphene with up to $4{,}324$ atoms. The method is implemented in the \paoflow{} code and integrates seamlessly with its full post-processing suite, enabling the evaluation of a broad range of electronic, optical, and transport properties.</p>
+  </section>
+</article>
+</body>
+</html>
