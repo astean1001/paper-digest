@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-04-19-KindHML--formal-verification-of-smart-contracts-ba.html",
+    "title": "KindHML: formal verification of smart contracts based on Hennessy-Milner logic",
+    "date": "2026-04-19",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "Hennessy-Milner Logic 기반의 시간적 속성 명세를 통해 스마트 컨트랙트의 복잡한 비즈니스 로직 취약점을 자동으로 검증하는 형식 검증 도구 KindHML을 제안함.",
+    "url": "http://arxiv.org/abs/2604.14038v1"
+  },
+  {
     "filename": "2026-04-18-Engineering-van-der-Waals-heterostructures-for-dis.html",
     "title": "Engineering van der Waals heterostructures for dispersion-selective meV-scale quantum sensing",
     "date": "2026-04-18",

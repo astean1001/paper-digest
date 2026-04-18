@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KindHML: formal verification of smart contracts based on Hennessy-Milner logic</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>KindHML: formal verification of smart contracts based on Hennessy-Milner logic</h1>
+    <div class="meta">
+      <span>✍️ Massimo Bartoletti, Angelo Ferrando, Enrico Lipparini</span>
+      <span>📅 2026-04-15</span>
+      <a href="http://arxiv.org/abs/2604.14038v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Hennessy-Milner Logic 기반의 시간적 속성 명세를 통해 스마트 컨트랙트의 복잡한 비즈니스 로직 취약점을 자동으로 검증하는 형식 검증 도구 KindHML을 제안함.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 분석 도구들은 단일 트랜잭션 내의 취약점만 탐지할 수 있어, 여러 트랜잭션에 걸쳐 발생하는 복잡한 공격(유동성 공격, 프론트러닝 등)을 탐지하지 못하는 한계가 있음. 이러한 공격들은 스마트 컨트랙트의 비즈니스 로직 결함을 악용하며, 이를 분석하기 위해서는 표현력이 풍부한 시간적 속성(temporal properties)에 대한 추론이 필요함.<br><br>**핵심 기여**:<br>1. **새로운 명세 언어**: 1차 Hennessy-Milner Logic을 기반으로 스마트 컨트랙트의 복잡한 시간적 속성을 명세할 수 있는 언어 개발<br>2. **자동 인코딩 메커니즘**: Solidity 컨트랙트와 시간적 명세를 Kind 2 모델 체커가 지원하는 Lustre 언어로 완전 자동 변환하는 인코딩 방법 제시<br>3. **통합 툴체인**: 번역과 검증 단계를 통합한 자동화된 검증 도구 구현<br>4. **실증적 검증**: 복잡한 공격 시나리오를 포함한 벤치마크에서 기존 도구로는 탐지할 수 없는 취약점들을 성공적으로 탐지<br><br>**의의**:<br>스마트 컨트랙트 보안 연구에서 중요한 패러다임 전환을 제시함. 단순한 정적 분석을 넘어서 시간적 속성을 고려한 형식 검증으로 확장함으로써, 실제 블록체인 환경에서 발생하는 정교한 공격들을 사전에 탐지할 수 있는 새로운 방법론을 제공함. 특히 DeFi 프로토콜과 같이 복잡한 상태 전이를 갖는 스마트 컨트랙트의 안전성 검증에 직접적으로 활용 가능하며, </div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contracts deployed on blockchains such as Ethereum routinely manage large amounts of assets, making their security critical. Empirical studies show that real-world attacks often exploit flaws in the business logic of contracts that unfold across multiple transactions, such as liquidity or front-running attacks. Detecting these attacks requires reasoning about expressive temporal properties beyond the capabilities of existing analysis tools. In this paper, we present an automated approach to the formal verification of smart contracts, enabling the specification and verification of complex temporal properties. Our approach provides a fully automated encoding into Lustre -- the specification language supported by the Kind 2 model checker -- of an expressive subset of Solidity contracts and temporal specifications based on first-order Hennessy-Milner Logic. This encoding allows us to leverage Kind 2 to determine whether the contract respects the specification or not. We implement our approach in a toolchain that integrates the translation and verification steps, and we evaluate its effectiveness and performance on a benchmark of smart contracts and temporal properties capturing complex attack scenarios. Our results show that the proposed approach can effectively verify non-trivial temporal properties of smart contracts and detect violations that are beyond the reach of existing analysis tools.</p>
+  </section>
+</article>
+</body>
+</html>
