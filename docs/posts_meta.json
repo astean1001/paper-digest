@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-04-21-Where-Does-MEV-Really-Come-From--Revisiting-CEXDEX.html",
+    "title": "Where Does MEV Really Come From? Revisiting CEXDEX Arbitrage on Ethereum",
+    "date": "2026-04-21",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "기존 이론 모델들이 가격 점프를 무시함으로써 CEX-DEX 차익거래 규모를 과소평가했다는 점을 지적하고, 확률적 점프를 포함한 새로운 AMM 모델을 통해 MEV 수익의 실제 원천을 재분석한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.15973v1"
+  },
+  {
     "filename": "2026-04-19-KindHML--formal-verification-of-smart-contracts-ba.html",
     "title": "KindHML: formal verification of smart contracts based on Hennessy-Milner logic",
     "date": "2026-04-19",
