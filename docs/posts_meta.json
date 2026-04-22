@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-23-LLM-Guided-Strategy-Synthesis-for-Scalable-Equalit.html",
+    "title": "LLM-Guided Strategy Synthesis for Scalable Equality Saturation",
+    "date": "2026-04-23",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" OR (ab:\"e-graph\" AND ab:\"deobfuscation\")",
+    "one_liner": "Equality Saturation에서 수동으로 설계되던 최적화 전략을 LLM을 활용해 자동으로 합성하는 EggMind 프레임워크를 제안하여, e-graph 폭발 문제를 해결하면서 고품질 전략을 생성한다.",
+    "url": "http://arxiv.org/abs/2604.17364v1"
+  },
+  {
+    "filename": "2026-04-23-Neurosymbolic-Repo-level-Code-Localization.html",
+    "title": "Neurosymbolic Repo-level Code Localization",
+    "date": "2026-04-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "기존 코드 위치 탐지 모델들이 키워드 매칭에 의존하는 문제를 해결하기 위해, LLM과 Datalog를 결합한 논리적 추론 기반의 neurosymbolic 프레임워크 LogicLoc을 제안함.",
+    "url": "http://arxiv.org/abs/2604.16021v2"
+  },
+  {
+    "filename": "2026-04-23-From-Large-Language-Model-Predicates-to-Logic-Tens.html",
+    "title": "From Large Language Model Predicates to Logic Tensor Networks: Neurosymbolic Offer Validation in Regulated Procurement",
+    "date": "2026-04-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.05539v1"
+  },
+  {
+    "filename": "2026-04-23-Position--Logical-Soundness-is-not-a-Reliable-Crit.html",
+    "title": "Position: Logical Soundness is not a Reliable Criterion for Neurosymbolic Fact-Checking with LLMs",
+    "date": "2026-04-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "뉴로심볼릭 팩트체킹 시스템에서 논리적 건전성(logical soundness)만으로는 인간이 받아들이는 추론과 체계적으로 차이가 나기 때문에, 오히려 LLM의 인간적 추론 능력을 활용해야 한다고 주장하는 논문입니다.",
+    "url": "http://arxiv.org/abs/2604.04177v1"
+  },
+  {
+    "filename": "2026-04-23-Ontology-Constrained-Neural-Reasoning-in-Enterpris.html",
+    "title": "Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents",
+    "date": "2026-04-23",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "기업용 LLM의 환각과 규정 준수 문제를 해결하기 위해 3층 온톨로지 기반 뉴로심볼릭 아키텍처를 제안하고, 5개 산업군 실험을 통해 성능 향상을 입증한 연구.",
+    "url": "http://arxiv.org/abs/2604.00555v2"
+  },
+  {
     "filename": "2026-04-21-Where-Does-MEV-Really-Come-From--Revisiting-CEXDEX.html",
     "title": "Where Does MEV Really Come From? Revisiting CEXDEX Arbitrage on Ethereum",
     "date": "2026-04-21",

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"LLM" OR ab:"large language model")</span>
+    <h1>Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents</h1>
+    <div class="meta">
+      <span>✍️ Thanh Luong Tuan</span>
+      <span>📅 2026-04-01</span>
+      <a href="http://arxiv.org/abs/2604.00555v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기업용 LLM의 환각과 규정 준수 문제를 해결하기 위해 3층 온톨로지 기반 뉴로심볼릭 아키텍처를 제안하고, 5개 산업군 실험을 통해 성능 향상을 입증한 연구.<br><br>**문제 정의**: <br>기업 환경에서 LLM 도입 시 발생하는 세 가지 핵심 문제 해결<br>- 환각(hallucination) 현상으로 인한 부정확한 정보 생성<br>- 도메인 드리프트로 인한 전문 영역 지식 부족<br>- 추론 단계에서 규정 준수(regulatory compliance) 강제 불가능<br><br>**핵심 기여**:<br>1. **3층 온톨로지 프레임워크**: Role, Domain, Interaction 온톨로지로 구성된 형식적 의미 기반 제공<br>2. **비대칭 뉴로심볼릭 결합**: 심볼릭 온톨로지가 에이전트 입력(컨텍스트, 도구 발견, 거버넌스)과 출력(응답 검증, 추론 확인, 규정 준수)을 제약하는 메커니즘<br>3. **실증적 검증**: 5개 산업군 600회 실험을 통해 정확도(W=.460), 규정 준수(W=.318), 역할 일관성(W=.614)에서 유의한 성능 향상 확인<br><br>**의의**: <br>LLM과 프로그램 분석 융합 연구의 실용적 적용 가능성을 보여주는 중요한 사례로, 특히 도메인별 지식이 부족한 영역(베트남 금융/보험)에서 온톨로지 기반 제약이 더 큰 효과를 보인다는 점이 주목할 만함. 연구자의 뉴로심볼릭 접근법이 기업 환경에서 어떻게 구현되고 평가될 수 있는지에 대한 구체적인 방법론을 제시함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Enterprise adoption of Large Language Models (LLMs) is constrained by hallucination, domain drift, and the inability to enforce regulatory compliance at the reasoning level. We present a neurosymbolic architecture implemented within the Foundation AgenticOS (FAOS) platform that addresses these limitations through ontology-constrained neural reasoning. Our approach introduces a three-layer ontological framework--Role, Domain, and Interaction ontologies--that provides formal semantic grounding for LLM-based enterprise agents. We formalize the concept of asymmetric neurosymbolic coupling, wherein symbolic ontological knowledge constrains agent inputs (context assembly, tool discovery, governance thresholds) while proposing mechanisms for extending this coupling to constrain agent outputs (response validation, reasoning verification, compliance checking). We evaluate the architecture through a controlled experiment (600 runs across five industries: FinTech, Insurance, Healthcare, Vietnamese Banking, and Vietnamese Insurance), finding that ontology-coupled agents significantly outperform ungrounded agents on Metric Accuracy (p < .001, W = .460), Regulatory Compliance (p = .003, W = .318), and Role Consistency (p < .001, W = .614), with improvements greatest where LLM parametric knowledge is weakest--particularly in Vietnam-localized domains. Our contributions include: (1) a formal three-layer enterprise ontology model, (2) a taxonomy of neurosymbolic coupling patterns, (3) ontolog</p>
+  </section>
+</article>
+</body>
+</html>

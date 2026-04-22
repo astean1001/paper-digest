@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM-Guided Strategy Synthesis for Scalable Equality Saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" OR (ab:"e-graph" AND ab:"deobfuscation")</span>
+    <h1>LLM-Guided Strategy Synthesis for Scalable Equality Saturation</h1>
+    <div class="meta">
+      <span>✍️ Chenyun Yin, Youwei Xiao, Yuze Luo</span>
+      <span>📅 2026-04-19</span>
+      <a href="http://arxiv.org/abs/2604.17364v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Equality Saturation에서 수동으로 설계되던 최적화 전략을 LLM을 활용해 자동으로 합성하는 EggMind 프레임워크를 제안하여, e-graph 폭발 문제를 해결하면서 고품질 전략을 생성한다.<br><br>**문제 정의**: <br>Equality Saturation 기반 컴파일러에서 효과적인 최적화를 위해서는 도메인별 재작성 규칙뿐만 아니라 도메인별 전략이 필요하지만, 현재 대부분의 전략 설계가 수동으로 이루어져 자동화의 주요 장벽이 되고 있음. 최근 규칙 합성 프레임워크들이 대규모 재작성 어휘를 자동 추론할 수 있지만, 이로 인해 재작성 공간이 확장되어 e-graph 폭발 문제가 더욱 악화됨.<br><br>**핵심 기여**:<br>1. **EqSatL 도메인 특화 언어**: EqSat 전략을 명시적이고 검사 가능한 객체로 표현하는 언어 개발<br>2. **LLM 기반 에이전트 워크플로우**: 증명 유도 재작성 모티프 캐싱과 처리 가능성 가이던스를 포함한 새로운 기법으로 효율적인 전략 탐색 구현<br>3. **안정적인 합성**: e-graph 증가 상황에서도 안정적으로 고품질 전략을 합성하는 방법론 제시<br><br>**의의**: <br>MBA 난독화 해제 연구에 직접적으로 활용 가능한 핵심 기술로, e-graph 기반 최적화에서 수동 전략 설계의 부담을 크게 줄일 수 있음. 특히 복잡한 MBA 표현식의 자동 단순화를 위한 전략 합성에 EggMind의 접근법을 적용할 수 있으며, Neurosymbolic 융합 연구에서 기호적 추론과 LLM의 효과적인 결합 사례로 활용 가능함. 재사용 가능한 전략 추상화 개념은 난독화 해제 도구의 일반화 성능 향상에 기여할 것으로 예상됨.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Equality saturation (EqSat) is a powerful optimization paradigm that compactly represents many equivalent programs in an e-graph and delays commitment until extraction selects a lowest-cost program. Making EqSat effective, therefore, requires not only domain-specific rewrite rules but also domain-specific strategies. Today, much of this strategy design is still manual, making it a major obstacle to automating e-graph-based compilers. Recent rule-synthesis frameworks can automatically infer large rewrite vocabularies from semantic specifications, but they also enlarge the rewrite space and further exacerbate e-graph explosion. Although large language models (LLMs) make automated strategy synthesis plausible, directly evolving backend code remains ineffective in practice. The search lacks reusable strategy abstractions and actionable feedback, and can easily trigger e-graph explosion or converge to poor designs.
+  We present EggMind, an LLM-guided, end-to-end framework for synthesizing reusable EqSat strategies. At its core, EggMind introduces a domain-specific language, EqSatL, to represent EqSat strategies as explicit and inspectable artifacts. It then proposes an LLM-guided agentic workflow, equipped with novel techniques including proof-derived rewrite motif caching and tractability guidance, to search efficiently for high-quality strategies while keeping synthesis stable under e-graph growth. Evaluation shows that EggMind substantially improves the resource-quality trade-o</p>
+  </section>
+</article>
+</body>
+</html>

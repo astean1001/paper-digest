@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurosymbolic Repo-level Code Localization</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"LLM" OR ab:"large language model")</span>
+    <h1>Neurosymbolic Repo-level Code Localization</h1>
+    <div class="meta">
+      <span>✍️ Xiufeng Xu, Xiufeng Wu, Zejun Zhang</span>
+      <span>📅 2026-04-17</span>
+      <a href="http://arxiv.org/abs/2604.16021v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기존 코드 위치 탐지 모델들이 키워드 매칭에 의존하는 문제를 해결하기 위해, LLM과 Datalog를 결합한 논리적 추론 기반의 neurosymbolic 프레임워크 LogicLoc을 제안함.<br><br>**문제 정의**: <br>기존의 코드 위치 탐지(code localization) 방법들이 파일 경로나 함수명 같은 키워드에 과도하게 의존하여 진정한 구조적 추론 없이 표면적인 어휘 매칭만 수행하는 "Keyword Shortcut" 문제를 해결하려 함. 이를 위해 키워드 힌트 없이 구조적 추론만으로 코드를 찾아야 하는 KA-LCL(Keyword-Agnostic Logical Code Localization) 문제를 정의함.<br><br>**핵심 기여**:<br>1. **벤치마크 구축**: 구조적 추론을 요구하는 진단용 벤치마크 KA-LogicQuery 개발<br>2. **Neurosymbolic 프레임워크**: LLM의 유연성과 Datalog의 엄밀한 논리적 추론을 결합한 LogicLoc 시스템 설계<br>3. **자동화된 검증 메커니즘**: 파서 기반 검증과 변이 기반 중간 규칙 피드백을 통한 완전 자동화된 폐쇄 루프 워크플로우 구현<br><br>**의의**: <br>이 연구는 LLM과 기호적 추론(symbolic reasoning)의 효과적 융합 사례를 제시하여, 프로그램 분석에서 신경망의 유연성과 논리 시스템의 정확성을 동시에 활용하는 방법론을 보여줌. 특히 Datalog를 중간 표현으로 사용하여 LLM의 출력을 검증 가능한 형태로 변환하는 접근법은 neurosymbolic 프로그램 분석 연구의 실용적 구현 모델을 제공함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Code localization is a cornerstone of autonomous software engineering. Recent advancements have achieved impressive performance on real-world issue benchmarks. However, we identify a critical yet overlooked bias: these benchmarks are saturated with keyword references (e.g. file paths, function names), encouraging models to rely on superficial lexical matching rather than genuine structural reasoning. We term this phenomenon the Keyword Shortcut. To address this, we formalize the challenge of Keyword-Agnostic Logical Code Localization (KA-LCL) and introduce KA-LogicQuery, a diagnostic benchmark requiring structural reasoning without any naming hints. Our evaluation reveals a catastrophic performance drop of state-of-the-art approaches on KA-LogicQuery, exposing their lack of deterministic reasoning capabilities. We propose LogicLoc, a novel agentic framework that combines large language models with the rigorous logical reasoning of Datalog for precise localization. LogicLoc extracts program facts from the codebase and leverages an LLM to synthesize Datalog programs, with parser-gated validation and mutation-based intermediate-rule diagnostic feedback to ensure correctness and efficiency. The validated programs are executed by a high-performance inference engine, enabling accurate and verifiable localization in a fully automated, closed-loop workflow. Experimental results demonstrate that LogicLoc significantly outperforms SOTA methods on KA-LogicQuery while maintaining competi</p>
+  </section>
+</article>
+</body>
+</html>

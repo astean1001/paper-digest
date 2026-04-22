@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Position: Logical Soundness is not a Reliable Criterion for Neurosymbolic Fact-Checking with LLMs</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"LLM" OR ab:"large language model")</span>
+    <h1>Position: Logical Soundness is not a Reliable Criterion for Neurosymbolic Fact-Checking with LLMs</h1>
+    <div class="meta">
+      <span>✍️ Jason Chan, Robert Gaizauskas, Zhixue Zhao</span>
+      <span>📅 2026-04-05</span>
+      <a href="http://arxiv.org/abs/2604.04177v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 뉴로심볼릭 팩트체킹 시스템에서 논리적 건전성(logical soundness)만으로는 인간이 받아들이는 추론과 체계적으로 차이가 나기 때문에, 오히려 LLM의 인간적 추론 능력을 활용해야 한다고 주장하는 논문입니다.<br><br>**문제 정의**: <br>현재 뉴로심볼릭 팩트체킹 시스템들이 LLM의 편향과 환각을 완화하기 위해 자연어를 논리 공식으로 변환하고 논리적 건전성을 검증하는 방식을 사용하는데, 이러한 접근법이 구조적으로 오해의 소지가 있는 주장들을 탐지하지 못하는 문제를 다룹니다.<br><br>**핵심 기여**:<br>- 논리적으로 건전한 결론과 인간이 실제로 받아들이는 추론 사이의 체계적 차이점을 인지과학과 화용론 연구를 바탕으로 분석<br>- 논리적으로 올바르지만 인간에게 잘못된 추론을 유도하는 사례들의 유형론(typology) 제시<br>- LLM의 인간적 추론 성향을 결함이 아닌 특징으로 활용하여, 형식적 구성요소의 출력을 검증하는 보완적 접근법 제안<br><br>**의의**: <br>이 연구는 프로그램 분석과 LLM 융합 연구에서 중요한 시사점을 제공합니다. 형식적 검증과 기계학습 모델을 결합할 때 논리적 정확성만으로는 충분하지 않으며, 인간의 인지적 특성과 실용적 추론을 고려해야 한다는 점을 보여줍니다. 특히 LLM을 활용한 코드 생성이나 프로그램 합성 연구에서 형식적 검증 도구와의 상호작용 설계 시 반드시 고려해야 할 제약사항을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>As large language models (LLMs) are increasing integrated into fact-checking pipelines, formal logic is often proposed as a rigorous means by which to mitigate bias, errors and hallucinations in these models' outputs. For example, some neurosymbolic systems verify claims by using LLMs to translate natural language into logical formulae and then checking whether the proposed claims are logically sound, i.e. whether they can be validly derived from premises that are verified to be true. We argue that such approaches structurally fail to detect misleading claims due to systematic divergences between conclusions that are logically sound and inferences that humans typically make and accept. Drawing on studies in cognitive science and pragmatics, we present a typology of cases in which logically sound conclusions systematically elicit human inferences that are unsupported by the underlying premises. Consequently, we advocate for a complementary approach: leveraging the human-like reasoning tendencies of LLMs as a feature rather than a bug, and using these models to validate the outputs of formal components in neurosymbolic systems against potentially misleading conclusions.</p>
+  </section>
+</article>
+</body>
+</html>
