@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAU-Net: Uncertainty-aware Representation Learning and Evidential Classification for Facial Action Unit Detection</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND (ab:"deobfuscation" OR ab:"e-graph" OR ab:"MBA")</span>
+    <h1>UAU-Net: Uncertainty-aware Representation Learning and Evidential Classification for Facial Action Unit Detection</h1>
+    <div class="meta">
+      <span>✍️ Yuze Li, Zhilei Liu</span>
+      <span>📅 2026-04-23</span>
+      <a href="http://arxiv.org/abs/2604.21227v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 얼굴 행동 단위(AU) 검출에서 표현 학습과 분류 단계 모두의 불확실성을 명시적으로 모델링하여 시각적 노이즈와 라벨 불균형 문제를 해결하는 UAU-Net 프레임워크를 제안한 연구입니다.<br><br>**문제 정의**: <br>기존 얼굴 행동 단위 검출 방법들이 표현을 결정론적으로 처리하여 시각적 노이즈, 개인차, 모호한 AU 간 관계로 인한 불확실성을 간과하고, 기존 분류기들이 심각한 라벨 불균형 상황에서 과신 예측(overconfident prediction)을 생성하는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **CV-AFE 모듈**: 조건부 VAE 기반으로 다중 시공간 스케일에서 특징 평균과 분산을 공동 추정하여 확률적 AU 표현을 학습<br>2. **AB-ENN**: 비대칭 베타 증거 신경망으로 베타 분포를 통해 예측 불확실성을 매개화하고, 불균형 이진 라벨에 최적화된 비대칭 손실로 과신 문제 완화<br>3. BP4D와 DISFA 데이터셋에서 우수한 성능 달성<br><br>**의의**: <br>이 연구는 불확실성 정량화(uncertainty quantification)를 통한 견고한 모델링 접근법을 제시하며, 특히 프로그램 분석에서의 신뢰도 추정과 LLM의 불확실성 처리 문제와 방법론적 유사성을 보입니다. 증거 기반 학습과 확률적 표현 학습은 프로그램 합성에서의 신뢰할 수 있는 코드 생성 및 분석 결과의 신뢰도 평가에 응용 가능한 아이디어를 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Facial action unit (AU) detection remains challenging because it involves heterogeneous, AU-specific uncertainties arising at both the representation and decision stages. Recent methods have improved discriminative feature learning, but they often treat the AU representations as deterministic, overlooking uncertainty caused by visual noise, subject-dependent appearance variations, and ambiguous inter-AU relationships, all of which can substantially degrade robustness. Meanwhile, conventional point-estimation classifiers often provide poorly calibrated confidence, producing overconfident predictions, especially under the severe label imbalance typical of AU datasets. We propose UAU-Net, an Uncertainty-aware AU detection framework that explicitly models uncertainty at both stages. At the representation stage, we introduce CV-AFE, a conditional VAE (CVAE)-based AU feature extraction module that learns probabilistic AU representations by jointly estimating feature means and variances across multiple spatio-temporal scales; conditioning on AU labels further enables CV-AFE to capture uncertainty associated with inter-AU dependencies. At the decision stage, we design AB-ENN, an Asymmetric Beta Evidential Neural Network for multi-label AU detection, which parameterizes predictive uncertainty with Beta distributions and mitigates overconfidence via an asymmetric loss tailored to highly imbalanced binary labels. Extensive experiments on BP4D and DISFA show that UAU-Net achieves strong </p>
+  </section>
+</article>
+</body>
+</html>
