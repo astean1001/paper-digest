@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLLM: Pseudo-Labeling Large Language Models for CAD Program Synthesis</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"program synthesis" OR ti:"neurosymbolic") AND ab:"large language model"</span>
+    <h1>PLLM: Pseudo-Labeling Large Language Models for CAD Program Synthesis</h1>
+    <div class="meta">
+      <span>✍️ Yuanbo Li, Dule Shu, Yanying Chen</span>
+      <span>📅 2026-02-13</span>
+      <a href="http://arxiv.org/abs/2602.12561v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 3D 형상으로부터 CAD 프로그램을 생성하는 문제에서 라벨이 없는 데이터를 활용하여 LLM을 자가학습시키는 의사 라벨링 프레임워크 PLLM을 제안<br><br>**문제 정의**: <br>기존 CAD 프로그램 합성 방법들은 3D 형상과 프로그램이 쌍으로 라벨링된 지도학습 데이터에 의존하는데, 이러한 paired 데이터는 구하기 어렵고 비용이 많이 든다는 한계가 있음. 라벨이 없는 3D 형상 데이터만으로도 효과적인 CAD 프로그램 합성이 가능한 방법이 필요함.<br><br>**핵심 기여**:<br>- **자가학습 프레임워크**: 사전 훈련된 CAD 가능 LLM과 라벨 없는 형상 데이터셋만으로 작동하는 PLLM 프레임워크 개발<br>- **반복적 의사 라벨링**: (1) 후보 프로그램 샘플링 → (2) 고충실도 실행 결과 선별 → (3) 프로그램 증강을 통한 합성 데이터 구축 → (4) 파인튜닝의 반복적 과정<br>- **실험적 검증**: DeepCAD의 CAD-Recode를 ABC 데이터셋에 적용하여 기하학적 충실도와 프로그램 다양성 모두에서 일관된 성능 향상 달성<br><br>**의의**: <br>이 연구는 Neurosymbolic AI의 핵심인 기호적 프로그램 생성과 신경망 기반 학습을 결합한 실용적 접근법을 제시함. 특히 라벨 없는 데이터로부터 구조화된 프로그램을 학습하는 자가지도 방법론은 프로그램 합성 분야에서 데이터 부족 문제를 해결하는 중요한 돌파구가 될 수 있으며, CAD 도메인을 넘어 다른 프로그램 합성 태스크에도 확장 가능한 일반적 프레임워크로서 가치가 높음.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Recovering Computer-Aided Design (CAD) programs from 3D geometries is a widely studied problem. Recent advances in large language models (LLMs) have enabled progress in CAD program synthesis, but existing methods rely on supervised training with paired shape-program data, which is often unavailable. We introduce PLLM, a self-training framework for CAD program synthesis from unlabeled 3D shapes. Given a pre-trained CAD-capable LLM and a shape dataset, PLLM iteratively samples candidate programs, selects high-fidelity executions, and augments programs to construct synthetic program-shape pairs for fine-tuning. We experiment on adapting CAD-Recode from DeepCAD to the unlabeled ABC dataset show consistent improvements in geometric fidelity and program diversity.</p>
+  </section>
+</article>
+</body>
+</html>

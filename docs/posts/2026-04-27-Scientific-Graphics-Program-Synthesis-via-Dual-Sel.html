@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scientific Graphics Program Synthesis via Dual Self-Consistency Reinforcement Learning</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"program synthesis" OR ti:"neurosymbolic") AND ab:"large language model"</span>
+    <h1>Scientific Graphics Program Synthesis via Dual Self-Consistency Reinforcement Learning</h1>
+    <div class="meta">
+      <span>✍️ Juekai Lin, Yun Zhu, Honglin Lin</span>
+      <span>📅 2026-04-07</span>
+      <a href="http://arxiv.org/abs/2604.06079v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 과학 도표 이미지를 편집 가능한 TikZ 코드로 변환하는 프로그램 합성 문제를 해결하기 위해 고품질 데이터셋과 이중 자기일관성 강화학습을 제안한 연구입니다.<br><br>**문제 정의**: <br>기존 멀티모달 대형언어모델들이 과학 도표를 TikZ 코드로 역공학할 때 두 가지 핵심 문제에 직면: (1) 데이터 품질 격차 - 기존 이미지-TikZ 데이터셋의 실행가능성과 시각적 정렬 신뢰성 부족, (2) 평가 격차 - 구조적/시각적 충실도를 모두 측정할 벤치마크 부재<br><br>**핵심 기여**:<br>1. **SciTikZ-230K**: 11개 과학 분야를 커버하는 실행 중심 데이터 엔진으로 생성한 대규모 고품질 데이터셋<br>2. **SciTikZ-Bench**: 기본 기하 구조부터 복잡한 계층적 도식까지 시각적 충실도와 구조적 논리를 평가하는 다면적 벤치마크  <br>3. **이중 자기일관성 강화학습**: Round-Trip Verification을 활용해 퇴화된 코드를 페널티하고 전체 자기일관성을 향상시키는 새로운 최적화 패러다임<br><br>**의의**: <br>프로그램 합성과 뉴로심볼릭 접근법의 실용적 응용을 보여주는 중요한 사례로, 특히 시각-코드 최적화 방법론을 확장했습니다. 강화학습을 통한 자기일관성 향상 접근법은 다른 도메인의 프로그램 합성 연구에도 적용 가능하며, 멀티모달 AI의 정밀한 구조적 출력 생성 문제 해결에 기여합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Graphics Program Synthesis is pivotal for interpreting and editing visual data, effectively facilitating the reverse-engineering of static visuals into editable TikZ code. While TikZ is the de facto standard for scientific schematics due to its programmatic flexibility, its requirement for rigorous spatial precision presents a significant challenge for Multimodal Large Language Models. Progress is currently stifled by two primary gaps: (1) Data Quality Gap: existing image-TikZ corpora often lack strict executability and reliable visual alignment; (2) Evaluation Gap: a lack of benchmarks for both structural and visual fidelity. To address these, we present a closed-loop framework featuring: SciTikZ-230K, a large-scale, high-quality dataset from our Execution-Centric Data Engine covering 11 diverse scientific disciplines; SciTikZ-Bench, a multifaceted benchmark spanning from basic geometric constructs to intricate hierarchical schematics to evaluate both visual fidelity and structural logic. To further broaden the scope of visual-code optimization methodology, we introduce a novel Dual Self-Consistency Reinforcement Learning optimization paradigm, which utilizes Round-Trip Verification to penalize degenerate code and boost overall self-consistency. Empowered by these, our trained model SciTikZer-8B achieves state-of-the-art performance, consistently outperforming proprietary giants like Gemini-2.5-Pro and massive models like Qwen3-VL-235B-A22B-Instruct.</p>
+  </section>
+</article>
+</body>
+</html>

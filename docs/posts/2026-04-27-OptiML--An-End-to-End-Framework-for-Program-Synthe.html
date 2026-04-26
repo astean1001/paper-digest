@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OptiML: An End-to-End Framework for Program Synthesis and CUDA Kernel Optimization</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"program synthesis" OR ti:"neurosymbolic") AND ab:"large language model"</span>
+    <h1>OptiML: An End-to-End Framework for Program Synthesis and CUDA Kernel Optimization</h1>
+    <div class="meta">
+      <span>✍️ Arijit Bhattacharjee, Heng Ping, Son Vu Le</span>
+      <span>📅 2026-02-12</span>
+      <a href="http://arxiv.org/abs/2602.12305v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>자연어 명세나 기존 CUDA 코드로부터 고성능 CUDA 커널을 자동 생성하고 최적화하는 end-to-end 프레임워크 OptiML을 제안하여, LLM 기반 프로그램 합성과 하드웨어 피드백 기반 최적화를 결합했습니다.<br><br>**문제 정의**: <br>CUDA 커널 최적화는 복잡한 조합 공간에서 저수준 변환을 탐색해야 하고 하드웨어 피드백이 노이즈가 많고 비용이 높아 어렵습니다. 기존 LLM은 기능적으로 올바른 CUDA 코드를 생성할 수 있지만, 경쟁력 있는 성능을 달성하기 위한 체계적인 최적화 선택 탐색과 검증이 부족했습니다.<br><br>**핵심 기여**:<br>1. **이단계 분리 아키텍처**: 자연어에서 초기 실행 가능한 프로그램을 생성하는 Mixture-of-Thoughts 생성기(OptiML-G)와 Monte Carlo Tree Search를 통해 커널을 최적화하는 검색 기반 최적화기(OptiML-X)로 구성<br>2. **하드웨어 인식 보상 시스템**: Nsight Compute 프로파일러 피드백을 활용하여 런타임, 하드웨어 병목 지표, 성능 저하 방지를 결합한 복합 목적 함수 설계<br>3. **검증 기반 탐색**: LLM 기반 편집에 대해 컴파일-검증-프로파일링 파이프라인을 통한 체계적 성능 개선 탐색<br><br>**의의**:<br>neurosymbolic 프로그램 합성 분야에서 LLM의 코드 생성 능력과 하드웨어 피드백 기반 최적화를 효과적으로 결합한 사례로, 자동화된 프로그램 수정 및 성능 최적화 연구에 중요한 방법론적 기여를 제공합니다. 특히 도메인별 최적화가 필요한 시스템 프로그래밍에서 LLM 활용 방안을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Generating high-performance CUDA kernels remains challenging due to the need to navigate a combinatorial space of low-level transformations under noisy and expensive hardware feedback. Although large language models can synthesize functionally correct CUDA code, achieving competitive performance requires systematic exploration and verification of optimization choices. We present OptiML, an end-to-end framework that maps either natural-language intent or input CUDA code to performance-optimized CUDA kernels by formulating kernel optimization as search under verification. OptiML consists of two decoupled stages. When the input is natural language, a Mixture-of-Thoughts generator (OptiML-G) acts as a proposal policy over kernel implementation strategies, producing an initial executable program. A search-based optimizer (OptiML-X) then refines either synthesized or user-provided kernels using Monte Carlo Tree Search over LLM-driven edits, guided by a hardware-aware reward derived from profiler feedback. Each candidate transformation is compiled, verified, and profiled with Nsight Compute, and evaluated by a composite objective that combines runtime with hardware bottleneck proxies and guardrails against regressions. We evaluate OptiML in both synthesis-and-optimize and optimization-only settings on a diverse suite of CUDA kernels. Results show that OptiML consistently discovers verified performance improvements over strong LLM baselines and produces interpretable optimization tra</p>
+  </section>
+</article>
+</body>
+</html>

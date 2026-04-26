@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-27-Scientific-Graphics-Program-Synthesis-via-Dual-Sel.html",
+    "title": "Scientific Graphics Program Synthesis via Dual Self-Consistency Reinforcement Learning",
+    "date": "2026-04-27",
+    "source": "arXiv",
+    "topic": "(ti:\"program synthesis\" OR ti:\"neurosymbolic\") AND ab:\"large language model\"",
+    "one_liner": "과학 도표 이미지를 편집 가능한 TikZ 코드로 변환하는 프로그램 합성 문제를 해결하기 위해 고품질 데이터셋과 이중 자기일관성 강화학습을 제안한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.06079v1"
+  },
+  {
+    "filename": "2026-04-27-PLLM--Pseudo-Labeling-Large-Language-Models-for-CA.html",
+    "title": "PLLM: Pseudo-Labeling Large Language Models for CAD Program Synthesis",
+    "date": "2026-04-27",
+    "source": "arXiv",
+    "topic": "(ti:\"program synthesis\" OR ti:\"neurosymbolic\") AND ab:\"large language model\"",
+    "one_liner": "3D 형상으로부터 CAD 프로그램을 생성하는 문제에서 라벨이 없는 데이터를 활용하여 LLM을 자가학습시키는 의사 라벨링 프레임워크 PLLM을 제안",
+    "url": "http://arxiv.org/abs/2602.12561v1"
+  },
+  {
+    "filename": "2026-04-27-OptiML--An-End-to-End-Framework-for-Program-Synthe.html",
+    "title": "OptiML: An End-to-End Framework for Program Synthesis and CUDA Kernel Optimization",
+    "date": "2026-04-27",
+    "source": "arXiv",
+    "topic": "(ti:\"program synthesis\" OR ti:\"neurosymbolic\") AND ab:\"large language model\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2602.12305v1"
+  },
+  {
+    "filename": "2026-04-27-A-Small-Scale-System-for-Autoregressive-Program-Sy.html",
+    "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
+    "date": "2026-04-27",
+    "source": "arXiv",
+    "topic": "(ti:\"program synthesis\" OR ti:\"neurosymbolic\") AND ab:\"large language model\"",
+    "one_liner": "대규모 언어모델의 한계를 극복하기 위해 200달러 미만의 비용으로 훈련 가능한 소규모 자기회귀 모델 시스템 Cadmus를 개발하여 프로그램 합성 연구의 통제된 실험을 가능하게 함.",
+    "url": "http://arxiv.org/abs/2602.09112v1"
+  },
+  {
+    "filename": "2026-04-27-Learning-Abstractions-for-Hierarchical-Planning-in.html",
+    "title": "Learning Abstractions for Hierarchical Planning in Program-Synthesis Agents",
+    "date": "2026-04-27",
+    "source": "arXiv",
+    "topic": "(ti:\"program synthesis\" OR ti:\"neurosymbolic\") AND ab:\"large language model\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2602.00929v1"
+  },
+  {
     "filename": "2026-04-26-UAU-Net--Uncertainty-aware-Representation-Learning.html",
     "title": "UAU-Net: Uncertainty-aware Representation Learning and Evidential Classification for Facial Action Unit Detection",
     "date": "2026-04-26",

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Abstractions for Hierarchical Planning in Program-Synthesis Agents</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"program synthesis" OR ti:"neurosymbolic") AND ab:"large language model"</span>
+    <h1>Learning Abstractions for Hierarchical Planning in Program-Synthesis Agents</h1>
+    <div class="meta">
+      <span>✍️ Zergham Ahmed, Kazuki Irie, Joshua B. Tenenbaum</span>
+      <span>📅 2026-01-31</span>
+      <a href="http://arxiv.org/abs/2602.00929v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>대형 언어모델의 맥락 학습 능력을 활용하여 경험으로부터 재사용 가능한 추상화를 자동으로 학습하고 이를 계층적 계획에 통합하는 프로그램 합성 에이전트 TheoryCoder-2를 제안함.<br><br>**문제 정의**: <br>기존 LLM 에이전트와 강화학습 시스템은 인간처럼 추상화를 학습하고 이를 활용해 효율적으로 계획하여 다양한 작업에 일반화하는 능력이 부족함. 기존 Theory-Based RL 시스템들(예: TheoryCoder)은 강력한 일반화 성능을 보이지만 인간이 제공한 추상화에 크게 의존하여 추상화 학습 문제를 회피함.<br><br>**핵심 기여**: <br>1) **자동 추상화 학습**: 인간이 명시한 추상화 대신 LLM의 맥락 학습을 통해 경험으로부터 재사용 가능한 추상화를 능동적으로 합성<br>2) **계층적 계획 통합**: 학습한 추상화를 계층적 계획 과정에 통합하는 메커니즘 제안<br>3) **우수한 성능**: BabyAI, Minihack, Sokoban 등 다양한 환경에서 기존 LLM 에이전트 및 WorldCoder 같은 프로그램 합성 에이전트보다 높은 샘플 효율성과 복잡한 문제 해결 능력 입증<br><br>**의의**: <br>뉴로-심볼릭 AI 연구에서 핵심 도전인 추상화 학습 문제에 대한 실용적 해결책을 제시함. LLM의 강력한 맥락 학습 능력과 프로그램 합성을 결합하여 최소한의 인간 개입으로도 복잡한 계획 문제를 해결할 수 있는 가능성을 보여주며, 향후 자율적인 프로그램 합성 시스템 개발에 중요한 기여를 할 것으로 예상됨.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Humans learn abstractions and use them to plan efficiently to quickly generalize across tasks -- an ability that remains challenging for state-of-the-art large language model (LLM) agents and deep reinforcement learning (RL) systems. Inspired by the cognitive science of how people form abstractions and intuitive theories of their world knowledge, Theory-Based RL (TBRL) systems, such as TheoryCoder, exhibit strong generalization through effective use of abstractions. However, they heavily rely on human-provided abstractions and sidestep the abstraction-learning problem. We introduce TheoryCoder-2, a new TBRL agent that leverages LLMs' in-context learning ability to actively learn reusable abstractions rather than relying on hand-specified ones, by synthesizing abstractions from experience and integrating them into a hierarchical planning process. We conduct experiments on diverse environments, including BabyAI, Minihack and VGDL games like Sokoban. We find that TheoryCoder-2 is significantly more sample-efficient than baseline LLM agents augmented with classical planning domain construction, reasoning-based planning, and prior program-synthesis agents such as WorldCoder. TheoryCoder-2 is able to solve complex tasks that the baselines fail, while only requiring minimal human prompts, unlike prior TBRL systems.</p>
+  </section>
+</article>
+</body>
+</html>

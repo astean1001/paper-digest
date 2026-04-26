@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"program synthesis" OR ti:"neurosymbolic") AND ab:"large language model"</span>
+    <h1>A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation</h1>
+    <div class="meta">
+      <span>✍️ Russ Webb, Jason Ramapuram</span>
+      <span>📅 2026-02-09</span>
+      <a href="http://arxiv.org/abs/2602.09112v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대규모 언어모델의 한계를 극복하기 위해 200달러 미만의 비용으로 훈련 가능한 소규모 자기회귀 모델 시스템 Cadmus를 개발하여 프로그램 합성 연구의 통제된 실험을 가능하게 함.<br><br>**문제 정의**: <br>기존 대규모 언어모델(LLM) 기반 프로그램 합성 연구는 다음과 같은 근본적 한계가 있음:<br>- 훈련 데이터의 분포 내/외 구분이 불명확<br>- 파인튜닝 효과의 메커니즘 이해 부족  <br>- 토큰화 방식이 성능에 미치는 영향 파악 어려움<br>- 높은 계산 비용으로 인한 실험적 접근의 제약<br><br>**핵심 기여**:<br>1. **Cadmus 시스템 개발**: 정수 가상머신(VM), 다양한 태스크의 실제 프로그램 데이터셋, 저비용 자기회귀 트랜스포머로 구성<br>2. **성능 우위 입증**: 단순한 정수 산술 프로그램 완성 태스크에서 GPT-5(95% 정확도) 대비 100% 정확도 달성<br>3. **투명성 확보**: 데이터셋과 문제 간의 관계를 명확히 파악할 수 있는 환경 제공<br>4. **세밀한 실험 제어**: 훈련 분포의 정밀한 조작과 모델 내부 검사 가능<br><br>**의의**:<br>프로그램 합성 연구의 패러다임 전환을 제시함. 기존의 블랙박스적 대규모 모델 접근에서 벗어나 통제된 실험 환경에서 귀납적 추론, 명령어 수행, 분포 외 일반화 등의 핵심 메커니즘을 체계적으로 연구할 수 있는 기반을 마련. 특히 뉴로심볼릭 AI 연구자들에게는 symbolic reasoning과 neural learning의 상호작용을 저비용으로 탐구할 수 있는 실험 플랫폼을 제공하여, 향후 해석 가능하고 신뢰할 수 있는 프로그램 합성 시스템 개발의 토대가 될 것으로 기대됨.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>What research can be pursued with small models trained to complete true programs? Typically, researchers study program synthesis via large language models (LLMs) which introduce issues such as knowing what is in or out of distribution, understanding fine-tuning effects, understanding the effects of tokenization, and higher demand on compute and storage to carry out experiments. We present a system called Cadmus which includes an integer virtual machine (VM), a dataset composed of true programs of diverse tasks, and an autoregressive transformer model that is trained for under \$200 of compute cost. The system can be used to study program completion, out-of-distribution representations, inductive reasoning, and instruction following in a setting where researchers have effective and affordable fine-grained control of the training distribution and the ability to inspect and instrument models. Smaller models working on complex reasoning tasks enable instrumentation and investigations that may be prohibitively expensive on larger models. To demonstrate that these tasks are complex enough to be of interest, we show that these Cadmus models outperform GPT-5 (by achieving 100\% accuracy while GPT-5 has 95\% accuracy) even on a simple task of completing correct, integer arithmetic programs in our domain-specific language (DSL) while providing transparency into the dataset's relationship to the problem. We also show that GPT-5 brings unknown priors into its reasoning process when solvi</p>
+  </section>
+</article>
+</body>
+</html>
