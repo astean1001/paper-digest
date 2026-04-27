@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-28-DeepHartree--A-Poisson-Coupled-Neural-Field-for-Sc.html",
+    "title": "DeepHartree: A Poisson-Coupled Neural Field for Scalable Density Functional Theory",
+    "date": "2026-04-28",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.22669v1"
+  },
+  {
+    "filename": "2026-04-28-Theoretical-prediction-of-strong-coupling-supercon.html",
+    "title": "Theoretical prediction of strong-coupling superconductivity in a hypothetical NaAlH3 phase at ambient pressure",
+    "date": "2026-04-28",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "가상의 3원 수소화물 NaAlH₃의 상온압 초전도 특성을 제1원리 계산으로 예측하여, 강결합 초전도체로서 임계온도 73.7K를 달성할 가능성을 이론적으로 입증했습니다.",
+    "url": "http://arxiv.org/abs/2604.22300v1"
+  },
+  {
+    "filename": "2026-04-28-Spin-polarized-Energy-Density-Method-from-Spin-Den.html",
+    "title": "Spin-polarized Energy Density Method from Spin-Density Functional Theory",
+    "date": "2026-04-28",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "스핀 밀도 범함수 이론을 기반으로 전체 에너지를 스핀 편극된 원자별 에너지로 분해하는 새로운 에너지 밀도 방법론을 개발하여 자성 시스템 연구에 적용했습니다.",
+    "url": "http://arxiv.org/abs/2604.22044v1"
+  },
+  {
+    "filename": "2026-04-28-Superconductivity-induced-by-altermagnetic-spin-fl.html",
+    "title": "Superconductivity induced by altermagnetic spin fluctuations in high-pressure MnB$_4$",
+    "date": "2026-04-28",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "고압 하에서 MnB₄의 14K 초전도 현상이 기존 전자-포논 결합으로는 설명되지 않아, 새로운 메커니즘인 교대자성(altermagnetic) 스핀 요동에 의한 초전도성을 제안한 이론 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.21561v1"
+  },
+  {
+    "filename": "2026-04-28-Polaron-transport-and-Verwey-transition-in-magneti.html",
+    "title": "Polaron transport and Verwey transition in magnetite",
+    "date": "2026-04-28",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "자철광(Fe₃O₄)에서 거의 100년간 미해결이었던 베르바이 전이 현상을 폴라론 수송 관점에서 분자동역학과 몬테카를로를 결합한 ab initio 모델로 해결했습니다.",
+    "url": "http://arxiv.org/abs/2604.20642v1"
+  },
+  {
     "filename": "2026-04-27-Scientific-Graphics-Program-Synthesis-via-Dual-Sel.html",
     "title": "Scientific Graphics Program Synthesis via Dual Self-Consistency Reinforcement Learning",
     "date": "2026-04-27",

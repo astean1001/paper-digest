@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spin-polarized Energy Density Method from Spin-Density Functional Theory</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"MBA")</span>
+    <h1>Spin-polarized Energy Density Method from Spin-Density Functional Theory</h1>
+    <div class="meta">
+      <span>✍️ Yang Dan, Dallas R. Trinkle</span>
+      <span>📅 2026-04-23</span>
+      <a href="http://arxiv.org/abs/2604.22044v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스핀 밀도 범함수 이론을 기반으로 전체 에너지를 스핀 편극된 원자별 에너지로 분해하는 새로운 에너지 밀도 방법론을 개발하여 자성 시스템 연구에 적용했습니다.<br><br>**문제 정의**: <br>기존의 밀도 범함수 이론(DFT)에서는 자성 시스템의 전체 에너지를 스핀 특성을 고려한 개별 원자 에너지로 명확하게 분해하는 방법이 부족했습니다. 이는 복잡한 자성 재료의 원자 단위 에너지 기여도를 정량적으로 분석하는 데 한계가 있었습니다.<br><br>**핵심 기여**:<br>1. **이론적 확장**: 스핀 밀도 범함수 이론을 기반으로 스핀 편극을 포함한 에너지 밀도 방법론의 완전한 형식론 도출<br>2. **2단계 분해 방법**: (1) 전체 에너지를 실공간에서 스핀 편극된 에너지 밀도 함수로 분해, (2) 게이지 불변 부피에서 이를 적분하여 고유한 원자 에너지 정의<br>3. **실용적 구현**: Vienna ab initio simulation package (VASP)에 수치적 구현 완료<br>4. **검증 사례**: 상자성 면심입방 Fe 모델링과 Ni 도핑된 GaN 희석 자성 반도체 연구로 방법론 검증<br><br>**의의**: <br>이 연구는 복잡한 자성 시스템을 원자 수준에서 정량적으로 분석할 수 있는 새로운 도구를 제공합니다. 연구자의 constraint-based 접근법과 symbolic execution 관심사와 연결하여 볼 때, 에너지 분해의 수학적 엄밀성과 게이지 불변성 보장은 제약 조건 기반 최적화 문제로 볼 수 있으며, 스핀 상태의 symbolic representation은 복잡한 자성 상태를 체계적으로 탐색하는 데 활용 가능합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The energy density method is generalized to include spin polarization with the full formalism derived based on spin-density functional theory, which aims at decomposing the total energy into well-defined atomic energies. The method involves two steps: (1) decomposing the total energy into spin-polarized energy density functions in real space, and (2) integrating these energy densities over chosen gauge-invariant volumes for uniquely defined atomic energies, whose summation over all the atoms restores the DFT total energy up to a constant difference. This method is numerically implemented into the Vienna ab initio simulation package for the projector augmented-wave method, and is showcased with two applications. In the first application, we model the paramagnetic face-centered cubic Fe using spin special quasirandom structures; the spin energies are fit to spin cluster expansions and a deep neural network. In the second application, we calculate the atomic energy distributions of dilute magnetic semiconductor Ni-doped GaN with different dopant distances and spin configurations. This method extracts additional useful information for the study of magnetic systems with density functional theory.</p>
+  </section>
+</article>
+</body>
+</html>
