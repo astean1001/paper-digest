@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unfolding an Atomistic World: Atomistic Simulation of Reactor Pressure Vessel Steel Across Year-and-Meter Scales</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MBA deobfuscation" OR (ti:"mixed boolean arithmetic" AND ab:"deobfuscation")</span>
+    <h1>Unfolding an Atomistic World: Atomistic Simulation of Reactor Pressure Vessel Steel Across Year-and-Meter Scales</h1>
+    <div class="meta">
+      <span>✍️ Haozhi Han, Ruge Zhang, Haoquan Chen</span>
+      <span>📅 2026-04-27</span>
+      <a href="http://arxiv.org/abs/2604.24091v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 원자 단위 시뮬레이션을 년-미터 규모까지 확장할 수 있는 AtomWorld 프레임워크를 개발하여, 원자로 압력용기 강철의 수명 예측을 위한 대규모 원자 시뮬레이션을 최초로 실현했습니다.<br><br>**문제 정의**: <br>원자로 압력용기(RPV) 강철의 수명 예측은 원자 단위의 열화 메커니즘(옹스트롬, 피코초)을 실제 서비스 규모(미터, 수십 년)로 연결해야 하는데, 기존 공학적 모델은 피팅된 열화 법칙에 의존하고, 최신 원자론적 키네틱 몬테카를로(AKMC) 방법도 년-미터 규모 커버리지를 달성하지 못하는 확장성 한계가 있었습니다.<br><br>**핵심 기여**: <br>1. **알고리즘**: 고전적 AKMC를 ab initio 에너지 랜드스케이프에서 결과 인식 상태 전이를 학습하는 원자론적 월드 모델로 재구성<br>2. **HPC 최적화**: 리더십급 슈퍼컴퓨터와의 공동 설계를 통해 계산 집약적이고 동기화가 적으며 통신 효율적인 실행 파이프라인 구현<br>3. **응용**: 물리적 기반의 복셀 병렬 프레임워크를 통해 원자론적 월드 모델링을 공학적 규모로 확장하는 경로 제시<br><br>**의의**: <br>이 연구는 최초로 10^19개 원자 시스템의 원자론적 시뮬레이션을 가능하게 하여 원자 시뮬레이션의 패러다임 전환을 보여주었습니다. 대규모 상태 공간 탐색과 확장성 문제 해결 방법론이 프로그램 합성 및 심볼릭 실행의 확장성 개선에 응용 가능하며, 특히 복잡한 상태 전이 시스템을 효율적으로 모델링하고 병렬 처리하는 접근법이 참고할 만합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Lifetime prediction of reactor pressure vessel (RPV) steel requires bridging atomistic degradation mechanisms with service-scale spatial and temporal regimes, from Angstroms and picoseconds to meters and decades. Existing engineering-scale models provide long-range reach but rely on fitted degradation laws, while recent atomistic kinetic Monte Carlo (AKMC) advances still fail to achieve year-and-meter-scale coverage. We present AtomWorld, an atomistic world-modeling framework for RPV steel lifetime simulation co-designed with leadership-scale supercomputing through three tightly coupled layers: (1) algorithm: AtomWorld recasts classical AKMC as an atomistic world model that learns consequence-aware state transitions over the ab initio energy landscape; (2) HPC: it co-designs this formulation with modern supercomputers, yielding a compute-dense, synchronization-light, and communication-efficient execution pipeline; and (3) application: it extends atomistic world modeling to engineering-scale simulation through a physically grounded voxel-parallel framework, offering a scalable pathway from local atomistic dynamics to engineering-scale degradation evolution. We demonstrate a paradigm shift in atomistic simulation: AtomWorld enables atomistic simulation of RPV steel across year-and-meter scales for the first time, extending direct atomistic modeling to ten-quintillion-atom systems and achieving a time-to-solution of 1.71 days for one simulated service year. These capabilities ar</p>
+  </section>
+</article>
+</body>
+</html>

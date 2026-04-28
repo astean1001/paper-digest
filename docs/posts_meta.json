@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-04-29-Enhancing-molecular-dynamics-with-equivariant-mach.html",
+    "title": "Enhancing molecular dynamics with equivariant machine-learned densities",
+    "date": "2026-04-29",
+    "source": "arXiv",
+    "topic": "ab:\"MBA deobfuscation\" OR (ti:\"mixed boolean arithmetic\" AND ab:\"deobfuscation\")",
+    "one_liner": "분자동역학 시뮬레이션에서 에너지/힘뿐만 아니라 전자 관측량(쌍극자 모멘트, 분극성 등)까지 예측할 수 있는 SE(3)-동변 신경망 기반 전자밀도 학습 방법론 DenSNet을 제안함.",
+    "url": "http://arxiv.org/abs/2604.24563v1"
+  },
+  {
+    "filename": "2026-04-29-Unfolding-an-Atomistic-World--Atomistic-Simulation.html",
+    "title": "Unfolding an Atomistic World: Atomistic Simulation of Reactor Pressure Vessel Steel Across Year-and-Meter Scales",
+    "date": "2026-04-29",
+    "source": "arXiv",
+    "topic": "ab:\"MBA deobfuscation\" OR (ti:\"mixed boolean arithmetic\" AND ab:\"deobfuscation\")",
+    "one_liner": "원자 단위 시뮬레이션을 년-미터 규모까지 확장할 수 있는 AtomWorld 프레임워크를 개발하여, 원자로 압력용기 강철의 수명 예측을 위한 대규모 원자 시뮬레이션을 최초로 실현했습니다.",
+    "url": "http://arxiv.org/abs/2604.24091v1"
+  },
+  {
+    "filename": "2026-04-29-Core-Hole-Excitation-Dynamics-of-One-Dimensional-U.html",
+    "title": "Core-Hole Excitation Dynamics of One-Dimensional Ultracold Trapped Fermions",
+    "date": "2026-04-29",
+    "source": "arXiv",
+    "topic": "ab:\"MBA deobfuscation\" OR (ti:\"mixed boolean arithmetic\" AND ab:\"deobfuscation\")",
+    "one_liner": "1차원 극저온 페르미온 시스템에서 코어-홀 여기 상태의 비평형 동역학을 ab initio 방법으로 분석하여, 깊은 코어 홀이 bulk나 edge 공공보다 재충진에 대해 훨씬 강건함을 발견했습니다.",
+    "url": "http://arxiv.org/abs/2604.23785v1"
+  },
+  {
+    "filename": "2026-04-29-DeepHartree--A-Poisson-Coupled-Neural-Field-for-Sc.html",
+    "title": "DeepHartree: A Poisson-Coupled Neural Field for Scalable Density Functional Theory",
+    "date": "2026-04-29",
+    "source": "arXiv",
+    "topic": "ab:\"MBA deobfuscation\" OR (ti:\"mixed boolean arithmetic\" AND ab:\"deobfuscation\")",
+    "one_liner": "대규모 분자 시스템의 밀도범함수이론(DFT) 계산에서 병목이 되는 자기일치장(SCF) 방정식 해결을 위해 포아송 방정식과 결합된 신경장(neural field)을 개발하여 O(N⁴)에서 O(N)으로 계산 복잡도를 대폭 감소시킨 연구.",
+    "url": "http://arxiv.org/abs/2604.22669v2"
+  },
+  {
+    "filename": "2026-04-29-Semiclassical-phases-of-charged-spin--1-2--matter.html",
+    "title": "Semiclassical phases of charged spin-$1/2$ matter-wave interferometers in gravitational wave backgrounds",
+    "date": "2026-04-29",
+    "source": "arXiv",
+    "topic": "ab:\"MBA deobfuscation\" OR (ti:\"mixed boolean arithmetic\" AND ab:\"deobfuscation\")",
+    "one_liner": "중력파 배경에서 전하를 가진 스핀-1/2 물질파 간섭계의 위상을 동역학적, 스핀, 전자기 기여로 분해하여 통합적으로 기술하는 반고전적 프레임워크를 개발했다.",
+    "url": "http://arxiv.org/abs/2604.24751v1"
+  },
+  {
     "filename": "2026-04-28-DeepHartree--A-Poisson-Coupled-Neural-Field-for-Sc.html",
     "title": "DeepHartree: A Poisson-Coupled Neural Field for Scalable Density Functional Theory",
     "date": "2026-04-28",

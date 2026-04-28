@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enhancing molecular dynamics with equivariant machine-learned densities</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MBA deobfuscation" OR (ti:"mixed boolean arithmetic" AND ab:"deobfuscation")</span>
+    <h1>Enhancing molecular dynamics with equivariant machine-learned densities</h1>
+    <div class="meta">
+      <span>✍️ Mihail Bogojeski, Muhammad R. Hasyim, Leslie Vogt-Maranto</span>
+      <span>📅 2026-04-27</span>
+      <a href="http://arxiv.org/abs/2604.24563v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 분자동역학 시뮬레이션에서 에너지/힘뿐만 아니라 전자 관측량(쌍극자 모멘트, 분극성 등)까지 예측할 수 있는 SE(3)-동변 신경망 기반 전자밀도 학습 방법론 DenSNet을 제안함.<br><br>**문제 정의**: 기존 기계학습 원자간 포텐셜(MLIPs)은 에너지와 힘만 예측할 수 있어 분광학적 특성이나 전자적 관측량에 접근할 수 없다는 한계가 있었음. 또한 대규모 분자 시스템에서 전자구조 계산의 전이가능성(transferability) 문제도 존재했음.<br><br>**핵심 기여**: <br>- **밀도 우선 접근법**: Hohenberg-Kohn 맵핑을 활용해 핵 배치로부터 바닥상태 전자밀도를 직접 학습<br>- **이중 신경망 구조**: SE(3)-동변 신경망으로 전자밀도 계수를 예측하고, 두 번째 동변 네트워크로 밀도를 총 에너지에 매핑<br>- **Δ-학습 전략**: 원자 밀도 중첩을 사전 정보로 활용하여 훈련 가속화<br>- **확장성 검증**: 폴리티오펜에서 1-6개 단량체로 훈련 후 12개 단량체까지 성공적 외삽<br><br>**의의**: 전자밀도를 중심 학습 대상으로 복원함으로써 대규모 분자 시뮬레이션에서 분광학적/전자적 관측량의 전이가능한 예측을 가능케 함. 연구자의 neurosymbolic 방법론 관점에서, 물리적 원리(Hohenberg-Kohn)와 기계학습을 결합한 하이브리드 접근법으로서 LLM-프로그램 분석 융합 연구에서 도메인 지식과 데이터 기반 학습의 효과적 결합 전략에 대한 통찰을 제공할 수 있음.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Machine-learning interatomic potentials (MLIPs) have enabled molecular dynamics at near ab initio accuracy, yet remain limited to energies and forces by construction, leaving electronic observables such as dipole moments and polarizabilities inaccessible. We introduce DenSNet, a density-first approach to machine-learned electronic structure that learns the Hohenberg--Kohn map from nuclear configurations to the ground-state electron density. Our approach employs an SE(3)-equivariant neural network to predict density coefficients of a flexible atom-centered Gaussian basis, combined with a $Δ$-learning strategy that uses superposed atomic densities as a prior to accelerate training. A second equivariant network then maps the predicted density to the total energy, providing a unified framework for molecular dynamics and electronic structure. We validate DenSNet on ethanol, ethanethiol, and resorcinol, where infrared spectra from machine-learned trajectories show excellent agreement with experimental gas-phase measurements. To test scalability, we train on polythiophene oligomers with 1--6 monomers and extrapolate to chains of up to 12 monomers, generating stable long-time trajectories whose infrared spectra agree with reference density functional theory calculations. Here, we show that reinstating the electron density as the central learned quantity opens a practical route to transferable prediction of spectroscopic and electronic observables in large-scale molecular simulations.</p>
+  </section>
+</article>
+</body>
+</html>

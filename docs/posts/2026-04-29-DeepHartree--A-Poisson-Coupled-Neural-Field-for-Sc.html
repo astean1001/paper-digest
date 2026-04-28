@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeepHartree: A Poisson-Coupled Neural Field for Scalable Density Functional Theory</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MBA deobfuscation" OR (ti:"mixed boolean arithmetic" AND ab:"deobfuscation")</span>
+    <h1>DeepHartree: A Poisson-Coupled Neural Field for Scalable Density Functional Theory</h1>
+    <div class="meta">
+      <span>✍️ Jiankun Wu, Jinming Fan, Chao Qian</span>
+      <span>📅 2026-04-24</span>
+      <a href="http://arxiv.org/abs/2604.22669v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대규모 분자 시스템의 밀도범함수이론(DFT) 계산에서 병목이 되는 자기일치장(SCF) 방정식 해결을 위해 포아송 방정식과 결합된 신경장(neural field)을 개발하여 O(N⁴)에서 O(N)으로 계산 복잡도를 대폭 감소시킨 연구.<br><br>**문제 정의**: <br>기존 ab initio 양자화학 계산에서 대규모 분자 시스템에 대한 SCF 방정식 해결이 O(N⁴)의 steep scaling으로 인해 계산적으로 매우 비싸며, 기존 머신러닝 접근법들은 물리적 엄밀성을 타협하거나 basis set에 의존적이어서 전이성(transferability)이 제한적인 문제.<br><br>**핵심 기여**:<br>1. **DeepHartree 아키텍처**: E(3)-equivariant 신경망과 포아송 방정식을 자동미분으로 결합한 물리 기반 신경장 모델<br>2. **Delta-learning 기법**: 핵 특이점(nuclear singularities) 완화를 통한 안정적 학습<br>3. **Two-level transferability**: 작은 분자로만 학습했음에도 불구하고 (1) SCF 가속화에서는 다양한 basis set, 함수, 168개 원자까지 zero-shot 전이 가능, (2) 밀도 관련 물성 예측에서는 few-shot fine-tuning으로 대규모 시스템 적용 가능<br>4. **GPU 가속 O(N) 추론**: 분석적 적분 계산을 수치적 추론으로 대체하여 계산 복잡도 획기적 감소<br><br>**의의**: <br>물리적 엄밀성을 유지하면서도 계산 효율성을 크게 향상시킨 점에서 computational chemistry의 패러다임 전환을 보여줌. 특히 small-scale 데이터로 학습하여 large-scale 시스템에 전이하는 접근법은 제한된 데이터로 복잡한 문제를 해결해야 하는 다양한 과학 컴퓨팅 영역에 적용 가능한 방법론적 통찰을 제공함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Ab initio calculations are fundamentally bottlenecked for large systems by the steep computational scaling of solving self-consistent field (SCF) equations. While machine learning offers potential accelerations, existing methods often compromise physical rigor or rely on basis-dependent, non-transferable representations. Here, we introduce DeepHartree, a Poisson-coupled neural field that accelerates linear combination of atomic orbitals (LCAO) density functional theory (DFT). By coupling an E(3)-equivariant neural network with the Poisson equation through automatic differentiation and mitigating nuclear singularities via delta-learning, DeepHartree simultaneously predicts mutually consistent real-space electron densities and Hartree potentials. This resolves the Coulomb bottleneck by substituting $\mathcal{O}(N^4)$ analytical integrals with GPU-accelerated, near-linear $\mathcal{O}(N)$ numerical inference. Trained solely on small molecules, DeepHartree enables scalable density functional theory through a two-level transferability: for SCF convergence acceleration, it achieves robust zero-shot transferability across diverse basis sets, functionals, and systems up to 168 atoms; for predicting other density-related physical quantities, it retains zero-shot capability on small molecules while enabling precise predictions for larger systems via efficient few-shot fine-tuning. Our model accelerates standard SCF protocols by reducing iterations by up to 40.6% via high-fidelity initi</p>
+  </section>
+</article>
+</body>
+</html>
