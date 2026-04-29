@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-04-30-Zero-Shot-Vulnerability-Detection-in-Low-Resource.html",
+    "title": "Zero-Shot Vulnerability Detection in Low-Resource Smart Contracts Through Solidity-Only Training",
+    "date": "2026-04-30",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"Solidity\" OR ab:\"EVM\")",
+    "one_liner": "Solidity로만 훈련된 모델이 Vyper 스마트 컨트랙트의 취약점을 탐지할 수 있는 Sol2Vy 프레임워크를 제시하여, 저자원 언어에서의 취약점 탐지 문제를 해결했습니다.",
+    "url": "http://arxiv.org/abs/2603.21058v2"
+  },
+  {
     "filename": "2026-04-29-Enhancing-molecular-dynamics-with-equivariant-mach.html",
     "title": "Enhancing molecular dynamics with equivariant machine-learned densities",
     "date": "2026-04-29",
