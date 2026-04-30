@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-05-01-aim2dat--A-Python-infrastructure-for-automated-ab.html",
+    "title": "aim2dat: A Python infrastructure for automated ab initio material modeling and data analysis",
+    "date": "2026-05-01",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "밀도함수이론 계산 기반의 대규모 재료 탐색 워크플로우를 자동화하고 머신러닝과 통합한 Python 패키지 aim2dat을 개발하여 데이터 기반 계산재료과학 연구를 가능하게 함.",
+    "url": "http://arxiv.org/abs/2604.26551v1"
+  },
+  {
+    "filename": "2026-05-01-Benchmarking-Universal-Machine-Learned-Interatomic.html",
+    "title": "Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry",
+    "date": "2026-05-01",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "고온 조건에서 금속-유기 골격체(MOF)의 동역학을 시뮬레이션하기 위한 범용 머신러닝 원자간 포텐셜(uMLIP) 5종을 벤치마킹하여, 현재 모델들의 한계를 규명하고 향후 개발 방향을 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.25262v1"
+  },
+  {
+    "filename": "2026-05-01-Trillion-atom-molecular-dynamics-simulations-with.html",
+    "title": "Trillion-atom molecular dynamics simulations with ab initio accuracy",
+    "date": "2026-05-01",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.24816v1"
+  },
+  {
+    "filename": "2026-05-01-Lattice-Topological-Defects-in-Non-Unitary-Conform.html",
+    "title": "Lattice Topological Defects in Non-Unitary Conformal Field Theories",
+    "date": "2026-05-01",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.25999v1"
+  },
+  {
+    "filename": "2026-05-01-Hyper-Operations-and-Extension-of-Scalars-from---m.html",
+    "title": "Hyper-Operations and Extension of Scalars from $\\mathbb{F}_1$ to $\\mathbb{Z}$",
+    "date": "2026-05-01",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "$\\mathbb{F}_1$-모듈의 다중값 하이퍼연산 구조를 고전적 아벨군으로 변환하는 스칼라 확장 함자를 구성하고, 이것이 절대대수기하학의 기저 변환 메커니즘을 제공함을 증명했습니다.",
+    "url": "http://arxiv.org/abs/2604.24568v1"
+  },
+  {
     "filename": "2026-04-30-Zero-Shot-Vulnerability-Detection-in-Low-Resource.html",
     "title": "Zero-Shot Vulnerability Detection in Low-Resource Smart Contracts Through Solidity-Only Training",
     "date": "2026-04-30",

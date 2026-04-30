@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trillion-atom molecular dynamics simulations with ab initio accuracy</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"LLM" OR ab:"large language model")</span>
+    <h1>Trillion-atom molecular dynamics simulations with ab initio accuracy</h1>
+    <div class="meta">
+      <span>✍️ Pengfei Suo, Wudi Cao, Xingxing Wu</span>
+      <span>📅 2026-04-27</span>
+      <a href="http://arxiv.org/abs/2604.24816v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>중국 연구팀이 neuroevolution potential(NEP) 프레임워크를 활용하여 1.62조 개 원자 규모의 분자동역학 시뮬레이션을 ab initio 수준의 정확도로 구현했습니다.<br><br>**문제 정의**: <br>물질의 특성은 미시적 원자 단위부터 거시적 연속체 모델까지 다중스케일 현상에 의해 결정되는데, 기존 분자동역학 시뮬레이션은 계산 비용과 확장성 한계로 인해 마이크로미터 규모의 메조스케일 현상을 양자역학적 정확도로 직접 모델링하기 어려웠습니다.<br><br>**핵심 기여**: <br>- 1.62조 개 원자 규모의 전례 없는 대규모 MD 시뮬레이션 달성<br>- NEP 기반 구현으로 기존 최고 성능 ML 포스필드 대비 100배, 6년 전 Gordon Bell Prize 수상작 대비 1,000배 빠른 성능 실현<br>- 단일 GPU부터 45,000개 GPU까지 86.9%의 weak scaling 효율성 달성<br>- 양자역학 수준의 정확도를 유지하면서 메조스케일 직접 모델링 가능<br><br>**의의**: <br>이 연구는 대규모 시스템에서 높은 정확도와 확장성을 동시에 달성한 사례로, neurosymbolic 프로그램 합성 분야에서 대규모 심볼릭 실행과 최적화 전략의 확장성 문제 해결에 중요한 통찰을 제공합니다. 특히 GPU 병렬화를 통한 계산 효율성 개선과 약한 스케일링 최적화 기법은 LLM 기반 대규모 프로그램 합성 시스템의 성능 향상에 직접 적용 가능한 방법론적 시사점을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Material properties are fundamentally dictated by multiscale phenomena, which often reach mesoscale in size. The μm mesoscale is also the size which can be observed directly under an optical microscope, bridging the atomistic microscopic description with the continuous model macroscopic world. In this work, we report an unprecedented molecular dynamics (MD) simulation comprising 1.62 trillion atoms. Utilizing the neuroevolution potential (NEP) framework, we attained ab initio accuracy on China's New-generation Intelligent Supercomputer. Our implementation achieves a time-to-solution (s/step/atom) 100 times faster than previous state-of-the-art machine learning force field simulations, and 1,000 times faster than the Gordon Bell Prize-winning application from six years ago. Furthermore, we demonstrate an 86.9% weak scaling efficiency from a single GPGPU to 45,000 GPGPUs. These results redefine atomistic simulation boundaries, enabling direct mesoscopic modeling with quantum-level precision.</p>
+  </section>
+</article>
+</body>
+</html>
