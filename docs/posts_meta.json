@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-05-02-The-Origins-of-MEV--Systematic-Attribution-of-Arbi.html",
+    "title": "The Origins of MEV: Systematic Attribution of Arbitrage Opportunity Creation at Scale",
+    "date": "2026-05-02",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "MEV(Maximal Extractable Value) 기회가 어떤 온체인 거래에서 발생하는지 체계적으로 추적하고 정량화하는 프레임워크를 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.27979v1"
+  },
+  {
+    "filename": "2026-05-02-The-Nesting-Bird-Box-Problem-is-ER-complete--Sharp.html",
+    "title": "The Nesting Bird Box Problem is ER-complete: Sharp Hardness Results for the Hidden Set Problem",
+    "date": "2026-05-02",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "Nesting Bird Box Problem(다각형 내에서 서로 보이지 않는 k개 점 배치 문제)이 ER-complete임을 증명하여, 계산 기하학의 복잡도 이론에 새로운 이정표를 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.26749v1"
+  },
+  {
+    "filename": "2026-05-02-State-Dependent-Lyapunov-Method-for-Rank-1-Matrix.html",
+    "title": "State-Dependent Lyapunov Method for Rank-1 Matrix Factorization",
+    "date": "2026-05-02",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "Rank-1 행렬 분해의 gradient descent 수렴성을 증명하기 위해 상태 의존적 Lyapunov 함수를 활용한 certificate 기반 분석 프레임워크를 제안했습니다.",
+    "url": "http://arxiv.org/abs/2604.26993v1"
+  },
+  {
+    "filename": "2026-05-02-Ultrafast-Sliding-Ferroelectric-Switching-in-Bilay.html",
+    "title": "Ultrafast Sliding Ferroelectric Switching in Bilayer Hexagonal Boron Nitride Revealed by Deep Learning Molecular Dynamics",
+    "date": "2026-05-02",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "이중층 h-BN의 초고속 강유전체 전환 메커니즘을 딥러닝 기반 분자동역학 시뮬레이션으로 규명하여 5ps 내 단일 도메인 강체 슬라이딩 현상을 발견한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.27342v1"
+  },
+  {
+    "filename": "2026-05-02-State-Dependent-Lyapunov-Method-for-Rank-1-Matrix.html",
+    "title": "State-Dependent Lyapunov Method for Rank-1 Matrix Factorization",
+    "date": "2026-05-02",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"deobfuscation\" OR ab:\"MBA\" OR ab:\"mixed boolean arithmetic\")",
+    "one_liner": "Rank-1 행렬 분해를 위한 gradient descent 알고리즘의 수렴성을 state-dependent Lyapunov 방법론을 통해 분석하고, 매개변수화된 이차 증명서(certificate)로 전역 최적해 수렴을 보장하는 프레임워크를 제시했습니다.",
+    "url": "http://arxiv.org/abs/2604.26993v1"
+  },
+  {
     "filename": "2026-05-01-aim2dat--A-Python-infrastructure-for-automated-ab.html",
     "title": "aim2dat: A Python infrastructure for automated ab initio material modeling and data analysis",
     "date": "2026-05-01",

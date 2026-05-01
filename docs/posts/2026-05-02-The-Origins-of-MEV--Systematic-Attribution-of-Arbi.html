@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Origins of MEV: Systematic Attribution of Arbitrage Opportunity Creation at Scale</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"MEV" OR ti:"maximal extractable value" AND ab:"Solana"</span>
+    <h1>The Origins of MEV: Systematic Attribution of Arbitrage Opportunity Creation at Scale</h1>
+    <div class="meta">
+      <span>✍️ Andrei Seoev, Dmitry Belousov, Anastasiia Smirnova</span>
+      <span>📅 2026-04-30</span>
+      <a href="http://arxiv.org/abs/2604.27979v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: MEV(Maximal Extractable Value) 기회가 어떤 온체인 거래에서 발생하는지 체계적으로 추적하고 정량화하는 프레임워크를 제시한 연구입니다.<br><br>**문제 정의**: <br>기존 MEV 연구는 추출과 완화에 집중했지만, MEV 기회가 **어디서 발생하는지** 체계적으로 추적하는 방법이 부족했습니다. 특정 거래가 차익거래 기회를 얼마나 창출하는지 정량적으로 측정할 수 있는 표준화된 방법론이 필요했습니다.<br><br>**핵심 기여**:<br>1. **4가지 MEV 기여도 측정 방법론 제시**: 봇 데이터 기반, 시뮬레이션 기반, 계수 기반, Shapley 기반 접근법<br>2. **대규모 실증 분석**: Polygon 네트워크의 100만 블록 이상을 분석하여 대부분의 차익거래 기회가 단일 소스 거래에서 발생함을 입증<br>3. **MEV 창출의 집중도 정량화**: 소수의 프로토콜이 대부분의 MEV 기회를 생성한다는 고도로 집중된 분포 발견<br>4. **방법론별 정확도-비용-확장성 트레이드오프 비교 분석**<br><br>**의의**: <br>이 연구는 MEV 생태계의 **근본적 구조**를 이해할 수 있는 분석 도구를 제공합니다. 프로토콜 설계자에게는 MEV 누출 최소화 인사이트를, 검증자에게는 거래 순서 최적화 방법을, 분석가에게는 생태계 건강성 측정 도구를 제공합니다. 특히 연구자의 MEV/블록체인 인프라 연구에서 **MEV 발생 원인을 정량적으로 분석**하고 **네트워크별 MEV 패턴을 비교**하는 데 직접 활용 가능한 방법론적 기여를 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Maximal Extractable Value (MEV) represents billions of dollars in extracted value that fundamentally shapes blockchain network dynamics and participant incentives. While research has focused on MEV extraction and mitigation, we lack systematic methods to attribute MEV opportunities to their on-chain origins. This paper formalizes the MEV opportunity attribution problem and introduces a systems framework for identifying which transactions create arbitrage opportunities and quantifying their contributions. We design and evaluate four attribution methods for atomic arbitrage on EVM-compatible networks: bot-data-driven, simulation-based, coefficient-based, and Shapley-based approaches. Through large-scale retrospective analysis spanning over one million blocks on Polygon, we demonstrate that the majority of atomic arbitrage opportunities can be traced to single source transactions, validating our central hypothesis about competitive MEV markets. We quantify a highly concentrated distribution of MEV creation, where a small subset of protocols generates most opportunities, and provide comparative analysis of method trade-offs in accuracy, cost, and scalability. Our findings offer insights for protocol designers reducing MEV leakage, validators optimizing transaction ordering, and analysts measuring ecosystem health through opportunity creation.</p>
+  </section>
+</article>
+</body>
+</html>

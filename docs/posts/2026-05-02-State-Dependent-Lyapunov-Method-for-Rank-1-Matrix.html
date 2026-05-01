@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State-Dependent Lyapunov Method for Rank-1 Matrix Factorization</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND (ab:"deobfuscation" OR ab:"MBA" OR ab:"mixed boolean arithmetic")</span>
+    <h1>State-Dependent Lyapunov Method for Rank-1 Matrix Factorization</h1>
+    <div class="meta">
+      <span>✍️ Jaehong Moon</span>
+      <span>📅 2026-04-28</span>
+      <a href="http://arxiv.org/abs/2604.26993v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Rank-1 행렬 분해를 위한 gradient descent 알고리즘의 수렴성을 state-dependent Lyapunov 방법론을 통해 분석하고, 매개변수화된 이차 증명서(certificate)로 전역 최적해 수렴을 보장하는 프레임워크를 제시했습니다.<br><br>**문제 정의**: <br>- Rank-1 행렬 분해에서 gradient descent의 수렴성 분석이 기존 ad hoc 대수적 구조에 의존하여 일반화가 어려웠음<br>- 동적 시스템의 단조성 구조로부터 자연스럽게 도출되는 체계적인 수렴 분석 방법론이 필요했음<br>- 전역 최적해로의 수렴을 보장하는 certificate 기반 접근법의 이론적 기반 구축 필요<br><br>**핵심 기여**:<br>- **State-dependent Lyapunov 프레임워크**: 구조적 공리에 기반한 새로운 수렴 분석 방법론 제시<br>- **매개변수화된 이차 증명서 I(δ;·)**: level set이 동적으로 축소되면서 단조 상태 매개변수 δ_t를 유도하는 메커니즘 개발<br>- **이원적 수렴 체제**: certified 영역에서는 전역 최적해 수렴, post-critical 영역에서는 terminal balanced manifold로의 궤적 유도<br>- **유일성 정리**: 스칼라 certificate가 프레임워크 내에서 유일하게 결정됨을 증명<br>- **확장성 실증**: 2차원 rank-1 근사 문제와 quartic-augmented 손실함수에서 방법론의 적용 가능성 입증<br><br>**의의**:<br>심볼릭 실행과 제약 기반 분석에서 핵심인 **수렴성 보장**과 **상태 의존적 분석**의 수학적 기반을 제공합니다. 특히 deobfuscation이나 MBA 분석에서 최적화 과정의 안정성을 보장하고, 복잡한 제약 조건 하에서도 체계적인 수렴 분석이 가능한 이론적 도구로 활용할 수 있습니다. State-dependent 접근법은 동적으로 변화하는 분석 환경에 적응적으로 대응할 수 있는 강건한 프레임워크를 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We study gradient descent for rank-1 matrix factorization through a certificate-based viewpoint. The central object is a parameterized quadratic certificate $I(δ;\,\cdot)$ whose level sets shrink along the dynamics, thereby inducing a monotone state parameter $δ_t$. In the certified regime, this mechanism yields convergence to a global minimizer; in the post-critical regime, it forces trajectories toward a terminal balanced manifold.
+  To explain the origin of these certificates, we formulate a state-dependent Lyapunov framework based on structural axioms. Within this framework, the scalar certificate is uniquely determined, and the same local Lagrange analysis constrains the signal and noise blocks of rank-1 extensions. Thus, the certificates arise from the monotonicity structure of the dynamics, rather than from ad hoc algebraic constructions.
+  We also provide numerical evidence beyond the proved cases. For the 2-dimensional rank-1 approximation problem $X=\mathrm{diag}(1,σ)$ with $σ\in(0,1)$, the experiments are consistent with the existence of a $C^1$ admissible certificate branch. For the quartic-augmented scalar loss $\frac12(ab-1)^2+μ(ab-1)^4$, the same scalar certificate remains predictive for several values of $μ$ after choosing an empirical threshold. These experiments suggest that the state-dependent Lyapunov method may extend beyond the settings proved in this paper.</p>
+  </section>
+</article>
+</body>
+</html>

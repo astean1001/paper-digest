@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Nesting Bird Box Problem is ER-complete: Sharp Hardness Results for the Hidden Set Problem</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>The Nesting Bird Box Problem is ER-complete: Sharp Hardness Results for the Hidden Set Problem</h1>
+    <div class="meta">
+      <span>✍️ Lucas Meijer, Till Miltzow, Johanna Ockenfels</span>
+      <span>📅 2026-04-29</span>
+      <a href="http://arxiv.org/abs/2604.26749v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Nesting Bird Box Problem(다각형 내에서 서로 보이지 않는 k개 점 배치 문제)이 ER-complete임을 증명하여, 계산 기하학의 복잡도 이론에 새로운 이정표를 제시한 연구입니다.<br><br>**문제 정의**: <br>다각형 영역 P와 정수 k가 주어졌을 때, P 내부에 서로 볼 수 없는(시선이 차단되는) k개의 점들을 배치할 수 있는지 판단하는 문제입니다. 이는 새집 배치 문제로 모델링되며, 새들이 다른 새집이 보이지 않는 곳에만 둥지를 틀고자 하는 상황을 반영합니다.<br><br>**핵심 기여**:<br>- Nesting Bird Box Problem이 ER-complete(Existential Theory of the Reals-complete)임을 최초로 증명<br>- Art Gallery Problem의 ER-completeness 증명 기법을 활용하되, 최신 도구들과 구멍이 있는 다각형 사용으로 증명을 크게 단순화<br>- ER 복잡도 클래스(다항식 방정식 p(x)=0의 해 존재 문제와 동치)에 새로운 기하학적 문제 추가<br><br>**의의**:<br>이 연구는 계산 기하학에서 가시성(visibility) 문제의 본질적 어려움을 이론적으로 규명했습니다. ER-complete 증명은 해당 문제가 다항식 시간 알고리즘으로는 해결 불가능할 가능성이 높음을 시사하며, 프로그램 합성 분야에서 기하학적 제약 조건이 포함된 문제의 복잡도 분석에 중요한 참고점이 됩니다. 특히 신경-기호 추론에서 공간적 제약 조건을 다룰 때의 계산 한계를 이해하는 데 도움이 될 것입니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In the (Nesting) Bird Box Problem we are given a polygonal domain P and a number k and we want to know if there is a set B of k points inside P such that no two points in B can see each other. The underlying idea is that each point represents a birdhouse and many birds only use a birdhouse if there is no other occupied birdhouse in its vicinity. We say two points a,b see each other if the open segment ab intersects neither the exterior of P nor any vertex of P.
+  We show that the Nesting Bird Box problem is ER-complete. The complexity class ER can be defined by the set of problems that are polynomial time equivalent to finding a solution to the equation $p(x) = 0$, with $x\in R^n$ and $p\in $Z[X_1,...,X_n]$. The proof builds on the techniques developed in the original ER-completeness proof of the Art Gallery problem. However our proof is significantly shorter for two reasons. First, we can use recently developed tools that were not available at the time. Second, we consider polygonal domains with holes instead of simple polygons.</p>
+  </section>
+</article>
+</body>
+</html>
