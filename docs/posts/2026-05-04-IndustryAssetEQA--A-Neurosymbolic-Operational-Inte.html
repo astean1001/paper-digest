@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IndustryAssetEQA: A Neurosymbolic Operational Intelligence System for Embodied Question Answering in Industrial Asset Maintenance</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model" OR ab:"LLM")</span>
+    <h1>IndustryAssetEQA: A Neurosymbolic Operational Intelligence System for Embodied Question Answering in Industrial Asset Maintenance</h1>
+    <div class="meta">
+      <span>✍️ Chathurangi Shyalika, Dhaval Patel, Amit Sheth</span>
+      <span>📅 2026-04-25</span>
+      <a href="http://arxiv.org/abs/2604.23446v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 산업 자산 유지보수 환경에서 텔레메트리 데이터와 고장 모드 분석 지식 그래프를 결합한 뉴로심볼릭 시스템을 통해 LLM 단독 접근법의 한계를 극복하고 신뢰할 수 있는 질의응답 시스템을 구축한 연구입니다.<br><br>**문제 정의**: <br>산업 유지보수 환경에서 기존 LLM 기반 시스템들이 텔레메트리 데이터에 약하게 근거된 일반적 설명만 제공하고, 검증 가능한 근거와 반사실적(counterfactual) 추론 능력이 부족하여 안전이 중요한 환경에서 신뢰성을 확보하지 못하는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **뉴로심볼릭 아키텍처**: 에피소딕 텔레메트리 표현과 FMEA 지식 그래프를 결합하여 Embodied Question Answering(EQA) 시스템 구현<br>2. **프로그램 합성 접근법**: 구조화된 지식과 신경망 기반 언어 이해를 융합하여 검증 가능하고 근거 있는 추론 제공<br>3. **성능 개선**: LLM 단독 대비 구조적 유효성 0.51, 반사실적 정확도 0.47, 설명 함의 0.64 향상 및 전문가 평가 과대 주장을 93% 감소<br><br>**의의**: <br>이 연구는 프로그램 합성과 LLM 융합 관점에서 매우 중요한 실용적 사례를 제시합니다. 특히 도메인 지식(FMEA-KG)을 구조화된 프로그램 형태로 표현하고 이를 LLM의 자연어 처리 능력과 결합하는 방법론은, 안전이 중요한 영역에서 신뢰할 수 있는 AI 시스템 구축을 위한 뉴로심볼릭 접근법의 효용성을 실증적으로 보여주며, 프로그램 분석 및 합성 기술이 실제 산업 환경에서 LLM과 어떻게 융합될 수 있는지에 대한 구체적인 청사진을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Industrial maintenance environments increasingly rely on AI systems to assist operators in understanding asset behavior, diagnosing failures, and evaluating interventions. Although large language models (LLMs) enable fluent natural-language interaction, deployed maintenance assistants routinely produce generic explanations that are weakly grounded in telemetry, omit verifiable provenance, and offer no testable support for counterfactual or action-oriented reasoning that undermine trust in safety-critical settings. We present IndustryAssetEQA, a neurosymbolic operational intelligence system that combines episodic telemetry representations with a Failure Mode Effects Analysis Knowledge Graph (FMEA-KG) to enable Embodied Question Answering (EQA) over industrial assets. We evaluate on four datasets covering four industrial asset types, including rotating machinery, turbofan engines, hydraulic systems, and cyber-physical production systems. Compared to LLM-only baselines, IndustryAssetEQA improves structural validity by up to 0.51, counterfactual accuracy by up to 0.47, and explanation entailment by 0.64, while reducing severe expert-rated overclaims from 28% to 2% (approximately 93% reduction). Code, datasets, and the FMEA-KG are available at https://github.com/IBM/AssetOpsBench/tree/IndustryAssetEQA/IndustryAssetEQA.</p>
+  </section>
+</article>
+</body>
+</html>

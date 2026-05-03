@@ -1,5 +1,23 @@
 [
   {
+    "filename": "2026-05-04-IndustryAssetEQA--A-Neurosymbolic-Operational-Inte.html",
+    "title": "IndustryAssetEQA: A Neurosymbolic Operational Intelligence System for Embodied Question Answering in Industrial Asset Maintenance",
+    "date": "2026-05-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "산업 자산 유지보수 환경에서 텔레메트리 데이터와 고장 모드 분석 지식 그래프를 결합한 뉴로심볼릭 시스템을 통해 LLM 단독 접근법의 한계를 극복하고 신뢰할 수 있는 질의응답 시스템을 구축한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.23446v1"
+  },
+  {
+    "filename": "2026-05-04-Position--Logical-Soundness-is-not-a-Reliable-Crit.html",
+    "title": "Position: Logical Soundness is not a Reliable Criterion for Neurosymbolic Fact-Checking with LLMs",
+    "date": "2026-05-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.04177v2"
+  },
+  {
     "filename": "2026-05-02-The-Origins-of-MEV--Systematic-Attribution-of-Arbi.html",
     "title": "The Origins of MEV: Systematic Attribution of Arbitrage Opportunity Creation at Scale",
     "date": "2026-05-02",
