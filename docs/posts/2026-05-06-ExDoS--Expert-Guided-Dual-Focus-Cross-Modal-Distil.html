@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExDoS: Expert-Guided Dual-Focus Cross-Modal Distillation for Smart Contract Vulnerability Detection</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND ab:"vulnerability detection" AND ab:"bytecode"</span>
+    <h1>ExDoS: Expert-Guided Dual-Focus Cross-Modal Distillation for Smart Contract Vulnerability Detection</h1>
+    <div class="meta">
+      <span>✍️ Ye Tian, Yifan Jia, Yanbin Wang</span>
+      <span>📅 2025-09-12</span>
+      <a href="http://arxiv.org/abs/2509.10252v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트 바이트코드 취약점 탐지를 위해 소스코드의 의미적 지식을 바이트코드로 전이하는 전문가 가이드 기반 이중 초점 크로스 모달 증류 기법을 제안<br><br>**문제 정의**: <br>- 스마트 컨트랙트가 폐쇄 소스인 경우 바이트코드만으로 취약점을 탐지해야 하는데, 기존 소스코드-바이트코드 임베딩 정렬 방법은 그래프 수준에서만 수행되어 세밀한 구조적/의미적 상관관계를 놓침<br>- 바이트코드에는 정확한 취약점 패턴과 세부 주석이 부족하여 모델이 판별적 특징을 학습하기 위한 중요한 감독 신호가 부족<br><br>**핵심 기여**:<br>- **Dual-Attention Graph Network**: 노드 어텐션 집계 모듈을 도입하여 지역적 패턴 캡처를 강화한 그래프 임베딩 생성<br>- **정렬된 패턴 프레임워크**: 기존 소스코드 취약점 패턴을 요약하고 대응하는 바이트코드 레벨 패턴을 설계하여 세밀한 크로스 모달 정렬 촉진<br>- **이중 초점 목적함수**: 그래프 수준과 함수 수준 모두에서 크로스 모달 지식 전이를 최적화<br><br>**의의**: <br>바이트코드만 접근 가능한 실제 환경에서 소스코드의 풍부한 의미 정보를 활용할 수 있는 실용적 해결책을 제시하며, 기존 그래프 수준 정렬의 한계를 극복하여 함수 수준의 세밀한 취약점 탐지가 가능하다는 점에서 바이트코드 분석 연구에 중요한 기여를 함</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The success of smart contracts has made them a target for attacks, but their closed-source nature often forces vulnerability detection to work on bytecode, which is inherently more challenging than source-code-based analysis. While recent studies try to align source and bytecode embeddings during training to transfer knowledge, current methods rely on graph-level alignment that obscures fine-grained structural and semantic correlations between the two modalities. Moreover, the absence of precise vulnerability patterns and granular annotations in bytecode leads to depriving the model of crucial supervisory signals for learning discriminant features. We propose ExDoS to transfer rich semantic knowledge from source code to bytecode, effectively supplementing the source code prior in practical settings. Specifically, we construct semantic graphs from source code and control-flow graphs from bytecode. To address obscured local signals in graph-level contract embeddings, we propose a Dual-Attention Graph Network introducing a novel node attention aggregation module to enhance local pattern capture in graph embeddings. Furthermore, by summarizing existing source-code vulnerability patterns and designing corresponding bytecode-level patterns for the three target vulnerabilities, we provide an aligned pattern framework that facilitates fine-grained cross-modal alignment and the capture of function-level vulnerability signals. Finally, we propose a dual-focus objective for our cross-mo</p>
+  </section>
+</article>
+</body>
+</html>
