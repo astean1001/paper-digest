@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tailored Prompts, Targeted Protection: Vulnerability-Specific LLM Analysis for Smart Contracts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature analysis" OR ab:"formal verification")</span>
+    <h1>Tailored Prompts, Targeted Protection: Vulnerability-Specific LLM Analysis for Smart Contracts</h1>
+    <div class="meta">
+      <span>✍️ Xing Zhang, Keyu Zhang, Taohong Zhu</span>
+      <span>📅 2026-05-05</span>
+      <a href="http://arxiv.org/abs/2605.03697v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트 취약점 탐지를 위해 AST 기반 컨텍스트 추출과 취약점별 맞춤형 프롬프트를 활용한 LLM 프레임워크를 제안하여 높은 정확도를 달성한 연구입니다.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 취약점 탐지 방법들은 다양한 취약점 유형에 대한 유연성이 부족하고, 수동으로 제작된 전문가 규칙에 과도하게 의존하는 문제가 있어, 블록체인의 불변성으로 인한 심각한 재정적 손실을 효과적으로 방지하지 못하고 있습니다.<br><br>**핵심 기여**:<br>1. **대규모 데이터셋 구축**: 15개 주요 블록체인 플랫폼의 3,200개 실제 프로젝트에서 수집한 31,165개의 전문가 주석 취약점 인스턴스로 구성된 데이터셋 공개<br>2. **정밀한 AST 기반 컨텍스트 추출**: 추상 구문 트리를 활용한 정확한 코드 컨텍스트 추출 방법론<br>3. **취약점별 맞춤형 프롬프트 설계**: 13개 주요 취약점 카테고리에 대한 맞춤형 탐지기를 생성하는 프롬프트 엔지니어링 기법<br>4. **우수한 성능**: 평균 양성 재현율 0.92, 음성 재현율 0.85 달성<br><br>**의의**: <br>이 연구는 LLM과 프로그램 분석의 융합을 통해 스마트 컨트랙트 보안 분야에 실용적인 해결책을 제시합니다. 특히 AST 기반 정적 분석과 LLM의 자연어 이해 능력을 결합한 접근법은 확장 가능하고 정밀한 보안 분석을 가능하게 하며, 연구자의 관심 분야인 '스마트 컨트랙트 보안'과 'LLM과 프로그램 분석 융합'에 직접적으로 기여할 수 있는 방법론적 통찰을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contracts on blockchains are prone to diverse security vulnerabilities that can lead to significant financial losses due to their immutable nature. Existing detection approaches often lack flexibility across vulnerability types and rely heavily on manually crafted expert rules. In this paper, we present an LLM-based framework for practical smart contract vulnerability detection. We construct and release a large-scale dataset comprising 31,165 professionally annotated vulnerability instances collected from over 3,200 real-world projects across 15 major blockchain platforms. Our approach leverages precise AST-based context extraction and vulnerability-specific prompt design to instantiate customized detectors for 13 prevalent vulnerability categories. Experimental results demonstrate strong effectiveness, achieving an average positive recall of 0.92 and an average negative recall of 0.85, highlighting the potential of carefully engineered contextual prompting for scalable and high-precision smart contract security analysis.</p>
+  </section>
+</article>
+</body>
+</html>

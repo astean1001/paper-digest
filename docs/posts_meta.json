@@ -1,5 +1,23 @@
 [
   {
+    "filename": "2026-05-07-Tailored-Prompts--Targeted-Protection--Vulnerabili.html",
+    "title": "Tailored Prompts, Targeted Protection: Vulnerability-Specific LLM Analysis for Smart Contracts",
+    "date": "2026-05-07",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature analysis\" OR ab:\"formal verification\")",
+    "one_liner": "스마트 컨트랙트 취약점 탐지를 위해 AST 기반 컨텍스트 추출과 취약점별 맞춤형 프롬프트를 활용한 LLM 프레임워크를 제안하여 높은 정확도를 달성한 연구입니다.",
+    "url": "http://arxiv.org/abs/2605.03697v1"
+  },
+  {
+    "filename": "2026-05-07-EvoPoC--Automated-Exploit-Synthesis-for-DeFi-Smart.html",
+    "title": "EvoPoC: Automated Exploit Synthesis for DeFi Smart Contracts via Hierarchical Knowledge Graphs",
+    "date": "2026-05-07",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature analysis\" OR ab:\"formal verification\")",
+    "one_liner": "DeFi 스마트 컨트랙트 취약점을 자동으로 탐지하고 실제 공격 코드(PoC)까지 합성하는 LLM 기반 시스템으로, 계층적 지식 그래프를 활용한 구조적 추론을 통해 98% 탐지율과 96.6% 공격 성공률을 달성.",
+    "url": "http://arxiv.org/abs/2605.02868v1"
+  },
+  {
     "filename": "2026-05-06-ExDoS--Expert-Guided-Dual-Focus-Cross-Modal-Distil.html",
     "title": "ExDoS: Expert-Guided Dual-Focus Cross-Modal Distillation for Smart Contract Vulnerability Detection",
     "date": "2026-05-06",
