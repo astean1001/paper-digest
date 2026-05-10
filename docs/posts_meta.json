@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-05-11-Revocation-Ready-CP-ABE-Key-Management-for-Blockch.html",
+    "title": "Revocation-Ready CP-ABE Key Management for Blockchain-Based IoT Data Sharing",
+    "date": "2026-05-11",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "블록체인 기반 IoT 데이터 공유 시스템에서 CP-ABE(Ciphertext-Policy Attribute-Based Encryption)를 활용한 탈중앙화 키 관리 방식을 제안하여, 기존의 온라인 신뢰 기관 의존성을 제거하고 동적 권한 취소를 지원하는 시스템을 구현했습니다.",
+    "url": "http://arxiv.org/abs/2605.04280v1"
+  },
+  {
+    "filename": "2026-05-11-Revocation-Ready-CP-ABE-Key-Management-for-Blockch.html",
+    "title": "Revocation-Ready CP-ABE Key Management for Blockchain-Based IoT Data Sharing",
+    "date": "2026-05-11",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "블록체인 기반 IoT 데이터 공유에서 온라인 키 서버 없이도 동적 사용자 권한 관리와 효율적인 권한 취소가 가능한 CP-ABE 기반 키 관리 시스템을 제안했습니다.",
+    "url": "http://arxiv.org/abs/2605.04280v1"
+  },
+  {
+    "filename": "2026-05-11-When-Quantization-Is-Free--An-int4-KV-Cache-That-O.html",
+    "title": "When Quantization Is Free: An int4 KV Cache That Outruns fp16 on Apple Silicon",
+    "date": "2026-05-11",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "Apple Silicon의 통합 메모리 아키텍처에서 int4 KV Cache 양자화가 기존 통념과 달리 품질 손실 없이 fp16보다 오히려 빠른 성능을 달성할 수 있음을 실증적으로 증명한 연구.",
+    "url": "http://arxiv.org/abs/2605.05699v1"
+  },
+  {
+    "filename": "2026-05-11-When-Quantization-Is-Free--An-int4-KV-Cache-That-O.html",
+    "title": "When Quantization Is Free: An int4 KV Cache That Outruns fp16 on Apple Silicon",
+    "date": "2026-05-11",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "Apple Silicon에서 int4 KV-cache 양자화가 fp16보다 빠르면서도 품질을 유지할 수 있음을 보여준 연구로, 기존의 품질-속도 트레이드오프 관념을 뒤집었습니다.",
+    "url": "http://arxiv.org/abs/2605.05699v1"
+  },
+  {
+    "filename": "2026-05-11-FAB--A-First-Order-AB-based-Gradient-Algorithm-for.html",
+    "title": "FAB: A First-Order AB-based Gradient Algorithm for Distributed Bilevel Optimization over Time-Varying Directed Graphs",
+    "date": "2026-05-11",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "시간에 따라 변화하는 방향 그래프에서 분산 이중층 최적화를 위한 1차 기울기 알고리즘(FAB)을 제안하고, 하이퍼파라미터 튜닝 등의 실제 문제에서 효과성을 입증했습니다.",
+    "url": "http://arxiv.org/abs/2605.06328v1"
+  },
+  {
     "filename": "2026-05-07-Tailored-Prompts--Targeted-Protection--Vulnerabili.html",
     "title": "Tailored Prompts, Targeted Protection: Vulnerability-Specific LLM Analysis for Smart Contracts",
     "date": "2026-05-07",

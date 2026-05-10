@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAB: A First-Order AB-based Gradient Algorithm for Distributed Bilevel Optimization over Time-Varying Directed Graphs</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"MBA")</span>
+    <h1>FAB: A First-Order AB-based Gradient Algorithm for Distributed Bilevel Optimization over Time-Varying Directed Graphs</h1>
+    <div class="meta">
+      <span>✍️ Yaoshuai Ma, Xiao Wang, Wei Yao</span>
+      <span>📅 2026-05-07</span>
+      <a href="http://arxiv.org/abs/2605.06328v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 시간에 따라 변화하는 방향 그래프에서 분산 이중층 최적화를 위한 1차 기울기 알고리즘(FAB)을 제안하고, 하이퍼파라미터 튜닝 등의 실제 문제에서 효과성을 입증했습니다.<br><br>**문제 정의**: <br>실제 환경에서 복잡한 통신 제약 조건 하에서 분산 최적화를 수행할 때, 특히 하이퍼파라미터 튜닝과 같은 이중층 최적화 문제가 필요한 상황에서 기존 알고리즘의 한계를 해결하고자 했습니다. 시간에 따라 변화하는 방향 그래프에서의 동적 불균형 통신과 중첩된 최적화 구조로 인한 합의 편향(consensus bias) 문제가 핵심 도전과제였습니다.<br><br>**핵심 기여**:<br>1. **FAB 알고리즘 개발**: Push-Pull(AB) 통신 전략과 가치 함수 기반 페널티 방법을 통합한 완전한 1차 분산 기울기 알고리즘 제안<br>2. **이론적 분석**: 비점근적 수렴성 증명 및 수렴률 확립<br>3. **부수적 성과**: 비볼록 단일층 분산 최적화에 대한 Push-Pull 알고리즘의 수렴률을 증명하여 기존 미해결 문제 해결<br><br>**의의**: <br>이 연구는 제약 기반 최적화 방법론을 제시한다는 점에서 automated program repair의 제약 기반 패치 합성과 유사한 접근법을 보여줍니다. 특히 동적 환경에서의 분산 최적화 문제 해결 방식은 프로그램 분석 및 자동화된 수정에서 여러 제약 조건을 동시에 만족하는 솔루션을 찾는 문제와 구조적 유사성을 가지며, 하이퍼파라미터 자동 튜닝 측면에서 자동화된 도구 개발에 응용 가능성을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Distributed optimization over time-varying directed graphs has shown promising performance in addressing challenges posed by complex communication constraints in real-world scenarios. In many practical settings, however, the direct application of distributed optimization algorithms encounters additional difficulties, most notably hyperparameter tuning, which our empirical observations suggest can be effectively mitigated by integrating bilevel optimization. Motivated by these findings, we study distributed bilevel optimization over time-varying directed networks, a problem that remains largely unexplored due to the compounded challenges arising from consensus bias in dynamic unbalanced communication and the nested optimization structure. In this work, we propose a fully first-order distributed gradient-based algorithm that integrates the Push-Pull (also known as AB) communication strategy with a value function-based penalty method and establish its non-asymptotic convergence properties. Notably, a simplified variant of our analysis framework for nonconvex single-level distributed optimization establishes a convergence rate for the Push-Pull algorithm, thereby resolving an open question concerning its convergence over time-varying directed graphs. Empirical evaluations across diverse tasks, including hyperparameter tuning, data hyper-cleaning, and reinforcement learning, validate the effectiveness and efficiency of the proposed algorithm.</p>
+  </section>
+</article>
+</body>
+</html>

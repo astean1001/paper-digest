@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revocation-Ready CP-ABE Key Management for Blockchain-Based IoT Data Sharing</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Revocation-Ready CP-ABE Key Management for Blockchain-Based IoT Data Sharing</h1>
+    <div class="meta">
+      <span>✍️ Chun Yin Chiu</span>
+      <span>📅 2026-05-05</span>
+      <a href="http://arxiv.org/abs/2605.04280v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 블록체인 기반 IoT 데이터 공유에서 온라인 키 서버 없이도 동적 사용자 권한 관리와 효율적인 권한 취소가 가능한 CP-ABE 기반 키 관리 시스템을 제안했습니다.<br><br>**문제 정의**: <br>기존 하이브리드 블록체인-IoT 시스템에서는 암호화된 대용량 데이터를 콘텐츠 주소 저장소에, 메타데이터를 블록체인에 저장하는데, 키 접근 제어 시 항상 온라인 상태인 신뢰할 수 있는 서버가 필요하여 보안 취약점과 감사 가능성 저하 문제가 발생합니다. 또한 사용자 권한 변경 시 대용량 파일을 재암호화해야 하는 비효율성이 존재했습니다.<br><br>**핵심 기여**: <br>1) **오프라인 키 관리**: CP-ABE 암호문으로 AES-GCM 키를 캡슐화하여 블록체인에 저장하고, 사용자가 로컬에서 속성 기반으로 복호화하는 방식으로 온라인 키 서버를 제거<br>2) **에포크 기반 권한 취소**: 시간 기반 속성과 경량 키 순환 프로토콜을 도입하여 대용량 파일 재암호화 없이도 전방향 권한 취소 지원<br>3) **(CID, CK, PolicyID, epoch)** 형태의 메타데이터 구조로 효율적인 키-정책 매핑 제공<br><br>**의의**: <br>이 연구는 블록체인 인프라의 탈중앙화 보안 모델을 IoT 데이터 공유에 실질적으로 적용한 사례로, MEV 연구자에게는 블록체인 기반 권한 관리 시스템의 설계 패턴과 보안 트레이드오프를 이해하는 데 유용합니다. 특히 온체인 메타데이터와 오프체인 데이터 분리 아키텍처는 블록체인 확장성 연구와 직접적 연관성이 있습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Blockchain-based IoT data sharing systems increasingly adopt a hybrid architecture in which a permissioned ledger stores tamper-evident metadata while encrypted payloads are placed in content-addressed storage. In such systems, a central security bottleneck is key access control: enforcing dynamic, multi-user authorization for releasing or using bulk-data decryption keys. Existing designs often rely on always-online RBAC or smart-contract gates that return keys to authorized users, reintroducing a trusted online policy enforcement point and weakening auditability. This paper presents a revocation-ready key management layer that replaces online key release with ciphertext key publication: the ledger records metadata of the form (CID, CK, PolicyID, epoch), where CK is a CP-ABE ciphertext encapsulating an AES-GCM key. Users retrieve CK from the ledger and decrypt locally if their attributes satisfy the policy.
+  To support forward revocation and policy evolution without re-encrypting large files, the design introduces an epoch/time-bound attribute and a lightweight CK-rotation protocol that updates only small ciphertext keys and ledger entries. We implement a minimal end-to-end prototype using a local content-addressed store, a hash-chained ledger, and a CP-ABE backend, with the goal of isolating key-management costs rather than benchmarking production blockchain throughput. Experiments on a commodity MacBook show that CP-ABE encryption dominates store latency, with approximatel</p>
+  </section>
+</article>
+</body>
+</html>
