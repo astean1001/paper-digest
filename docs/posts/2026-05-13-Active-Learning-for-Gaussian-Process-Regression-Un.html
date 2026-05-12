@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Active Learning for Gaussian Process Regression Under Self-Induced Boltzmann Weights</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>Active Learning for Gaussian Process Regression Under Self-Induced Boltzmann Weights</h1>
+    <div class="meta">
+      <span>✍️ Jixiang Qing, Henry Moss, Matthias Sachs</span>
+      <span>📅 2026-05-11</span>
+      <a href="http://arxiv.org/abs/2605.10654v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 함수 자체가 유도하는 미지의 볼츠만 분포 하에서 가우시안 프로세스 기반 능동학습을 수행하는 새로운 획득함수 AB-SID-iVAR를 제안하여 분배함수 추정 없이 효율적인 함수 학습을 달성했습니다.<br><br>**문제 정의**: <br>- 계산화학의 포텐셜 에너지 표면 모델링 등에서 발생하는 자기유도 볼츠만 가중치 문제 해결<br>- 목표 함수가 자체적으로 생성하는 미지의 확률분포 하에서 예측 오차를 최소화하는 능동학습<br>- 분배함수가 계산 불가능하고 목표 분포가 미지인 상황에서의 효율적 샘플링<br><br>**핵심 기여**:<br>- **AB-SID-iVAR**: 분배함수 추정 없이 베이지안 목표분포를 닫힌형태로 근사하는 GP 기반 획득함수 개발<br>- **TS-SID-iVAR**: 높은 분산을 가진 톰슨 샘플링 기반 몬테카를로 변형 제안<br>- 이산/연속 입력 도메인 모두에 적용 가능한 범용성 확보<br>- 미지의 목표분포 하에서도 종료 예측 오차가 높은 확률로 0에 수렴함을 이론적으로 증명<br><br>**의의**: <br>프로그램 분석에서 코드 복잡도나 실행 비용에 따른 적응적 샘플링이 필요한 경우, 본 방법론의 자기유도 가중치 개념을 활용할 수 있습니다. 특히 프로그램 합성이나 난독화 해제에서 탐색 공간의 효율적 탐색을 위한 능동학습 전략으로 응용 가능하며, LLM과 결합시 코드 생성 확률에 기반한 적응적 학습에도 활용할 수 있습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We consider the active learning problem where the goal is to learn an unknown function with low prediction error under an unknown Boltzmann distribution induced by the function itself. This self-induced weighting arises naturally in problems such as potential energy surface (PES) modeling in computational chemistry,
+  yet poses unique challenges as the target distribution is unknown and its partition function is intractable. We propose \texttt{AB-SID-iVAR}, a Gaussian Process-based acquisition function that approximates the intractable Bayesian target distribution in closed form while avoiding partition function estimation, and is applicable to both discrete and continuous input domains. We also analyze a Thompson sampling alternative (\texttt{TS-SID-iVAR}) as a higher variance Monte Carlo variant. Despite the unknown target, under mild conditions, we establish that the terminal prediction error vanishes with high probability, and provide a tighter average-case guarantee. We demonstrate consistent improvements over existing approaches in this setting on synthetic benchmarks and real-world PES modeling and drug discovery tasks.</p>
+  </section>
+</article>
+</body>
+</html>

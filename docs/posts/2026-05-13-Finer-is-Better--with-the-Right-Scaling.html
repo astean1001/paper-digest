@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finer is Better (with the Right Scaling)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND ab:"program synthesis" AND ab:"large language model"</span>
+    <h1>Finer is Better (with the Right Scaling)</h1>
+    <div class="meta">
+      <span>✍️ Clemens Schaefer, Gil Tabak</span>
+      <span>📅 2026-05-08</span>
+      <a href="http://arxiv.org/abs/2605.08565v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: LLM의 초저정밀도 양자화에서 블록 크기가 작을수록 성능이 오히려 떨어지는 역설적 현상의 원인을 규명하고, 올바른 스케일링 기법으로 이를 해결하여 하드웨어 호환 포맷에서도 최적 성능을 달성했습니다.<br><br>**문제 정의**: <br>- LLM을 FP4와 같은 초저정밀도로 양자화할 때, 이론적으로는 더 작은 블록 크기가 양자화 오류를 줄여야 하지만 실제로는 성능이 악화되는 "블록 크기 역설" 현상이 발생<br>- 기존 abs-max 스케일링 방법이 미세한 블록에서 모델 품질을 저하시키는 근본 원인 규명 필요<br><br>**핵심 기여**:<br>1. **원인 분석**: 중꼬리 분포(heavy-tailed distribution)를 가진 텐서가 FP4의 거친 상위 양자화 구간과 상호작용할 때 문제가 발생함을 입증<br>2. **해결 방법론**: <br>   - 스케일링 팩터의 언더플로우 방지로 국소적 오류 완화<br>   - 4-over-6 방법론으로 대형 요소의 양자화 기하학 교정<br>   - 무차별 탐색으로 이론적 MSE가 미세한 블록에서 개선됨을 확인<br>3. **실용적 성과**: 표준 하드웨어 호환 포맷(OCP E4M3)이 커스텀 포맷(UE5M3) 수준의 성능 달성<br><br>**의의**: <br>neurosymbolic 시스템에서 LLM의 효율적 추론이 핵심인데, 이 연구는 하드웨어 제약 하에서도 최적의 양자화 성능을 보장하는 실용적 방법론을 제시합니다. 특히 program synthesis 과정에서 요구되는 정밀한 추론 능력을 유지하면서도 메모리와 연산 효율성을 극대화할 수 있어, 실시간 neurosymbolic 응용에 직접적으로 활용 가능한 기술적 토대를 마련했습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Microscaling is a critical technique for preserving the quality of Large Language Models (LLMs) quantized to ultra-low precision formats. Intuitively, finer block sizes should yield lower quantization error; however, a paradox recently identified in the literature demonstrates that standard abs-max scaling can actually degrade model quality as block sizes shrink. In this work, we investigate the underlying mechanics of this phenomenon. We demonstrate that this degradation is not an inherent limitation of finer granularity, but is primarily driven by heavy-tailed tensor distributions interacting poorly with the coarse upper quantization bins of the FP4 element format. Specifically, we show that i) preventing the scaling factor from underflowing to zero mitigates localized errors, ii) targeted algorithmic interventions like the 4-over-6 methodology effectively correct the quantization geometry for large elements, and iii) a brute-force search establishes an optimal baseline, confirming that the theoretical Mean Squared Error (MSE) strictly improves with finer block sizes. Ultimately, our findings reveal a valuable interchangeability: applying the correct algorithmic recipe allows standard, hardware-compliant formats (like OCP E4M3) to match the performance of custom, wider-exponent formats (like UE5M3). We validate these results across several large language models, fully resolving the block size paradox and achieving robust downstream perplexity improvements.</p>
+  </section>
+</article>
+</body>
+</html>

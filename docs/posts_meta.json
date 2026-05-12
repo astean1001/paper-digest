@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-05-13-Active-Learning-for-Gaussian-Process-Regression-Un.html",
+    "title": "Active Learning for Gaussian Process Regression Under Self-Induced Boltzmann Weights",
+    "date": "2026-05-13",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "함수 자체가 유도하는 미지의 볼츠만 분포 하에서 가우시안 프로세스 기반 능동학습을 수행하는 새로운 획득함수 AB-SID-iVAR를 제안하여 분배함수 추정 없이 효율적인 함수 학습을 달성했습니다.",
+    "url": "http://arxiv.org/abs/2605.10654v1"
+  },
+  {
+    "filename": "2026-05-13-V-ABS--Action-Observer-Driven-Beam-Search-for-Dyna.html",
+    "title": "V-ABS: Action-Observer Driven Beam Search for Dynamic Visual Reasoning",
+    "date": "2026-05-13",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "멀티모달 언어모델의 다단계 시각 추론에서 발생하는 상상-행동-관찰 편향을 해결하기 위해 실행 피드백을 동적으로 활용하는 빔 서치 프레임워크 V-ABS를 제안함.",
+    "url": "http://arxiv.org/abs/2605.10172v1"
+  },
+  {
+    "filename": "2026-05-13-Finer-is-Better--with-the-Right-Scaling.html",
+    "title": "Finer is Better (with the Right Scaling)",
+    "date": "2026-05-13",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2605.08565v1"
+  },
+  {
+    "filename": "2026-05-13-V-ABS--Action-Observer-Driven-Beam-Search-for-Dyna.html",
+    "title": "V-ABS: Action-Observer Driven Beam Search for Dynamic Visual Reasoning",
+    "date": "2026-05-13",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND ab:\"program synthesis\" AND ab:\"large language model\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2605.10172v1"
+  },
+  {
+    "filename": "2026-05-13-Finer-is-Better--with-the-Right-Scaling.html",
+    "title": "Finer is Better (with the Right Scaling)",
+    "date": "2026-05-13",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND ab:\"program synthesis\" AND ab:\"large language model\"",
+    "one_liner": "LLM의 초저정밀도 양자화에서 블록 크기가 작을수록 성능이 오히려 떨어지는 역설적 현상의 원인을 규명하고, 올바른 스케일링 기법으로 이를 해결하여 하드웨어 호환 포맷에서도 최적 성능을 달성했습니다.",
+    "url": "http://arxiv.org/abs/2605.08565v1"
+  },
+  {
     "filename": "2026-05-11-Revocation-Ready-CP-ABE-Key-Management-for-Blockch.html",
     "title": "Revocation-Ready CP-ABE Key Management for Blockchain-Based IoT Data Sharing",
     "date": "2026-05-11",

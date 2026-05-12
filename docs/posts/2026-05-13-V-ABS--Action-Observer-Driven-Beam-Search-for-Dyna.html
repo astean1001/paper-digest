@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V-ABS: Action-Observer Driven Beam Search for Dynamic Visual Reasoning</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND ab:"program synthesis" AND ab:"large language model"</span>
+    <h1>V-ABS: Action-Observer Driven Beam Search for Dynamic Visual Reasoning</h1>
+    <div class="meta">
+      <span>✍️ Zhiwei Ning, Xuanang Gao, Jiaxi Cao</span>
+      <span>📅 2026-05-11</span>
+      <a href="http://arxiv.org/abs/2605.10172v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>멀티모달 대규모 언어 모델의 다단계 시각 추론에서 사전 상상과 실제 관찰 피드백 간의 불일치(IAO bias)를 해결하기 위해 action-observer 기반 beam search 프레임워크를 제안한 연구입니다.<br><br>**문제 정의**: <br>현재 멀티모달 대규모 언어 모델들은 일반적인 인식 능력은 뛰어나지만, 복잡한 다단계 시각 추론에서는 여전히 어려움을 겪고 있습니다. 특히 기존의 에이전트 기반 접근법들은 도구 사용을 포함하지만 실행 피드백을 간과하여, 사전 상상과 관찰자 피드백 간의 불일치(IAO bias)로 인해 추론의 안정성과 최적성이 저하되는 문제가 있습니다.<br><br>**핵심 기여**: <br>1. **V-ABS 프레임워크**: thinker-actor-observer 반복을 통한 의도적 추론이 가능한 action-observer 기반 beam search 구조 제안<br>2. **엔트로피 기반 적응적 가중치 알고리즘**: 정책 사전확률과 관찰 피드백 간의 신뢰도 점수를 동적으로 균형 맞춰 IAO bias 완화<br>3. **대규모 SFT 데이터셋**: 80k 이상의 샘플로 구성된 지도학습 데이터셋을 구축하여 모델이 올바른 행동 경로에 높은 사전 신뢰도를 부여하도록 학습<br>4. **성능 향상**: 8개 벤치마크에서 평균 19.7% 성능 개선 달성<br><br>**의의**: <br>이 연구는 neurosymbolic 프로그램 합성 분야에서 중요한 의미를 갖습니다. beam search를 활용한 동적 추론 방식은 프로그램 합성의 탐색 효율성을 높일 수 있으며, action-observer 피드백 루프는 대규모 언어 모델 기반 프로그램 생성에서 실행 결과를 반영한 점진적 개선을 가능하게 합니다. 특히 IAO bias 해결 방법론은 LLM이 생성한 프로그램의 실제 실행 결과와 예상 결과 간의 불일치를 줄이는 데 응용할 수 있어, 더</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Multimodal large language models (MLLMs) have achieved remarkable success in general perception, yet complex multi-step visual reasoning remains a persistent challenge. Although recent agentic approaches incorporate tool use, they often neglect critical execution feedback. Consequently, they suffer from the imagination-action-observer (IAO) bias, a misalignment between prior imagination and observer feedback that undermines reasoning stability and optimality. To bridge this gap, we introduce V-ABS, an action-observer driven beam search framework that enables deliberate reasoning through thinker-actor-observer iterations. We also propose an entropy-based adaptive weighting algorithm to mitigate the IAO bias by dynamically balancing the confidence scores between the policy priors and the observational feedback. Moreover, we construct a large-scale supervised fine-tuning (SFT) dataset comprising over 80k samples to guide the model to assign higher prior confidence to correct action paths. Extensive experiments across eight diverse benchmarks show that V-ABS achieves state-of-the-art performance, delivering an average improvement of 19.7% on the Qwen3-VL-8B baseline and consistent gains across both open-source and proprietary models.</p>
+  </section>
+</article>
+</body>
+</html>
