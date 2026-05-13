@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AB-Sparse: Sparse Attention with Adaptive Block Size for Accurate and Efficient Long-Context Inference</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND (ab:"LLM" OR ab:"large language model")</span>
+    <h1>AB-Sparse: Sparse Attention with Adaptive Block Size for Accurate and Efficient Long-Context Inference</h1>
+    <div class="meta">
+      <span>✍️ Di Liu, Ruitian Wang, Chen Chen</span>
+      <span>📅 2026-05-12</span>
+      <a href="http://arxiv.org/abs/2605.12110v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>대형 언어모델의 긴 컨텍스트 처리 시 어텐션 헤드별로 적응적 블록 크기를 할당하는 sparse attention 기법으로, 기존 고정 블록 방식 대비 최대 5.43% 정확도 향상을 달성했습니다.<br><br>**문제 정의**: <br>대형 언어모델이 긴 컨텍스트를 처리할 때 KV 캐시 로딩이 주요 병목이 되는 문제와, 기존 블록 sparse attention 방법들이 모든 어텐션 헤드에 균일한 블록 크기를 적용하여 각 헤드의 서로 다른 블록 세분화 민감도를 고려하지 못해 차선책 정확도를 보이는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**: <br>1) 어텐션 헤드별로 블록 세분화 민감도가 다르다는 중요한 발견<br>2) 각 어텐션 헤드에 적응적 블록 크기를 할당하는 경량 알고리즘 개발<br>3) 메모리 오버헤드 보상을 위한 무손실 블록 centroid 양자화 기법<br>4) 가변 블록 크기를 효율적으로 처리하는 맞춤형 GPU 커널 구현<br>5) 훈련 없이 적용 가능한 알고리즘-시스템 공동 설계 프레임워크<br><br>**의의**: <br>neurosymbolic 프로그램 합성 연구에서 긴 코드나 복잡한 프로그램 분석 시 LLM의 컨텍스트 처리 효율성이 핵심인데, 이 기법은 정확도 손실 없이 긴 컨텍스트 추론을 가속화할 수 있어 대규모 프로그램 분석이나 코드 생성 작업의 실용성을 크게 향상시킬 수 있습니다. 특히 훈련 없이 적용 가능하다는 점에서 기존 neurosymbolic 시스템에 즉시 통합 가능합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>As large language models scale to longer contexts, loading the growing KV cache during attention computation becomes a critical bottleneck. Previous work has shown that attention computation is dominated by a small subset of tokens. This motivates block sparse attention methods that partition the KV cache into fixed-size blocks and selectively compute attention over those blocks exhibiting high importance. However, these methods assign a uniform block size across all attention heads, implicitly assuming homogeneous behavior throughout the model. Our analysis reveals that this assumption is flawed: attention heads exhibit widely varying sensitivity to block granularity, and uniformity leads to suboptimal accuracy. We present AB-Sparse, a training-free algorithm-system co-designed framework that improves accuracy while preserving throughput. AB-Sparse introduces lightweight adaptive block size allocation across attention heads to improve accuracy. To compensate for the additional memory overhead, it further employs lossless block centroid quantization. In addition, custom GPU kernels are developed to support efficient execution with variable block sizes. Evaluation results demonstrate that AB-Sparse achieves an accuracy improvement of up to 5.43% over existing block sparse attention baselines without throughput overhead.</p>
+  </section>
+</article>
+</body>
+</html>

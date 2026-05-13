@@ -1,5 +1,23 @@
 [
   {
+    "filename": "2026-05-14-Zero-Shot-Vulnerability-Detection-in-Low-Resource.html",
+    "title": "Zero-Shot Vulnerability Detection in Low-Resource Smart Contracts Through Solidity-Only Training",
+    "date": "2026-05-14",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"Solidity\" OR ab:\"EVM\")",
+    "one_liner": "Solidity로만 학습한 모델을 사용해 Vyper 스마트 컨트랙트의 취약점을 Zero-Shot으로 탐지하는 Sol2Vy 프레임워크를 제안하여, 저자원 언어에서의 취약점 탐지 문제를 해결했습니다.",
+    "url": "http://arxiv.org/abs/2603.21058v3"
+  },
+  {
+    "filename": "2026-05-14-AB-Sparse--Sparse-Attention-with-Adaptive-Block-Si.html",
+    "title": "AB-Sparse: Sparse Attention with Adaptive Block Size for Accurate and Efficient Long-Context Inference",
+    "date": "2026-05-14",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND (ab:\"LLM\" OR ab:\"large language model\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2605.12110v1"
+  },
+  {
     "filename": "2026-05-13-Active-Learning-for-Gaussian-Process-Regression-Un.html",
     "title": "Active Learning for Gaussian Process Regression Under Self-Induced Boltzmann Weights",
     "date": "2026-05-13",
