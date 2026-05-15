@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-05-16-Smart-Contract-Security-Beyond-Detection.html",
+    "title": "Smart Contract Security Beyond Detection",
+    "date": "2026-05-16",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "스마트 컨트랙트 보안 연구가 단순한 취약점 탐지를 넘어 의미 추론, 자동화 수정, 적대적 강건성, 실시간 탐지까지 포괄하는 통합적 연구 프레임워크를 제시한다.",
+    "url": "http://arxiv.org/abs/2605.09124v1"
+  },
+  {
     "filename": "2026-05-14-Zero-Shot-Vulnerability-Detection-in-Low-Resource.html",
     "title": "Zero-Shot Vulnerability Detection in Low-Resource Smart Contracts Through Solidity-Only Training",
     "date": "2026-05-14",
