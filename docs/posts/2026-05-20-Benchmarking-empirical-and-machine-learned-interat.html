@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benchmarking empirical and machine-learned interatomic potentials using phase diagram predictions for Lead</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Benchmarking empirical and machine-learned interatomic potentials using phase diagram predictions for Lead</h1>
+    <div class="meta">
+      <span>✍️ Tom Hellyar, Pascal T. Salzbrenner, Peter I. C. Cooke</span>
+      <span>📅 2026-05-15</span>
+      <a href="http://arxiv.org/abs/2605.16018v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 납(Pb)의 고압 상변화 예측에서 기존 경험적 포텐셜 모델(EAM, MEAM)과 신경망 기반 기계학습 모델(EDDP)의 성능을 비교 평가한 벤치마킹 연구입니다.<br><br>**문제 정의**: <br>고압 조건에서 물질의 상변화를 정확히 예측할 수 있는 인터원자 포텐셜 모델을 찾기 위해, 서로 다른 접근법(경험적 vs 기계학습)으로 개발된 모델들의 예측 성능을 체계적으로 비교 평가하고자 했습니다.<br><br>**핵심 기여**: <br>1. **벤치마킹 방법론**: Nested sampling 시뮬레이션을 활용한 체계적인 상안정성 평가 프레임워크 제시<br>2. **모델별 성능 차이 규명**: EAM/MEAM은 60 GPa까지 FCC 구조 예측, EDDP만이 실험적으로 관찰된 15 GPa에서의 FCC→HCP 상전이를 정확히 재현<br>3. **핵심 성공 요인 식별**: 다양한 비평형 구성에서 훈련된 EDDP의 우수성이 훈련 데이터의 다양성과 모델 유연성에 기인함을 입증<br><br>**의의**: <br>이 연구는 복잡한 물리 현상 예측에서 서로 다른 모델링 접근법의 성능을 체계적으로 비교하는 방법론을 제시합니다. 특히 기계학습 모델이 기존 경험적 모델보다 우수한 예측 성능을 보이는 조건(훈련 데이터 다양성, 모델 유연성)을 명확히 규명한 점에서, AI 기반 도구들의 성능 평가 및 개선 방향 설정에 참고할 수 있는 벤치마킹 사례를 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We compare the predicted phase behaviour of lead (Pb) using three different interatomic potential models, including an embedded atom method (EAM), a modified embedded atom method (MEAM), and a neural network-based machine-learned model in the form of an ephemeral data-derived potential (EDDP). Using nested sampling and replica-exchange nested sampling simulations, we computed thermodynamic and structural properties at pressures up to 60 GPa, mapping both melting behaviour and solid-phase stability. Both the EAM and MEAM models predict the face-centred cubic (FCC) phase to remain stable up to approximately 60 GPa. In contrast, the EDDP model captures the experimentally-observed FCC-to-hexagonal close-packed (HCP) transition at around 15 GPa. These results highlight the importance of training data and model flexibility in accurately describing high-pressure phase behaviour, and demonstrate the effectiveness of nested sampling as a robust framework for exploring phase stability in materials. Particularly, the combination of nested sampling with modern machine-learned interatomic potentials - delivering near ab initio accuracy at tractable cost - opens the door to truly predictive and exhaustive exploration. EDDPs trained on diverse, out-of-equilibrium configurations appear particularly well suited to this task, offering a robust and transferable framework for unbiased phase discovery.</p>
+  </section>
+</article>
+</body>
+</html>

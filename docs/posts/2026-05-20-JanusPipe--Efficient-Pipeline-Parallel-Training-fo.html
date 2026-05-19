@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JanusPipe: Efficient Pipeline Parallel Training for Machine Learning Interatomic Potentials</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>JanusPipe: Efficient Pipeline Parallel Training for Machine Learning Interatomic Potentials</h1>
+    <div class="meta">
+      <span>✍️ Hongyu Wang, Weijian Liu, Hongtao Xu</span>
+      <span>📅 2026-05-18</span>
+      <a href="http://arxiv.org/abs/2605.18404v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>분자동역학 시뮬레이션용 머신러닝 원자간 포텐셜(MLIP)의 독특한 이중 역전파 구조에 최적화된 3차원 병렬 훈련 시스템 JanusPipe를 개발하여 기존 대비 1.5배 성능 향상을 달성했습니다.<br><br>**문제 정의**: <br>보존적 MLIP(Conservative Machine Learning Interatomic Potentials)는 순전파 과정에서 그래디언트를 계산하는 이중 역전파 패턴을 가지는데, 이는 기존 분산 훈련 시스템, 특히 파이프라인 병렬화와 구조적 불일치를 일으켜 확장 가능한 훈련을 어렵게 만드는 문제가 있었습니다.<br><br>**핵심 기여**: <br>1) **SymFold**: MLIP의 이중 역전파 구조에 맞춘 메모리 효율적 파이프라인 병렬화 기법 개발<br>2) **WaveK**: 4단계 계산 시간의 균형을 맞춰 파이프라인 버블을 줄이는 스케줄링 알고리즘 제안  <br>3) **3D 병렬화**: 파이프라인(PP), 데이터(DP), 그래디언트(GP) 병렬화를 통합한 효율적 분산 훈련 시스템 구축<br><br>**의의**: <br>도메인 특화적 계산 패턴(이중 역전파)에 맞춘 맞춤형 병렬화 기법 설계의 중요성을 보여주며, 대규모 프로그램 분석에서도 복잡한 계산 의존성을 가진 뉴로심볼릭 모델의 효율적 훈련 시스템 설계에 응용할 수 있는 아키텍처 설계 원리를 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Discovering atom-level phenomena requires molecular dynamics (MD) simulations with ab initio accuracy. Machine learning interatomic potentials (MLIPs) enable stable, high-accuracy MD simulations, and their models exhibit scaling-law trends similar to large language models. However, the lack of scalable and efficient distributed training systems for conservative MLIPs makes them difficult to scale. This is because conservative MLIPs inherently follow a double-backward execution pattern, which involves computing gradients during the forward pass. This pattern creates a mismatch with existing distributed training systems, especially for pipeline parallelism. Therefore, we present JanusPipe, an efficient 3D-parallel (PP/DP/GP) training system tailored for conservative MLIPs. It integrates SymFold to enable memory-efficient pipeline parallelism for conservative MLIPs, and WaveK to reduce pipeline bubbles by balancing the four-phase compute time. Experimental results on 32 GPUs show that JanusPipe improves throughput by $1.51\times$ and $1.45\times$ on average over 1F1B and Hanayo, respectively.</p>
+  </section>
+</article>
+</body>
+</html>

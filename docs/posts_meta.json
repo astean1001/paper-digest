@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-05-20-Evolutionary-Extreme-Learning-Machine-of-ab-initio.html",
+    "title": "Evolutionary Extreme Learning Machine of ab-initio Energy Landscapes for Crystal Structure Prediction using Manta Ray Optimization with Levy Flight",
+    "date": "2026-05-20",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2605.17148v1"
+  },
+  {
+    "filename": "2026-05-20-Fuzzy-band-structure-of-quantum-dots-by-Bloch-Orbi.html",
+    "title": "Fuzzy band structure of quantum dots by Bloch Orbital Expansion, unconventional insights into geometry-electronic structure relations",
+    "date": "2026-05-20",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "양자점의 실공간 궤도를 운동량 공간으로 변환하는 Bloch Orbital Expansion(BOE) 방법론을 개발하여 양자점의 기하학적 구조와 전자구조 간의 관계를 명확히 분류할 수 있는 새로운 분석 도구를 제시했습니다.",
+    "url": "http://arxiv.org/abs/2605.16055v1"
+  },
+  {
+    "filename": "2026-05-20-JanusPipe--Efficient-Pipeline-Parallel-Training-fo.html",
+    "title": "JanusPipe: Efficient Pipeline Parallel Training for Machine Learning Interatomic Potentials",
+    "date": "2026-05-20",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2605.18404v1"
+  },
+  {
+    "filename": "2026-05-20-Machine-learning-potential-as-a-guide-for-eutectic.html",
+    "title": "Machine learning potential as a guide for eutectic in ultra-refractory multicomponent ceramics",
+    "date": "2026-05-20",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "융점이 3000K를 초과하는 초내화성 세라믹 합금에서 실험적으로 측정하기 어려운 공융점(eutectic point)을 머신러닝 기반 원자간 포텐셜을 이용해 예측하는 새로운 기준을 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2605.16091v1"
+  },
+  {
+    "filename": "2026-05-20-Benchmarking-empirical-and-machine-learned-interat.html",
+    "title": "Benchmarking empirical and machine-learned interatomic potentials using phase diagram predictions for Lead",
+    "date": "2026-05-20",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "납(Pb)의 고압 상변화 예측에서 기존 경험적 포텐셜 모델(EAM, MEAM)과 신경망 기반 기계학습 모델(EDDP)의 성능을 비교 평가한 벤치마킹 연구입니다.",
+    "url": "http://arxiv.org/abs/2605.16018v1"
+  },
+  {
     "filename": "2026-05-16-Smart-Contract-Security-Beyond-Detection.html",
     "title": "Smart Contract Security Beyond Detection",
     "date": "2026-05-16",
