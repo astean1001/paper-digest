@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-05-21-Smart-Contract-Security-Beyond-Detection.html",
+    "title": "Smart Contract Security Beyond Detection",
+    "date": "2026-05-21",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "스마트 컨트랙트 보안 연구가 단순 취약점 탐지를 넘어 의미론적 추론, 자동화 수정, 적대적 학습, 실시간 익스플로잇 탐지 등을 포괄하는 통합적 연구 프레임워크를 제시한 논문입니다.",
+    "url": "http://arxiv.org/abs/2605.09124v2"
+  },
+  {
+    "filename": "2026-05-21-Neurosymbolic-Learning-for-Inference-Time-Argument.html",
+    "title": "Neurosymbolic Learning for Inference-Time Argumentation",
+    "date": "2026-05-21",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2605.20098v1"
+  },
+  {
+    "filename": "2026-05-21-Neurosymbolic-Auditing-of-Natural-Language-Softwar.html",
+    "title": "Neurosymbolic Auditing of Natural-Language Software Requirements",
+    "date": "2026-05-21",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "자연어로 작성된 소프트웨어 요구사항의 모호성과 불일치를 감지하기 위해 대형언어모델(LLM)과 SMT 솔버를 결합한 뉴로심볼릭 감사 프레임워크 VERIMED를 제안하고, 의료기기 소프트웨어 요구사항에서 그 효과를 검증했습니다.",
+    "url": "http://arxiv.org/abs/2605.13817v1"
+  },
+  {
+    "filename": "2026-05-21-SCALAR--A-Neurosymbolic-Framework-for-Automated-Co.html",
+    "title": "SCALAR: A Neurosymbolic Framework for Automated Conjecture and Reasoning in Quantum Circuit Analysis",
+    "date": "2026-05-21",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "양자 회로 분석에서 QAOA 매개변수와 그래프 불변량 간의 관계를 자동으로 발견하기 위해 양자 시뮬레이션, 기호적 추측 생성, LLM 기반 해석을 통합한 neurosymbolic 프레임워크 SCALAR를 개발했습니다.",
+    "url": "http://arxiv.org/abs/2605.10327v1"
+  },
+  {
+    "filename": "2026-05-21-Ontology-Constrained-Neural-Reasoning-in-Enterpris.html",
+    "title": "Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents",
+    "date": "2026-05-21",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2604.00555v4"
+  },
+  {
     "filename": "2026-05-20-Evolutionary-Extreme-Learning-Machine-of-ab-initio.html",
     "title": "Evolutionary Extreme Learning Machine of ab-initio Energy Landscapes for Crystal Structure Prediction using Manta Ray Optimization with Levy Flight",
     "date": "2026-05-20",

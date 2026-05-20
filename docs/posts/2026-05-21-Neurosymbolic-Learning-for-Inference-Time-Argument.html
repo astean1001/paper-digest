@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurosymbolic Learning for Inference-Time Argumentation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model" OR ab:"LLM")</span>
+    <h1>Neurosymbolic Learning for Inference-Time Argumentation</h1>
+    <div class="meta">
+      <span>✍️ Gabriel Freedman, Adam Dejl, Adam Gould</span>
+      <span>📅 2026-05-19</span>
+      <a href="http://arxiv.org/abs/2605.20098v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>LLM이 생성한 논증과 점수를 형식적 논증 의미론으로 결합하여 클레임 검증에서 true/false/uncertain의 3진 분류와 설명 가능한 추론을 동시에 달성하는 neurosymbolic 프레임워크를 제안했습니다.<br><br>**문제 정의**: <br>의료, 금융 등 고위험 영역의 클레임 검증에서 불완전하거나 상충하는 정보로 인해 불확실한 판단이 필요한 상황에서, 기존 모델들은 이진 분류에 국한되고 사후적 설명(post-hoc reasoning)으로 인해 신뢰할 수 없는 추론 과정을 제공하는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**: <br>1) **Inference-Time Argumentation (ITA)**: 형식적 논증 의미론을 활용해 LLM 훈련과 추론을 모두 가이드하는 trainable neurosymbolic 프레임워크<br>2) **이중 활용 구조**: 논증 의미론을 (i) LLM이 논증 생성 및 기본 점수 할당을 학습하는 훈련 가이드와 (ii) 생성된 논증에서 3진 예측을 계산하는 추론 엔진으로 동시 활용<br>3) **구조적 충실성**: 최종 예측이 명시적이고 검사 가능한 논증 구조로부터 결정론적으로 도출되어 설명 가능성 보장<br><br>**의의**: <br>이 연구는 프로그램 분석과 LLM 융합 연구에 중요한 시사점을 제공합니다. 특히 형식적 의미론을 LLM 훈련과 추론에 직접 통합하는 방식은 neurosymbolic 접근법의 새로운 패러다임을 제시하며, 설명 가능하고 신뢰할 수 있는 AI 시스템 구축을 위한 구체적인 방법론을 보여줍니다. 훈련 시간과 추론 시간에 동일한 형식적 구조를 활용하는 접근법은 연구자의 프로그램 분석 기반 LLM 연구에 직접적으로 응용 가능한 통찰을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Claim verification is an important problem in high-stakes settings, including health and finance. When information underpinning claims is incomplete or conflicting, uncertain answers may be more appropriate than binary true or false classifications. In all cases, faithful explanations of the considerations determining the final verdict are crucial. We introduce inference-time argumentation (ITA), a trainable neurosymbolic framework for ternary claim verification in which a formal argumentation semantics giving the strength of claims is used both (i) to guide LLM training as models learn to generate arguments and assign them base scores (representing intrinsic strengths) and (ii) to compute ternary (true/false/uncertain) predictions from generated, scored arguments. As a result, at training time, argument generation and scoring can be optimised according to the quality of the induced argumentative predictions. Moreover, at inference time, the final prediction is faithful, by construction, to the arguments and scores determining the verdict, rather than being justified by a potentially unfaithful post-hoc reasoning trace as in conventional reasoning models. We finally show that, on two datasets for ternary claim verification, ITA improves upon argumentative baselines and can perform competitively against non-argumentative direct-prediction baselines, while providing verdicts that are computed deterministically from explicit, inspectable argumentative structures.</p>
+  </section>
+</article>
+</body>
+</html>

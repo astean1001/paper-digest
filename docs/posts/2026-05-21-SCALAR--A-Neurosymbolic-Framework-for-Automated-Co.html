@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCALAR: A Neurosymbolic Framework for Automated Conjecture and Reasoning in Quantum Circuit Analysis</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model" OR ab:"LLM")</span>
+    <h1>SCALAR: A Neurosymbolic Framework for Automated Conjecture and Reasoning in Quantum Circuit Analysis</h1>
+    <div class="meta">
+      <span>✍️ Sean Feeney, Pooja Rao, Andreas Klappenecker</span>
+      <span>📅 2026-05-11</span>
+      <a href="http://arxiv.org/abs/2605.10327v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 양자 회로 분석에서 QAOA 매개변수와 그래프 불변량 간의 관계를 자동으로 발견하기 위해 양자 시뮬레이션, 기호적 추측 생성, LLM 기반 해석을 통합한 neurosymbolic 프레임워크 SCALAR를 개발했습니다.<br><br>**문제 정의**: <br>양자 근사 최적화 알고리즘(QAOA)에서 최적 매개변수와 그래프 구조적 특성 간의 복잡한 관계를 수동으로 분석하는 것은 시간이 오래 걸리고 확장성이 제한적입니다. 특히 다양한 그래프 토폴로지에 대해 일반화 가능한 매개변수 전이 현상과 구조적 불변량을 체계적으로 발견하기 어렵습니다.<br><br>**핵심 기여**:<br>1. **SCALAR 프레임워크**: CUDA-Q 기반의 양자 시뮬레이션과 LLM을 결합하여 자동으로 추측을 생성하고 해석하는 neurosymbolic 시스템 구축<br>2. **대규모 실험적 검증**: 82개 MaxCut 인스턴스와 4가지 그래프 토폴로지(regular, Erdős-Rényi, Barabási-Albert, Watts-Strogatz)의 2,000개 무작위 생성 그래프에서 최대 77 큐비트까지 확장<br>3. **새로운 관계 발견**: 위상 분리 매개변수 γ의 주기성 제약과 같은 알려진 관계뿐만 아니라 구조적으로 유사한 인스턴스 간 매개변수 전이 현상 재발견<br><br>**의의**:<br>이 연구는 neurosymbolic AI가 복잡한 양자 시스템 분석에서 인간 전문가의 직관을 자동화할 수 있음을 보여줍니다. 특히 심볼릭 추론과 LLM의 융합을 통해 도메인 특화 지식 발견을 가속화하는 방법론은 프로그램 합성 분야에서 형식적 검증과 자연어 이해를 결합하는 연구 방향에 중요한 시사점을 제공합니다. 또한 대규모 계산 실험과 자동화된 패턴 인식의 결합은 다른 복잡한 최적화 문제에도 적용 가능한 일반</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In this paper, we present SCALAR (Symbolic Conjecture and LLM-Assisted Reasoning), a neurosymbolic framework for automated conjecture generation in quantum circuit analysis built on top of the CUDA-Q open source framework. The system integrates quantum simulation, symbolic conjecture generation, and LLM-based interpretation. We evaluate SCALAR on 82 MaxCut instances from the MQLib benchmark dataset and extend the analysis to 2,000 randomly generated graphs across four topologies: regular, Erdos-Renyi, Barabasi-Albert, and Watts-Strogatz. The framework generates conjectured bounds relating optimal QAOA parameters to graph invariants, including known relationships such as periodicity constraints on the phase separation parameter $γ$. SCALAR also recovers previously reported parameter transfer phenomena across structurally similar instances. Additionally, the system identifies correlations between graph structural features and optimization landscape properties, which we characterize through invariant-based descriptors. Using CUDA-Q tensor network simulator, we scale experiments to instances of up to 77 qubits. We discuss the accuracy, generality, and limitations of the generated conjectures, including sensitivity to graph class and quantum circuit depth.</p>
+  </section>
+</article>
+</body>
+</html>
