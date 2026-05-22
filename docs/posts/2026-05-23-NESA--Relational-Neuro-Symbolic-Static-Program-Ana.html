@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NESA: Relational Neuro-Symbolic Static Program Analysis</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ti:"neuro-symbolic") AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>NESA: Relational Neuro-Symbolic Static Program Analysis</h1>
+    <div class="meta">
+      <span>✍️ Chengpeng Wang, Yifei Gao, Wuqi Zhang</span>
+      <span>📅 2024-12-18</span>
+      <a href="http://arxiv.org/abs/2412.14399v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대형 언어모델(LLM)의 환각 문제를 완화하면서 컴파일 없이도 사용자 정의 가능한 정적 프로그램 분석을 수행하는 구성적 신경-기호 융합 접근법 NESA를 제안<br><br>**문제 정의**: <br>- 기존 정적 프로그램 분석 도구들은 컴파일 의존성과 제한된 커스터마이징 능력으로 인해 실무 적용이 어려움<br>- LLM을 프로그램 분석에 활용할 때 발생하는 환각(hallucination) 문제로 신뢰성 부족<br>- 복잡한 프로그램 분석 작업을 LLM이 한 번에 처리하기 어려운 한계<br><br>**핵심 기여**:<br>- **분석 정책 언어(Analysis Policy Language)**: Datalog의 제한된 형태로 복잡한 분석 문제를 구문적/의미적 하위 문제들로 분해<br>- **하이브리드 처리 방식**: 구문적 문제는 파싱 기반으로, 의미적 문제는 LLM으로 처리하여 환각 문제 완화<br>- **지연 및 증분 프롬프팅**: 점진적 쿼리를 통해 LLM 성능 향상 및 환각 감소<br>- **실증 검증**: TaintBench에서 정밀도 66.27%, 재현율 78.57%, F1 점수 0.72로 기존 산업용 도구 성능 초과<br><br>**의의**: <br>- 신경-기호 융합 연구에서 LLM의 약점을 기호적 방법으로 보완하는 실용적 사례 제시<br>- 프로그램 분석 분야에서 LLM 활용의 새로운 패러다임 제시 - 단순 대체가 아닌 상호 보완적 융합<br>- 컴파일 없는 분석 환경 구현으로 개발 워크플로우 개선 가능성 입증<br>- 문제 분해 기반 접근법이 복잡한 프로그램 분석 작업에서 LLM 신뢰성을 높이는 방법론적 시사점 제공</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Static program analysis plays an essential role in program optimization, bug detection, and debugging. However, reliance on compilation and limited customization hinder its adoption in the real world. This paper presents a compositional neuro-symbolic approach named NESA that facilitates compilation-free and customizable static program analysis using large language models (LLMs) with mitigated hallucinations. Specifically, we propose an analysis policy language, a restricted form of Datalog, to support users decomposing a static program analysis problem into several sub-problems that target simpler syntactic or semantic properties upon smaller code snippets. The problem decomposition enables the LLMs to target more manageable semantic-related sub-problems with reduced hallucinations, while the syntactic ones are resolved by parsing-based analysis without hallucinations. An analysis policy then is evaluated with lazy and incremental prompting, which significantly mitigates the hallucinations and improves the performance. We evaluate NESA for program slicing and bug detection upon benchmark and real-world programs. Evaluation results show that while NESA supports compilation-free and customizable analysis, it can still achieve comparable and even better performance than existing techniques. In a customized taint vulnerability detection upon TaintBench, for example, NESA achieves a precision of 66.27%, a recall of 78.57%, and an F1 score of 0.72, surpassing an industrial approac</p>
+  </section>
+</article>
+</body>
+</html>

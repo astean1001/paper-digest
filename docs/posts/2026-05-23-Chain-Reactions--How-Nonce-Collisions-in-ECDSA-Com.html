@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chain Reactions: How Nonce Collisions in ECDSA Compromise Polygon MEV Searchers</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"MEV" OR ti:"maximal extractable value" AND ab:"Solana"</span>
+    <h1>Chain Reactions: How Nonce Collisions in ECDSA Compromise Polygon MEV Searchers</h1>
+    <div class="meta">
+      <span>✍️ Yash Madhwal, Andrey Seoev, Raffaele Della Pietra</span>
+      <span>📅 2026-05-03</span>
+      <a href="http://arxiv.org/abs/2605.21498v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Polygon MEV 생태계에서 빠른 응답을 위해 예측 가능한 nonce 패턴을 사용하는 searcher들의 ECDSA 서명이 개인키 복구 공격에 취약함을 발견하고 분석한 연구.<br><br>**문제 정의**: <br>MEV searcher들이 sealed-bid 경매에서 1초 미만의 빠른 응답시간을 달성하기 위해 ECDSA 서명의 nonce 생성에서 보안을 희생하고 있는 현상과, 이로 인한 개인키 노출 위험성을 조사하고 분석하는 것.<br><br>**핵심 기여**:<br>- Polygon 온체인 데이터 분석을 통해 MEV searcher들의 체계적인 nonce 재사용 패턴 발견<br>- 동일한 nonce 사용으로 인한 서명 간 선형 관계를 활용한 개인키 복구 공격의 수학적 모델링 제시<br>- 크로스 지갑 nonce 충돌을 포함한 선형 시스템 기반 공격 방법론의 간결한 공식화<br>- Polygon에서 실제 악용 가능한 패턴들의 구체적 증거 제시<br><br>**의의**:<br>프로토콜 수준에서 요구되는 지연시간 압박이 어떻게 실제 블록체인 시스템에서 치명적인 암호학적 실패로 이어질 수 있는지 보여주는 중요한 사례연구로, MEV 보안 연구와 블록체인 시스템 설계에서 성능과 보안의 트레이드오프 문제를 부각시킨다. 특히 단일 구현 오류가 다수의 계정을 동시에 위험에 빠뜨릴 수 있음을 실증적으로 증명하여, MEV 생태계의 보안 설계 원칙 수립에 핵심적 기여를 한다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>ECDSA signatures form the bedrock of blockchain transaction authentication, yet their security critically depends on proper nonce generation. We uncover a critical vulnerability in the Polygon MEV ecosystem: systematic nonce reuse that enables complete private key recovery. Analyzing on-chain data reveals that searchers, driven by the need for sub-second response times in sealed-bid auctions, employ predictable nonce patterns. These patterns create linear relationships between signatures, allowing passive attackers to recover private keys using elementary algebra. We provide a compact linear-system formulation for such attacks, including the dangerous case of cross-wallet nonce collisions, and present concrete evidence of exploitable patterns on Polygon. Our findings demonstrate how protocol-induced latency pressures can lead to catastrophic cryptographic failures in production blockchain systems, where a single implementation error compromises multiple accounts simultaneously.</p>
+  </section>
+</article>
+</body>
+</html>

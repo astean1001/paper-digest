@@ -1,5 +1,32 @@
 [
   {
+    "filename": "2026-05-23-Chain-Reactions--How-Nonce-Collisions-in-ECDSA-Com.html",
+    "title": "Chain Reactions: How Nonce Collisions in ECDSA Compromise Polygon MEV Searchers",
+    "date": "2026-05-23",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "Polygon MEV 생태계에서 빠른 응답을 위해 예측 가능한 nonce 패턴을 사용하는 searcher들의 ECDSA 서명이 개인키 복구 공격에 취약함을 발견하고 분석한 연구.",
+    "url": "http://arxiv.org/abs/2605.21498v1"
+  },
+  {
+    "filename": "2026-05-23-Finding-Memory-Leaks-in-C-C---Programs-via-Neuro-S.html",
+    "title": "Finding Memory Leaks in C/C++ Programs via Neuro-Symbolic Augmented Static Analysis",
+    "date": "2026-05-23",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ti:\"neuro-symbolic\") AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "LLM의 코드 의미 이해 능력과 Z3 기반 기호 추론을 결합한 neuro-symbolic 파이프라인(MemHint)을 통해 기존 정적 분석기가 놓치던 C/C++ 메모리 누수를 효과적으로 탐지하는 방법을 제안함.",
+    "url": "http://arxiv.org/abs/2603.27224v3"
+  },
+  {
+    "filename": "2026-05-23-NESA--Relational-Neuro-Symbolic-Static-Program-Ana.html",
+    "title": "NESA: Relational Neuro-Symbolic Static Program Analysis",
+    "date": "2026-05-23",
+    "source": "arXiv",
+    "topic": "(ti:\"neurosymbolic\" OR ti:\"neuro-symbolic\") AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "대형 언어모델(LLM)의 환각 문제를 완화하면서 컴파일 없이도 사용자 정의 가능한 정적 프로그램 분석을 수행하는 구성적 신경-기호 융합 접근법 NESA를 제안",
+    "url": "http://arxiv.org/abs/2412.14399v2"
+  },
+  {
     "filename": "2026-05-21-Smart-Contract-Security-Beyond-Detection.html",
     "title": "Smart Contract Security Beyond Detection",
     "date": "2026-05-21",

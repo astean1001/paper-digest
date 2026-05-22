@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finding Memory Leaks in C/C++ Programs via Neuro-Symbolic Augmented Static Analysis</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"neurosymbolic" OR ti:"neuro-symbolic") AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Finding Memory Leaks in C/C++ Programs via Neuro-Symbolic Augmented Static Analysis</h1>
+    <div class="meta">
+      <span>✍️ Huihui Huang, Jieke Shi, Bo Wang</span>
+      <span>📅 2026-03-28</span>
+      <a href="http://arxiv.org/abs/2603.27224v3" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: LLM의 코드 의미 이해 능력과 Z3 기반 기호 추론을 결합한 neuro-symbolic 파이프라인(MemHint)을 통해 기존 정적 분석기가 놓치던 C/C++ 메모리 누수를 효과적으로 탐지하는 방법을 제안함.<br><br>**문제 정의**: <br>기존 정적 분석기(CodeQL, Infer)는 두 가지 한계로 인해 메모리 누수를 놓치는 문제가 있음: (1) 프로젝트별 커스텀 메모리 관리 함수를 인식하지 못함 (malloc/free 등 표준 함수만 인식), (2) 경로 민감적 제어 흐름 모델링 부족으로 실제로는 실행 불가능한 경로에서 false positive 발생.<br><br>**핵심 기여**:<br>- **Neuro-Symbolic 파이프라인**: LLM이 각 함수를 메모리 할당자/해제자로 분류하고 함수 요약(function summary) 생성 → Z3 기반 검증으로 제어 흐름 그래프상에서 도달 불가능한 메모리 연산 제거 → 검증된 요약을 기존 분석기에 주입<br>- **경로 실행 가능성 필터링**: Z3를 통해 실행 불가능한 경로의 경고 제거로 false positive 대폭 감소<br>- **실증적 성과**: 3.4M 라인 7개 실제 프로젝트에서 52개 고유 메모리 누수 탐지 (49개 확인/수정, 4개 CVE 제출), 기존 CodeQL(19개), Infer(3개) 대비 월등한 성능<br><br>**의의**: <br>프로그램 분석 분야에서 LLM과 기호 추론의 실용적 결합 사례를 제시하며, 각 기술의 장점(LLM의 의미 이해 + 기호 추론의 정확성)을 효과적으로 활용한 neuro-symbolic 접근법의 가능성을 입증함. 특히 비용 효율성($1.7/bug)과 실제 버그 탐지 성능을 동시에 달성하여 산업 적용 가능성이 높음.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Memory leaks remain prevalent in real-world C/C++ software. Static analyzers such as CodeQL provide scalable program analysis but frequently miss such bugs because they cannot recognize project-specific custom memory-management functions and lack path-sensitive control-flow modeling. We present MemHint, a neuro-symbolic pipeline that addresses both limitations by combining LLMs' semantic understanding of code with Z3-based symbolic reasoning. MemHint parses the target codebase and applies an LLM to classify each function as a memory allocator, deallocator, or neither, producing function summaries that record which argument or return value carries memory ownership, extending the analyzer's built-in knowledge beyond standard primitives such as malloc and free. A Z3-based validation step checks each summary against the function's control-flow graph, discarding those whose claimed memory operation is unreachable on any feasible path. The validated summaries are injected into CodeQL and Infer via their respective extension mechanisms. Z3 path feasibility filtering then eliminates warnings on infeasible paths, and a final LLM-based validation step confirms whether each remaining warning is a genuine bug. On seven real-world C/C++ projects totaling over 3.4M lines of code, MemHint detects 52 unique memory leaks (49 confirmed/fixed, 4 CVEs submitted) at approximately $1.7 per detected bug, compared to 19 by vanilla CodeQL and 3 by vanilla Infer.</p>
+  </section>
+</article>
+</body>
+</html>
