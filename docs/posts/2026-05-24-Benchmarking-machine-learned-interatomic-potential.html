@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benchmarking machine-learned interatomic potentials for molecular infrared spectroscopy</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>Benchmarking machine-learned interatomic potentials for molecular infrared spectroscopy</h1>
+    <div class="meta">
+      <span>✍️ Nitik Bhatia, Ondrej Krejci, Patrick Rinke</span>
+      <span>📅 2026-05-21</span>
+      <a href="http://arxiv.org/abs/2605.22367v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 분자 적외선 스펙트럼 예측을 위해 5가지 메시지 패싱 신경망(MPNN) 아키텍처를 벤치마킹하여, 회전 대칭성을 고려한 등변(equivariant) 모델들이 불변(invariant) 모델들보다 미지 시스템에 대한 일반화 성능이 우수함을 입증했습니다.<br><br>**문제 정의**: 기존 ab-initio 계산은 분자 진동 및 적외선 스펙트럼 예측에서 높은 정확도를 제공하지만 계산 비용이 매우 높아, 계산 효율성과 정확도를 동시에 만족하는 기계학습 기반 원자간 포텐셜의 체계적인 성능 비교가 필요했습니다.<br><br>**핵심 기여**: <br>- 5가지 MPNN 아키텍처(SchNet, FieldSchNet, SO3Net, PaiNN, MACE)의 포괄적 벤치마킹 수행<br>- 불변 모델(SchNet, FieldSchNet)과 등변 모델(SO3Net, PaiNN, MACE)의 성능 차이 규명<br>- 등변 모델들이 분자 표현에서 회전 대칭성을 명시적으로 고려하여 미지 시스템에 대한 전이가능성(transferability)이 현저히 우수함을 실증<br>- 계산 효율성 측면에서는 SchNet이 가장 효율적이나, 일반화 성능과의 트레이드오프 관계 확인<br><br>**의의**: 본 연구는 분자 시뮬레이션 분야에서 기하학적 대칭성을 고려한 신경망 설계의 중요성을 실증적으로 보여주며, 프로그램 합성이나 최적화 문제에서도 도메인 특화적 제약조건(대칭성, 불변성 등)을 모델 아키텍처에 명시적으로 반영하는 것이 일반화 성능 향상에 핵심적임을 시사합니다. 특히 equality saturation과 e-graph 기반 프로그램 분석에서도 구조적 등가성을 활용한 표현 학습에 응용 가능한 통찰을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Machine learning has transformed the field of atomistic simulations by enabling the development of interatomic potentials that are computationally efficient and highly accurate. These advances have opened the door to modeling molecular vibrations and predicting infrared spectra with near ab-initio accuracy at a fraction of the computational cost. Among these approaches, message-passing neural networks (MPNNs) have emerged as a particularly powerful class of models for representing complex atomic interactions. In this study, we benchmark five MPNN architectures, SchNet, FieldSchNet, SO3Net, PaiNN, and MACE, for predicting infrared spectra of small organic molecules. SchNet and FieldSchNet are invariant models, while SO3Net, PaiNN, and MACE are equivariant, explicitly accounting for rotational symmetries in molecular representations. We evaluate their performance in terms of computational efficiency, accuracy, and robustness. All models accurately predict properties, such as energies, forces, and dipole moments, required for infrared spectra calculations. They also capture harmonic frequencies and infrared spectra derived from molecular dynamics with high fidelity for molecules in the training set. However, SchNet and FieldSchNet show limited transferability to unseen systems, while SO3Net, PaiNN, and MACE generalize more effectively. In terms of computational efficiency, SchNet is the most efficient and FieldSchNet enables field-dependent response modeling but with higher cost</p>
+  </section>
+</article>
+</body>
+</html>

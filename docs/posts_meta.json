@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-05-24-Machine-Learning-Interatomic-Potentials--Advancing.html",
+    "title": "Machine Learning Interatomic Potentials: Advancing Open-Source Software for Efficient and Scalable Molecular Simulation",
+    "date": "2026-05-24",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "기계학습 원자간 퍼텐셜(MLIP)의 확장성과 효율성을 높이기 위해 통합된 오픈소스 프레임워크 mlip v2를 개발하여, 복잡한 분자 시뮬레이션을 ab initio 수준의 정확도로 수행할 수 있게 함.",
+    "url": "http://arxiv.org/abs/2605.22698v1"
+  },
+  {
+    "filename": "2026-05-24-Benchmarking-machine-learned-interatomic-potential.html",
+    "title": "Benchmarking machine-learned interatomic potentials for molecular infrared spectroscopy",
+    "date": "2026-05-24",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "분자 적외선 스펙트럼 예측을 위해 5가지 메시지 패싱 신경망(MPNN) 아키텍처를 벤치마킹하여, 회전 대칭성을 고려한 등변(equivariant) 모델들이 불변(invariant) 모델들보다 미지 시스템에 대한 일반화 성능이 우수함을 입증했습니다.",
+    "url": "http://arxiv.org/abs/2605.22367v1"
+  },
+  {
+    "filename": "2026-05-24-High-throughput-study-of-electrical-conductivity-i.html",
+    "title": "High-throughput study of electrical conductivity in ordered metals",
+    "date": "2026-05-24",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "머신러닝과 고처리량 제1원리 계산을 결합하여 280만개 화합물을 스크리닝해 알루미늄 수준의 고전도성 금속간화합물을 발견하고 설계 원리를 규명한 연구.",
+    "url": "http://arxiv.org/abs/2605.22167v1"
+  },
+  {
+    "filename": "2026-05-24-Scalable-On-Policy-Reinforcement-Learning-via-Adap.html",
+    "title": "Scalable On-Policy Reinforcement Learning via Adaptive Batch Scaling",
+    "date": "2026-05-24",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "강화학습에서 훈련 단계별로 정책의 안정성을 측정하여 배치 크기를 적응적으로 조절함으로써, 기존 통념을 깨고 대규모 배치 훈련의 성능 향상을 달성한 연구입니다.",
+    "url": "http://arxiv.org/abs/2605.21557v1"
+  },
+  {
+    "filename": "2026-05-24-Uncertainty-aware-Machine-Learning-Interatomic-Pot.html",
+    "title": "Uncertainty-aware Machine Learning Interatomic Potentials via Learned Functional Perturbations",
+    "date": "2026-05-24",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"program synthesis\")",
+    "one_liner": "기계학습 원자간 상호작용 포텐셜(MLIP)에서 학습된 함수적 섭동을 통해 결정론적 모델을 확률론적 모델로 변환하여 불확실성을 정량화하는 새로운 방법을 제안했습니다.",
+    "url": "http://arxiv.org/abs/2605.19939v1"
+  },
+  {
     "filename": "2026-05-23-Chain-Reactions--How-Nonce-Collisions-in-ECDSA-Com.html",
     "title": "Chain Reactions: How Nonce Collisions in ECDSA Compromise Polygon MEV Searchers",
     "date": "2026-05-23",

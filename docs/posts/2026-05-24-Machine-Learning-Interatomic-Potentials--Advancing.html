@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Learning Interatomic Potentials: Advancing Open-Source Software for Efficient and Scalable Molecular Simulation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>Machine Learning Interatomic Potentials: Advancing Open-Source Software for Efficient and Scalable Molecular Simulation</h1>
+    <div class="meta">
+      <span>✍️ Christoph Brunken, Titouan Cormier, Lucien Walewski</span>
+      <span>📅 2026-05-21</span>
+      <a href="http://arxiv.org/abs/2605.22698v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기계학습 원자간 퍼텐셜(MLIP)의 확장성과 효율성을 높이기 위해 통합된 오픈소스 프레임워크 mlip v2를 개발하여, 복잡한 분자 시뮬레이션을 ab initio 수준의 정확도로 수행할 수 있게 함.<br><br>**문제 정의**: <br>- 기존 MLIP 도구들의 분산화된 툴체인과 제한적 확장성 문제<br>- 소프트웨어 설계의 경직성으로 인한 커스터마이징 어려움  <br>- 대규모 다양한 데이터셋에 대한 훈련 효율성 부족<br>- ML 연구와 실제 분자 시뮬레이션 응용 간의 격차<br><br>**핵심 기여**:<br>- **API 재설계**: 모듈성과 제어성을 향상시킨 통합 확장 가능 프레임워크 구축<br>- **고성능 백엔드 통합**: e3j를 통한 등변 연산(equivariant operations) 가속화로 모델 추론 속도 개선<br>- **eSEN 아키텍처**: Mixture-of-Experts 방식을 적용한 대규모 데이터셋 확장 가능 훈련<br>- **물리 기반 개선**: 전하 모델링과 장거리 상호작용 처리를 통한 정전기학 향상<br>- **고급 시뮬레이션 기능**: NPT 앙상블, nudged elastic band 방법 등 새로운 시뮬레이션 역량<br><br>**의의**: <br>본 연구는 오픈소스 소프트웨어 개발을 통해 복잡한 과학 계산 도구의 접근성과 확장성을 높이는 모범 사례를 제시합니다. 특히 모듈형 설계와 고성능 백엔드 통합 접근법은 프로그램 합성 및 LLM 융합 연구에서 대규모 계산 프레임워크 구축 시 적용 가능한 설계 원칙을 제공하며, 연구-응용 간 격차 해소를 위한 소프트웨어 엔지니어링 전략에 대한 통찰을 줍니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Machine learning interatomic potentials (MLIPs) enable atomistic simulations with near ab initio accuracy at significantly reduced computational cost, but their broader adoption is often limited by fragmented tooling, limited scalability, and inflexible software design. We present mlip v2, a new generation of the mlip library that advances efficient and scalable molecular simulation through a unified and extensible framework. The new release features a targeted API redesign with improved modularity and control, enabling flexible customization of training, data processing, and simulation workflows. It further integrates a new high-performance backend for equivariant operations, e3j, significantly accelerating model inference and simulations. In addition, the framework introduces a range of entirely new capabilities, including the eSEN architecture with a Mixture-of-Experts formulation for scalable training on large and diverse datasets, improved handling of electrostatics through more physically grounded charge modeling and long-range interaction treatment, and advanced simulation features such as NPT ensembles and nudged elastic band methods. Together, these extensions significantly broaden the scope of MLIP applications, enabling efficient modeling of complex, reactive, and out-of-equilibrium systems, and bridging the gap between ML research and practical molecular simulation applications. The library is available on GitHub and on PyPI under the Apache license 2.0.</p>
+  </section>
+</article>
+</body>
+</html>

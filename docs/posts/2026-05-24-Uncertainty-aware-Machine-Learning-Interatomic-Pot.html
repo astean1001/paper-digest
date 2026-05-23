@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uncertainty-aware Machine Learning Interatomic Potentials via Learned Functional Perturbations</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>Uncertainty-aware Machine Learning Interatomic Potentials via Learned Functional Perturbations</h1>
+    <div class="meta">
+      <span>✍️ Olga Zaghen, Maksim Zhdanov, Dario Coscia</span>
+      <span>📅 2026-05-19</span>
+      <a href="http://arxiv.org/abs/2605.19939v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기계학습 원자간 상호작용 포텐셜(MLIP)에서 학습된 함수적 섭동을 통해 결정론적 모델을 확률론적 모델로 변환하여 불확실성을 정량화하는 새로운 방법을 제안했습니다.<br><br>**문제 정의**: <br>- MLIP는 양자역학 시뮬레이션 대비 저비용으로 높은 정확도를 달성하지만, 분포 외(out-of-distribution) 구성에서 조용한 실패(silent failure)가 발생<br>- 기존 불확실성 정량화(UQ) 방법들은 변분추론이나 매개변수적 분포 가정에 의존하여 아키텍처 복잡성과 작업별 하이퍼파라미터 튜닝 필요<br>- 오류 인식 시뮬레이션과 능동 학습을 위한 원칙적 불확실성 정량화가 필수적<br><br>**핵심 기여**:<br>1. **함수적 섭동 학습**: 확률론적 날씨 예측의 발전에서 영감을 받아 결정론적 MLIP를 학습된 함수적 섭동을 통해 확률론적으로 변환<br>2. **CRPS 기반 end-to-end 학습**: Continuous Ranked Probability Score라는 적절한 점수 규칙을 사용하여 전체 모델을 미세조정<br>3. **실증적 성능 향상**: N-body charged particle 벤치마크에서 BLIP 대비 CRPS 19-32% 개선, 실리카에서 불확실성-오류 간 Spearman 상관관계 0.75→0.84로 향상<br><br>**의의**: <br>- 아키텍처 복잡성을 줄이면서도 우수한 불확실성 정량화를 달성하는 단순하고 효과적인 접근법 제시<br>- 형식 검증과 심볼릭 실행에서 중요한 불확실성 처리 문제에 대한 새로운 관점 제공<br>- Foundation model(Orb-v3) 미세조정을 통한 확장성 입증으로 실용적 적용 가능성 시사</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Machine Learning Interatomic Potentials (MLIPs) achieve near ab initio accuracy at a fraction of the cost of quantum-mechanical simulations, yet they remain prone to silent failures on out-of-distribution configurations, making principled uncertainty quantification (UQ) essential for error-aware simulations and active learning. Existing non-ensemble UQ methods for MLIPs rely either on variational inference or on parametric distributional assumptions, both of which add architectural complexity and hyper-parameters that must be tuned per task. Inspired by recent advances in probabilistic weather forecasting, we propose a simpler alternative: turn a deterministic MLIP into a probabilistic one through learned functional perturbations and finetune it end-to-end with the Continuous Ranked Probability Score (CRPS), a proper scoring rule. We validate the approach with an equivariant GNN (P-EGNN) trained from scratch and by finetuning the foundation model the Orb-v3 for silica. On the N-body charged particle benchmark, P-EGNN improves CRPS over the state-of-the-art Bayesian MLIP method BLIP by 19-32% across all training sizes; on silica, P-Orb raises the Spearman correlation between predicted uncertainty and actual error from 0.75 (BLIP-Orb) to 0.84.</p>
+  </section>
+</article>
+</body>
+</html>

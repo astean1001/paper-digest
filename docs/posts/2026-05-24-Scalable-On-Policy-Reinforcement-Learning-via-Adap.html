@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scalable On-Policy Reinforcement Learning via Adaptive Batch Scaling</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND ab:"e-graph" AND (ab:"deobfuscation" OR ab:"program synthesis")</span>
+    <h1>Scalable On-Policy Reinforcement Learning via Adaptive Batch Scaling</h1>
+    <div class="meta">
+      <span>✍️ Jongchan Park</span>
+      <span>📅 2026-05-20</span>
+      <a href="http://arxiv.org/abs/2605.21557v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 강화학습에서 훈련 단계별로 정책의 안정성을 측정하여 배치 크기를 적응적으로 조절함으로써, 기존 통념을 깨고 대규모 배치 훈련의 성능 향상을 달성한 연구입니다.<br><br>**문제 정의**: <br>강화학습에서는 데이터 분포의 비정상성(non-stationarity) 때문에 배치 크기를 늘리면 성능이 오히려 저하되어 대규모 병렬 훈련이 어렵다는 기존 한계를 해결하려 했습니다. 특히 초기 단계에서는 빠른 정책 변화로 인해 작은 배치가 필요하지만, 후기 단계에서는 안정적 수렴을 위해 큰 배치가 유리하다는 모순적 요구사항을 다루었습니다.<br><br>**핵심 기여**:<br>1. **Behavioral Divergence 메트릭**: 연속된 업데이트 간 행동 수준의 변화를 측정하여 정책의 비정상성을 정량화하는 새로운 지표 제안<br>2. **Adaptive Batch Scaling (ABS) 알고리즘**: 정책 변동성에 반비례하여 배치 크기를 동적으로 조절하는 적응적 스케일링 방법론<br>3. **실증적 발견**: 큰 네트워크와 큰 배치 크기의 조합이 최고 성능을 달성한다는, 기존 강화학습 통념을 뒤엎는 결과 입증<br><br>**의의**: <br>이 연구는 neurosymbolic 접근법에서 중요한 방법론적 시사점을 제공합니다. equality saturation과 e-graph 기반 프로그램 합성에서도 탐색 초기에는 다양성이 중요하고 후기에는 수렴 안정성이 핵심인데, 이와 유사한 적응적 전략을 통해 계산 효율성을 크게 개선할 수 있습니다. 특히 대규모 프로그램 변환 시스템에서 배치 처리와 병렬화 최적화에 직접 응용 가능한 통찰을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Conventional wisdom holds that large-batch training is fundamentally incompatible with Reinforcement Learning (RL) - beyond a modest threshold, increasing batch sizes typically yields diminishing returns or performance degradation due to the inherent non-stationarity of the data distribution. We challenge this view by observing that non-stationarity is not a fixed property of RL, but evolves throughout training: early stages exhibit rapid behavioral shifts that demand small batches for plasticity, whereas late stages approach a quasi-stationary regime where large batches enable precise convergence. Motivated by this observation, we propose Adaptive Batch Scaling (ABS), that dynamically adjusts the effective batch size according to the stability of the learning policy. Central to ABS is Behavioral Divergence, a novel metric that quantifies policy non-stationarity by measuring action-level shifts between consecutive updates, which we use to scale batch size inversely to policy volatility. Integrated with the Parallelised Q-Network (PQN) algorithm and evaluated on the ALE benchmark, ABS seamlessly reconciles early-stage plasticity with late-stage stable convergence. Strikingly, contrary to conventional wisdom, our results reveal that the combination of larger networks and larger batch sizes achieves the best performance - a scaling behavior previously thought to be unattainable in RL, now unlocked through adaptive batch control.</p>
+  </section>
+</article>
+</body>
+</html>
