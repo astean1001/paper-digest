@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Force-Kernel Reformulation of the Extended-System Adaptive Biasing Force for Free-Energy Calculations</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"MBA deobfuscation" OR (ab:"mixed boolean arithmetic" AND ab:"equality saturation")</span>
+    <h1>A Force-Kernel Reformulation of the Extended-System Adaptive Biasing Force for Free-Energy Calculations</h1>
+    <div class="meta">
+      <span>✍️ Christopher Kang, Rahul Verma, Aditya Sonpal</span>
+      <span>📅 2026-05-20</span>
+      <a href="http://arxiv.org/abs/2605.21720v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기존 히스토그램 기반 eABF를 가우시안 커널과 회귀 기법으로 개선하여 자유에너지 계산의 초기 수렴 속도를 크게 향상시킨 새로운 분자동역학 방법론을 제시했습니다.<br><br>**문제 정의**: <br>기존의 확장계 적응 편향력(eABF) 방법은 히스토그램 기반 평균력 누적 방식을 사용하여 자유에너지 계산 시 초기 단계에서 충분한 샘플링이 이루어지기 전까지 부정확하고 불안정한 결과를 보이며, 최소 카운트 임계값 요구사항으로 인해 수렴 속도가 느린 문제가 있었습니다.<br><br>**핵심 기여**: <br>1. **Force-Kernel eABF(FK-eABF)** 개발: 히스토그램을 희소 가우시안 커널 집합으로 대체하고 Nadaraya-Watson 회귀를 통해 편향력을 복원하는 새로운 프레임워크<br>2. **자기감쇠 탐색력(self-attenuating exploration force)** 도입: 장벽 높이에 대한 사전 지식 없이도 효율적인 샘플링이 가능한 보조 힘 구현<br>3. **광범위한 시간 스케일 검증**: 30ps(양자역학 수준)부터 마이크로초(고전역학 수준)까지 4차수 이상의 시뮬레이션 시간에서 성능 입증<br><br>**의의**: <br>이 연구는 sparse population과 커널 기반 회귀를 활용한 최적화 접근법을 제시하여, 제약 기반 패치 합성이나 프로그램 분석에서 equality saturation과 같은 sparse한 상태 공간을 효율적으로 탐색하는 문제와 방법론적으로 유사한 통찰을 제공합니다. 특히 초기 데이터가 부족한 상황에서도 안정적인 추정이 가능한 커널 기반 접근법은 코드 변환이나 최적화 과정에서 중간 상태의 효율적 탐색에 응용할 수 있는 가능성을 시사합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We introduce force-kernel extended-system adaptive biasing force (FK-eABF), a force-based kernel reformulation of eABF that replaces the histogram-based mean-force accumulator of conventional eABF with a sparse population of Gaussian kernels storing local running-mean forces. Biasing forces are recovered by Nadaraya-Watson regression, yielding smooth estimates from the earliest stages of a simulation without a minimum-count threshold, while the same kernel population also defines an auxiliary, self-attenuating exploration force that requires no prior knowledge of barrier heights. On N-acetyl-N'-methylalanylamide in explicit water, FK-eABF achieves full free-energy landscape coverage faster than well-tempered metadynamics (WT-MetaD), on-the-fly probability enhanced sampling (OPES), and WTM-eABF, while all four methods converge to comparable accuracy given sufficient time. FK-eABF also retains long-time accuracy: on the DFG-in/out transition of Abl1 kinase, multi-microsecond simulations recover the established near-isoenergetic balance between states. At the opposite extreme, applied to the electrocyclic ring closure of 1,3-butadiene at the ab initio molecular dynamics level, FK-eABF recovers the free-energy landscape within 30 ps. Together, these benchmarks, spanning more than four orders of magnitude in simulation time, establish FK-eABF as more than a kernelized implementation of eABF: A force-based kernel reformulation that delivers faster early-time convergence without sac</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-05-25-Toward-the-Rational-Design-of-Molecular-Field-Coup.html",
+    "title": "Toward the Rational Design of Molecular Field-Coupled Nanocomputing Candidates",
+    "date": "2026-05-25",
+    "source": "arXiv",
+    "topic": "ti:\"MBA deobfuscation\" OR (ab:\"mixed boolean arithmetic\" AND ab:\"equality saturation\")",
+    "one_liner": "분자 기반 나노컴퓨팅(MolFCN)에서 안정적인 논리 상태와 신뢰성 있는 정보 전파가 가능한 분자 후보를 체계적으로 설계하고 검증하는 통합 프레임워크 LUFFY를 제안한 연구입니다.",
+    "url": "http://arxiv.org/abs/2605.22196v1"
+  },
+  {
+    "filename": "2026-05-25-A-Force-Kernel-Reformulation-of-the-Extended-Syste.html",
+    "title": "A Force-Kernel Reformulation of the Extended-System Adaptive Biasing Force for Free-Energy Calculations",
+    "date": "2026-05-25",
+    "source": "arXiv",
+    "topic": "ti:\"MBA deobfuscation\" OR (ab:\"mixed boolean arithmetic\" AND ab:\"equality saturation\")",
+    "one_liner": "기존 히스토그램 기반 eABF를 가우시안 커널과 회귀 기법으로 개선하여 자유에너지 계산의 초기 수렴 속도를 크게 향상시킨 새로운 분자동역학 방법론을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2605.21720v1"
+  },
+  {
+    "filename": "2026-05-25-Huge-ultrafast-spin-Seebeck-effect-mediated-by-las.html",
+    "title": "Huge ultrafast spin Seebeck effect mediated by laser-excited superdiffusive magnon currents",
+    "date": "2026-05-25",
+    "source": "arXiv",
+    "topic": "ti:\"MBA deobfuscation\" OR (ab:\"mixed boolean arithmetic\" AND ab:\"equality saturation\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2605.21389v1"
+  },
+  {
+    "filename": "2026-05-25-Non-equilibrium-exciton-dynamics-in-tailored-molec.html",
+    "title": "Non-equilibrium exciton dynamics in tailored molecular potentials of Rydberg ion crystals",
+    "date": "2026-05-25",
+    "source": "arXiv",
+    "topic": "ti:\"MBA deobfuscation\" OR (ab:\"mixed boolean arithmetic\" AND ab:\"equality saturation\")",
+    "one_liner": "라이드베리 이온 결정에서 강하게 결합된 전자-진동 자유도와 장거리 상호작용을 활용하여 생화학적 엑시톤 전송 메커니즘을 양자 시뮬레이션으로 연구한 논문입니다.",
+    "url": "http://arxiv.org/abs/2605.21250v1"
+  },
+  {
+    "filename": "2026-05-25-Probing-the-Rare-Four-Bottom-Higgs-Decay--H-to-b-b.html",
+    "title": "Probing the Rare Four-Bottom Higgs Decay $H\\to b\\bar b b\\bar b$ at the HL-LHC and ILC",
+    "date": "2026-05-25",
+    "source": "arXiv",
+    "topic": "ti:\"MBA deobfuscation\" OR (ab:\"mixed boolean arithmetic\" AND ab:\"equality saturation\")",
+    "one_liner": "표준모형 힉스 보손의 희귀 붕괴 과정 H→b𝑏̄b𝑏̄을 HL-LHC와 ILC에서 탐지하기 위한 다변수 분석 방법론을 제시하고, 복잡한 간섭 효과를 포함한 정밀한 신호 추출 전략을 개발한 연구입니다.",
+    "url": "http://arxiv.org/abs/2605.19935v1"
+  },
+  {
     "filename": "2026-05-24-Machine-Learning-Interatomic-Potentials--Advancing.html",
     "title": "Machine Learning Interatomic Potentials: Advancing Open-Source Software for Efficient and Scalable Molecular Simulation",
     "date": "2026-05-24",
