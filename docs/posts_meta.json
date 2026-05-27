@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-05-28-An-empirical-analysis-of-vulnerability-detection-t.html",
+    "title": "An empirical analysis of vulnerability detection tools for solidity smart contracts",
+    "date": "2026-05-28",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\") AND (ab:\"Solidity\" OR ab:\"EVM\")",
+    "one_liner": "Solidity 스마트 컨트랙트 취약점 탐지 도구 20개를 2,182개 수동 라벨링 데이터셋으로 실증 평가하여, 3개 도구 조합으로 76.78% 탐지율을 달성할 수 있음을 확인한 연구",
+    "url": "http://arxiv.org/abs/2505.15756v2"
+  },
+  {
     "filename": "2026-05-25-Toward-the-Rational-Design-of-Molecular-Field-Coup.html",
     "title": "Toward the Rational Design of Molecular Field-Coupled Nanocomputing Candidates",
     "date": "2026-05-25",
