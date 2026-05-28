@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORACAL: A Robust and Explainable Multimodal Framework for Smart Contract Vulnerability Detection with Causal Graph Enrichment</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>ORACAL: A Robust and Explainable Multimodal Framework for Smart Contract Vulnerability Detection with Causal Graph Enrichment</h1>
+    <div class="meta">
+      <span>✍️ Tran Duong Minh Dai, Triet Huynh Minh Le, M. Ali Babar</span>
+      <span>📅 2026-03-30</span>
+      <a href="http://arxiv.org/abs/2603.28128v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스마트 컨트랙트 취약점 탐지를 위해 제어 흐름, 데이터 흐름, 호출 그래프를 통합한 멀티모달 GNN 프레임워크를 제시하고, RAG와 인과적 추론을 통해 설명 가능하고 강건한 탐지 성능을 달성했습니다.<br><br>**문제 정의**: <br>기존 GNN 기반 스마트 컨트랙트 취약점 탐지 방법들이 (1) 동질 그래프는 제어 흐름과 데이터 의존성 간의 상호작용을 포착하지 못하고, (2) 이질 그래프는 깊은 의미적 이해가 부족해 적대적 공격에 취약하며, (3) 대부분의 블랙박스 모델은 설명 가능한 증거를 제공하지 못해 전문적 감사에서의 신뢰성이 떨어지는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>- **ORACAL 프레임워크**: CFG, DFG, CG를 통합한 이질적 멀티모달 그래프 학습 구조 설계<br>- **RAG + LLM 통합**: 중요한 서브그래프에 전문가 수준의 보안 컨텍스트를 선택적으로 강화<br>- **인과적 어텐션 메커니즘**: 진짜 취약점 지표와 허위 상관관계를 분리하는 추론 방법<br>- **설명 가능성**: PGExplainer를 통한 서브그래프 수준의 취약점 트리거 경로 식별<br>- **성능**: 기존 최고 방법 대비 최대 39.6%p 향상, Macro F1 91.28% 달성<br><br>**의의**: <br>이 연구는 스마트 컨트랙트 보안 분야에서 중요한 진전을 보여줍니다. 특히 멀티모달 그래프 접근법과 설명 가능성의 결합은 실제 감사 환경에서의 실용성을 크게 높였습니다. 연구자의 스마트 컨트랙트 보안 연구에 직접적으로 활용 가능한 방법론이며, RAG와 인과적 추론을 통한 강건성 향상 접근법은 향후 연구 방향에 중요한 시사점을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Although Graph Neural Networks (GNNs) have shown promise for smart contract vulnerability detection, they still face significant limitations. Homogeneous graph models fail to capture the interplay between control flow and data dependencies, while heterogeneous graph approaches often lack deep semantic understanding, leaving them susceptible to adversarial attacks. Moreover, most black-box models fail to provide explainable evidence, hindering trust in professional audits. To address these challenges, we propose ORACAL (Observable RAG-enhanced Analysis with CausAL reasoning), a heterogeneous multimodal graph learning framework that integrates Control Flow Graph (CFG), Data Flow Graph (DFG), and Call Graph (CG). ORACAL selectively enriches critical subgraphs with expert-level security context from Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs), and employs a causal attention mechanism to disentangle true vulnerability indicators from spurious correlations. For transparency, the framework adopts PGExplainer to generate subgraph-level explanations identifying vulnerability triggering paths. Experiments on large-scale datasets demonstrate that ORACAL achieves state-of-the-art performance, outperforming MANDO-HGT, MTVHunter, GNN-SC, and SCVHunter by up to 39.6 percentage points, with a peak Macro F1 of 91.28% on the primary benchmark. ORACAL maintains strong generalization on out-of-distribution datasets with 91.8% on CGT Weakness and 77.1% on DAppScan. In ex</p>
+  </section>
+</article>
+</body>
+</html>

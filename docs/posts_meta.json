@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-05-29-ORACAL--A-Robust-and-Explainable-Multimodal-Framew.html",
+    "title": "ORACAL: A Robust and Explainable Multimodal Framework for Smart Contract Vulnerability Detection with Causal Graph Enrichment",
+    "date": "2026-05-29",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "스마트 컨트랙트 취약점 탐지를 위해 제어 흐름, 데이터 흐름, 호출 그래프를 통합한 멀티모달 GNN 프레임워크를 제시하고, RAG와 인과적 추론을 통해 설명 가능하고 강건한 탐지 성능을 달성했습니다.",
+    "url": "http://arxiv.org/abs/2603.28128v2"
+  },
+  {
     "filename": "2026-05-28-An-empirical-analysis-of-vulnerability-detection-t.html",
     "title": "An empirical analysis of vulnerability detection tools for solidity smart contracts",
     "date": "2026-05-28",
