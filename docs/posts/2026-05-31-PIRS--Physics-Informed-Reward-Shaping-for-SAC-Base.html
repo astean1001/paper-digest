@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIRS: Physics-Informed Reward Shaping for SAC-Based Building Energy Management</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"language model"</span>
+    <h1>PIRS: Physics-Informed Reward Shaping for SAC-Based Building Energy Management</h1>
+    <div class="meta">
+      <span>✍️ Shadmehr Zaregarizi, Khashayar Yavari</span>
+      <span>📅 2026-05-27</span>
+      <a href="http://arxiv.org/abs/2605.28232v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 건물 에너지 관리를 위한 강화학습에서 기존의 임시방편적 보상 함수를 ISO 7730 PMV 열적 쾌적성 물리 모델로 대체하여 성능을 개선한 연구입니다.<br><br>**문제 정의**: <br>건물의 거주자 쾌적성과 에너지 효율성을 동시에 최적화하는 강화학습 제어기에서 보상 함수 설계가 여전히 임의적이고 비체계적인 문제를 해결하고자 했습니다. 기존 방법들은 단순한 온도 편차나 수작업 휴리스틱에 의존하여 물리적 근거가 부족했습니다.<br><br>**핵심 기여**:<br>- **PIRS(Physics-Informed Reward Shaping)** 제안: ISO 7730 PMV(Predicted Mean Vote) 공식을 SAC 기반 다목적 보상 함수에 통합<br>- 물리학 기반 쾌적성 신호를 통해 보상의 해석가능성 향상 및 표준 기반 쾌적성 프록시 제공<br>- CityLearn 환경에서 기존 규칙 기반 제어기 대비 부하 램핑(1.78x vs 2.4x) 및 일일 피크 수요에서 상당한 성능 개선 달성<br><br>**의의**: <br>이 연구는 도메인별 물리적 지식을 강화학습의 보상 설계에 체계적으로 통합하는 접근법을 보여줍니다. 연구자의 프로그램 분석/합성 분야와는 직접적 연관성이 제한적이지만, 도메인 특화 지식을 AI 시스템에 효과적으로 인코딩하는 방법론적 통찰을 제공하며, 향후 블록체인이나 스마트 컨트랙트 등 다른 도메인에서도 물리적/논리적 제약을 보상 함수에 통합하는 연구에 참고할 수 있습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Occupant comfort and grid-aware energy efficiency are competing objectives whose joint optimization depends critically on how reward functions are specified in deep reinforcement learning (DRL) controllers for buildings. Yet reward design remains largely ad hoc: comfort terms are either hand-tuned heuristics or simple temperature-deviation proxies without explicit grounding in thermal-comfort physics. We present PIRS (Physics-Informed Reward Shaping), which replaces these ad-hoc comfort proxies with the ISO 7730 Predicted Mean Vote (PMV) formulation inside a weighted multi-objective reward for Soft Actor-Critic (SAC). By anchoring the comfort signal in the ISO 7730 PMV formulation, PIRS improves reward interpretability and provides a standards-grounded comfort proxy without changing any other component of the learning pipeline. We evaluate PIRS in CityLearn v2.1.2 (challenge 2022 phase 1) with a central SAC agent trained for 50k steps over five random seeds, and compare against a rule-based controller (RBC), a manually engineered reward (E2), an energy-only reward (E3), and a naive temperature-deviation comfort reward (E4). District-level key performance indicators (KPIs), reported as ratios versus RBC, show that PIRS attains cost, carbon, and electricity metrics on par with the manual baseline while substantially outperforming non-physics-grounded designs -- particularly on load ramping (1.78x vs. ~2.4x RBC) and daily peak demand. All DRL policies remain above RBC at this tr</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-05-31-PIRS--Physics-Informed-Reward-Shaping-for-SAC-Base.html",
+    "title": "PIRS: Physics-Informed Reward Shaping for SAC-Based Building Energy Management",
+    "date": "2026-05-31",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"language model\"",
+    "one_liner": "건물 에너지 관리를 위한 강화학습에서 기존의 임시방편적 보상 함수를 ISO 7730 PMV 열적 쾌적성 물리 모델로 대체하여 성능을 개선한 연구입니다.",
+    "url": "http://arxiv.org/abs/2605.28232v1"
+  },
+  {
     "filename": "2026-05-29-ORACAL--A-Robust-and-Explainable-Multimodal-Framew.html",
     "title": "ORACAL: A Robust and Explainable Multimodal Framework for Smart Contract Vulnerability Detection with Causal Graph Enrichment",
     "date": "2026-05-29",
