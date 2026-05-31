@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Towards exascale fully relativistic pseudopotential density functional theory calculations enabled by mixed-precision computation and compressed-communication using residual based subspace iteration</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND (ab:"deobfuscation" OR ab:"e-graph" OR ab:"MBA")</span>
+    <h1>Towards exascale fully relativistic pseudopotential density functional theory calculations enabled by mixed-precision computation and compressed-communication using residual based subspace iteration</h1>
+    <div class="meta">
+      <span>✍️ Nikhil Kodali, Gourab Panigrahi, Nishant Gupta</span>
+      <span>📅 2026-05-28</span>
+      <a href="http://arxiv.org/abs/2605.30128v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 상대론적 효과를 고려한 밀도범함수이론(DFT) 계산의 높은 연산 비용 문제를 혼합 정밀도 연산과 압축 통신 기법으로 해결하여 엑사스케일 계산을 가능하게 한 연구.<br><br>**문제 정의**: <br>비공선성 자기현상(NC magnetism)과 스핀-궤도 결합(SOC)을 포함한 상대론적 DFT 계산은 복소수 2성분 파동함수를 요구하여 기존 대비 훨씬 큰 고유값 문제를 발생시키고, 이로 인해 계산 비용이 급격히 증가하는 문제가 있었음.<br><br>**핵심 기여**:<br>1. **R-ChFSI 알고리즘**: 불완전한 행렬-벡터 곱에도 견고한 잔차 기반 체비셰프 필터링 부분공간 반복법 개발<br>2. **혼합 정밀도 최적화**: 블록 부동소수점 압축을 통한 4배 이상의 MPI 통신 압축률 달성하면서도 배정밀도 수준의 정확도 유지<br>3. **매트릭스-프리 전략**: 유한요소 포아송 솔버 가속화를 위한 메모리 효율적 접근법<br>4. **통신 효율적 밴드 분할**: 확장성 향상을 위한 새로운 병렬화 알고리즘<br><br>**의의**: <br>엑사스케일 아키텍처에서 최대 100,000개 전자를 포함하는 대규모 상대론적 DFT 계산을 가능하게 함으로써 재료과학 시뮬레이션의 새로운 영역을 개척했으며, 특히 혼합 정밀도 연산과 압축 통신 기법은 고성능 컴퓨팅의 일반적인 메모리 대역폭 병목과 통신 오버헤드 문제 해결에 광범위하게 적용 가능한 핵심 방법론을 제시함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Noncollinear (NC) magnetism and spin-orbit coupling (SOC) are indispensable for predictive ab initio materials simulations with pronounced relativistic effects and magnetic frustration, yet they significantly increase the cost of cubic-scaling density functional theory (DFT) by introducing complex 2-component wavefunctions per electron and consequently much larger eigenproblems. We present a GPU-centric high-performance framework for NC-SOC DFT that combines: (i) algorithmic advances for solving finite-element (FE) discretized DFT equations; (ii) residual-based Chebyshev filtered subspace iteration (R-ChFSI), tolerant to inexact matrix-vector products, for the resulting sparse generalized eigenproblem; (iii) a matrix-free strategy for accelerating FE Poisson solver; (iv) R-ChFSI-enabled mixed-precision computation with block floating-point compressed MPI communication at compression ratios over 4x, preserving double-precision robustness while reducing compute and data movement costs; and (v) a communication efficient band-partitioning algorithm to improve scalability. Numerical results demonstrate improved time-to-solution and excellent scaling on exascale architectures, enabling fully relativistic pseudopotential DFT simulations of up to 100,000 electrons.</p>
+  </section>
+</article>
+</body>
+</html>

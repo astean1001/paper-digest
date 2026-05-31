@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-01-Towards-exascale-fully-relativistic-pseudopotentia.html",
+    "title": "Towards exascale fully relativistic pseudopotential density functional theory calculations enabled by mixed-precision computation and compressed-communication using residual based subspace iteration",
+    "date": "2026-06-01",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"deobfuscation\" OR ab:\"e-graph\" OR ab:\"MBA\")",
+    "one_liner": "상대론적 효과를 고려한 밀도범함수이론(DFT) 계산의 높은 연산 비용 문제를 혼합 정밀도 연산과 압축 통신 기법으로 해결하여 엑사스케일 계산을 가능하게 한 연구.",
+    "url": "http://arxiv.org/abs/2605.30128v1"
+  },
+  {
+    "filename": "2026-06-01-Error-corrected-phase-estimation-averaged-over-var.html",
+    "title": "Error-corrected phase estimation averaged over variable grids on a trapped-ion quantum computer: hyperacuity spectra of a CO molecule adsorbed onto $χ$-Fe$_5$C$_2$",
+    "date": "2026-06-01",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"deobfuscation\" OR ab:\"e-graph\" OR ab:\"MBA\")",
+    "one_liner": "양자 위상 추정의 낮은 격자 해상도와 환경 노이즈 문제를 해결하기 위해 다중 원점 이동과 연속 매개변수화를 결합한 QAVG 기법을 제안하고, 실제 양자컴퓨터에서 분자 흡착 시스템의 여기 스펙트럼을 정확히 재구성했습니다.",
+    "url": "http://arxiv.org/abs/2605.29674v1"
+  },
+  {
+    "filename": "2026-06-01-How-reproducible-are-first-principles-simulations.html",
+    "title": "How reproducible are first-principles simulations of liquid water?",
+    "date": "2026-06-01",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"deobfuscation\" OR ab:\"e-graph\" OR ab:\"MBA\")",
+    "one_liner": "동일한 밀도범함수(revPBE-D3)를 사용한 액체 물의 제1원리 시뮬레이션에서 기존 연구들 간 20% 이상의 큰 차이를 발견하고, 머신러닝 원자간 포텐셜과 엄밀한 DFT 계산을 결합하여 이러한 재현성 문제를 해결했습니다.",
+    "url": "http://arxiv.org/abs/2605.28798v1"
+  },
+  {
+    "filename": "2026-06-01-Symmetry-Selective-Topological-Magnon-Engineering.html",
+    "title": "Symmetry-Selective Topological Magnon Engineering by Phonon Angular Momentum",
+    "date": "2026-06-01",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"deobfuscation\" OR ab:\"e-graph\" OR ab:\"MBA\")",
+    "one_liner": "원형 및 타원형 포논의 각운동량을 이용하여 마그논 밴드 구조의 위상학적 성질을 대칭성 선택적으로 제어할 수 있는 새로운 방법을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2605.28425v1"
+  },
+  {
+    "filename": "2026-06-01-Adapting-Automotive-Aerodynamics-Surrogates-to-New.html",
+    "title": "Adapting Automotive Aerodynamics Surrogates to New Vehicle Families via Transfer Learning",
+    "date": "2026-06-01",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"deobfuscation\" OR ab:\"e-graph\" OR ab:\"MBA\")",
+    "one_liner": "자동차 공기역학 CFD 시뮬레이션에서 사전훈련된 Transformer 대리모델을 새로운 차량군에 적응시킬 때, LoRA가 기하학적 표현의 전이학습을 가능하게 하는 핵심 메커니즘임을 입증한 연구입니다.",
+    "url": "http://arxiv.org/abs/2605.27968v1"
+  },
+  {
     "filename": "2026-05-31-PIRS--Physics-Informed-Reward-Shaping-for-SAC-Base.html",
     "title": "PIRS: Physics-Informed Reward Shaping for SAC-Based Building Energy Management",
     "date": "2026-05-31",

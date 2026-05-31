@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error-corrected phase estimation averaged over variable grids on a trapped-ion quantum computer: hyperacuity spectra of a CO molecule adsorbed onto $χ$-Fe$_5$C$_2$</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND (ab:"deobfuscation" OR ab:"e-graph" OR ab:"MBA")</span>
+    <h1>Error-corrected phase estimation averaged over variable grids on a trapped-ion quantum computer: hyperacuity spectra of a CO molecule adsorbed onto $χ$-Fe$_5$C$_2$</h1>
+    <div class="meta">
+      <span>✍️ Taichi Kosugi, Hirofumi Nishi, Keito Kasebayashi</span>
+      <span>📅 2026-05-28</span>
+      <a href="http://arxiv.org/abs/2605.29674v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 양자 위상 추정의 낮은 격자 해상도와 환경 노이즈 문제를 해결하기 위해 다중 원점 이동과 연속 매개변수화를 결합한 QAVG 기법을 제안하고, 실제 양자컴퓨터에서 분자 흡착 시스템의 여기 스펙트럼을 정확히 재구성했습니다.<br><br>**문제 정의**: 현재 양자 하드웨어에서 양자 위상 추정(QPE)을 이용한 다전자 시스템의 여기 스펙트럼 추출이 낮은 격자 해상도와 환경 노이즈로 인해 실용성이 제한되는 문제를 해결하려 했습니다.<br><br>**핵심 기여**: <br>- 다중 격자 원점 이동과 물리적으로 동기화된 연속 매개변수화를 결합한 버니어형 접근법인 QAVG(QPE averaged over variable grids) 기법 개발<br>- Quantinuum H2-2 양자컴퓨터에서 물리적 QPE 회로와 Steane 코드 기반 논리적 QPE 회로 모두를 사용한 실험적 검증<br>- CO 분자가 χ-Fe₅C₂ 표면에 흡착된 시스템에 대한 end-to-end 워크플로우 구현<br>- 스펙트럼 누설로 인한 국소 최솟값을 억제하여 최적화 안정성 향상<br><br>**의의**: 조기 내결함성 양자컴퓨터 시대를 향한 상관 스펙트럼의 견고한 양자 시뮬레이션 경로를 제시했으며, 노이즈가 있는 환경에서도 명목상의 QPE 해상도보다 훨씬 작은 편차로 정확한 스펙트럼 재구성이 가능함을 실증했습니다. 이는 양자 컴퓨팅을 활용한 실용적인 분자 시스템 연구의 가능성을 크게 높였습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Quantum phase estimation (QPE) is an underlying technology for extracting the excitation spectra of many-electron systems, yet its practical use on current hardware is hindered by low grid resolution and environmental noises. Here we propose QPE averaged over variable grids (QAVG), a vernier-type approach that combines low-resolution QPE with multiple origin shifts and physically motivated continuous parametrization to reconstruct the spectra accurately. We introduce this approach into an end-to-end workflow for the {\it ab initio}-based model system for a CO molecule adsorbed onto the $χ$-Fe$_5$C$_2$ surface. We perform experiments on Quantinuum H2-2 using both physical QPE circuits and logical QPE circuits encoded in the Steane code with offline bit-flip correction. We demonstrate that QAVG accurately reconstructs the spectra with deviations much smaller than the nominal QPE resolution, even when the noisy histograms are used. The cost landscapes averaged over the shifted grids substantially suppress the local minima arising from the spectral leakage, thereby stabilizing the optimization of trial parameters. These results indicate that QAVG provides a robust route to quantum simulations of correlated spectra toward the era of early-fault-tolerant quantum computers.</p>
+  </section>
+</article>
+</body>
+</html>
