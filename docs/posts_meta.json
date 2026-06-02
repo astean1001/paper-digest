@@ -1,5 +1,41 @@
 [
   {
+    "filename": "2026-06-03-Tridirectional-Discriminating-Power-Formal-Verific.html",
+    "title": "Tridirectional Discriminating-Power Formal Verification of Smart Contract Reentrancy Defense Against Production-Deployed Solidity Source",
+    "date": "2026-06-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"signature analysis\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "OpenZeppelin 리엔트런시 가드 패턴의 정확성을 실제 운영 중인 Solidity 코드에 대해 Lean 4로 기계 검증한 최초의 연구로, 공격 차단-정상 실행 보존-경계 사례 구분의 3방향 판별력을 모두 증명했습니다.",
+    "url": "http://arxiv.org/abs/2606.01794v1"
+  },
+  {
+    "filename": "2026-06-03-Generating-Move-Smart-Contracts-based-on-Concepts.html",
+    "title": "Generating Move Smart Contracts based on Concepts",
+    "date": "2026-06-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"signature analysis\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "Move 언어의 제한된 학습 데이터 문제를 해결하기 위해 개념 지식 그래프와 검증된 코드 예제를 활용하여 LLM 기반 스마트 컨트랙트 생성 성능을 향상시키는 ConMover 프레임워크를 제안함.",
+    "url": "http://arxiv.org/abs/2412.12513v1"
+  },
+  {
+    "filename": "2026-06-03-Formally-Verifying-a-Real-World-Smart-Contract.html",
+    "title": "Formally Verifying a Real World Smart Contract",
+    "date": "2026-06-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"signature analysis\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "실제 배포된 최신 Solidity 스마트 컨트랙트에 대해 형식 검증이 가능한 도구를 찾고 평가한 실용적 연구입니다.",
+    "url": "http://arxiv.org/abs/2307.02325v1"
+  },
+  {
+    "filename": "2026-06-03-Smart-Contract-Generation-for-Inter-Organizational.html",
+    "title": "Smart Contract Generation for Inter-Organizational Process Collaboration",
+    "date": "2026-06-03",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"signature analysis\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "조직 간 프로세스 협력을 위한 블록체인 스마트 컨트랙트를 BPMN 모델에서 자동 생성할 때, 모델 검증을 통해 데드락 등의 문제를 사전에 방지하는 프레임워크를 제안했습니다.",
+    "url": "http://arxiv.org/abs/2303.09257v1"
+  },
+  {
     "filename": "2026-06-01-Towards-exascale-fully-relativistic-pseudopotentia.html",
     "title": "Towards exascale fully relativistic pseudopotential density functional theory calculations enabled by mixed-precision computation and compressed-communication using residual based subspace iteration",
     "date": "2026-06-01",

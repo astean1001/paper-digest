@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generating Move Smart Contracts based on Concepts</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"signature analysis" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>Generating Move Smart Contracts based on Concepts</h1>
+    <div class="meta">
+      <span>✍️ Rabimba Karanjai, Sam Blackshear, Lei Xu</span>
+      <span>📅 2024-12-17</span>
+      <a href="http://arxiv.org/abs/2412.12513v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Move 언어의 제한된 학습 데이터 문제를 해결하기 위해 개념 지식 그래프와 검증된 코드 예제를 활용하여 LLM 기반 스마트 컨트랙트 생성 성능을 향상시키는 ConMover 프레임워크를 제안함.<br><br>**문제 정의**: <br>형식 검증이 가능한 새로운 스마트 컨트랙트 언어인 Move의 경우, 기존 언어 대비 학습 데이터가 부족하여 LLM이 효과적인 코드 생성을 수행하기 어려운 저자원(low-resource) 코드 생성 문제에 직면함.<br><br>**핵심 기여**:<br>1. **ConMover 프레임워크**: Move 개념의 지식 그래프와 소규모 검증된 코드 예제를 활용한 neurosymbolic 접근법<br>2. **다중 에이전트 시스템**: 개념 검색, 계획 수립, 코딩, 디버깅 에이전트를 반복적으로 통합하여 코드를 점진적으로 개선<br>3. **개념 기반 생성**: 자연어 설명에서 관련 Move 개념을 추출하고 이를 바탕으로 구조화된 코드 생성 수행<br><br>**의의**: <br>형식 검증과 LLM을 결합한 neurosymbolic 접근법으로, 프로그램 분석/합성과 LLM 융합 연구에 직접적으로 적용 가능함. 특히 도메인별 지식을 체계화하여 LLM 성능을 향상시키는 방법론은 다른 저자원 도메인의 코드 생성 문제에도 확장 적용할 수 있어 연구적 가치가 높음.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>The growing adoption of formal verification for smart contracts has spurred the development of new verifiable languages like Move. However, the limited availability of training data for these languages hinders effective code generation by large language models (LLMs). This paper presents ConMover, a novel framework that enhances LLM-based code generation for Move by leveraging a knowledge graph of Move concepts and a small set of verified code examples. ConMover integrates concept retrieval, planning, coding, and debugging agents in an iterative process to refine generated code. Evaluations with various open-source LLMs demonstrate substantial accuracy improvements over baseline models. These results underscore ConMover's potential to address low-resource code generation challenges, bridging the gap between natural language descriptions and reliable smart contract development.</p>
+  </section>
+</article>
+</body>
+</html>

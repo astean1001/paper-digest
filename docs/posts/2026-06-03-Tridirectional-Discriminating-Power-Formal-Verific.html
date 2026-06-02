@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tridirectional Discriminating-Power Formal Verification of Smart Contract Reentrancy Defense Against Production-Deployed Solidity Source</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"signature analysis" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>Tridirectional Discriminating-Power Formal Verification of Smart Contract Reentrancy Defense Against Production-Deployed Solidity Source</h1>
+    <div class="meta">
+      <span>✍️ Ray Iskander</span>
+      <span>📅 2026-06-01</span>
+      <a href="http://arxiv.org/abs/2606.01794v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: OpenZeppelin 리엔트런시 가드 패턴의 정확성을 실제 운영 중인 Solidity 코드에 대해 Lean 4로 기계 검증한 최초의 연구로, 공격 차단-정상 실행 보존-경계 사례 구분의 3방향 판별력을 모두 증명했습니다.<br><br>**문제 정의**: <br>스마트 컨트랙트 리엔트런시 공격이 2016년 이후 5억 달러 이상의 손실을 야기했음에도 불구하고, 사실상 표준 방어 기법인 OpenZeppelin ReentrancyGuard 패턴의 판별력(discriminating power)이 형식적으로 증명되지 않았습니다. 기존 연구들은 토이 컨트랙트의 가드 정확성 또는 격리된 인스턴스의 공격 가능성만 검증했지, 실제 운영 코드에 대한 양방향 검증과 경계 사례까지 다루지 못했습니다.<br><br>**핵심 기여**:<br>- Lean 4 상태 머신 모델을 통해 실제 운영 Solidity 코드의 기계 검증 증명 제시 (sorry 0개, 사용자 도입 공리 0개)<br>- 3방향 판별력 검증: (a) DAO 2016 공격 재현, (b) Compound v2 정확성 증명, (c) Aave V3 flashLoan과 취약한 변종 간 경계 사례 구분<br>- 뮤테이션 테스팅을 통한 보안 임계 차이점 분리 및 연속 통합 환경에서의 검증<br><br>**의의**:<br>형식 검증과 스마트 컨트랙트 보안 연구에서 이론과 실무 간 격차를 해소한 중요한 이정표입니다. Lean 4를 활용한 실용적 형식 검증 방법론을 제시하여, 향후 DeFi 프로토콜의 보안 패턴을 기계 검증하는 연구의 기반을 마련했습니다. 특히 시그니처/바이트코드 분석을 넘어선 상태 머신 기반 형식 검증 접근법이 실제 운영 환경에서도 적용 가능함을 입증했습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We present the first machine-checked correctness proof of the OpenZeppelin reentrancy-guard pattern against a Lean 4 state-machine model of production-deployed Solidity source. All thirteen theorems are machine-checked with zero sorry, zero user-introduced axioms, and an axiom footprint bounded by [propext] (a standard mathlib4 axiom), gated under continuous integration.
+  Smart contract reentrancy has caused over US$500M in documented losses since 2016, with the DAO 2016 attack draining ~3.6M ETH and forcing the hard fork that split Ethereum. The OpenZeppelin ReentrancyGuard pattern is the de facto defense across production DeFi, yet no prior work has established its discriminating power: that the guard blocks attacks on vulnerable instances, preserves correct execution for non-attacking transactions, and distinguishes adjacent safe and vulnerable variants. Prior efforts formalized either guard correctness on toy contracts or attack feasibility on isolated instances - not both directions plus boundary cases against production source.
+  We verify three production instantiations - DAO 2016, Compound v2, and Aave V3 flashLoan - plus a minimal-diff mutant of Aave V3's flashLoan (flashLoanVulnerable) isolating one security-critical difference, via mutation testing. The tridirectional structure pairs (a) attack reproduction of the DAO 2016 pattern, (b) a correctness proof for Compound v2, and (c) a boundary-case proof distinguishing Aave V3's CEI-correct flashLoan from the mutant.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Contract Generation for Inter-Organizational Process Collaboration</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"signature analysis" OR ab:"bytecode analysis" OR ab:"formal verification")</span>
+    <h1>Smart Contract Generation for Inter-Organizational Process Collaboration</h1>
+    <div class="meta">
+      <span>✍️ Tianhong Xiong, Shangqing Feng, Maolin Pan</span>
+      <span>📅 2023-03-16</span>
+      <a href="http://arxiv.org/abs/2303.09257v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 조직 간 프로세스 협력을 위한 블록체인 스마트 컨트랙트를 BPMN 모델에서 자동 생성할 때, 모델 검증을 통해 데드락 등의 문제를 사전에 방지하는 프레임워크를 제안했습니다.<br><br>**문제 정의**: <br>기존의 조직 간 프로세스 협력(IOPC)에서 BPMN과 같은 그래픽 모델을 스마트 컨트랙트로 직접 변환할 때, 모델의 데드락이나 논리적 오류가 그대로 컨트랙트에 반영되어 예상치 못한 동작을 유발하는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>1. **CSP# 기반 형식화**: BPMN 협력 모델을 메시지 상호작용 관점에서 CSP#로 형식화하여 정확한 실행 의미론과 모델 검증 제공<br>2. **검증된 모델 기반 생성**: 그래픽 모델 대신 검증된 형식 모델을 입력으로 사용하는 스마트 컨트랙트 자동 생성 방법<br>3. **구문 트리 기반 번역**: 모델링-검증-번역-구현의 end-to-end 자동화 프레임워크 구축<br><br>**의의**: <br>프로그램 합성 관점에서 도메인 특화 모델(BPMN)을 실행 가능한 코드(스마트 컨트랙트)로 변환하는 과정에서 형식 검증을 통한 품질 보장 방법론을 제시했으며, 특히 블록체인 환경에서의 분산 프로세스 실행을 위한 신뢰성 있는 코드 생성 기법으로서 연구자의 프로그램 합성 및 블록체인 인프라 연구에 직접적인 방법론적 시사점을 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Currently, inter-organizational process collaboration (IOPC) has been widely used in the design and development of distributed systems that support business process execution. Blockchain-based IOPC can establish trusted data sharing among participants, attracting more and more attention. The core of such study is to translate the graphical model (e.g., BPMN) into program code called smart contract that can be executed in the blockchain environment. In this context, a proper smart contract plays a vital role in the correct implementation of block-chain-based IOPC. In fact, the quality of graphical model affects the smart con-tract generation. Problematic models (e.g., deadlock) will result in incorrect contracts (causing unexpected behaviours). To avoid this undesired implementation, this paper explores to generate smart contracts by using the verified formal model as input instead of graphical model. Specifically, we introduce a prototype framework that supports the automatic generation of smart contracts, providing an end-to-end solution from modeling, verification, translation to implementation. One of the cores of this framework is to provide a CSP#-based formalization for the BPMN collaboration model from the perspective of message interaction. This formalization provides precise execution semantics and model verification for graphical models, and a verified formal model for smart contract generation. Another novelty is that it introduces a syntax tree-based translation a</p>
+  </section>
+</article>
+</body>
+</html>
