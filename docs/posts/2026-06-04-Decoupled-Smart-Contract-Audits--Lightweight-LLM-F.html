@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decoupled Smart Contract Audits: Lightweight LLM Framework via Distillation and Aggregation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>Decoupled Smart Contract Audits: Lightweight LLM Framework via Distillation and Aggregation</h1>
+    <div class="meta">
+      <span>✍️ Bagus Rakadyanto Oktavianto Putra, Muhamad Risqi Utama Saputra, Widyawan</span>
+      <span>📅 2026-06-02</span>
+      <a href="http://arxiv.org/abs/2606.03128v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>스마트 컨트랙트 보안 감사를 4개 모듈로 분해하고, 경량 LLM(0.6B-4B)에 지식 증류 및 검증 체인 기법을 적용하여 대형 모델 대비 높은 성능(98.25% 정확도)을 달성한 자동화 프레임워크<br><br>**문제 정의**:<br>기존 LLM 기반 스마트 컨트랙트 감사 시스템의 한계 해결 - (1) 취약점 탐지만 하고 심각도 평가나 실행 가능한 수정 방안 부족, (2) 대형 모델 의존으로 인한 과도한 계산 오버헤드<br><br>**핵심 기여**:<br>- **분리형 감사 아키텍처**: 취약점 탐지/설명/심각도 분류/수정 권고를 독립 모듈로 구성<br>- **경량화 최적화 기법**: rsLoRA, 지식 증류, CoVe(Chain-of-Verification) 집합 전략 조합<br>- **성능 검증**: 7B-34B 파라미터 모델들을 0.6B-4B 경량 모델로 능가<br>- **새로운 발견**: 심각도 중심성 편향(severity centrality bias) 현상 규명<br><br>**의의**:<br>스마트 컨트랙트 보안 연구에서 실용적 배포 가능성을 크게 높임. 특히 자원 제약 환경에서도 고품질 보안 감사가 가능함을 입증하여, LLM과 블록체인 보안 융합 연구의 새로운 방향성 제시. 연구자의 스마트 컨트랙트 보안 자동화 연구에 직접적인 방법론적 통찰 제공.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contracts face critical security challenges that require thorough auditing in decentralized web services. While Large Language Models (LLMs) have shown promise in automated vulnerability detection, existing approaches lack severity evaluations with actionable remediation and demand unnecessarily massive computational overhead. In this study, we introduce an efficient end-to-end smart contract security audit framework utilizing lightweight, highly optimized open-source LLMs (0.6B-4B parameters). Our framework decouples comprehensive audit tasks into four interconnected components: vulnerability detection, explanation, severity classification, and remediation recommendation. To maintain high accuracy without massive parameters, we implement Rank-Stabilized Low-Rank Adapters (rsLoRA), knowledge distillation, and a custom Chain-of-Verification (CoVe) aggregation strategy to systematically screen and consolidate multiple draft responses from the model into a highly accurate audit report. Experimental results demonstrate that our lightweight pipeline consistently outperforms state-of-the-art open-source coder dense LLMs (7B to 34B parameters), achieving 98.25% accuracy in vulnerability detection and an alignment score of 0.4375 in generative explanation tasks. Furthermore, our extensive ablation studies empirically validate the superiority of our decoupled audit processes over unified prompting and uncover a novel severity centrality bias, establishing a critical benchmark fo</p>
+  </section>
+</article>
+</body>
+</html>

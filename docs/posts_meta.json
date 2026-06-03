@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-04-Bastet--A-Fine-Grained-Expert-Labeled-Dataset-for.html",
+    "title": "Bastet: A Fine-Grained Expert-Labeled Dataset for DeFi Smart Contract Vulnerability Detection",
+    "date": "2026-06-04",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.03387v1"
+  },
+  {
+    "filename": "2026-06-04-Decoupled-Smart-Contract-Audits--Lightweight-LLM-F.html",
+    "title": "Decoupled Smart Contract Audits: Lightweight LLM Framework via Distillation and Aggregation",
+    "date": "2026-06-04",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature extraction\" OR ab:\"audit report\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.03128v1"
+  },
+  {
+    "filename": "2026-06-04-E-Path--Equality-Saturation-for-Control-Flow-Graph.html",
+    "title": "E-Path: Equality Saturation for Control-Flow Graphs",
+    "date": "2026-06-04",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" OR (ti:\"e-graph\" AND ab:\"deobfuscation\")",
+    "one_liner": "기존 equality saturation이 표현식 레벨에서만 작동하는 한계를 극복하여, 제어 흐름 그래프 전체에 대해 equality saturation 최적화를 가능하게 하는 E-Path 프레임워크를 제안했습니다.",
+    "url": "http://arxiv.org/abs/2605.28694v1"
+  },
+  {
+    "filename": "2026-06-04-Distilling-Answer-Set-Programming-Rules-from-LLMs.html",
+    "title": "Distilling Answer-Set Programming Rules from LLMs for Neurosymbolic Visual Question Answering",
+    "date": "2026-06-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.03269v1"
+  },
+  {
+    "filename": "2026-06-04-LANTERN--LLM-Augmented-Neurosymbolic-Transfer-with.html",
+    "title": "LANTERN: LLM-Augmented Neurosymbolic Transfer with Experience-Gated Reasoning Networks",
+    "date": "2026-06-04",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\")",
+    "one_liner": "대규모 언어모델(LLM)을 활용하여 자연어 태스크 설명으로부터 유한상태오토마타를 자동 생성하고, 다중 소스 태스크로부터 적응적으로 지식을 전이하는 신경기호 강화학습 프레임워크를 제안함.",
+    "url": "http://arxiv.org/abs/2605.05478v1"
+  },
+  {
     "filename": "2026-06-03-Tridirectional-Discriminating-Power-Formal-Verific.html",
     "title": "Tridirectional Discriminating-Power Formal Verification of Smart Contract Reentrancy Defense Against Production-Deployed Solidity Source",
     "date": "2026-06-03",

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bastet: A Fine-Grained Expert-Labeled Dataset for DeFi Smart Contract Vulnerability Detection</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature extraction" OR ab:"audit report")</span>
+    <h1>Bastet: A Fine-Grained Expert-Labeled Dataset for DeFi Smart Contract Vulnerability Detection</h1>
+    <div class="meta">
+      <span>✍️ Wan-Hsuan Hsu, Wei-Hsin Wang, Cheng-Yu Liou</span>
+      <span>📅 2026-06-02</span>
+      <a href="http://arxiv.org/abs/2606.03387v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>DeFi 스마트 컨트랙트 취약점 탐지를 위해 실제 감사 보고서 기반으로 전문가가 라벨링한 고품질 데이터셋 Bastet을 구축하고, 기존 데이터셋의 한계를 극복한 2계층 분류 체계를 제시했습니다.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 취약점 탐지 데이터셋의 세 가지 근본적 문제를 해결하고자 했습니다: (1) 구버전 Solidity 기반으로 현대 DeFi 환경을 반영하지 못함, (2) 자동화/LLM 생성 라벨의 환각(hallucination) 문제로 인한 노이즈, (3) 단일 계층 라벨링으로 복잡한 비즈니스 로직 취약점의 의미적 복잡성을 포착하지 못함.<br><br>**핵심 기여**: <br>- 2021-2024년 Code4rena 경쟁 감사 보고서 394개에서 수집한 4,402개 실제 취약점 데이터셋 구축<br>- DeFiHackLabs 커뮤니티의 화이트햇 보안 연구자들이 2인 합의 방식으로 849개 취약점을 정밀 라벨링<br>- 46개 태그와 77개 서브태그로 구성된 2계층 분류 체계 개발<br>- 실제 감사 결과 기반의 전문가 검증된 고품질 라벨 제공<br><br>**의의**: <br>연구자의 audit report 기반 취약점 시그니처 추출 방법론과 직접적으로 연관됩니다. 실제 감사 보고서에서 추출한 검증된 취약점 패턴을 제공하므로, 시그니처 추출 알고리즘의 학습 데이터 및 벤치마크로 활용 가능하며, 2계층 분류 체계는 취약점 시그니처의 세분화된 특성 분석에 유용한 참조 프레임워크를 제공합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Smart contract vulnerabilities in Decentralized Finance (DeFi) protocols resulted in over 1.49 billion USD in confirmed losses in 2024 alone, across 192 incidents [1]. As LLM-based vulnerability detection emerges as a promising approach to address these threats, the quality of evaluation datasets has become a critical bottleneck. Existing datasets suffer from three fundamental problems: they are built on outdated Solidity versions (e.g., v0.4) that no longer reflect modern DeFi contracts [5][6][7]; they rely on automated or LLM-generated annotations that introduce hallucination-driven label noise [9][10]; and they apply coarse single-layer labeling that fails to capture the semantic complexity of real-world business logic vulnerabilities [6][7][11][12]. We present Bastet, an expert-labeled DeFi smart contract vulnerability dataset that addresses all three problems through real-world audit findings (2021-2024), human expert annotation with discussion-based consensus, and a two-layer taxonomy of 46 Tags and 77 Subtags. Bastet comprises 4,402 findings collected from 394 Code4rena competitive audit reports spanning April 2021 to November 2024, of which 849 findings are fully annotated by white-hat security researchers from the DeFiHackLabs community. All annotations are produced through a two-annotator consensus workflow, ensuring label accuracy grounded in real-world vulnerability root causes.</p>
+  </section>
+</article>
+</body>
+</html>

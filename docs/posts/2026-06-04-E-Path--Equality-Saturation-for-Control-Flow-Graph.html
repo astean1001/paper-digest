@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Path: Equality Saturation for Control-Flow Graphs</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" OR (ti:"e-graph" AND ab:"deobfuscation")</span>
+    <h1>E-Path: Equality Saturation for Control-Flow Graphs</h1>
+    <div class="meta">
+      <span>✍️ Guillermo Garcia</span>
+      <span>📅 2026-05-27</span>
+      <a href="http://arxiv.org/abs/2605.28694v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 기존 equality saturation이 표현식 레벨에서만 작동하는 한계를 극복하여, 제어 흐름 그래프 전체에 대해 equality saturation 최적화를 가능하게 하는 E-Path 프레임워크를 제안했습니다.<br><br>**문제 정의**: <br>현재 equality saturation 시스템들은 표현식 수준의 재작성에는 뛰어나지만, 임의의 제어 흐름 그래프(CFG)에 대한 동치성을 직접 표현하지 못하는 한계가 있습니다. 기존 시스템들은 최적화 전에 구조화된 형태나 트리 형태로 정규화가 필요하며, 이는 phase-ordering 문제를 야기하고 복잡한 제어 구조의 최적화를 어렵게 만듭니다.<br><br>**핵심 기여**:<br>1. **E-Path 데이터 구조**: 개별 표현식 간 합동성 대신 명령어 시퀀스 간의 동치성을 기록하는 새로운 프레임워크<br>2. **비파괴적 최적화**: 기본 그래프를 파괴적으로 변형하지 않으면서 루프와 기타 제어 흐름 구조를 최적화<br>3. **다중 동치 프로그램 보존**: 여러 동등한 프로그램 변형을 동시에 보존하면서 최적화 수행<br>4. **IR 무관성**: ANF 기반 제어 흐름 그래프에서 프로토타입을 구현했지만, 모델 자체는 특정 IR에 의존하지 않도록 설계<br><br>**의의**: <br>이 연구는 MBA 난독화 해제 연구에 매우 중요한 의미를 가집니다. MBA 난독화는 복잡한 제어 흐름과 표현식 변형을 동시에 사용하는데, 기존 e-graph 기반 접근법은 표현식 레벨에서만 작동하여 제어 흐름이 포함된 난독화 패턴을 효과적으로 처리하지 못했습니다. E-Path는 제어 흐름 그래프 전체에서 동치성을 탐색할 수 있어, 복합적인 MBA 난독화 패턴의 정규화와 단순화에 직접 적용 가능한 강력한 도구가 될 것입니다. 특히 비파괴적 최적화와 다중 변형 보존 기능은 난</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Modern equality saturation systems excel at expression-level rewrites by exploring large spaces of equivalent programs without suffering from the phase-ordering problem. How- ever, these systems struggle to represent equivalence directly over arbitrary control-flow graphs, often requiring normal- ization into structured or tree-like forms before optimization can occur. We present the E-Path data structure, a prototype frame- work for equality-saturation-style optimization over control- flow graphs. Instead of representing congruence between individual expressions, the E-Path records equivalence be- tween instruction sequences embedded within a compiler intermediate representation. In this prototype, E-Path is in- stantiated over a restricted ANF-based control-flow graph used in a compiler backend, but the model itself is intended to be IR-agnostic. By treating instruction sequences as the fundamental unit of congruence, the E-Path enables non-destructive optimiza- tion of loops and other control-flow structures while preserv- ing multiple equivalent program variants simultaneously. This allows classical CFG optimizations to be expressed as rewrite-driven transformations without destructive mutation of the underlying graph.</p>
+  </section>
+</article>
+</body>
+</html>

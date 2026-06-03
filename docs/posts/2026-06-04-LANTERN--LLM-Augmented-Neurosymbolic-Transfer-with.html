@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LANTERN: LLM-Augmented Neurosymbolic Transfer with Experience-Gated Reasoning Networks</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model")</span>
+    <h1>LANTERN: LLM-Augmented Neurosymbolic Transfer with Experience-Gated Reasoning Networks</h1>
+    <div class="meta">
+      <span>✍️ Mahyar Alinejad, Yue Wang, Amrit Singh Bedi</span>
+      <span>📅 2026-05-06</span>
+      <a href="http://arxiv.org/abs/2605.05478v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 대규모 언어모델(LLM)을 활용하여 자연어 태스크 설명으로부터 유한상태오토마타를 자동 생성하고, 다중 소스 태스크로부터 적응적으로 지식을 전이하는 신경기호 강화학습 프레임워크를 제안함.<br><br>**문제 정의**: <br>기존 신경기호 전이학습 방법들은 세 가지 주요 한계를 가지고 있음: (1) 수동으로 작성된 태스크 오토마타에 의존, (2) 단일 소스 태스크만 활용, (3) 소스 태스크의 관련성 변화에 적응하지 못하는 고정된 지식 통합 메커니즘 사용. 이러한 한계들로 인해 실제 환경에서 확장성과 강건성이 부족함.<br><br>**핵심 기여**:<br>- **LLM 기반 오토마타 자동 생성**: 자연어 태스크 설명으로부터 결정론적 유한상태오토마타를 자동으로 생성하는 방법론 개발<br>- **다중 소스 정책 집합화**: 의미적 임베딩을 활용한 태스크 간 유사도 기반의 가중 집합화 메커니즘 구현<br>- **적응적 Teacher-Student 게이팅**: 시간차 오차(TD error)와 의미적 불확실성을 기반으로 하는 적응적 지식 통합 시스템 도입<br>- **실험적 검증**: 자원 관리, 내비게이션, 제어 도메인에서 기존 방법 대비 40-60% 샘플 효율성 개선 달성<br><br>**의의**: <br>본 연구는 신경기호 AI와 LLM의 융합을 통해 강화학습의 전이학습 문제를 해결하는 새로운 패러다임을 제시함. 특히 자연어 명세로부터 자동으로 기호적 구조를 생성하고 다중 소스로부터 적응적으로 학습하는 방법론은, 실제 환경에서 보다 실용적이고 확장 가능한 신경기호 시스템 구축을 위한 중요한 방향을 제시함. 연구자의 신경기호 접근법과 LLM 융합 연구에 자동화된 기호 구조 생성과 적응적 다중 소스 전이학습이라는 새로운 관점을 제공함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Transfer learning in reinforcement learning (RL) seeks to accelerate learning in new tasks by leveraging knowledge from related sources. Existing neurosymbolic transfer methods, however, typically rely on manually specified task automata, assume a single source task, and use fixed knowledge-integration mechanisms that cannot adapt to varying source relevance. We propose LANTERN, a unified framework for multi-source neurosymbolic transfer that addresses these limitations through three components: (i) deterministic finite automata generated from natural language task descriptions using large language models, (ii) semantic embedding-based aggregation of multiple source policies weighted by cross-task similarity, and (iii) adaptive teacher-student gating based on temporal-difference error and semantic uncertainty. Across domains spanning resource management, navigation, and control, LANTERN achieves 40-60% improvements in sample efficiency over existing baselines while remaining robust to poorly aligned sources. These results demonstrate that multi-source, adaptively weighted neurosymbolic transfer can improve scalability and robustness in symbolic RL settings.</p>
+  </section>
+</article>
+</body>
+</html>
