@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-06-AttackPathGNN--Cross-function-vulnerability-detect.html",
+    "title": "AttackPathGNN: Cross-function vulnerability detection in smart contracts using state interference graphs and conjunction pooling",
+    "date": "2026-06-06",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature-based analysis\" OR ab:\"bytecode analysis\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.05986v1"
+  },
+  {
+    "filename": "2026-06-06-NeuroSymbolic-Robustness-Analysis-for-Discrete-Sys.html",
+    "title": "NeuroSymbolic Robustness Analysis for Discrete Systems with Respect to Transition Deviations",
+    "date": "2026-06-06",
+    "source": "arXiv",
+    "topic": "(ti:\"program synthesis\" OR ti:\"neurosymbolic\") AND ab:\"large language model\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.03872v1"
+  },
+  {
+    "filename": "2026-06-06-Ontology-Constrained-Neural-Reasoning-in-Enterpris.html",
+    "title": "Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents",
+    "date": "2026-06-06",
+    "source": "arXiv",
+    "topic": "(ti:\"program synthesis\" OR ti:\"neurosymbolic\") AND ab:\"large language model\"",
+    "one_liner": "엔터프라이즈 환경에서 LLM의 환각 문제와 도메인 지식 부족을 해결하기 위해 3계층 온톨로지 기반의 뉴로심볼릭 아키텍처를 제안하고, 입력뿐만 아니라 출력까지 제약하는 비대칭 결합 방식을 통해 정확도와 일관성을 크게 향상시켰음을 실증한 연구.",
+    "url": "http://arxiv.org/abs/2604.00555v5"
+  },
+  {
+    "filename": "2026-06-06-Dive-deeper-with-SUBMARINE--SUB-Mev-dArk-matter-di.html",
+    "title": "Dive deeper with SUBMARINE: SUB-Mev dArk matter diRect detectIon using bilayer grapheNE",
+    "date": "2026-06-06",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "이중층 그래핀의 비등방성 특성을 활용하여 sub-MeV 질량의 저질량 암흑물질을 직접 탐지할 수 있는 새로운 실험적 접근법을 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2604.21969v1"
+  },
+  {
+    "filename": "2026-06-06-Hunting-Sterile-Neutrino-Dark-Matter-in-the-MeV-Ga.html",
+    "title": "Hunting Sterile Neutrino Dark Matter in the MeV Gap",
+    "date": "2026-06-06",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "MeV 영역 감마선 망원경을 이용해 0.2-100 MeV 질량 범위의 스테릴 뉴트리노 암흑물질 탐지 가능성을 Fisher 예측 분석으로 평가하여, 기존 한계를 수 자릿수 개선할 수 있음을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2604.18674v1"
+  },
+  {
     "filename": "2026-06-04-Bastet--A-Fine-Grained-Expert-Labeled-Dataset-for.html",
     "title": "Bastet: A Fine-Grained Expert-Labeled Dataset for DeFi Smart Contract Vulnerability Detection",
     "date": "2026-06-04",

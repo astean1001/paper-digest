@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroSymbolic Robustness Analysis for Discrete Systems with Respect to Transition Deviations</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"program synthesis" OR ti:"neurosymbolic") AND ab:"large language model"</span>
+    <h1>NeuroSymbolic Robustness Analysis for Discrete Systems with Respect to Transition Deviations</h1>
+    <div class="meta">
+      <span>✍️ Shih-Jie Shih, Jonghan Lim, Ilya Kovalenko</span>
+      <span>📅 2026-06-02</span>
+      <a href="http://arxiv.org/abs/2606.03872v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>이산 시스템의 견고성(robustness) 분석에서 발생하는 확장성과 보수성 문제를 해결하기 위해 대규모 언어모델 기반 신경 추론과 기호적 계산을 결합한 뉴로심볼릭 프레임워크를 제안한 연구입니다.<br><br>**문제 정의**: <br>이산 이벤트 시스템의 감독 제어에서 모델링 오류나 결함으로 인한 플랜트 모델의 편차를 분석할 때, 기존 이산 견고성 개념은 1) 거대한 해공간으로 인한 확장성 문제와 2) 실제로는 발생 불가능한 대부분의 편차를 고려하는 보수성 문제를 가지고 있습니다.<br><br>**핵심 기여**: <br>- **2단계 뉴로심볼릭 접근법**: 먼저 LLM 기반 신경 추론 계층에서 시스템 모델, 명세, 도메인 지식을 바탕으로 실현 가능한 편차 전이(deviation transitions)만을 추론하고, 이후 기호적 계층에서 추론된 편차 집합에 대해 이산 견고성 보장을 계산<br>- **실용적 편차 집합 식별**: 전체 전이 기반 분석과 비교 가능한 견고성 보장을 유지하면서도 더 작고 실현 가능한 편차 집합을 식별<br><br>**의의**: <br>이 연구는 LLM의 도메인 지식 활용 능력과 기호적 형식 검증의 엄밀성을 효과적으로 결합한 사례로, 뉴로심볼릭 접근법이 실제 시스템 분석에서 확장성과 실용성을 동시에 개선할 수 있음을 보여줍니다. 특히 프로그램 합성과 뉴로심볼릭 융합 연구에서 LLM을 활용한 제약 공간 축소와 형식적 보장의 결합이라는 새로운 패러다임을 제시한다는 점에서 의미가 큽니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Supervisory control of discrete-event systems provides formal guarantees of correctness with respect to a plant model and specification. However, these guarantees heavily rely on the plant model, which could deviate from nominal behavior due to modeling errors or faults. Recent notions of discrete robustness model deviations as a set of additional transitions that are added to the plant. The discrete robustness is defined as all sets of extra transitions for which the supervised system still guarantees a desired specification. However, this notion suffers from scalability due to the large solution space and conservatism since most deviations are infeasible in practice. This paper proposes to address these two issues using a neurosymbolic computing framework for discrete robustness analysis of safety properties. First, a neural reasoning layer based on Large Language Models infers a set of feasible deviation transitions from system models, specifications, and domain knowledge. Next, a symbolic layer computes the discrete robustness guarantees over the inferred deviation set. We evaluate our framework on three case studies, demonstrating that our method identifies a smaller set of feasible deviations while preserving robustness guarantees comparable to those of full transition-based analysis.</p>
+  </section>
+</article>
+</body>
+</html>

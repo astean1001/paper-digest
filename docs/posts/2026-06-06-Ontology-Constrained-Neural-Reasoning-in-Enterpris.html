@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">(ti:"program synthesis" OR ti:"neurosymbolic") AND ab:"large language model"</span>
+    <h1>Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents</h1>
+    <div class="meta">
+      <span>✍️ Thanh Luong Tuan, Abhijit Sanyal</span>
+      <span>📅 2026-04-01</span>
+      <a href="http://arxiv.org/abs/2604.00555v5" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 엔터프라이즈 환경에서 LLM의 환각 문제와 도메인 지식 부족을 해결하기 위해 3계층 온톨로지 기반의 뉴로심볼릭 아키텍처를 제안하고, 입력뿐만 아니라 출력까지 제약하는 비대칭 결합 방식을 통해 정확도와 일관성을 크게 향상시켰음을 실증한 연구.<br><br>**문제 정의**: <br>- 엔터프라이즈에서 LLM 도입 시 환각(hallucination), 도메인 표류(domain drift), 규정 준수 강제 불가능 문제<br>- 기존 시스템은 에이전트 입력은 제약하지만 출력 검증은 부족한 비대칭적 구조의 한계<br><br>**핵심 기여**:<br>1. **3계층 온톨로지 프레임워크**: Role, Domain, Interaction 온톨로지로 구성된 체계적 지식 표현<br>2. **비대칭 뉴로심볼릭 결합**: 입력 제약(컨텍스트 조립, 도구 발견, 거버넌스)에서 출력 검증(응답 확인, 추론 검증, 준수 강제)으로 확장<br>3. **SQL-pushdown 기반 도구 발견**: 온톨로지 제약 하에서 적절한 도구를 자동 탐색하는 메커니즘<br>4. **실증 검증**: 5개 산업군, 3개 LLM(Claude Sonnet 4, Qwen 2.5 72B, Gemma 4 26B)을 대상으로 1,800회 실험하여 정확도와 역할 일관성에서 유의미한 개선 확인<br><br>**의의**: <br>LLM과 심볼릭 추론의 융합이라는 연구 관심사와 직접적으로 연결되며, 특히 프로그램 합성 관점에서 온톨로지 제약을 통한 출력 검증 메커니즘은 신뢰할 수 있는 코드 생성을 위한 중요한 통찰을 제공. 베트남어 등 저자원 도메인에서 2배 성능 향상을 보인 점은 다국어/도메인 특화 프로그램 합성 연구에 응용 가능한 접근법을 시사함.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Enterprise adoption of Large Language Models (LLMs) is constrained by hallucination, domain drift, and the inability to enforce regulatory compliance at the reasoning level. We present a neurosymbolic architecture implemented within the Foundation AgenticOS (FAOS) platform that addresses these limitations through ontology-constrained neural reasoning. We introduce a three-layer ontological framework--Role, Domain, and Interaction ontologies--grounding LLM-based enterprise agents. We formalize asymmetric neurosymbolic coupling: current enterprise systems constrain agent inputs (context assembly, tool discovery, governance thresholds) but not outputs, and we propose mechanisms extending this coupling to output-side validation (response checking, reasoning verification, compliance enforcement). A controlled experiment (1,800 runs across five industries and three LLMs: Claude Sonnet 4, Qwen 2.5 72B, Gemma 4 26B) finds ontology-coupled agents significantly outperform ungrounded agents on Metric Accuracy (p < .001) and Role Consistency (p < .001) across all three models with large effect sizes (Kendall's W = .46-.64). Improvements are greatest where LLM parametric knowledge is weakest--particularly in Vietnam-localized domains, where ontology lift is 2x that of English domains. Contributions: (1) a formal three-layer enterprise ontology model; (2) a taxonomy of neurosymbolic coupling patterns; (3) ontology-constrained tool discovery via SQL-pushdown scoring; (4) a proposed framewor</p>
+  </section>
+</article>
+</body>
+</html>
