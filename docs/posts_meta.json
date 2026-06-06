@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-07-Machine-learning-via-artificial-neural-networks-co.html",
+    "title": "Machine learning via artificial neural networks coupled with density functional theory and experiments for thermodynamic optimization of high-entropy alloys for hydrogen storage at room temperature",
+    "date": "2026-06-07",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.04803v1"
+  },
+  {
+    "filename": "2026-06-07-Machine-learning-via-artificial-neural-networks-co.html",
+    "title": "Machine learning via artificial neural networks coupled with density functional theory and experiments for thermodynamic optimization of high-entropy alloys for hydrogen storage at room temperature",
+    "date": "2026-06-07",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "인공신경망(ANN)과 밀도함수이론(DFT)을 결합하여 상온에서 수소저장이 가능한 고엔트로피 합금을 설계하고 실험으로 검증한 연구",
+    "url": "http://arxiv.org/abs/2606.04803v1"
+  },
+  {
+    "filename": "2026-06-07-Robustness-of-Entanglement-Manipulation-for-almost.html",
+    "title": "Robustness of Entanglement Manipulation for almost i.i.d. sources",
+    "date": "2026-06-07",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND ab:\"e-graph\" AND (ab:\"deobfuscation\" OR ab:\"MBA\")",
+    "one_liner": "완전한 텐서곱 구조에서 부분적으로 벗어나는 MSR almost i.i.d. 양자 소스에서도 얽힘 조작의 점근적 성능이 이상적인 경우와 동일하게 유지됨을 증명한 연구.",
+    "url": "http://arxiv.org/abs/2606.06392v1"
+  },
+  {
+    "filename": "2026-06-07-Robustness-of-Entanglement-Manipulation-for-almost.html",
+    "title": "Robustness of Entanglement Manipulation for almost i.i.d. sources",
+    "date": "2026-06-07",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "거의 독립동일분포(almost i.i.d.) 양자 상태 소스에 대한 얽힘 조작의 강건성을 수학적으로 증명하여, 이상적이지 않은 조건에서도 얽힘 농축과 증류의 성능이 유지됨을 보였습니다.",
+    "url": "http://arxiv.org/abs/2606.06392v1"
+  },
+  {
+    "filename": "2026-06-07-Exchange-mediated-exciton-splitting-and-linear-dic.html",
+    "title": "Exchange-mediated exciton splitting and linear dichroism in monolayer transition metal dichalcogenide induced by ferroelectric substrates",
+    "date": "2026-06-07",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"LLM\"",
+    "one_liner": "강유전체 기판 위의 2차원 전이금속 칼코게나이드에서 제1원리 계산을 통해 자기장 없이도 밸리 엑시톤 분리가 가능함을 예측하고, 이를 위한 설계 원리를 제시했습니다.",
+    "url": "http://arxiv.org/abs/2606.05093v1"
+  },
+  {
     "filename": "2026-06-06-AttackPathGNN--Cross-function-vulnerability-detect.html",
     "title": "AttackPathGNN: Cross-function vulnerability detection in smart contracts using state interference graphs and conjunction pooling",
     "date": "2026-06-06",

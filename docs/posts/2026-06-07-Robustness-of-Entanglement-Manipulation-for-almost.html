@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robustness of Entanglement Manipulation for almost i.i.d. sources</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"LLM"</span>
+    <h1>Robustness of Entanglement Manipulation for almost i.i.d. sources</h1>
+    <div class="meta">
+      <span>✍️ Nilanjana Datta</span>
+      <span>📅 2026-06-04</span>
+      <a href="http://arxiv.org/abs/2606.06392v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 거의 독립동일분포(almost i.i.d.) 양자 상태 소스에 대한 얽힘 조작의 강건성을 수학적으로 증명하여, 이상적이지 않은 조건에서도 얽힘 농축과 증류의 성능이 유지됨을 보였습니다.<br><br>**문제 정의**: <br>실제 양자 시스템은 완전한 독립동일분포(i.i.d.) 조건을 만족하지 않는데, 이러한 비이상적 조건에서도 얽힘 농축(entanglement concentration), 얽힘 증류(entanglement distillation), 얽힘 희석(entanglement dilution) 등의 양자 정보 처리 작업이 얼마나 강건하게 수행될 수 있는지를 규명하고자 했습니다.<br><br>**핵심 기여**:<br>1. **순수 MSR 소스**: 얽힘 농축률이 강건하며, 참조 상태의 얽힘 엔트로피 S(φ_A) 이하의 모든 비율이 달성 가능함을 증명<br>2. **범용 프로토콜**: 특정 소스 시퀀스에 무관하게 작동하는 단일 Schur-Weyl 농축 프로토콜의 존재성 입증<br>3. **혼합 MSR 소스**: 참조 상태의 coherent information I(A⟩B)ρ 이하의 비율로 얽힘 증류가 가능함을 보임<br>4. **얽힘 희석**: MSR 타겟 시퀀스의 점근적 얽힘 비용이 참조 상태의 정규화된 얽힘 형성도 이하임을 증명<br><br>**의의**: <br>이 연구는 불확실성과 노이즈가 존재하는 실제 환경에서의 양자 정보 처리 강건성을 수학적으로 보장하는 프레임워크를 제공합니다. 특히 프로그램 분석에서 불확실성 처리나 신경기호적 추론 시스템의 강건성 분석에 유용한 수학적 도구와 통찰을 제공할 수 있으며, 거의 이상적인 조건에서의 성능 보장 방법론은 LLM 기반 프로그램 합성의 신뢰성 분석에도 응용 가능합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>We study the robustness of asymptotic entanglement manipulation beyond the exact i.i.d. regime, focusing on Mazzola--Sutter--Renner (MSR) almost i.i.d. sources, which allow a sublinear number of deviations from a tensor-power structure. For pure MSR sources along a bipartite reference state $|φ\rangle_{AB}$, we prove that the entanglement concentration rate is robust: every rate below the entropy of entanglement $S(φ_A)$ remains achievable. Moreover, this can be done by a single Schur--Weyl concentration protocol that is universal within the MSR class, depending only on the reference state and not on the particular source sequence. For mixed MSR sources along a reference state $ρ_{AB}$, we prove a source-dependent entanglement-distillation achievability result: every rate below the coherent information $I(A\rangle B)_ρ$ of the reference state is achievable, although the entanglement distillation protocol may depend on the particular MSR source sequence. For the reverse task of entanglement dilution, we prove a rate-robustness theorem: the asymptotic entanglement cost of any MSR target sequence along $ρ_{AB}$ is at most $E_F^\infty(ρ_{AB})$, the regularized entanglement of formation of the reference state. To establish these results, we prove structural and entropic properties of MSR almost i.i.d. sequences which may be useful in other information-theoretic settings. Thus, for the achievability statements considered here, MSR almost i.i.d. perturbations exhibit the same asympt</p>
+  </section>
+</article>
+</body>
+</html>
