@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurosymbolic Framework for Concept-Driven Logical Reasoning in Skeleton-Based Human Action Recognition</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"neurosymbolic" AND (ab:"program synthesis" OR ab:"large language model" OR ab:"LLM")</span>
+    <h1>Neurosymbolic Framework for Concept-Driven Logical Reasoning in Skeleton-Based Human Action Recognition</h1>
+    <div class="meta">
+      <span>✍️ Talha Ilyas, Deval Mehta, Zongyuan Ge</span>
+      <span>📅 2026-05-08</span>
+      <a href="http://arxiv.org/abs/2605.07140v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 스켈레톤 기반 행동 인식의 해석가능성 문제를 해결하기 위해 신경기호학적(neurosymbolic) 프레임워크를 제안하여, 학습 가능한 개념과 1차 논리 추론을 결합한 해석 가능한 행동 분류 모델을 개발했습니다.<br><br>**문제 정의**: <br>기존 스켈레톤 기반 인간 행동 인식(HAR) 모델들이 높은 성능을 보이지만 블랙박스 특성으로 인해 해석이 어렵고, 행동 분류의 논리적 근거를 제공하지 못하는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**:<br>- 행동 인식을 개념 기반 1차 논리 추론 문제로 재정의하는 신경기호학적 프레임워크 제시<br>- 시공간 개념 디코더를 통해 자세 중심/동역학 중심 개념을 명시적으로 분리하여 해석 가능한 개념 서술어 생성<br>- 미분가능한 1차 논리 레이어를 통해 인간이 이해할 수 있는 논리 규칙 학습 가능<br>- LLM에서 추출한 원자적 동작 기본요소 설명과 스켈레톤 표현을 정렬하여 인식과 추론을 위한 공유 개념 공간 구축<br><br>**의의**: <br>이 연구는 신경망과 기호 추론을 효과적으로 결합한 사례로, 프로그램 합성과 LLM 융합 연구에 중요한 시사점을 제공합니다. 특히 개념 기반 논리 추론과 LLM을 활용한 의미적 정렬 방법론은 해석 가능한 AI 시스템 개발과 신경기호학적 접근법 연구에 직접적으로 활용 가능한 통찰을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Skeleton-based human activity recognition has achieved strong empirical performance, yet most existing models remain black boxes and difficult to interpret. In this work, we introduce a neurosymbolic formulation of skeleton-based HAR that reframes action recognition as concept-driven first-order logical reasoning over motion primitives. Our framework bridges representation learning and symbolic inference by grounding first-order logic predicates in learnable spatial and temporal motion concepts. Specifically, we employ a standard spatio-temporal skeleton encoder to extract latent motion representations, which are then mapped to interpretable concept predicates via a spatio-temporal concept decoder that explicitly separates pose-centric and dynamics-centric abstractions. These concept predicates are composed through differentiable first-order logic layers, enabling the model to learn human-readable logical rules that govern action semantics. To impose semantic structure on the learned concepts, we align skeleton representations with LLM-derived descriptions of atomic motion primitives, establishing a shared conceptual space for perception and reasoning. Extensive experiments on NTU RGB+D 60/120 and NW-UCLA demonstrate that our approach achieves competitive recognition performance while providing explicit, interpretable explanations grounded in logical structure. Our results highlight neurosymbolic reasoning as an effective paradigm for interpretable spatio-temporal action unde</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-08-Tridirectional-Discriminating-Power-Formal-Verific.html",
+    "title": "Tridirectional Discriminating-Power Formal Verification of Smart Contract Reentrancy Defense Against Production-Deployed Solidity Source",
+    "date": "2026-06-08",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"bytecode analysis\" OR ab:\"formal verification\")",
+    "one_liner": "스마트 컨트랙트의 리인트런시 공격에 대한 OpenZeppelin 방어 패턴의 정확성을 Lean 4를 이용해 실제 프로덕션 코드에 대해 기계적으로 증명한 최초의 연구",
+    "url": "http://arxiv.org/abs/2606.01794v2"
+  },
+  {
+    "filename": "2026-06-08-Neurosymbolic-Framework-for-Concept-Driven-Logical.html",
+    "title": "Neurosymbolic Framework for Concept-Driven Logical Reasoning in Skeleton-Based Human Action Recognition",
+    "date": "2026-06-08",
+    "source": "arXiv",
+    "topic": "ti:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"large language model\" OR ab:\"LLM\")",
+    "one_liner": "스켈레톤 기반 행동 인식의 해석가능성 문제를 해결하기 위해 신경기호학적(neurosymbolic) 프레임워크를 제안하여, 학습 가능한 개념과 1차 논리 추론을 결합한 해석 가능한 행동 분류 모델을 개발했습니다.",
+    "url": "http://arxiv.org/abs/2605.07140v1"
+  },
+  {
+    "filename": "2026-06-08-Local-and-global-properties-of-solutions-of-an-ell.html",
+    "title": "Local and global properties of solutions of an elliptic equation involving exponential and gradient reaction",
+    "date": "2026-06-08",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "지수함수와 기울기 반응을 포함한 타원형 편미분방정식의 해가 특이점 근처와 무한원점에서 보이는 국소적/전역적 성질을 동역학계 접근법으로 분석한 연구.",
+    "url": "http://arxiv.org/abs/2606.06206v1"
+  },
+  {
+    "filename": "2026-06-08-Density-functional-theory-calculation-of-hydrogen.html",
+    "title": "Density-functional theory calculation of hydrogen solubility in cubic silicon carbide at finite temperatures",
+    "date": "2026-06-08",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "밀도함수이론(DFT)을 이용하여 핵융합 반응로용 삼중수소 투과 차단 소재인 β-SiC에서 결함이 수소 용해도에 미치는 영향을 정량적으로 예측하는 제1원리 계산 프레임워크를 개발했습니다.",
+    "url": "http://arxiv.org/abs/2606.05100v1"
+  },
+  {
+    "filename": "2026-06-08-Spin-chiral-electron-phonon-coupling-in-metallic-s.html",
+    "title": "Spin-chiral electron-phonon coupling in metallic strontium titanate",
+    "date": "2026-06-08",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.03908v1"
+  },
+  {
     "filename": "2026-06-07-Machine-learning-via-artificial-neural-networks-co.html",
     "title": "Machine learning via artificial neural networks coupled with density functional theory and experiments for thermodynamic optimization of high-entropy alloys for hydrogen storage at room temperature",
     "date": "2026-06-07",
