@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>On the Shoulders of Giants: Empowering Automated Smart Contract Auditing via the GiAnt Corpus</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"smart contract" AND (ab:"vulnerability detection" OR ab:"signature-based analysis" OR ab:"bytecode analysis")</span>
+    <h1>On the Shoulders of Giants: Empowering Automated Smart Contract Auditing via the GiAnt Corpus</h1>
+    <div class="meta">
+      <span>✍️ Xiaoting Zhang, Zhipeng Gao, Yiran Lv</span>
+      <span>📅 2026-06-05</span>
+      <a href="http://arxiv.org/abs/2606.07363v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>실제 감사 보고서에서 취약점 정보를 자동으로 추출하여 고품질의 스마트 컨트랙트 감사 데이터셋을 구축하는 GiANT 프레임워크를 제안하고, 이를 통해 7,711개의 취약점 사례로 구성된 GiAnt Corpus를 생성했습니다.<br><br>**문제 정의**: <br>기존 스마트 컨트랙트 감사 데이터셋의 두 가지 핵심 한계점 - (1) 수동 구축으로 인한 확장성 병목현상과 (2) 데이터의 세분성(granularity)과 다양성 부족 - 을 해결하려 했습니다. 이러한 제약은 보안 도구 평가와 연구 발전을 저해하는 요인이었습니다.<br><br>**핵심 기여**: <br>- **GiANT 프레임워크**: Code4rena 실제 감사 보고서에서 구조화된 취약점 정보를 자동 추출하는 시스템 개발<br>- **분할정복 + Chain-of-Thought 기법**: 복잡한 감사 보고서를 효과적으로 분석하는 방법론 적용<br>- **LLM-as-a-judge 품질 보증**: 추출된 정보의 신뢰성을 검증하는 메커니즘 구축<br>- **GiAnt Corpus**: 388개 실제 감사 보고서에서 추출한 7,711개 취약점 사례의 고품질 데이터셋 (평균 품질 점수 4.76/5, 평가자 간 일치도 κ=0.88)<br><br>**의의**: <br>이 연구는 실제 감사 보고서에서 체계적으로 취약점 시그니처와 패턴을 추출하는 자동화된 방법론을 제시한다는 점에서 매우 중요합니다. 특히 제가 연구하는 "audit report에서 취약점 시그니처 추출"과 직접적으로 연관되며, 수동 분석의 한계를 극복하고 대규모 데이터 처리가 가능한 프레임워크를 제공합니다. 또한 구축된 데이터셋은 취약점 탐지, 코드 요약, 완화 방안 추천 등 다양한 downstream 태스크의 벤치마크로 활용 가능하여, 스마트 컨트랙트 보안 연구의 기반 자료로서 </div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>High-quality smart contract auditing datasets are crucial for evaluating security tools and advancing smart contract security research. Two major limitations of existing datasets are the manual-induced scalability bottleneck and the deficiency in data granularity and diversity. To address these limitations, we propose GiANT, an automated framework designed to curate smart contract auditing datasets by distilling vulnerability insights from real-world auditing reports. GiANT employs a divide-and-conquer strategy coupled with the Chain-of-Thought technique to extract structured vulnerability information from Code4rena reports, followed by an LLM-as-a-judge mechanism to perform rigorous quality assurance. To evaluate GiANT's effectiveness, we run it on 388 real-world audit reports and generate the GiAnt Corpus comprising 7,711 vulnerability findings across five severity levels. Manual assessment of the dataset demonstrates exceptional reliability in information extraction, achieving a mean quality score of $4.76\pm0.37$ (out of 5) with inter-rater agreement $κ$ of 0.88. We further validate the practicality of our dataset by benchmarking 4 state-of-the-art LLMs on vulnerability detection, code summarization, mitigation recommendation, and automated gas optimization tasks, to establish performance baselines, thereby providing a valuable data foundation for future research in automated smart contract auditing.</p>
+  </section>
+</article>
+</body>
+</html>

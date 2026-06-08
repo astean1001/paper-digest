@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-06-09-On-the-Shoulders-of-Giants--Empowering-Automated-S.html",
+    "title": "On the Shoulders of Giants: Empowering Automated Smart Contract Auditing via the GiAnt Corpus",
+    "date": "2026-06-09",
+    "source": "arXiv",
+    "topic": "ti:\"smart contract\" AND (ab:\"vulnerability detection\" OR ab:\"signature-based analysis\" OR ab:\"bytecode analysis\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.07363v1"
+  },
+  {
     "filename": "2026-06-08-Tridirectional-Discriminating-Power-Formal-Verific.html",
     "title": "Tridirectional Discriminating-Power Formal Verification of Smart Contract Reentrancy Defense Against Production-Deployed Solidity Source",
     "date": "2026-06-08",
