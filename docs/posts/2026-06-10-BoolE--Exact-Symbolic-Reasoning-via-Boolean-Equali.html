@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoolE: Exact Symbolic Reasoning via Boolean Equality Saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" AND (ab:"program synthesis" OR ab:"deobfuscation" OR ab:"e-graph")</span>
+    <h1>BoolE: Exact Symbolic Reasoning via Boolean Equality Saturation</h1>
+    <div class="meta">
+      <span>✍️ Jiaqi Yin, Zhan Song, Chen Chen</span>
+      <span>📅 2025-04-08</span>
+      <a href="http://arxiv.org/abs/2504.05577v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>BoolE는 equality saturation 기법을 활용하여 게이트 레벨 네트리스트에서 Boolean 심볼릭 추론을 정확하게 수행하는 프레임워크로, 기존 방법보다 3배 이상 정확하게 회로 구조를 식별합니다.<br><br>**문제 정의**: <br>게이트 레벨 네트리스트에서 Boolean 심볼릭 추론, 특히 데이터패스와 가산기 트리 구조를 정확히 식별하는 것은 하드웨어 검증과 합성에 필수적이지만, 기존 접근법들은 구조적 해싱과 심볼릭 전파로는 정확한 기능 블록 식별에 실패하거나, 기술 매핑이나 논리 최적화로 인한 구조 변경에 민감하다는 문제가 있습니다.<br><br>**핵심 기여**: <br>1) **Equality saturation 기반 정확한 추론**: Boolean 네트리스트에 특화된 도메인별 규칙셋을 통합한 equality saturation 프레임워크 개발<br>2) **새로운 추출 알고리즘**: e-graph에서 다중 입출력 고수준 구조(예: 전가산기)를 효율적으로 식별하고 캡처하는 알고리즘 제안<br>3) **성능 향상**: ABC 대비 carry-save array에서 3.53배, 다른 구조에서 3.01배 더 많은 정확한 전가산기 식별<br><br>**의의**: <br>하드웨어 보안 분야에서 난독화된 회로의 역분석이나 바이트코드 분석에 응용 가능하며, 기존 구조적 방법의 한계를 극복한 정확한 심볼릭 추론 방법론을 제시합니다. 특히 equality saturation의 형식 검증 영역 확장과 프로그램 합성 분야에서의 정확성 보장 측면에서 중요한 기여를 합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Boolean symbolic reasoning for gate-level netlists is a critical step in verification, logic and datapath synthesis, and hardware security. Specifically, reasoning datapath and adder tree in bit-blasted Boolean networks is particularly crucial for verification and synthesis, and challenging. Conventional approaches either fail to accurately (exactly) identify the function blocks of the designs in gate-level netlist with structural hashing and symbolic propagation, or their reasoning performance is highly sensitive to structure modifications caused by technology mapping or logic optimization. This paper introduces BoolE, an exact symbolic reasoning framework for Boolean netlists using equality saturation. BoolE optimizes scalability and performance by integrating domain-specific Boolean ruleset for term rewriting. We incorporate a novel extraction algorithm into BoolE to enhance its structural insight and computational efficiency, which adeptly identifies and captures multi-input, multi-output high-level structures (e.g., full adder) in the reconstructed e-graph.
+  Our experiments show that BoolE surpasses state-of-the-art symbolic reasoning baselines, including the conventional functional approach (ABC) and machine learning-based method (Gamora). Specifically, we evaluated its performance on various multiplier architecture with different configurations. Our results show that BoolE identifies $3.53\times$ and $3.01\times$ more exact full adders than ABC in carry-save array and</p>
+  </section>
+</article>
+</body>
+</html>

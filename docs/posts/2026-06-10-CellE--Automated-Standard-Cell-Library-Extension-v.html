@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CellE: Automated Standard Cell Library Extension via Equality Saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" AND (ab:"program synthesis" OR ab:"deobfuscation" OR ab:"e-graph")</span>
+    <h1>CellE: Automated Standard Cell Library Extension via Equality Saturation</h1>
+    <div class="meta">
+      <span>✍️ Yi Ren, Yukun Wang, Xiang Meng</span>
+      <span>📅 2026-03-13</span>
+      <a href="http://arxiv.org/abs/2603.12797v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: VLSI 설계에서 equality saturation과 e-graph를 활용하여 표준 셀 라이브러리를 자동으로 확장하고 최적화하는 CellE 프레임워크를 제안하여 평균 15.41%의 면적 감소와 8.00%의 지연 감소를 달성했습니다.<br><br>**문제 정의**: <br>현대 VLSI 설계에서 Quality of Results (QoR) 최대화를 위한 표준 셀 라이브러리의 자동 확장 문제를 해결하고자 했습니다. 기존 방법들은 기능적으로 동등한 하위 회로들을 완전히 발견하지 못해 최적화 기회를 놓치는 한계가 있었습니다.<br><br>**핵심 기여**:<br>1. **Equality saturation 기반 접근법**: 포스트 매핑 네트리스트에 equality saturation을 적용하여 기능적으로 동등한 모든 구현들을 완전히 탐색<br>2. **E-graph 기반 클러스터링**: 기능적으로 동등한 구현들을 e-graph로 표현하여 정규화된 표현(canonical representation) 생성<br>3. **효율적인 패턴 마이닝 알고리즘**: e-graph 구조를 활용하여 면적 최적화된 표준 셀을 선택하는 알고리즘 개발<br><br>**의의**:<br>이 연구는 equality saturation과 e-graph라는 형식 검증 기법을 VLSI 설계 최적화 도메인에 성공적으로 적용한 사례로, 프로그램 합성 및 회로 최적화 분야에서 equality saturation의 실용적 응용 가능성을 보여줍니다. 특히 e-graph 기반 접근법이 복잡한 최적화 문제에서 완전성(exhaustiveness)과 효율성을 동시에 달성할 수 있음을 실증적으로 입증했습니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Automated standard cell library extension is crucial for maximizing Quality of Results (QoR) in modern VLSI design. We introduce CellE, a novel framework that leverages formal methods to achieve exhaustive discovery of functionally equivalent subcircuits. CellE applies equality saturation to the post-mapping netlist, generating an e-graph to cluster all functionally equivalent implementations. This canonical representation enables an efficient pattern mining algorithm to select the most area-optimal standard cells. Experimental results show a 15.41% average area reduction (up to 23.64% over prior work). Furthermore, characterization in a commercial flow demonstrates an 8.00% average delay reduction, confirming CellE's superior QoR optimization capabilities.</p>
+  </section>
+</article>
+</body>
+</html>

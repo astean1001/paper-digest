@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-10-CellE--Automated-Standard-Cell-Library-Extension-v.html",
+    "title": "CellE: Automated Standard Cell Library Extension via Equality Saturation",
+    "date": "2026-06-10",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "VLSI 설계에서 equality saturation과 e-graph를 활용하여 표준 셀 라이브러리를 자동으로 확장하고 최적화하는 CellE 프레임워크를 제안하여 평균 15.41%의 면적 감소와 8.00%의 지연 감소를 달성했습니다.",
+    "url": "http://arxiv.org/abs/2603.12797v2"
+  },
+  {
+    "filename": "2026-06-10-Optimism-in-Equality-Saturation.html",
+    "title": "Optimism in Equality Saturation",
+    "date": "2026-06-10",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "Equality saturation의 기존 비관적 e-class 분석을 개선하여 순환 프로그램(SSA 형태)에 대해 정확성을 유지하면서도 정밀도를 향상시키는 낙관적 추상 해석 알고리즘을 제안한 연구입니다.",
+    "url": "http://arxiv.org/abs/2511.20782v4"
+  },
+  {
+    "filename": "2026-06-10-HEC--Equivalence-Verification-Checking-for-Code-Tr.html",
+    "title": "HEC: Equivalence Verification Checking for Code Transformation via Equality Saturation",
+    "date": "2026-06-10",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2506.02290v2"
+  },
+  {
+    "filename": "2026-06-10-BoolE--Exact-Symbolic-Reasoning-via-Boolean-Equali.html",
+    "title": "BoolE: Exact Symbolic Reasoning via Boolean Equality Saturation",
+    "date": "2026-06-10",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2504.05577v2"
+  },
+  {
+    "filename": "2026-06-10-Sketch-Guided-Equality-Saturation--Scaling-Equalit.html",
+    "title": "Sketch-Guided Equality Saturation: Scaling Equality Saturation to Complex Optimizations of Functional Programs",
+    "date": "2026-06-10",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "함수형 프로그램의 복잡한 컴파일러 최적화를 위해 프로그래머가 제공하는 스케치로 equality saturation을 가이드하는 반자동 기법을 제안하여 기존 방법의 확장성 문제를 해결했습니다.",
+    "url": "http://arxiv.org/abs/2111.13040v2"
+  },
+  {
     "filename": "2026-06-09-On-the-Shoulders-of-Giants--Empowering-Automated-S.html",
     "title": "On the Shoulders of Giants: Empowering Automated Smart Contract Auditing via the GiAnt Corpus",
     "date": "2026-06-09",

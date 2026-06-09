@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimism in Equality Saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" AND (ab:"program synthesis" OR ab:"deobfuscation" OR ab:"e-graph")</span>
+    <h1>Optimism in Equality Saturation</h1>
+    <div class="meta">
+      <span>✍️ Russel Arbore, Alvin Cheung, Max Willsey</span>
+      <span>📅 2025-11-25</span>
+      <a href="http://arxiv.org/abs/2511.20782v4" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Equality saturation의 기존 비관적 e-class 분석을 개선하여 순환 프로그램(SSA 형태)에 대해 정확성을 유지하면서도 정밀도를 향상시키는 낙관적 추상 해석 알고리즘을 제안한 연구입니다.<br><br>**문제 정의**: <br>기존 equality saturation 기법은 e-class 분석에서 비관적(pessimistic) 접근법을 사용하여 SSA 형태와 같은 순환 프로그램을 분석할 때 정밀도가 낮고, 단순히 낙관적(optimistic) 접근법으로 바꾸면 e-graph의 프로그램 표현 방식으로 인해 부정확성(unsoundness) 문제가 발생합니다.<br><br>**핵심 기여**: <br>1) 기존 낙관적 e-class 분석이 왜 부정확해지는지 근본적 원인을 규명<br>2) 이 문제를 회피하면서 e-graph를 낙관적으로 분석할 수 있는 새로운 추상 해석 알고리즘 제안<br>3) 낙관적 분석과 비파괴적 재작성을 통합한 단일 알고리즘 개발<br>4) SSA 프로그램용 프로토타입 구현 및 성능 검증<br><br>**의의**: <br>프로그램 최적화와 분석의 정밀도-성능 트레이드오프를 개선한 중요한 연구로, 특히 순환 구조를 가진 복잡한 프로그램의 분석 품질을 향상시킵니다. 프로그램 합성, 난독화 해제 등 정밀한 프로그램 분석이 필요한 연구 영역에서 핵심적인 기반 기술로 활용될 수 있으며, 기존 추상 해석 기법의 한계를 극복하는 새로운 방법론을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Equality saturation is a program optimization technique based on non-destructive rewriting and a form of abstract interpretation called e-class analysis. Existing e-class analyses are pessimistic and therefore typically imprecise when analyzing cyclic programs, such as those in SSA form. We show that a straightforward optimistic variant of e-class analysis can result in unsoundness, due to a subtlety in how e-graphs represent programs. We propose an abstract interpretation algorithm that circumvents this issue and can optimistically analyze e-graphs during equality saturation. This results in a unified algorithm for optimistic analysis and non-destructive rewriting. We implement a prototype abstract interpreter and equality saturation tool for SSA programs. Our tool exhibits precision improvements over pure abstract interpretation (without rewriting) and pessimistic e-class analysis on example programs. Additionally, its performance is comparable to existing abstract interpretation and e-class analysis techniques.</p>
+  </section>
+</article>
+</body>
+</html>

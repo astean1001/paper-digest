@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HEC: Equivalence Verification Checking for Code Transformation via Equality Saturation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ti:"equality saturation" AND (ab:"program synthesis" OR ab:"deobfuscation" OR ab:"e-graph")</span>
+    <h1>HEC: Equivalence Verification Checking for Code Transformation via Equality Saturation</h1>
+    <div class="meta">
+      <span>✍️ Jiaqi Yin, Zhan Song, Nicolas Bohm Agostini</span>
+      <span>📅 2025-06-02</span>
+      <a href="http://arxiv.org/abs/2506.02290v2" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>HEC는 e-graph 데이터 구조와 MLIR을 결합하여 소스-투-소스 코드 변환의 기능적 동치성을 포괄적으로 검증하는 프레임워크로, 실제 컴파일러 버그를 발견할 수 있는 실용적 검증 도구입니다.<br><br>**문제 정의**: <br>현대 컴파일러와 고수준 합성(HLS)에서 성능 향상을 위해 다양한 소스-투-소스 코드 변환(루프 언롤링, 타일링, 퓨전 등)을 적극 사용하고 있으나, 이러한 변환의 정확성을 검증하는 포괄적인 도구가 부족한 상황입니다. 특히 제어 흐름과 데이터패스 변환의 기능적 동치성을 체계적으로 검증할 수 있는 방법론이 필요했습니다.<br><br>**핵심 기여**: <br>1) **E-graph 기반 동치성 검증 프레임워크**: equality saturation의 e-graph 데이터 구조를 활용하여 프로그램 간 기능적 동치성을 검증하는 새로운 접근법 제시<br>2) **MLIR 통합**: MLIR을 프론트엔드로 사용하여 e-graph 프레임워크와 통합, 산업 표준 중간 표현을 활용한 실용적 검증 환경 구축  <br>3) **동적-정적 혼합 재작성**: 동적 및 정적 e-graph 재작성 기법을 결합하여 포괄적인 코드 변환 검증 가능<br>4) **실제 버그 발견**: mlir-opt에서 루프 경계 검사 오류와 메모리 read-after-write 위반 등 실제 컴파일러 버그 2건 발견<br><br>**의의**: <br>이 연구는 형식 검증과 컴파일러 최적화의 교차점에서 중요한 실용적 가치를 제공합니다. equality saturation이 단순히 이론적 기법을 넘어 실제 소프트웨어 시스템의 신뢰성 향상에 기여할 수 있음을 보여주며, 특히 안전-critical 시스템에서 코드 변환의 정확성 보장이 필수적인 상황에서 직접적으로 활용 가능한 도구를 제시합니다. 프로그램 분석, 컴파일러 검증, 그리고 형</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>In modern computing systems, compilation employs numerous optimization techniques to enhance code performance. Source-to-source code transformations, which include control flow and datapath transformations, have been widely used in High-Level Synthesis (HLS) and compiler optimization.
+  While researchers actively investigate methods to improve performance with source-to-source code transformations, they often overlook the significance of verifying their correctness. Current tools cannot provide a holistic verification of these transformations. This paper introduces HEC, a framework for equivalence checking that leverages the e-graph data structure to comprehensively verify functional equivalence between programs. HEC utilizes the MLIR as its frontend and integrates MLIR into the e-graph framework. Through the combination of dynamic and static e-graph rewriting, HEC facilitates the validation of comprehensive code transformations.
+  We demonstrate effectiveness of HEC on PolyBenchC benchmarks, successfully verifying loop unrolling, tiling, and fusion transformations. HEC processes over 100,000 lines of MLIR code in 40 minutes with predictable runtime scaling. Importantly, HEC identified two critical compilation errors in mlir-opt: loop boundary check errors causing unintended executions during unrolling, and memory read-after-write violations in loop fusion that alter program semantics. These findings demonstrate HEC practical value in detecting real-world compiler bugs and hi</p>
+  </section>
+</article>
+</body>
+</html>
