@@ -1,5 +1,14 @@
 [
   {
+    "filename": "2026-06-11-A-Near-Cutoff-Waveguide-Haloscope-for-sub-meV-Dark.html",
+    "title": "A Near-Cutoff Waveguide Haloscope for sub-meV Dark Matter",
+    "date": "2026-06-11",
+    "source": "arXiv",
+    "topic": "ti:\"MEV\" OR ti:\"maximal extractable value\" AND ab:\"Solana\"",
+    "one_liner": "sub-meV 영역의 암흑물질 탐지를 위해 근차단 평행판 도파관 할로스코프를 제안하여, 기존 공진기의 한계를 극복하고 높은 민감도와 확장성을 달성하는 새로운 방법론을 제시함.",
+    "url": "http://arxiv.org/abs/2605.15820v1"
+  },
+  {
     "filename": "2026-06-10-CellE--Automated-Standard-Cell-Library-Extension-v.html",
     "title": "CellE: Automated Standard Cell Library Extension via Equality Saturation",
     "date": "2026-06-10",
