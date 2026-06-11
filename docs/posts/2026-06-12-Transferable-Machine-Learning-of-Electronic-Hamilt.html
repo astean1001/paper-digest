@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transferable Machine Learning of Electronic Hamiltonians with Superposition-of-Atomic-Potentials Features</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MEV" OR ab:"maximal extractable value" AND ti:"Solana"</span>
+    <h1>Transferable Machine Learning of Electronic Hamiltonians with Superposition-of-Atomic-Potentials Features</h1>
+    <div class="meta">
+      <span>✍️ Chaoqun Zhang, Christian Venturella, Enzhi Chen</span>
+      <span>📅 2026-06-10</span>
+      <a href="http://arxiv.org/abs/2606.12326v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: <br>원자 포텐셜 중첩(SAP) 근사를 기반으로 한 머신러닝 프레임워크를 통해 전자 해밀토니안을 효율적이고 전이가능하게 학습하는 방법을 제시했습니다.<br><br>**문제 정의**: <br>전자구조 계산에서 정확한 해밀토니안 예측은 계산비용이 높고, 기존 머신러닝 접근법은 큰 basis set으로의 확장성과 새로운 분자계로의 전이성이 제한적이라는 문제를 해결하고자 했습니다.<br><br>**핵심 기여**: <br>1) **SAP 기반 특징량 설계**: 전자-전자 차폐 효과를 포착하는 물리학적 정보가 풍부한 입력 특징량 개발<br>2) **궤도 기반 그래프 신경망**: 대칭성이 적응된 원자궤도 학습 기저를 사용하여 Kohn-Sham Fock 행렬 예측<br>3) **Downfolding 기법**: 최소 기저 특징량으로부터 큰 기저집합의 전자구조를 예측하는 확장 방법론<br>4) **높은 전이성 확인**: 벤젠 유도체 이종이합체에서 4.8 meV의 낮은 오차로 전이 적분 예측<br><br>**의의**: <br>이 연구는 물리학적 선험지식을 머신러닝에 효과적으로 통합하여 정확성과 전이성을 동시에 달성한 사례로, 프로그램 합성과 LLM 융합 연구에서 도메인 지식을 어떻게 효과적으로 인코딩할지에 대한 중요한 통찰을 제공합니다. 특히 계층적 표현학습(minimal→large basis)과 물리적 제약을 만족하는 신경망 설계는 과학계산 분야의 AI 응용에 직접 적용 가능한 방법론입니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Machine learning (ML) of electronic Hamiltonians offers a unified route to electronic wave functions and physical observables. We introduce a Hamiltonian learning framework built on electronic features derived from the superposition-of-atomic-potentials (SAP) approximation, an efficient self-consistent-field initial guess that captures essential electron-electron screening. SAP quantities define a symmetry-adapted intrinsic atomic orbital learning basis and provide physics-informed inputs to an orbital-based graph neural network that predicts converged Kohn-Sham Fock matrices. To extend the approach to larger basis sets, we further develop a downfolding scheme that predicts large-basis electronic structure from minimal-basis features. On the QM9 dataset, the model accurately reproduces frontier and core orbital energies, dipole moments, and the full density of states. For organic charge-transport materials, it yields accurate intermolecular transfer integrals for benzene, tetracyanoquinodimethane (TCNQ), and tetrathiafulvalene (TTF) dimers, and transfers to unseen substituted-benzene heterodimers with a mean absolute error of 4.8 meV. These results establish SAP-based ML of electronic Hamiltonians as a transferable and scalable tool for high-throughput electronic-structure prediction.</p>
+  </section>
+</article>
+</body>
+</html>

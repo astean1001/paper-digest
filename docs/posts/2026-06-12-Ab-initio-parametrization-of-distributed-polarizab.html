@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ab initio parametrization of distributed polarizable force fields</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MBA deobfuscation" OR (ti:"mixed boolean arithmetic" AND ab:"equality saturation")</span>
+    <h1>Ab initio parametrization of distributed polarizable force fields</h1>
+    <div class="meta">
+      <span>✍️ Felix Post, Jean-Philip Filling, Toulik Maitra</span>
+      <span>📅 2026-06-08</span>
+      <a href="http://arxiv.org/abs/2606.09647v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 개별 원자에 극성화 텐서를 할당하고 그래프 신경망으로 예측하는 새로운 극성화 가능 힘장(polarizable force field) 매개변수화 방법을 제시하여 분자 시뮬레이션의 정확도와 전이성을 크게 향상시켰습니다.<br><br>**문제 정의**: <br>기존 극성화 가능 힘장은 원자 타입별로 스칼라 극성화도를 할당하여 양이온, 음이온, 들뜬 상태 등에서 정확도가 떨어지고, ab initio 계산 비용이 높아 실용적 매개변수화가 어려운 문제가 있었습니다.<br><br>**핵심 기여**:<br>1. **개별 원자 기반 극성화**: 원자 타입 대신 개별 원자에 극성화도를 할당하는 새로운 접근법<br>2. **텐서 극성화도 도입**: 스칼라 대신 극성화 텐서를 사용하여 방향성 고려<br>3. **그래프 신경망 예측 모델**: message-passing 그래프 신경망으로 극성화 매개변수를 효율적으로 예측<br>4. **제1원리 검증 프로토콜**: 소분자 공액 시스템에서 방법론 검증 및 실패 사례 진단 기준 제시<br><br>**의의**: <br>형식 검증에서 제약 기반 접근법과 유사하게, 물리화학적 제약(극성화 특성)을 정확히 모델링하고 기계학습으로 효율화한 방법론입니다. 분자 시뮬레이션의 정확도 향상은 drug discovery, 재료 설계 등에서 예측 신뢰성을 높이며, 매개변수 최적화와 검증 과정은 다른 과학 계산 분야의 모델 개선에도 응용 가능한 범용적 접근법을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Polarizable force fields offer superior transferability and accuracy compared to classical force fields, enabling access to electronic response properties such as refractive index and electronic density of states. Here, we demonstrate two key improvements that significantly enhance their accuracy: (1) assigning atomic polarizability to individual atoms rather than atom types, and (2) employing atomic polarizability tensors instead of scalar values. These modifications extend the applicability of polarizable force fields to cations, anions, and excited states, while also providing more accurate descriptions of neutral molecules. We propose a first-principles-based parameterization procedure for atomic polarizability tensors and scalars, validated on a set of small organic molecules with conjugated building blocks. To overcome the computational cost of ab initio calculations, we train a message-passing graph neural network to predict polarizability parameters, enabling efficient and scalable parameterization. Crucially, this approach imposes no additional computational cost during simulations and provides a clear diagnostic criterion for identifying cases where polarizable force field models fail to accurately describe molecular polarizability.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Constraint residuals, graph posteriors, and determinant-corrected full-space targets in Bayesian inverse problems</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MBA deobfuscation" OR (ti:"mixed boolean arithmetic" AND ab:"equality saturation")</span>
+    <h1>Constraint residuals, graph posteriors, and determinant-corrected full-space targets in Bayesian inverse problems</h1>
+    <div class="meta">
+      <span>✍️ Jonathon Cottom, Emilia Olsson</span>
+      <span>📅 2026-06-08</span>
+      <a href="http://arxiv.org/abs/2606.09594v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 베이지안 역문제에서 제약 조건을 잔차 페널티로 처리할 때 발생하는 사후분포 불일치 문제를 분석하고, 올바른 사후분포 샘플링을 위한 결정자 보정 방법을 제시했다.<br><br>**문제 정의**: <br>상태방정식으로 제약된 베이지안 역문제를 해결할 때, 축소된 공간에서 직접 샘플링하는 대신 전체 매개변수-상태 공간에서 잔차를 페널티로 사용하는 방법이 널리 쓰이지만, 이 두 접근법이 동일한 사후분포를 생성한다고 가정되어 왔다. 그러나 실제로는 이들이 서로 다른 사후측도를 만들어낸다는 문제가 있다.<br><br>**핵심 기여**:<br>1. **이론적 분석**: 축소된 사후분포, 그래프 리프트, 제로 노이즈 잔차 사후분포가 서로 구별되는 세 가지 다른 분포임을 수학적으로 증명<br>2. **결정자 보정 공식**: 가우시안 잔차 페널티가 여백화 후 축소된 밀도에 |det ∂_u c(θ,G(θ))|^(-1) 항을 곱한 형태로 수렴함을 보이고, 이를 보정하는 결정자 수정 방법 도출<br>3. **일반화된 보정 방법**: 가중치 없는, 가중치 있는, 재스케일된 잔차 페널티에 대한 포괄적인 보정 기법 제시<br><br>**의의**: <br>이 연구는 제약 기반 최적화와 심볼릭 실행에서 핵심적인 통계적 추론 문제를 해결한다. 특히 MBA 디옵스케이션과 같은 제약 기반 패치 합성에서 베이지안 방법을 사용할 때, 단순히 제약 조건을 만족시키는 것만으로는 올바른 확률적 추론이 보장되지 않으며, 적절한 밀도 보정이 필요함을 시사한다. 이는 제약 만족 문제에서 확률적 샘플링의 정확성을 보장하는 이론적 기반을 제공한다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Bayesian inverse problems constrained by state equations are often sampled in a full parameter-state space by penalising the residual, rather than in a reduced space where the state is eliminated. We show that these formulations are not automatically equivalent as posterior measures. For finite-dimensional discretisations of equality-constrained inverse problems, assume the state equation \(c(θ,u)=0\) has a unique solution \(u=G(θ)\) and nonsingular state Jacobian \(\D_u c\). The reduced posterior, its graph lift, and the zero-noise residual posterior are then distinct. A local change of variables shows that an uncorrected Gaussian residual penalty converges, after marginalisation over \(u\), to the reduced density multiplied by \(\abs{\det \D_u c(θ,G(θ))}^{-1}\). Thus algebraically equivalent residuals can define the same feasible set but different limiting posteriors. We derive determinant corrections for unweighted, weighted, and rescaled residual penalties that have the graph-lifted reduced posterior as their hard-constraint limit. The result separates feasibility from posterior calibration: driving the residual to zero is not sufficient for exact sampling of the graph-lifted reduced posterior unless the sampling or correction step targets the corresponding corrected density.</p>
+  </section>
+</article>
+</body>
+</html>

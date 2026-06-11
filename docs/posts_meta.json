@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-12-Transferable-Machine-Learning-of-Electronic-Hamilt.html",
+    "title": "Transferable Machine Learning of Electronic Hamiltonians with Superposition-of-Atomic-Potentials Features",
+    "date": "2026-06-12",
+    "source": "arXiv",
+    "topic": "ab:\"MEV\" OR ab:\"maximal extractable value\" AND ti:\"Solana\"",
+    "one_liner": "",
+    "url": "http://arxiv.org/abs/2606.12326v1"
+  },
+  {
+    "filename": "2026-06-12-DSpinGNN--A-Physics-Informed-Equivariant-Graph-Neu.html",
+    "title": "DSpinGNN: A Physics-Informed Equivariant Graph Neural Network for Dynamic Magnetic Exchange Prediction in Strain-Deformed Monolayer CrI$_3$",
+    "date": "2026-06-12",
+    "source": "arXiv",
+    "topic": "ab:\"MEV\" OR ab:\"maximal extractable value\" AND ti:\"Solana\"",
+    "one_liner": "동적으로 변형되는 CrI₃ 단일층에서 구조적 변형과 자기 교환 결합을 동시에 예측하는 물리학 정보 기반 이중 구조 그래프 신경망(DSpinGNN)을 개발했습니다.",
+    "url": "http://arxiv.org/abs/2606.11685v1"
+  },
+  {
+    "filename": "2026-06-12-Ab-initio-parametrization-of-distributed-polarizab.html",
+    "title": "Ab initio parametrization of distributed polarizable force fields",
+    "date": "2026-06-12",
+    "source": "arXiv",
+    "topic": "ab:\"MBA deobfuscation\" OR (ti:\"mixed boolean arithmetic\" AND ab:\"equality saturation\")",
+    "one_liner": "개별 원자에 극성화 텐서를 할당하고 그래프 신경망으로 예측하는 새로운 극성화 가능 힘장(polarizable force field) 매개변수화 방법을 제시하여 분자 시뮬레이션의 정확도와 전이성을 크게 향상시켰습니다.",
+    "url": "http://arxiv.org/abs/2606.09647v1"
+  },
+  {
+    "filename": "2026-06-12-Constraint-residuals--graph-posteriors--and-determ.html",
+    "title": "Constraint residuals, graph posteriors, and determinant-corrected full-space targets in Bayesian inverse problems",
+    "date": "2026-06-12",
+    "source": "arXiv",
+    "topic": "ab:\"MBA deobfuscation\" OR (ti:\"mixed boolean arithmetic\" AND ab:\"equality saturation\")",
+    "one_liner": "베이지안 역문제에서 제약 조건을 잔차 페널티로 처리할 때 발생하는 사후분포 불일치 문제를 분석하고, 올바른 사후분포 샘플링을 위한 결정자 보정 방법을 제시했다.",
+    "url": "http://arxiv.org/abs/2606.09594v1"
+  },
+  {
+    "filename": "2026-06-12-Investigating-Calibration-Challenges-in-Probabilis.html",
+    "title": "Investigating Calibration Challenges in Probabilistic Electricity Price Forecasting",
+    "date": "2026-06-12",
+    "source": "arXiv",
+    "topic": "ab:\"MBA deobfuscation\" OR (ti:\"mixed boolean arithmetic\" AND ab:\"equality saturation\")",
+    "one_liner": "확률적 전력 가격 예측에서 현재 평가 지표들이 예측 정확도에만 집중하여 통계적 신뢰성을 희생시키는 보정(calibration) 문제를 지적하고, 신뢰할 수 있는 불확실성 추정을 위한 보정 중심 접근법의 필요성을 제시한 연구입니다.",
+    "url": "http://arxiv.org/abs/2606.09517v1"
+  },
+  {
     "filename": "2026-06-11-A-Near-Cutoff-Waveguide-Haloscope-for-sub-meV-Dark.html",
     "title": "A Near-Cutoff Waveguide Haloscope for sub-meV Dark Matter",
     "date": "2026-06-11",

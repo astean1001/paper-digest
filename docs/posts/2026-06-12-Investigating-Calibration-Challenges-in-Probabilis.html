@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investigating Calibration Challenges in Probabilistic Electricity Price Forecasting</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"MBA deobfuscation" OR (ti:"mixed boolean arithmetic" AND ab:"equality saturation")</span>
+    <h1>Investigating Calibration Challenges in Probabilistic Electricity Price Forecasting</h1>
+    <div class="meta">
+      <span>✍️ Jan Niklas Lettner, Hadeer El Ashhab, Benjamin Schäfer</span>
+      <span>📅 2026-06-08</span>
+      <a href="http://arxiv.org/abs/2606.09517v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 확률적 전력 가격 예측에서 현재 평가 지표들이 예측 정확도에만 집중하여 통계적 신뢰성을 희생시키는 보정(calibration) 문제를 지적하고, 신뢰할 수 있는 불확실성 추정을 위한 보정 중심 접근법의 필요성을 제시한 연구입니다.<br><br>**문제 정의**: <br>재생에너지 통합으로 인한 전력시장 변동성 증가로 확률적 가격 예측이 필수가 되었으나, 기존 scoring rule들이 예측의 날카로움(sharpness)을 우선시하면서 보정(calibration)을 무시하여 과신된(overconfident) 불확실성 추정치를 생성하는 문제를 다룹니다.<br><br>**핵심 기여**:<br>- 이론적 점수화와 실제 보정 간의 중요한 격차를 실증적으로 입증<br>- 신뢰성이 무시될 때 확률적 모델이 단순한 결정론적 예측의 대리물로 전락함을 보임  <br>- 에너지 시장 예측의 분포적 무결성 보장을 위한 보정 인식 목적함수와 아키텍처 개발 필요성 제시<br><br>**의의**:<br>전력시장과 같은 고변동성 환경에서 불확실성 정량화의 신뢰성이 위험관리에 미치는 영향을 조명한 점에서 중요합니다. 다중 플랫폼 분석 연구에서도 예측 모델의 보정 품질이 의사결정 신뢰성에 직결되므로, 본 연구의 보정 중심 평가 방법론은 구조방정식 모델링에서 모델 적합도 평가 시 예측 신뢰성을 높이는 데 적용 가능합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>As renewable energy integration increases market volatility, probabilistic electricity price forecasting has become essential for effective risk management. However, current-proper-scoring rules often prioritize forecast sharpness at the expense of calibration, leading to overconfident and statistically unreliable uncertainty estimates. This work highlights the critical gap between theoretical scoring and practical calibration, demonstrating that models can become mere proxies for deterministic forecasts when reliability is neglected. We conclude that future research must shift toward calibration-aware objectives and architectures to ensure the distributional integrity of energy market forecasts.</p>
+  </section>
+</article>
+</body>
+</html>
