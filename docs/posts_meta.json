@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-13-Momentum-Space-Algorithm-for-Electronic-Structure.html",
+    "title": "Momentum Space Algorithm for Electronic Structure of Double-Incommensurate Trilayer Graphene",
+    "date": "2026-06-13",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" OR (ab:\"e-graph\" AND ab:\"deobfuscation\") OR ab:\"mixed boolean arithmetic\"",
+    "one_liner": "이중 비공약(double-incommensurate) 삼층 그래핀의 전자구조를 효율적으로 계산하기 위한 운동량 공간 알고리즘을 개발하고, 4차원 격자 공간의 효과적인 절단 기법을 통해 상태밀도 계산의 수렴성을 대폭 개선했습니다.",
+    "url": "http://arxiv.org/abs/2606.13434v1"
+  },
+  {
+    "filename": "2026-06-13-Efficient-emulation-of-nuclear-ground-states-with.html",
+    "title": "Efficient emulation of nuclear ground states with neural-network variational Monte Carlo and eigenvector continuation",
+    "date": "2026-06-13",
+    "source": "arXiv",
+    "topic": "ti:\"equality saturation\" OR (ab:\"e-graph\" AND ab:\"deobfuscation\") OR ab:\"mixed boolean arithmetic\"",
+    "one_liner": "신경망 변분 몬테카르로(FeynmanNet)와 고유벡터 연속화를 결합하여 핵 바닥상태 특성을 0.5% 미만 오차로 효율적으로 계산하는 에뮬레이터를 개발했습니다.",
+    "url": "http://arxiv.org/abs/2606.12998v1"
+  },
+  {
+    "filename": "2026-06-13-Momentum-Space-Algorithm-for-Electronic-Structure.html",
+    "title": "Momentum Space Algorithm for Electronic Structure of Double-Incommensurate Trilayer Graphene",
+    "date": "2026-06-13",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"language model\"",
+    "one_liner": "이중 비공약(double-incommensurate) 삼층 그래핀의 전자 구조를 효율적으로 계산하기 위한 운동량 공간 알고리즘을 개발하고, 4차원 격자 공간의 절단 기법을 통해 수치적 수렴성을 대폭 개선했습니다.",
+    "url": "http://arxiv.org/abs/2606.13434v1"
+  },
+  {
+    "filename": "2026-06-13-Efficient-emulation-of-nuclear-ground-states-with.html",
+    "title": "Efficient emulation of nuclear ground states with neural-network variational Monte Carlo and eigenvector continuation",
+    "date": "2026-06-13",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"language model\"",
+    "one_liner": "FeynmanNet 신경망과 고유벡터 연속화를 결합하여 핵 바닥상태 계산의 효율적인 에뮬레이터를 개발하고, 다양한 해밀토니안에 대한 핵 특성을 최소 계산 비용으로 예측할 수 있는 방법을 제시했습니다.",
+    "url": "http://arxiv.org/abs/2606.12998v1"
+  },
+  {
+    "filename": "2026-06-13-Hidden-antiferromagnetism--persistent-valley-fluct.html",
+    "title": "Hidden antiferromagnetism, persistent valley fluctuations, and $U(6)$ crossovers in triangular-lattice M-point moiré materials via determinantal quantum Monte Carlo",
+    "date": "2026-06-13",
+    "source": "arXiv",
+    "topic": "ab:\"neurosymbolic\" AND (ab:\"program synthesis\" OR ab:\"program analysis\") AND ab:\"language model\"",
+    "one_liner": "삼각격자 M-점 모아레 물질에서 determinantal 양자 몬테카를로 시뮬레이션을 통해 숨겨진 반강자성, 지속적인 밸리 요동, 그리고 U(6) 대칭성 교차현상을 발견했습니다.",
+    "url": "http://arxiv.org/abs/2606.12530v1"
+  },
+  {
     "filename": "2026-06-12-Transferable-Machine-Learning-of-Electronic-Hamilt.html",
     "title": "Transferable Machine Learning of Electronic Hamiltonians with Superposition-of-Atomic-Potentials Features",
     "date": "2026-06-12",

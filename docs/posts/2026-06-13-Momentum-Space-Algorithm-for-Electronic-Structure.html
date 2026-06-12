@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Momentum Space Algorithm for Electronic Structure of Double-Incommensurate Trilayer Graphene</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"neurosymbolic" AND (ab:"program synthesis" OR ab:"program analysis") AND ab:"language model"</span>
+    <h1>Momentum Space Algorithm for Electronic Structure of Double-Incommensurate Trilayer Graphene</h1>
+    <div class="meta">
+      <span>✍️ Ken Beard, Daniel Massatt</span>
+      <span>📅 2026-06-11</span>
+      <a href="http://arxiv.org/abs/2606.13434v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: 이중 비공약(double-incommensurate) 삼층 그래핀의 전자 구조를 효율적으로 계산하기 위한 운동량 공간 알고리즘을 개발하고, 4차원 격자 공간의 절단 기법을 통해 수치적 수렴성을 대폭 개선했습니다.<br><br>**문제 정의**: <br>기존 연속체 모델(continuum model)을 사용한 이중 비공약 삼층 그래핀의 전자 구조 계산에서 4차원 격자 공간으로 인해 상태 밀도(density of states)의 수치적 수렴성이 매우 나쁜 문제를 해결하고자 했습니다. 세 개의 격자가 모두 상호 비공약적인 상황에서 주기성이 없어 블로흐 이론을 직접 적용할 수 없는 근본적 한계도 극복해야 했습니다.<br><br>**핵심 기여**:<br>1. **운동량 공간 프레임워크**: 이중 비공약 삼층 그래핀을 위한 새로운 운동량 공간 기반 계산 프레임워크 도입<br>2. **효율적 절단 기법**: 4차원 격자 공간의 효율적인 절단(truncation) 방법을 개발하여 상태 밀도와 운동량 국소 상태 밀도의 수렴성을 획기적으로 개선<br>3. **고차 정확도**: 타이트 바인딩 모델의 정확한 변환으로서 연속체 모델보다 본질적으로 높은 차수의 정확도 달성<br>4. **매직 각도 검증**: 매직 각도에서의 평평한 밴드 근처의 변화된 밴드 거동을 수치적으로 검증<br><br>**의의**: <br>이 연구는 복잡한 다층 2D 재료의 전자 구조를 정확하고 효율적으로 계산할 수 있는 수치 알고리즘을 제시함으로써, 재료 특성 예측과 실험 가이드라인 제공에 중요한 도구를 제공합니다. 특히 운동량 공간에서의 체계적인 절단 기법과 수렴성 개선 방법론은 다른 비주기적 복합 시스템의 수치 해석에도 응용 가능한 범용적 접근법으로 평가됩니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Numerical algorithms for computing electronic structure of incommensurate 2D materials using ab initio models is critical for predicting material properties and guiding experiment. For bilayers, momentum space and continuum models have been introduced to approximate observables of ab initio tight-binding models using a momenta description despite the lack of periodicity in the tight-binding model required for Bloch theory. A similar structure has been introduced for double-incommensurate trilayers using a continuum model, where the three lattices are all mutually incommensurate. However, this description leads to a four-dimensional lattice space, and numerical convergence of the density of states was observed to have poor convergence.
+  In this work, we introduce a momentum space framework for double incommensurate trilayer graphene, and introduce an efficient truncation scheme of the four-dimensional lattice to drastically improve convergence of the density of states and momentum local density of states (a parallel object to classical band structure). We implement this algorithm on an ab initio model of twisted trilayer graphene and validate convergence estimates. We further verify numerically that the momentum space algorithm, inherently higher order than the continuum model as it is an exact transformation of the tight-binding model, captures altered band behavior near the flat bands at magic angles.</p>
+  </section>
+</article>
+</body>
+</html>
