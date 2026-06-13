@@ -1,5 +1,50 @@
 [
   {
+    "filename": "2026-06-14-Cepstral-Analysis-to-accelerate-Green-Kubo-thermal.html",
+    "title": "Cepstral Analysis to accelerate Green-Kubo thermal conductivity calculations of Metal-Organic Frameworks",
+    "date": "2026-06-14",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "Metal-Organic Frameworks(MOFs)의 열전도도 계산에서 기존 Green-Kubo 시뮬레이션의 통계적 노이즈와 매개변수 민감성 문제를 Cepstral Analysis를 통해 해결하여 계산 효율성과 재현성을 크게 향상시킨 연구입니다.",
+    "url": "http://arxiv.org/abs/2606.13588v1"
+  },
+  {
+    "filename": "2026-06-14-Model-structures-and-electron-transfer-properties.html",
+    "title": "Model structures and electron transfer properties of conductive nickel-organic nanoribbons in cable bacteria",
+    "date": "2026-06-14",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "Cable bacteria의 전도성 니켈-유기 나노리본 구조를 DFT 계산으로 모델링하여 전자 전달 메커니즘을 규명하고, 생체 재료로서는 극히 높은 전도성의 원리를 밝혔다.",
+    "url": "http://arxiv.org/abs/2606.13117v1"
+  },
+  {
+    "filename": "2026-06-14-Mixed-dimensional-quantum-Monte-Carlo-studies-of-M.html",
+    "title": "Mixed-dimensional quantum Monte Carlo studies of M-point moiré materials",
+    "date": "2026-06-14",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "M-point 모아레 재료에서 준1차원 호핑과 2차원 상호작용이 혼재하는 \"혼합차원\" 시스템을 부호 문제 없이 시뮬레이션할 수 있는 새로운 양자 몬테카를로 알고리즘을 개발하고, 이를 통해 비틀린 SnSe₂의 상도표를 탐구했습니다.",
+    "url": "http://arxiv.org/abs/2606.12508v1"
+  },
+  {
+    "filename": "2026-06-14-Plasmonic-properties-and-correlation-energies-from.html",
+    "title": "Plasmonic properties and correlation energies from a compact multipole representation of the dielectric response in 2D metals",
+    "date": "2026-06-14",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "2D 금속의 동적 유전 응답을 소수의 집단 모드로 표현하는 컴팩트한 다중극-파데 근사 방법을 개발하여, 제1원리 계산과 해석적 모델 사이의 연결고리를 제공했습니다.",
+    "url": "http://arxiv.org/abs/2606.12274v1"
+  },
+  {
+    "filename": "2026-06-14-Proximity-induced-unconventional-superconductivity.html",
+    "title": "Proximity-induced unconventional superconductivity and chiral topological phases in twisted graphene/NbSe$_2$ van der Waals heterostructure",
+    "date": "2026-06-14",
+    "source": "arXiv",
+    "topic": "ab:\"equality saturation\" AND (ab:\"program synthesis\" OR ab:\"deobfuscation\" OR ab:\"e-graph\")",
+    "one_liner": "비틀린 그래핀/NbSe₂ 이종구조에서 근접효과로 유도되는 비전형 초전도성을 이론적으로 분석하여 키랄 토폴로지 초전도상의 풍부한 상도표를 발견했습니다.",
+    "url": "http://arxiv.org/abs/2606.12104v1"
+  },
+  {
     "filename": "2026-06-13-Momentum-Space-Algorithm-for-Electronic-Structure.html",
     "title": "Momentum Space Algorithm for Electronic Structure of Double-Incommensurate Trilayer Graphene",
     "date": "2026-06-13",

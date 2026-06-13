@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cepstral Analysis to accelerate Green-Kubo thermal conductivity calculations of Metal-Organic Frameworks</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav><a href="../index.html">← 전체 목록</a></nav>
+<article class="paper">
+  <header>
+    <span class="badge" style="background:#4a90d9">arXiv</span>
+    <span class="badge topic">ab:"equality saturation" AND (ab:"program synthesis" OR ab:"deobfuscation" OR ab:"e-graph")</span>
+    <h1>Cepstral Analysis to accelerate Green-Kubo thermal conductivity calculations of Metal-Organic Frameworks</h1>
+    <div class="meta">
+      <span>✍️ Florian P. Lindner, Egbert Zojer, Sandro Wieser</span>
+      <span>📅 2026-06-11</span>
+      <a href="http://arxiv.org/abs/2606.13588v1" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </header>
+  <section class="summary">
+    <h2>📝 요약</h2>
+    <div class="summary-content">**한 줄 요약**: Metal-Organic Frameworks(MOFs)의 열전도도 계산에서 기존 Green-Kubo 시뮬레이션의 통계적 노이즈와 매개변수 민감성 문제를 Cepstral Analysis를 통해 해결하여 계산 효율성과 재현성을 크게 향상시킨 연구입니다.<br><br>**문제 정의**: <br>- 기존 Green-Kubo(GK) 분자동역학 시뮬레이션을 통한 MOFs 열전도도 예측이 심각한 통계적 노이즈에 영향을 받음<br>- 사용자 정의 매개변수에 대한 강한 민감성으로 인해 결과의 재현성과 자동화가 어려움<br>- 수렴을 위해 긴 샘플링 시간이 필요하여 계산 비용이 높음<br><br>**핵심 기여**:<br>- Cepstral Analysis와 Green-Kubo 시뮬레이션을 결합한 새로운 방법론 제시<br>- DFT 참조 데이터로 훈련된 기계학습 moment tensor potential 활용<br>- MOF-5, HKUST-1, ZIF-8 등 대표적인 3개 MOF 구조에서 검증 완료<br>- 기존 방법 대비 1-2 ns의 짧은 샘플링 시간으로 안정적 수렴 달성<br>- 상관 길이의 넓은 범위에서 안정적인 결과 제공<br><br>**의의**: <br>이 연구는 복잡한 물리 시뮬레이션에서 자동화와 재현성을 확보하는 방법론적 혁신을 보여줍니다. 특히 매개변수 최적화와 노이즈 제거를 통한 계산 가속화는 프로그램 합성 및 자동화된 최적화 기법과 밀접한 연관이 있으며, 과학 계산 분야에서 수동적인 매개변수 튜닝을 자동화 가능한 robust한 알고리즘으로 대체하는 패러다임을 제시합니다.</div>
+  </section>
+  <section class="abstract">
+    <h2>📄 원문 초록</h2>
+    <p>Metal-organic frameworks (MOFs) are promising porous materials for applications such as gas storage and separation, where heat transport can critically affect device performance. However, reliable computational prediction of their thermal conductivities remains challenging. In particular, equilibrium molecular-dynamics-based Green-Kubo (GK) simulations, as the most widely used approach, are severely affected by statistical noise. Moreover, they rely on multiple ambiguous, user-defined parameters, which hinder transferability and automation. Here, we demonstrate for metal-organic frameworks that cepstral analysis in combination with GK simulations provides a robust route to massively mitigate these problems, while simultaneously reducing the required sampling times. This is shown for three prototypical frameworks, MOF-5, HKUST-1, and ZIF-8, employing machine-learned moment tensor potentials trained on DFT reference data. In contrast to conventional, direct GK analysis, which shows erratic convergence and strong sensitivity to ad hoc choices of parameters, the cepstral approach yields stable results across a wide range of correlation lengths and achieves convergence within about 1-2 ns of total sampling time. This establishes cepstral analysis base Green-Kubo simulations combined with machine-learned potentials as an efficient, reproducible and automation-ready framework for near ab initio accuracy prediction of thermal transport in MOFs and other complex low-thermal-conductivi</p>
+  </section>
+</article>
+</body>
+</html>
